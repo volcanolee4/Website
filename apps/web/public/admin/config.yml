@@ -10,7 +10,7 @@ backend:
   base_url: https://hygoal-oauth.pages.dev
   auth_endpoint: /api/auth
 
-# 上传的媒体文件存放位置
+# 上传的媒体文件存放位置（widget: image 上传的图会存到这里）
 media_folder: "apps/web/public/images"
 public_folder: "/Website/images"
 
@@ -41,27 +41,29 @@ collections:
               - { label: "营业时间", name: hours, widget: string }
               - { label: "成立年份", name: founded, widget: number, value_type: int }
 
-          - label: "图片资源"
+          - label: "图片资源（点按钮可直接从本地上传）"
             name: images
             widget: object
             fields:
-              - { label: "Logo", name: logo, widget: string }
-              - { label: "轮播图 1", name: banner1, widget: string }
-              - { label: "轮播图 2", name: banner2, widget: string }
-              - { label: "轮播图 3", name: banner3, widget: string }
-              - { label: "分度销分类图", name: plunger, widget: string }
-              - { label: "调平脚分类图", name: foot, widget: string }
-              - { label: "凸轮手柄分类图", name: lever, widget: string }
-              - { label: "定制服务分类图", name: custom, widget: string }
-              - { label: "特性图标-可靠", name: iconReliable, widget: string }
-              - { label: "特性图标-经济", name: iconEconomic, widget: string }
-              - { label: "特性图标-品质", name: iconQuality, widget: string }
+              - { label: "Logo", name: logo, widget: image }
+              - { label: "页脚 Logo", name: logoFooter, widget: image }
+              - { label: "轮播图 1", name: banner1, widget: image }
+              - { label: "轮播图 2", name: banner2, widget: image }
+              - { label: "轮播图 3", name: banner3, widget: image }
+              - { label: "分度销分类图", name: plunger, widget: image }
+              - { label: "调平脚分类图", name: foot, widget: image }
+              - { label: "凸轮手柄分类图", name: lever, widget: image }
+              - { label: "定制服务分类图", name: custom, widget: image }
+              - { label: "工厂车间图", name: workshop, widget: image }
+              - { label: "特性图标-可靠", name: iconReliable, widget: image }
+              - { label: "特性图标-经济", name: iconEconomic, widget: image }
+              - { label: "特性图标-品质", name: iconQuality, widget: image }
 
           - label: "特性（可靠/经济/品质）"
             name: features
             widget: list
             fields:
-              - { label: "图标 URL", name: icon, widget: string }
+              - { label: "图标", name: icon, widget: image }
               - { label: "标题", name: title, widget: string }
               - { label: "副标题", name: sub, widget: string }
 
@@ -106,7 +108,7 @@ collections:
                   - { label: "上下箭头 (调平脚)", value: arrow-down-up }
                   - { label: "扳手 (凸轮手柄)", value: wrench }
                   - { label: "圆规 (定制服务)", value: drafting-compass }
-              - { label: "图片 URL", name: image, widget: string }
+              - { label: "分类图片", name: image, widget: image }
               - { label: "简介", name: blurb, widget: text }
 
   # ============ 产品列表 ============
@@ -130,10 +132,10 @@ collections:
                 widget: select
                 options:
                   - { label: "分度销 Indexing Plunger", value: indexing-plunger }
-                  - { label: "调平脚 Levelling Feet", value: levelling-feet }
+                  - { label: "调平脚 Leveling Feet", value: levelling-feet }
                   - { label: "凸轮手柄 Cam Lever", value: cam-lever }
                   - { label: "定制服务 Customized Service", value: customized-service }
-              - { label: "产品图 URL", name: image, widget: string }
+              - { label: "产品图", name: image, widget: image }
               - { label: "规格简述", name: spec, widget: string }
 
   # ============ 产品详情 ============
@@ -150,9 +152,9 @@ collections:
             name: categoryDrawings
             widget: object
             fields:
-              - { label: "分度销图纸", name: indexing-plunger, widget: string, required: false }
-              - { label: "凸轮手柄图纸", name: cam-lever, widget: string, required: false }
-              - { label: "调平脚图纸", name: levelling-feet, widget: string, required: false }
+              - { label: "分度销图纸", name: indexing-plunger, widget: image, required: false }
+              - { label: "凸轮手柄图纸", name: cam-lever, widget: image, required: false }
+              - { label: "调平脚图纸", name: levelling-feet, widget: image, required: false }
 
           - label: "产品详情"
             name: details
@@ -163,7 +165,7 @@ collections:
               - label: "图片库"
                 name: gallery
                 widget: list
-                field: { label: "图片 URL", name: image, widget: string }
+                field: { label: "图片", name: image, widget: image }
               - label: "规格表"
                 name: table
                 widget: object

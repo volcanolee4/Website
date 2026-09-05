@@ -23,22 +23,22 @@ export default function AboutPage() {
 				description="Precision-engineered solutions that redefine industry standards — combining cutting-edge technology, cost-effective manufacturing and unwavering commitment to excellence."
 			/>
 
-			{/* Intro split */}
+			{/* Intro split — image left, text right */}
 			<section className="bg-white py-20 md:py-28">
-				<div className="mx-auto grid max-w-7xl items-center gap-14 px-6 lg:grid-cols-2">
+				<div className="mx-auto grid max-w-7xl items-stretch gap-10 px-6 md:grid-cols-2 md:gap-14">
 					<Reveal>
-						<div className="relative">
+						<div className="relative h-full">
 							<div className="absolute -left-4 -top-4 h-full w-full border-2 border-brand" aria-hidden="true" />
 							<img
-								src={IMAGES.banner3}
-								alt="HYGOAL customized machining service"
+								src={IMAGES.workshop}
+								alt="HYGOAL factory workshop with CNC machining equipment"
 								loading="lazy"
-								className="relative w-full object-cover shadow-xl"
+								className="relative h-full min-h-[320px] w-full object-cover shadow-xl"
 							/>
 						</div>
 					</Reveal>
 					<Reveal delay={0.15}>
-						<div>
+						<div className="flex h-full flex-col justify-center">
 							<p className="flex items-center gap-3 text-sm font-semibold uppercase tracking-[0.3em] text-muted-foreground">
 								<span className="h-[3px] w-10 bg-brand" />
 								Our Advantage

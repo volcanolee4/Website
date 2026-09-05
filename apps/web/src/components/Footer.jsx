@@ -15,7 +15,7 @@ export default function Footer() {
 		<footer className="bg-navy text-navy-foreground">
 			<div className="mx-auto grid max-w-7xl gap-12 px-6 py-16 md:grid-cols-2 lg:grid-cols-4">
 				<div>
-					<img src={IMAGES.logo} alt="HYGOAL" className="h-14 w-auto max-w-[200px] object-contain" />
+					<img src={IMAGES.logoFooter} alt="HYGOAL" className="h-14 w-auto max-w-[200px] object-contain" />
 					<p className="mt-5 max-w-xs text-sm leading-relaxed text-navy-foreground/70">
 						A leading factory located in Ningbo, China, specializing in indexing plungers, levelling
 						feet, cam levers and customized industrial components.

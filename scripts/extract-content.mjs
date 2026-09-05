@@ -1,7 +1,6 @@
 /**
  * 一次性迁移脚本：把硬编码的 site.js / productDetails.js 数据
  * 导出为 apps/web/src/content/ 下的 JSON 文件。
- * 运行后即可删除，仅作迁移记录。
  *
  * 用法：node scripts/extract-content.mjs
  */
@@ -60,24 +59,25 @@ const siteJson = {
 };
 writeFileSync(join(contentDir, 'site.json'), JSON.stringify(siteJson, null, 2) + '\n');
 
-// ---- 2. categories.json ----
-const categoriesJson = site.CATEGORIES.map((c) => ({
+// ---- 2. categories.json（具名包装，配合 data/site.js 桥接层读 categoriesData.categories）----
+const categoriesList = site.CATEGORIES.map((c) => ({
 	slug: c.slug,
 	name: c.name,
 	icon: iconToKey(c.icon) ?? c.slug,
 	image: c.image,
 	blurb: c.blurb,
 }));
-writeFileSync(join(contentDir, 'categories.json'), JSON.stringify(categoriesJson, null, 2) + '\n');
+writeFileSync(join(contentDir, 'categories.json'), JSON.stringify({ categories: categoriesList }, null, 2) + '\n');
 
-// ---- 3. products.json ----
-const productsJson = site.PRODUCTS;
-writeFileSync(join(contentDir, 'products.json'), JSON.stringify(productsJson, null, 2) + '\n');
+// ---- 3. products.json（具名包装，配合 data/site.js 桥接层读 productsData.products）----
+const productsList = site.PRODUCTS;
+writeFileSync(join(contentDir, 'products.json'), JSON.stringify({ products: productsList }, null, 2) + '\n');
 
-// ---- 4. productDetails.json ----
+// ---- 4. productDetails.json（PRODUCT_DETAILS 是对象 → 转成带 id 的数组）----
+const detailsList = Object.entries(pd.PRODUCT_DETAILS).map(([id, detail]) => ({ id, ...detail }));
 const productDetailsJson = {
 	categoryDrawings: pd.CATEGORY_DRAWINGS,
-	details: pd.PRODUCT_DETAILS,
+	details: detailsList,
 };
 writeFileSync(join(contentDir, 'productDetails.json'), JSON.stringify(productDetailsJson, null, 2) + '\n');
 
@@ -86,7 +86,7 @@ rmSync(tmpDir, { recursive: true, force: true });
 
 console.log('✅ 已导出 4 个 JSON 文件到 apps/web/src/content/');
 console.log('  - site.json           (公司/图片/特性/简介/优势/材料)');
-console.log('  - categories.json     (' + categoriesJson.length + ' 个分类)');
-console.log('  - products.json       (' + productsJson.length + ' 个产品)');
-console.log('  - productDetails.json (' + Object.keys(pd.PRODUCT_DETAILS).length + ' 个产品详情 + ' + Object.keys(pd.CATEGORY_DRAWINGS).length + ' 个图纸)');
-console.log('图标映射:', categoriesJson.map((c) => `${c.slug}=${c.icon}`).join(', '));
+console.log('  - categories.json     (' + categoriesList.length + ' 个分类)');
+console.log('  - products.json       (' + productsList.length + ' 个产品)');
+console.log('  - productDetails.json (' + detailsList.length + ' 个产品详情 + ' + Object.keys(pd.CATEGORY_DRAWINGS).length + ' 个图纸)');
+console.log('图标映射:', categoriesList.map((c) => `${c.slug}=${c.icon}`).join(', '));

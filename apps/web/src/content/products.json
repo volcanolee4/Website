@@ -85,6 +85,48 @@
       "spec": "Standard · Stainless steel"
     },
     {
+      "id": "7500-ss",
+      "name": "Index Plunger 7500-SS",
+      "category": "indexing-plunger",
+      "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/jpg/16980410304612734a5fe5e3c0da56a10f72152183516.jpg?version=1698041032",
+      "spec": "Stainless steel · With rest position"
+    },
+    {
+      "id": "7200",
+      "name": "Knurled Knob Plunger 7200",
+      "category": "indexing-plunger",
+      "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/1695085897211570bc81a997309e0f9b2092b754fffec.png?version=1695085941",
+      "spec": "Knurled knob · Steel / Stainless steel"
+    },
+    {
+      "id": "7300",
+      "name": "Mini Indexing Plunger 7300",
+      "category": "indexing-plunger",
+      "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/1695088713474dd25581b3a1518c5d782ab546032045a.png?version=1695088716",
+      "spec": "Mini · Steel / Stainless steel"
+    },
+    {
+      "id": "8700",
+      "name": "Indexing Plunger with Flange 8700",
+      "category": "indexing-plunger",
+      "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/1695092582957f4b97ea30da4dc8ac088671bfa6fb2e2.png?version=1695092587",
+      "spec": "With flange · Steel / Stainless steel"
+    },
+    {
+      "id": "6400",
+      "name": "Indexing Plunger with Pull Ring 6400",
+      "category": "indexing-plunger",
+      "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/16951150772876caa1e4e0a322c4080f0c23a98392865.png?version=1695115079",
+      "spec": "Pull ring · Steel / Stainless steel"
+    },
+    {
+      "id": "7100-a",
+      "name": "Retractable Indexing Plunger 7100-A",
+      "category": "indexing-plunger",
+      "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/16953492328092a76aafa9f02875a51cac8012c604f18.png?version=1695349253",
+      "spec": "Retractable · Non-locking"
+    },
+    {
       "id": "9900",
       "name": "Cam Lever with Stud in Metric 9900",
       "category": "cam-lever",
@@ -113,6 +155,20 @@
       "spec": "With stud · Inch thread"
     },
     {
+      "id": "cl-9500",
+      "name": "Cam Lever with Stud in Metric 9500",
+      "category": "cam-lever",
+      "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/1701075399836e7f9cb4719479d4db81433856a8ee747.png?version=0",
+      "spec": "With stud · Metric thread"
+    },
+    {
+      "id": "cl-9400",
+      "name": "Cam Lever with Internal Thread in Inch 9400",
+      "category": "cam-lever",
+      "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/170107408842550b996eb7302cd44403a7c82fba43bdb.png?version=0",
+      "spec": "Internal thread · Inch"
+    },
+    {
       "id": "cl-9300",
       "name": "Cam Lever with Internal Thread in Metric 9300",
       "category": "cam-lever",
@@ -120,38 +176,59 @@
       "spec": "Internal thread · Metric"
     },
     {
-      "id": "1600",
-      "name": "Levelling Mounts 1600",
+      "id": "1100",
+      "name": "Leveling Mounts with stud 1100",
       "category": "levelling-feet",
-      "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/171151995512937fced618de6622dbc1210e507f6be6d.png?version=1711519957",
-      "spec": "Stainless steel · Heavy duty"
+      "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/170106640635344888e645823652248f2c4bcc942b3c8.png?version=1701066442",
+      "spec": "With stud · Steel / Stainless steel"
     },
     {
-      "id": "1500",
-      "name": "Levelling Mounts with Rubber Pad 1500",
+      "id": "1200",
+      "name": "Leveling Mounts with metric stud 1200",
       "category": "levelling-feet",
-      "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/1711429886641a8140642bfb7e8bda07354d399bc7571.png?version=1711429888",
-      "spec": "With rubber pad · Anti-vibration"
-    },
-    {
-      "id": "1400",
-      "name": "Levelling Mounts with Tapped Socket in Metric 1400",
-      "category": "levelling-feet",
-      "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/17010693826001c47b5ba6fa585cc685fda68138ef703.png?version=0",
-      "spec": "Tapped socket · Metric"
+      "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/17010679270931b45c353b49a7d7a6e4f8c305bd60196.png?version=0",
+      "spec": "Metric stud · Steel / Stainless steel"
     },
     {
       "id": "1300",
-      "name": "Levelling Mounts with Tapped Socket in Inch 1300",
+      "name": "Leveling Mounts with Tapped Socket in Inch 1300",
       "category": "levelling-feet",
       "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/170106858995472d22954fd7a7eb53a3fd89d393d8b38.png?version=1701068592",
       "spec": "Tapped socket · Inch"
     },
     {
+      "id": "1400",
+      "name": "Leveling Mounts with Tapped Socket in Metric 1400",
+      "category": "levelling-feet",
+      "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/17010693826001c47b5ba6fa585cc685fda68138ef703.png?version=0",
+      "spec": "Tapped socket · Metric"
+    },
+    {
+      "id": "1500",
+      "name": "Leveling Mounts with Rubber Pad 1500",
+      "category": "levelling-feet",
+      "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/1711429886641a8140642bfb7e8bda07354d399bc7571.png?version=1711429888",
+      "spec": "With rubber pad · Anti-vibration"
+    },
+    {
+      "id": "1600",
+      "name": "Leveling Mounts 1600",
+      "category": "levelling-feet",
+      "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/171151995512937fced618de6622dbc1210e507f6be6d.png?version=1711519957",
+      "spec": "Stainless steel · Heavy duty"
+    },
+    {
+      "id": "1700",
+      "name": "Leveling Mounts with fix-lug 1700",
+      "category": "levelling-feet",
+      "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/1724293305632c29505177007f163801ff8172a0468e9.png?version=1724293307",
+      "spec": "With fix-lug · Steel / Stainless steel"
+    },
+    {
       "id": "custom",
       "name": "Customized Service",
       "category": "customized-service",
-      "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/169484513943433f2ee11f1130c5c6e11061cc91d9b9a.png?version=1694845144",
+      "image": "https://images.hostinger.com/d7384486-4d63-4b97-8a7c-5c83f1d1afdd.png",
       "spec": "OEM / ODM · Machined to your drawing"
     }
   ]
