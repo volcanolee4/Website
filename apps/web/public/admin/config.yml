@@ -4,8 +4,11 @@ backend:
   name: github
   repo: volcanolee4/Website
   branch: main
-  # 生产环境请取消注释并填入你的 OAuth 网关地址：
-  # base_url: https://your-oauth-gateway.example.com
+  # 站点地址（/admin 所在的域名，用于登录后跳回）
+  site_domain: https://volcanolee4.github.io/Website/
+  # OAuth 网关地址 —— 按 docs/admin-oauth-setup.md 部署后，把 CHANGE-ME 换成你的 Cloudflare Pages 地址
+  base_url: https://CHANGE-ME.pages.dev
+  auth_endpoint: /api/auth
 
 # 上传的媒体文件存放位置
 media_folder: "apps/web/public/images"
