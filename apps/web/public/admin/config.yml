@@ -6,8 +6,8 @@ backend:
   branch: main
   # 站点地址（/admin 所在的域名，用于登录后跳回）
   site_domain: https://volcanolee4.github.io/Website/
-  # OAuth 网关地址 —— 按 docs/admin-oauth-setup.md 部署后，把 CHANGE-ME 换成你的 Cloudflare Pages 地址
-  base_url: https://CHANGE-ME.pages.dev
+  # OAuth 网关地址（Cloudflare Pages，已部署）
+  base_url: https://hygoal-oauth.pages.dev
   auth_endpoint: /api/auth
 
 # 上传的媒体文件存放位置
