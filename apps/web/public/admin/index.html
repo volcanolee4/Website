@@ -5,8 +5,81 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex" />
   <title>内容管理后台</title>
+  <style>
+    /* ===== 自定义表格 widget 样式 ===== */
+    .hygoal-table-editor { width: 100%; }
+    .hygoal-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0 0 8px;
+      table-layout: fixed;
+    }
+    .hygoal-table th,
+    .hygoal-table td {
+      border: 1px solid #d0d0d0;
+      padding: 0;
+      position: relative;
+      background: #fff;
+    }
+    .hygoal-table th { background: #f0f4f7; }
+    .hygoal-table input {
+      width: 100%;
+      border: none;
+      background: transparent;
+      padding: 7px 8px;
+      font-size: 13px;
+      line-height: 1.4;
+      box-sizing: border-box;
+      color: #1c2530;
+    }
+    .hygoal-table th input { font-weight: 600; }
+    .hygoal-table input:focus {
+      outline: 2px solid #2f7d6d;
+      outline-offset: -2px;
+      background: #fff;
+    }
+    .hygoal-del {
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      width: 18px;
+      height: 18px;
+      line-height: 16px;
+      padding: 0;
+      border: none;
+      border-radius: 3px;
+      background: #e74c3c;
+      color: #fff;
+      font-size: 13px;
+      cursor: pointer;
+      opacity: 0.55;
+    }
+    .hygoal-del:hover { opacity: 1; }
+    .hygoal-del-cell { width: 30px; text-align: center; }
+    .hygoal-del-cell .hygoal-del { position: static; margin: 0 auto; }
+    .hygoal-table-actions { display: flex; gap: 8px; }
+    .hygoal-add {
+      border: 1px solid #2f7d6d;
+      background: #fff;
+      color: #2f7d6d;
+      padding: 5px 12px;
+      border-radius: 3px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+    .hygoal-add:hover { background: #eef7f4; }
+    /* 预览面板里的只读表格 */
+    .hygoal-table-preview { table-layout: auto; }
+    .hygoal-table-preview th,
+    .hygoal-table-preview td {
+      padding: 4px 8px;
+      text-align: left;
+      font-size: 12px;
+    }
+  </style>
 </head>
 <body>
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <script src="./table-widget.js"></script>
 </body>
 </html>

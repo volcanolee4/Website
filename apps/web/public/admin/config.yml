@@ -166,22 +166,9 @@ collections:
                 name: gallery
                 widget: list
                 field: { label: "图片", name: image, widget: image }
-              - label: "规格表"
+              - label: "规格表（点单元格直接编辑，所见即所得）"
                 name: table
-                widget: object
-                fields:
-                  - label: "表头"
-                    name: headers
-                    widget: list
-                    field: { label: "列名", name: column, widget: string }
-                  - label: "数据行"
-                    name: rows
-                    widget: list
-                    field:
-                      label: "行"
-                      name: row
-                      widget: list
-                      field: { label: "单元格", name: cell, widget: string }
+                widget: table
               - label: "备注"
                 name: notes
                 widget: object
