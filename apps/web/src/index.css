@@ -1,0 +1,86 @@
+/*
+  HYGOAL theme: industrial steel blue + safety orange, Barlow / Barlow Condensed.
+*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Barlow", ui-sans-serif, system-ui, sans-serif;
+  overflow-x: clip;
+}
+
+::selection {
+  background: hsl(var(--brand));
+  color: hsl(var(--brand-foreground));
+}
+
+/*
+  ---break---
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 213 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 213 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 213 47% 11%;
+    --primary: 210 74% 24%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 214 32% 96%;
+    --secondary-foreground: 213 47% 11%;
+    --muted: 214 24% 95%;
+    --muted-foreground: 215 15% 42%;
+    --accent: 214 32% 93%;
+    --accent-foreground: 213 47% 11%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 214 20% 88%;
+    --input: 214 20% 88%;
+    --ring: 210 74% 24%;
+    --brand: 22 90% 48%;
+    --brand-foreground: 0 0% 100%;
+    --navy: 213 55% 9%;
+    --navy-foreground: 210 30% 92%;
+    --radius: 0.375rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+  .dark {
+    --background: 213 47% 8%;
+    --foreground: 0 0% 98%;
+    --card: 213 47% 10%;
+    --card-foreground: 0 0% 98%;
+    --popover: 213 47% 10%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 213 47% 11%;
+    --secondary: 214 25% 16%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 214 25% 16%;
+    --muted-foreground: 215 15% 65%;
+    --accent: 214 25% 16%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 214 25% 18%;
+    --input: 214 25% 18%;
+    --ring: 22 90% 48%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
