@@ -59,6 +59,8 @@
       this.props.onChange({ headers: headers, rows: rows });
     },
     render: function () {
+      // 临时诊断：打印收到的 value，确认数据是否传到组件
+      if (typeof console !== 'undefined') console.log('[table-widget] value =', this.props.value);
       var v = normalize(this.props.value);
       var headers = v.headers;
       var rows = v.rows;
@@ -133,6 +135,20 @@
           })
         )
       );
+    }
+  });
+
+  // 值序列化器：告诉 Decap CMS 本组件的值是对象（不是字符串），
+  // 避免对象值被默认的字符串序列化弄丢。
+  CMS.registerWidgetValueSerializer('table', {
+    serialize: function (value) {
+      return value;
+    },
+    deserialize: function (value) {
+      if (typeof value === 'string') {
+        try { return JSON.parse(value); } catch (e) { return { headers: [''], rows: [['']] }; }
+      }
+      return value;
     }
   });
 
