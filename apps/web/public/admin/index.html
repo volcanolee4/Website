@@ -77,9 +77,18 @@
       font-size: 12px;
     }
   </style>
+  <script>
+    // 阻止 Decap CMS 自动初始化，改为手动控制顺序：
+    // 先注册自定义 widget，再 init，确保「table」组件在渲染前就绪
+    window.CMS_MANUAL_INIT = true;
+  </script>
 </head>
 <body>
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   <script src="./table-widget.js"></script>
+  <script>
+    // 自定义 widget 已注册完毕，现在初始化 CMS
+    window.initCMS();
+  </script>
 </body>
 </html>

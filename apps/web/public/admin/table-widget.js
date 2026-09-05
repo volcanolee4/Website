@@ -11,6 +11,10 @@
   var EMPTY = { headers: [''], rows: [['']] };
 
   function normalize(value) {
+    // 防御：某些情况下 Decap CMS 可能把对象值序列化成字符串
+    if (typeof value === 'string') {
+      try { value = JSON.parse(value); } catch (e) { value = null; }
+    }
     if (!value || typeof value !== 'object') return { headers: [''], rows: [['']] };
     var headers = Array.isArray(value.headers) ? value.headers : [''];
     var rows = Array.isArray(value.rows) ? value.rows : [['']];
