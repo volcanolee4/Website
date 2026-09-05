@@ -1,15 +1,16 @@
 {
   "categoryDrawings": {
-    "indexing-plunger": "/Website/images/d25afa1a-ac87-48e4-8b93-d431a47ca147.png",
-    "cam-lever": "/Website/images/41905541-4eaf-4b70-8b02-d2c046cec5e8.png",
-    "levelling-feet": "/Website/images/23f9fea2-b417-4a28-85c0-ea96db1889da.png"
+    "indexing-plunger": "",
+    "cam-lever": "",
+    "levelling-feet": ""
   },
   "details": [
     {
       "id": "1100",
       "summary": "Leveling Mounts with stud 1100\nWith stud · Steel / Stainless steel",
       "gallery": [
-        "/Website/images/170106640635344888e645823652248f2c4bcc942b3c8.png"
+        "/Website/images/170106640635344888e645823652248f2c4bcc942b3c8.png",
+        "/Website/images/1100-drawing.png"
       ],
       "table": {
         "headers": [
