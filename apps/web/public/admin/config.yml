@@ -1,0 +1,191 @@
+# Decap CMS 配置
+# 编辑后端：GitHub（生产环境需配合 OAuth 认证，见 README 部署说明）
+backend:
+  name: github
+  repo: volcanolee4/Website
+  branch: main
+  # 生产环境请取消注释并填入你的 OAuth 网关地址：
+  # base_url: https://your-oauth-gateway.example.com
+
+# 上传的媒体文件存放位置
+media_folder: "apps/web/public/images"
+public_folder: "/Website/images"
+
+# 站点显示名称
+site_url: https://volcanolee4.github.io/Website/
+
+collections:
+  # ============ 站点设置（单例） ============
+  - name: site
+    label: "站点设置"
+    editor:
+      preview: false
+    files:
+      - name: site
+        label: "公司信息与站点内容"
+        file: "apps/web/src/content/site.json"
+        fields:
+          - label: "公司信息"
+            name: company
+            widget: object
+            fields:
+              - { label: "公司简称", name: name, widget: string }
+              - { label: "公司全称", name: fullName, widget: string }
+              - { label: "邮箱", name: email, widget: string }
+              - { label: "电话", name: phone, widget: string }
+              - { label: "WhatsApp", name: whatsapp, widget: string }
+              - { label: "地址", name: address, widget: string }
+              - { label: "营业时间", name: hours, widget: string }
+              - { label: "成立年份", name: founded, widget: number, value_type: int }
+
+          - label: "图片资源"
+            name: images
+            widget: object
+            fields:
+              - { label: "Logo", name: logo, widget: string }
+              - { label: "轮播图 1", name: banner1, widget: string }
+              - { label: "轮播图 2", name: banner2, widget: string }
+              - { label: "轮播图 3", name: banner3, widget: string }
+              - { label: "分度销分类图", name: plunger, widget: string }
+              - { label: "调平脚分类图", name: foot, widget: string }
+              - { label: "凸轮手柄分类图", name: lever, widget: string }
+              - { label: "定制服务分类图", name: custom, widget: string }
+              - { label: "特性图标-可靠", name: iconReliable, widget: string }
+              - { label: "特性图标-经济", name: iconEconomic, widget: string }
+              - { label: "特性图标-品质", name: iconQuality, widget: string }
+
+          - label: "特性（可靠/经济/品质）"
+            name: features
+            widget: list
+            fields:
+              - { label: "图标 URL", name: icon, widget: string }
+              - { label: "标题", name: title, widget: string }
+              - { label: "副标题", name: sub, widget: string }
+
+          - label: "公司简介段落"
+            name: companyIntro
+            widget: list
+            field: { label: "段落", name: paragraph, widget: text }
+
+          - label: "为什么选择我们"
+            name: whyChoose
+            widget: list
+            fields:
+              - { label: "标题", name: title, widget: string }
+              - { label: "内容", name: text, widget: text }
+
+          - label: "材料/认证标签"
+            name: materials
+            widget: list
+            field: { label: "标签", name: tag, widget: string }
+
+  # ============ 产品分类 ============
+  - name: categories
+    label: "产品分类"
+    editor:
+      preview: false
+    files:
+      - name: categories
+        label: "分类列表"
+        file: "apps/web/src/content/categories.json"
+        fields:
+          - label: "分类"
+            name: categories
+            widget: list
+            fields:
+              - { label: "标识(slug)", name: slug, widget: string, hint: "英文唯一标识，勿随意修改，否则产品关联会失效" }
+              - { label: "名称", name: name, widget: string }
+              - label: "图标"
+                name: icon
+                widget: select
+                options:
+                  - { label: "十字准星 (分度销)", value: crosshair }
+                  - { label: "上下箭头 (调平脚)", value: arrow-down-up }
+                  - { label: "扳手 (凸轮手柄)", value: wrench }
+                  - { label: "圆规 (定制服务)", value: drafting-compass }
+              - { label: "图片 URL", name: image, widget: string }
+              - { label: "简介", name: blurb, widget: text }
+
+  # ============ 产品列表 ============
+  - name: products
+    label: "产品"
+    editor:
+      preview: false
+    files:
+      - name: products
+        label: "产品列表"
+        file: "apps/web/src/content/products.json"
+        fields:
+          - label: "产品"
+            name: products
+            widget: list
+            fields:
+              - { label: "产品 ID", name: id, widget: string, hint: "英文唯一标识，对应详情页 URL，勿随意修改" }
+              - { label: "产品名称", name: name, widget: string }
+              - label: "所属分类"
+                name: category
+                widget: select
+                options:
+                  - { label: "分度销 Indexing Plunger", value: indexing-plunger }
+                  - { label: "调平脚 Levelling Feet", value: levelling-feet }
+                  - { label: "凸轮手柄 Cam Lever", value: cam-lever }
+                  - { label: "定制服务 Customized Service", value: customized-service }
+              - { label: "产品图 URL", name: image, widget: string }
+              - { label: "规格简述", name: spec, widget: string }
+
+  # ============ 产品详情 ============
+  - name: product-details
+    label: "产品详情"
+    editor:
+      preview: false
+    files:
+      - name: product-details
+        label: "产品详情与规格表"
+        file: "apps/web/src/content/productDetails.json"
+        fields:
+          - label: "分类技术图纸"
+            name: categoryDrawings
+            widget: object
+            fields:
+              - { label: "分度销图纸", name: indexing-plunger, widget: string, required: false }
+              - { label: "凸轮手柄图纸", name: cam-lever, widget: string, required: false }
+              - { label: "调平脚图纸", name: levelling-feet, widget: string, required: false }
+
+          - label: "产品详情"
+            name: details
+            widget: list
+            fields:
+              - { label: "产品 ID", name: id, widget: string, hint: "必须与产品列表中的 ID 一致" }
+              - { label: "摘要（换行分隔）", name: summary, widget: text }
+              - label: "图片库"
+                name: gallery
+                widget: list
+                field: { label: "图片 URL", name: image, widget: string }
+              - label: "规格表"
+                name: table
+                widget: object
+                fields:
+                  - label: "表头"
+                    name: headers
+                    widget: list
+                    field: { label: "列名", name: column, widget: string }
+                  - label: "数据行"
+                    name: rows
+                    widget: list
+                    field:
+                      label: "行"
+                      name: row
+                      widget: list
+                      field: { label: "单元格", name: cell, widget: string }
+              - label: "备注"
+                name: notes
+                widget: object
+                fields:
+                  - label: "左栏"
+                    name: left
+                    widget: list
+                    field: { label: "条目", name: note, widget: string }
+                  - label: "右栏"
+                    name: right
+                    widget: list
+                    field: { label: "条目", name: note, widget: string }
