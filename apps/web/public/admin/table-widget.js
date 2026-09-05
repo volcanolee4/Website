@@ -64,8 +64,6 @@
       this.props.onChange({ headers: headers, rows: rows });
     },
     render: function () {
-      // 临时诊断：打印收到的 value，确认数据是否传到组件
-      if (typeof console !== 'undefined') console.log('[table-widget] value =', this.props.value);
       var v = normalize(this.props.value);
       var headers = v.headers;
       var rows = v.rows;
