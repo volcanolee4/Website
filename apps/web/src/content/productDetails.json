@@ -4,8 +4,9 @@
     "cam-lever": "https://images.hostinger.com/41905541-4eaf-4b70-8b02-d2c046cec5e8.png",
     "levelling-feet": "https://images.hostinger.com/23f9fea2-b417-4a28-85c0-ea96db1889da.png"
   },
-  "details": {
-    "1300": {
+  "details": [
+    {
+      "id": "1300",
       "summary": "Levelling Mounts with Tapped Socket in Inch 1300",
       "gallery": [
         "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/170106858995472d22954fd7a7eb53a3fd89d393d8b38.png?version=1701068592"
@@ -67,7 +68,8 @@
         ]
       }
     },
-    "1400": {
+    {
+      "id": "1400",
       "summary": "Levelling Mounts with Tapped Socket in Metric 1400",
       "gallery": [
         "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/17010693826001c47b5ba6fa585cc685fda68138ef703.png?version=0"
@@ -145,7 +147,8 @@
         ]
       }
     },
-    "1500": {
+    {
+      "id": "1500",
       "summary": "Levelling Mounts with Rubber Pad 1500\nAnti-vibration",
       "gallery": [
         "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/1711429886641a8140642bfb7e8bda07354d399bc7571.png?version=1711429888"
@@ -223,7 +226,8 @@
         ]
       }
     },
-    "1600": {
+    {
+      "id": "1600",
       "summary": "Levelling Mounts 1600\nStainless steel · Heavy duty",
       "gallery": [
         "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/171151995512937fced618de6622dbc1210e507f6be6d.png?version=1711519957"
@@ -301,7 +305,8 @@
         ]
       }
     },
-    "8800": {
+    {
+      "id": "8800",
       "summary": "Indexing Plunger with Knurled Knob 8800\nMetric sizes",
       "gallery": [
         "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/16951140334537ac52e3f2729d1b3f6d2b7e8f6467226.png?version=1695114037"
@@ -403,7 +408,8 @@
         ]
       }
     },
-    "9100": {
+    {
+      "id": "9100",
       "summary": "Ball Handle Indexing Plunger 9100\nWeld-in version",
       "gallery": [
         "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/16956230222666bad1b7fd2b3f8028a08ed095e504c9c.png?version=1695623025"
@@ -505,7 +511,8 @@
         ]
       }
     },
-    "9200": {
+    {
+      "id": "9200",
       "summary": "Indexing Plunger with T-Handle 9200\nThreaded body",
       "gallery": [
         "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/169568974954593c98df25c230311da17b3e231a19549.png?version=1695689752"
@@ -607,7 +614,8 @@
         ]
       }
     },
-    "9300": {
+    {
+      "id": "9300",
       "summary": "Indexing Plunger with Ball Handle 9300\nThreaded body",
       "gallery": [
         "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/16957078884738d40710fd005ae657f43d0b9c5b15327.png?version=1695707891"
@@ -709,7 +717,8 @@
         ]
       }
     },
-    "9400": {
+    {
+      "id": "9400",
       "summary": "Indexing Plunger 9400\nStandard · Steel zinc-plated",
       "gallery": [
         "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/16957093414521f96f39006a1a8fdfbce8a99a5224d50.png?version=1695709344"
@@ -811,7 +820,8 @@
         ]
       }
     },
-    "9500": {
+    {
+      "id": "9500",
       "summary": "Indexing Plunger 9500\nStandard · Stainless steel",
       "gallery": [
         "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/16957065635625c5437edf1564c6107c068181b50213e.png?version=1695707029"
@@ -913,7 +923,8 @@
         ]
       }
     },
-    "9600": {
+    {
+      "id": "9600",
       "summary": "Cam Lever with Stud in Inch 9600",
       "gallery": [
         "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/17010758309628e454950dd96f7e8b591dfeea88df1cc.png?version=0"
@@ -980,7 +991,8 @@
         ]
       }
     },
-    "9700": {
+    {
+      "id": "9700",
       "summary": "Cam Lever with Adjustable Nut in Metric 9700",
       "gallery": [
         "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/17010775041319026826b7c70782c23ced3f96f0b360d.png?version=0"
@@ -1062,7 +1074,8 @@
         ]
       }
     },
-    "9800": {
+    {
+      "id": "9800",
       "summary": "Cam Lever in Metric 9800\nIt's for quick clamping and release",
       "gallery": [
         "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/1701078414552adb1a73e2fe7547bb8227f5f997293e2.png?version=1701078416"
@@ -1144,7 +1157,8 @@
         ]
       }
     },
-    "9900": {
+    {
+      "id": "9900",
       "summary": "Cam Lever with Stud in Metric 9900\nIt's for quick clamping and release",
       "gallery": [
         "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/170107883515732fdccd81899e30be3b4860cec3169a1.png?version=1701078837"
@@ -1226,7 +1240,8 @@
         ]
       }
     },
-    "90000": {
+    {
+      "id": "90000",
       "summary": "T-Handle Indexing Plunger 90000\nWeld-in version",
       "gallery": [
         "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/16954377099872d821b814eec9b0afa7acf5a8607265e.png?version=1695437713"
@@ -1328,7 +1343,8 @@
         ]
       }
     },
-    "6400-a": {
+    {
+      "id": "6400-a",
       "summary": "Knurled Knob Index Plunger 6400-A\nWith or without locking patch",
       "gallery": [
         "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/1698647051683fb62bd92b8dd7ed94e44ded91fdc23be.png?version=1698647054",
@@ -1434,7 +1450,8 @@
         ]
       }
     },
-    "7600-b": {
+    {
+      "id": "7600-b",
       "summary": "Index Plunger 7600-B Full Stainless Steel\nLocking type · rest position",
       "gallery": [
         "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/169814950361889fab76c4d5cd688647ce11ea6bdbd44.png?version=1698149506"
@@ -1536,7 +1553,8 @@
         ]
       }
     },
-    "7600-a": {
+    {
+      "id": "7600-a",
       "summary": "Index Plunger 7600-A Full Stainless Steel\nNon-locking type",
       "gallery": [
         "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/1698127384574b6b0ecce941a74899a202abb360e5b2b.png?version=1698127387"
@@ -1638,7 +1656,8 @@
         ]
       }
     },
-    "7500-st": {
+    {
+      "id": "7500-st",
       "summary": "Index Plunger 7500-ST\nSteel · With rest position",
       "gallery": [
         "https://wds-service-1258344699.file.myqcloud.com/20/17249/jpg/169804266099523229ac638a140e48b1cde2f3f48a017.jpg?version=1698042663"
@@ -1743,7 +1762,8 @@
         ]
       }
     },
-    "7100-b": {
+    {
+      "id": "7100-b",
       "summary": "Retractable Indexing Plunger with Rest Position 7100-B",
       "gallery": [
         "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/16953609416945ce8be38e15c264e3b006ee942d07b66.png?version=1695360945"
@@ -1845,7 +1865,8 @@
         ]
       }
     },
-    "cl-9300": {
+    {
+      "id": "cl-9300",
       "summary": "Cam Lever with Internal Thread in Metric 9300",
       "gallery": [
         "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/170107408842550b996eb7302cd44403a7c82fba43bdb.png?version=0"
@@ -1927,7 +1948,8 @@
         ]
       }
     },
-    "custom": {
+    {
+      "id": "custom",
       "summary": "Customized Service\nOEM / ODM · Machined to your drawing",
       "gallery": [
         "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/169484513943433f2ee11f1130c5c6e11061cc91d9b9a.png?version=1694845144"
@@ -1971,5 +1993,5 @@
         ]
       }
     }
-  }
+  ]
 }

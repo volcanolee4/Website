@@ -15,12 +15,12 @@ export const COMPANY = siteData.company;
 
 export const IMAGES = siteData.images;
 
-export const CATEGORIES = categoriesData.map((c) => ({
+export const CATEGORIES = categoriesData.categories.map((c) => ({
 	...c,
 	icon: ICON_MAP[c.icon] ?? Crosshair,
 }));
 
-export const PRODUCTS = productsData;
+export const PRODUCTS = productsData.products;
 
 export const FEATURES = siteData.features;
 
