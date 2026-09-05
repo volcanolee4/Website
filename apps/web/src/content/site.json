@@ -1,0 +1,86 @@
+{
+  "company": {
+    "name": "HYGOAL",
+    "fullName": "HYGOAL",
+    "email": "info@hygoal.com",
+    "phone": "+86 574 8806 0075",
+    "whatsapp": "+86 138 6789 4521",
+    "address": "Ningbo, Zhejiang, China",
+    "hours": "Mon–Sat · 8:30–18:00 (GMT+8)",
+    "founded": 2009
+  },
+  "images": {
+    "logo": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/1694079822873317823ff7efb55ad42871c25da3e64ae.png?version=1694079825",
+    "banner1": "https://wds-service-1258344699.file.myqcloud.com/20/17249/jpg/16946574420015c82e5254af2b0f86c7394ff4aa50cae.jpg?version=1694657444",
+    "banner2": "https://wds-service-1258344699.file.myqcloud.com/20/17249/jpg/16946678008475ba0a3c30ce531a21055a68088f1a527.jpg?version=0",
+    "banner3": "https://wds-service-1258344699.file.myqcloud.com/20/17249/jpg/1694672835489e36b9300feec30a5f8b748b143a17d2c.jpg?version=1694672837",
+    "plunger": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/1698647051683fb62bd92b8dd7ed94e44ded91fdc23be.png?version=1698647054",
+    "foot": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/171151995512937fced618de6622dbc1210e507f6be6d.png?version=1711519957",
+    "lever": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/170107883515732fdccd81899e30be3b4860cec3169a1.png?version=1701078837",
+    "custom": "https://images.hostinger.com/5256061a-a7cb-47b0-be88-8a79acc98511.png",
+    "iconReliable": "https://www.hygoal.com/img/upimages/pkgimg/icon/icon2.png",
+    "iconEconomic": "https://www.hygoal.com/img/upimages/pkgimg/icon/icon4.png",
+    "iconQuality": "https://www.hygoal.com/img/upimages/pkgimg/icon/icon3.png"
+  },
+  "features": [
+    {
+      "icon": "https://www.hygoal.com/img/upimages/pkgimg/icon/icon2.png",
+      "title": "Reliable",
+      "sub": "Trustworthy · Dependable"
+    },
+    {
+      "icon": "https://www.hygoal.com/img/upimages/pkgimg/icon/icon4.png",
+      "title": "Economic",
+      "sub": "Factory to Customer"
+    },
+    {
+      "icon": "https://www.hygoal.com/img/upimages/pkgimg/icon/icon3.png",
+      "title": "Quality",
+      "sub": "High-grade · Top-notch"
+    }
+  ],
+  "companyIntro": [
+    "Hygoal is a leading factory located in Ningbo, China, specializing in the production of industrial components such as indexing plungers, leveling feet, cam levers, and more. With a strong focus on quality, our products are known for their reliability and durability.",
+    "What sets us apart is our commitment to providing high-quality industrial accessories at competitive prices. We understand the importance of delivering products that not only meet industry standards but also exceed customer expectations.",
+    "At Hygoal, we take pride in our ability to offer customized solutions tailored to your specific requirements. Our team of skilled professionals is dedicated to working closely with you to ensure that you receive products that perfectly align with your needs.",
+    "With a track record of excellence and a reputation for delivering on our promises, we have built strong relationships with clients worldwide. We are committed to maintaining the highest standards of manufacturing and service, and we look forward to the opportunity to serve you.",
+    "Choose Hygoal for reliable, affordable, and customized industrial components. Experience the difference in quality and service that sets us apart in the industry."
+  ],
+  "whyChoose": [
+    {
+      "title": "Precision Craftsmanship, Exceptional Performance",
+      "text": "At HYGOAL, we pride ourselves on delivering precision-engineered solutions that redefine industry standards. Specializing in the production of indexing plungers, levelling feet, and cam levers, our commitment to meticulous craftsmanship ensures that each component surpasses expectations in performance and durability."
+    },
+    {
+      "title": "Cutting-Edge Technology",
+      "text": "Situated in the heart of China's manufacturing hub in Ningbo, our state-of-the-art facility embraces cutting-edge technology. We leverage advanced manufacturing processes and equipment to guarantee the highest level of precision and consistency in every product. At HYGOAL, we stay at the forefront of technological innovation to meet the evolving needs of our clients."
+    },
+    {
+      "title": "Cost-Effective Solutions without Compromise",
+      "text": "HYGOAL stands out as a cost-effective manufacturing partner without compromising on quality. Our strategic location in Ningbo allows us to benefit from the region's industrial ecosystem, optimizing production costs without sacrificing the excellence of our products. Choose HYGOAL for unbeatable value – where quality and affordability coexist seamlessly."
+    },
+    {
+      "title": "Experienced Team of Experts",
+      "text": "Backed by a team of skilled engineers and professionals, HYGOAL brings years of industry expertise to the table. Our dedicated team is committed to understanding your unique requirements and delivering tailored solutions. From concept to completion, our experts ensure that every product meets the highest standards of quality and functionality."
+    },
+    {
+      "title": "Seamless Customization Experience",
+      "text": "Navigating our user-friendly website, you'll discover a seamless customization experience. Tailor our indexing plungers, levelling feet, and cam levers to your specific requirements effortlessly. HYGOAL empowers you to create components that perfectly align with your application needs, providing a level of customization that sets us apart."
+    },
+    {
+      "title": "Global Reach, Local Commitment",
+      "text": "While our reach extends globally, our commitment to personalized service remains local. HYGOAL fosters strong relationships with clients worldwide, offering reliable solutions and responsive communication. Experience the global expertise of HYGOAL with the personal touch of a local partner."
+    }
+  ],
+  "materials": [
+    "Stainless Steel 304",
+    "Carbon Steel C45",
+    "Aluminum 6061",
+    "Brass CW614N",
+    "Zinc Die-Cast",
+    "ISO 9001:2015",
+    "DIN / GN Standards",
+    "OEM · ODM",
+    "RoHS Compliant"
+  ]
+}

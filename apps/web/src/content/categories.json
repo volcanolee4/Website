@@ -1,0 +1,30 @@
+[
+  {
+    "slug": "indexing-plunger",
+    "name": "Indexing Plunger",
+    "icon": "crosshair",
+    "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/1698647051683fb62bd92b8dd7ed94e44ded91fdc23be.png?version=1698647054",
+    "blurb": "Indexing plungers with knob, pull ring or ball handle — steel and full stainless steel."
+  },
+  {
+    "slug": "levelling-feet",
+    "name": "Levelling Feet",
+    "icon": "arrow-down-up",
+    "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/171151995512937fced618de6622dbc1210e507f6be6d.png?version=1711519957",
+    "blurb": "Levelling mounts with tapped socket or rubber pad, in metric and inch sizes."
+  },
+  {
+    "slug": "cam-lever",
+    "name": "Cam Lever",
+    "icon": "wrench",
+    "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/170107883515732fdccd81899e30be3b4860cec3169a1.png?version=1701078837",
+    "blurb": "Cam levers with stud or internal thread, adjustable nut, in metric and inch."
+  },
+  {
+    "slug": "customized-service",
+    "name": "Customized Service",
+    "icon": "drafting-compass",
+    "image": "https://images.hostinger.com/5256061a-a7cb-47b0-be88-8a79acc98511.png",
+    "blurb": "OEM / ODM customized components manufactured to your specific requirements."
+  }
+]

@@ -1,0 +1,156 @@
+[
+  {
+    "id": "6400-a",
+    "name": "Knurled Knob Index Plunger 6400-A",
+    "category": "indexing-plunger",
+    "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/1698647051683fb62bd92b8dd7ed94e44ded91fdc23be.png?version=1698647054",
+    "spec": "Knurled knob · Steel / Stainless steel"
+  },
+  {
+    "id": "7600-b",
+    "name": "Index Plunger 7600-B Full Stainless Steel",
+    "category": "indexing-plunger",
+    "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/169814950361889fab76c4d5cd688647ce11ea6bdbd44.png?version=1698149506",
+    "spec": "Full stainless steel · Locking type"
+  },
+  {
+    "id": "7600-a",
+    "name": "Index Plunger 7600-A Full Stainless Steel",
+    "category": "indexing-plunger",
+    "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/1698127384574b6b0ecce941a74899a202abb360e5b2b.png?version=1698127387",
+    "spec": "Full stainless steel · Non-locking"
+  },
+  {
+    "id": "7500-st",
+    "name": "Index Plunger 7500-ST",
+    "category": "indexing-plunger",
+    "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/jpg/169804266099523229ac638a140e48b1cde2f3f48a017.jpg?version=1698042663",
+    "spec": "Steel · With rest position"
+  },
+  {
+    "id": "8800",
+    "name": "Indexing Plunger with Knurled Knob 8800",
+    "category": "indexing-plunger",
+    "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/16951140334537ac52e3f2729d1b3f6d2b7e8f6467226.png?version=1695114037",
+    "spec": "Knurled knob · Metric sizes"
+  },
+  {
+    "id": "7100-b",
+    "name": "Retractable Indexing Plunger with Rest Position 7100-B",
+    "category": "indexing-plunger",
+    "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/16953609416945ce8be38e15c264e3b006ee942d07b66.png?version=1695360945",
+    "spec": "Retractable · Rest position"
+  },
+  {
+    "id": "90000",
+    "name": "T-Handle Indexing Plunger 90000",
+    "category": "indexing-plunger",
+    "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/16954377099872d821b814eec9b0afa7acf5a8607265e.png?version=1695437713",
+    "spec": "T-handle · Weld-in version"
+  },
+  {
+    "id": "9100",
+    "name": "Ball Handle Indexing Plunger 9100",
+    "category": "indexing-plunger",
+    "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/16956230222666bad1b7fd2b3f8028a08ed095e504c9c.png?version=1695623025",
+    "spec": "Ball handle · Weld-in version"
+  },
+  {
+    "id": "9200",
+    "name": "Indexing Plunger with T-Handle 9200",
+    "category": "indexing-plunger",
+    "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/169568974954593c98df25c230311da17b3e231a19549.png?version=1695689752",
+    "spec": "T-handle · Threaded body"
+  },
+  {
+    "id": "9300",
+    "name": "Indexing Plunger with Ball Handle 9300",
+    "category": "indexing-plunger",
+    "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/16957078884738d40710fd005ae657f43d0b9c5b15327.png?version=1695707891",
+    "spec": "Ball handle · Threaded body"
+  },
+  {
+    "id": "9400",
+    "name": "Indexing Plunger 9400",
+    "category": "indexing-plunger",
+    "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/16957093414521f96f39006a1a8fdfbce8a99a5224d50.png?version=1695709344",
+    "spec": "Standard · Steel zinc-plated"
+  },
+  {
+    "id": "9500",
+    "name": "Indexing Plunger 9500",
+    "category": "indexing-plunger",
+    "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/16957065635625c5437edf1564c6107c068181b50213e.png?version=1695707029",
+    "spec": "Standard · Stainless steel"
+  },
+  {
+    "id": "9900",
+    "name": "Cam Lever with Stud in Metric 9900",
+    "category": "cam-lever",
+    "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/170107883515732fdccd81899e30be3b4860cec3169a1.png?version=1701078837",
+    "spec": "With stud · Metric thread"
+  },
+  {
+    "id": "9800",
+    "name": "Cam Lever in Metric 9800",
+    "category": "cam-lever",
+    "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/1701078414552adb1a73e2fe7547bb8227f5f997293e2.png?version=1701078416",
+    "spec": "Metric thread · Steel"
+  },
+  {
+    "id": "9700",
+    "name": "Cam Lever with Adjustable Nut in Metric 9700",
+    "category": "cam-lever",
+    "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/17010775041319026826b7c70782c23ced3f96f0b360d.png?version=0",
+    "spec": "Adjustable nut · Metric"
+  },
+  {
+    "id": "9600",
+    "name": "Cam Lever with Stud in Inch 9600",
+    "category": "cam-lever",
+    "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/17010758309628e454950dd96f7e8b591dfeea88df1cc.png?version=0",
+    "spec": "With stud · Inch thread"
+  },
+  {
+    "id": "cl-9300",
+    "name": "Cam Lever with Internal Thread in Metric 9300",
+    "category": "cam-lever",
+    "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/170107408842550b996eb7302cd44403a7c82fba43bdb.png?version=0",
+    "spec": "Internal thread · Metric"
+  },
+  {
+    "id": "1600",
+    "name": "Levelling Mounts 1600",
+    "category": "levelling-feet",
+    "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/171151995512937fced618de6622dbc1210e507f6be6d.png?version=1711519957",
+    "spec": "Stainless steel · Heavy duty"
+  },
+  {
+    "id": "1500",
+    "name": "Levelling Mounts with Rubber Pad 1500",
+    "category": "levelling-feet",
+    "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/1711429886641a8140642bfb7e8bda07354d399bc7571.png?version=1711429888",
+    "spec": "With rubber pad · Anti-vibration"
+  },
+  {
+    "id": "1400",
+    "name": "Levelling Mounts with Tapped Socket in Metric 1400",
+    "category": "levelling-feet",
+    "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/17010693826001c47b5ba6fa585cc685fda68138ef703.png?version=0",
+    "spec": "Tapped socket · Metric"
+  },
+  {
+    "id": "1300",
+    "name": "Levelling Mounts with Tapped Socket in Inch 1300",
+    "category": "levelling-feet",
+    "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/170106858995472d22954fd7a7eb53a3fd89d393d8b38.png?version=1701068592",
+    "spec": "Tapped socket · Inch"
+  },
+  {
+    "id": "custom",
+    "name": "Customized Service",
+    "category": "customized-service",
+    "image": "https://wds-service-1258344699.file.myqcloud.com/20/17249/png/169484513943433f2ee11f1130c5c6e11061cc91d9b9a.png?version=1694845144",
+    "spec": "OEM / ODM · Machined to your drawing"
+  }
+]
