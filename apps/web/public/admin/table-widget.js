@@ -11,6 +11,11 @@
   var EMPTY = { headers: [''], rows: [['']] };
 
   function normalize(value) {
+    // Decap CMS 内部用 Immutable.js 存数据，传进来的是 Map/List 结构，
+    // 用 .toJS() 转成普通对象/数组。
+    if (value && typeof value.toJS === 'function') {
+      value = value.toJS();
+    }
     // 防御：某些情况下 Decap CMS 可能把对象值序列化成字符串
     if (typeof value === 'string') {
       try { value = JSON.parse(value); } catch (e) { value = null; }
