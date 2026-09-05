@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>HYGOAL | Precision Machine Components Manufacturer</title>
+  <script type="text/javascript">
+    // SPA 路由重定向 (GitHub Pages 不支持 history fallback)
+    // 将 /Website/products/xxx 这种直接访问的路径，
+    // 转为 /Website/?p=/products/xxx，由 index.html 里的脚本还原。
+    (function () {
+      var l = window.location;
+      var base = '/Website';
+      var path = l.pathname;
+
+      // 只在子路径直接访问时重定向（不是根路径）
+      if (path === base + '/' || path === base) return;
+
+      // 去掉 base 前缀，得到真实 SPA 路径
+      var route = path;
+      if (path.indexOf(base) === 0) {
+        route = path.slice(base.length) || '/';
+      }
+
+      var qs = '?p=' + encodeURIComponent(route) + (l.search ? '&' + l.search.slice(1) : '') + (l.hash || '');
+      l.replace(base + '/' + qs);
+    })();
+  </script>
+</head>
+<body>
+  <div id="root"></div>
+</body>
+</html>

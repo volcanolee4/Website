@@ -2,13 +2,28 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/Website/favicon.svg" />
 		<meta name="generator" content="Hostinger AI Builder" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet" />
 		<title>HYGOAL | Precision Machine Components Manufacturer</title>
+		<script type="text/javascript">
+			// SPA 路由还原：配合 public/404.html 使用。
+			// 直接访问 /Website/products/xxx 时，404.html 会重定向到
+			// /Website/?p=/products/xxx，这里把 ?p= 里的路径还原进 history。
+			(function () {
+				var params = new URLSearchParams(window.location.search);
+				var p = params.get('p');
+				if (p) {
+					params.delete('p');
+					var qs = params.toString();
+					var url = '/Website' + p + (qs ? '?' + qs : '') + window.location.hash;
+					window.history.replaceState(null, '', url);
+				}
+			})();
+		</script>
 	</head>
 	<body>
 		<div id="root"></div>
