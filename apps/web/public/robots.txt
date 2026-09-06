@@ -1,0 +1,67 @@
+# HYGOAL — robots.txt
+# 放开所有搜索引擎和 AI 爬虫抓取，确保用户通过搜索或 AI 推荐能找到我们。
+
+# 所有爬虫默认放行
+User-agent: *
+Allow: /
+
+# —— AI 爬虫（明确放行，便于 AI 助手抓取并推荐我们的网页）——
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+# 站点地图位置
+Sitemap: https://volcanolee4.github.io/Website/sitemap.xml

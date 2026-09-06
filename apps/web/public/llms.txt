@@ -1,0 +1,26 @@
+# HYGOAL
+
+> HYGOAL is a precision machine components manufacturer based in Ningbo, Zhejiang, China (founded 2009), specializing in indexing plungers, leveling feet, cam levers, and custom CNC-machined parts for overseas customers. 15+ years of manufacturing, 1200+ SKUs, exports to 40+ countries, 98% on-time delivery.
+
+## Key pages
+
+- [Home](https://volcanolee4.github.io/Website/): Company overview, product categories, factory capabilities.
+- [Products](https://volcanolee4.github.io/Website/products): Full product range, filterable by category (Indexing Plunger / Leveling Feet / Cam Lever / Customized Service).
+- [About](https://volcanolee4.github.io/Website/about): Why choose HYGOAL — precision craftsmanship, cost-effective manufacturing, OEM/ODM capability.
+- [Contact](https://volcanolee4.github.io/Website/contact): Request a quotation; engineers reply within 48 hours.
+
+## Product categories
+
+- **Indexing Plungers** — knurled knob, T-handle, ball handle, pull-ring, retractable and mini plungers; steel and full stainless steel; metric and inch.
+- **Leveling Feet** — leveling mounts with stud, tapped socket, or rubber pad; anti-vibration; steel / stainless steel.
+- **Cam Levers** — with stud or internal thread, adjustable nut; metric and inch.
+- **Customized Service** — OEM/ODM components machined to customer drawings.
+
+## Company facts
+
+- Location: Ningbo, Zhejiang, China
+- Founded: 2009
+- Email: info@hygoal.com
+- Phone: +86 574 8806 0075
+- Materials: Stainless Steel 304, Carbon Steel C45, Aluminum 6061, Brass CW614N, Zinc Die-Cast
+- Standards: ISO 9001:2015, DIN / GN, RoHS compliant

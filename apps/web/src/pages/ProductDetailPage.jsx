@@ -65,6 +65,31 @@ export default function ProductDetailPage() {
 	const table = detail?.table;
 	const notes = detail?.notes;
 
+	// —— 结构化数据（JSON-LD）：产品 + 面包屑，帮助搜索引擎和 AI 理解页面 ——
+	const origin = window.location.origin;
+	const productImage = product.image.startsWith('http') ? product.image : origin + product.image;
+	const productUrl = `${origin}/Website/products/${product.id}`;
+	const productJsonLd = JSON.stringify({
+		'@context': 'https://schema.org',
+		'@type': 'Product',
+		name: product.name,
+		image: productImage,
+		description: product.spec,
+		sku: product.id,
+		category: categoryName(product.category),
+		brand: { '@type': 'Brand', name: 'HYGOAL' },
+		manufacturer: { '@type': 'Organization', name: 'HYGOAL' },
+	});
+	const breadcrumbJsonLd = JSON.stringify({
+		'@context': 'https://schema.org',
+		'@type': 'BreadcrumbList',
+		itemListElement: [
+			{ '@type': 'ListItem', position: 1, name: 'Home', item: `${origin}/Website/` },
+			{ '@type': 'ListItem', position: 2, name: 'Products', item: `${origin}/Website/products` },
+			{ '@type': 'ListItem', position: 3, name: product.name, item: productUrl },
+		],
+	});
+
 	const prevImg = () => setActive((i) => (i - 1 + gallery.length) % gallery.length);
 	const nextImg = () => setActive((i) => (i + 1) % gallery.length);
 
@@ -76,6 +101,8 @@ export default function ProductDetailPage() {
 					name="description"
 					content={`${product.name}. ${product.spec}. Specs, drawings and technical data from HYGOAL.`}
 				/>
+				<script type="application/ld+json">{productJsonLd}</script>
+				<script type="application/ld+json">{breadcrumbJsonLd}</script>
 			</Helmet>
 
 			<PageHero
