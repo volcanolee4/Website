@@ -53,7 +53,8 @@
 
   // 单元格/表头 → 内部统一结构 { text, font, size, align, bold, colspan, rowspan }；null 表示被合并覆盖的占位
   function toCell(cell) {
-    if (cell == null) return null;
+    if (cell === null) return null;   // 显式 null = 被合并覆盖的占位
+    if (cell == null) return emptyCell(); // undefined（缺列补齐）→ 空单元格
     if (typeof cell === 'string') return { text: cell, font: '', size: '', align: '', bold: false, colspan: 1, rowspan: 1 };
     if (typeof cell === 'number') return { text: String(cell), font: '', size: '', align: '', bold: false, colspan: 1, rowspan: 1 };
     if (typeof cell === 'object') {
@@ -122,11 +123,27 @@
     };
   }
 
+  // 剪贴板纯文本 → 二维数组（Tab/逗号 分列，换行分行；去掉末尾空行）
+  function parseClipboard(text) {
+    if (text == null) return [];
+    var rows = text.replace(/\r\n?/g, '\n').split('\n');
+    while (rows.length && rows[rows.length - 1].trim() === '') rows.pop();
+    if (!rows.length) return [];
+    var hasTab = rows.some(function (r) { return r.indexOf('\t') !== -1; });
+    var hasComma = !hasTab && rows.some(function (r) { return r.indexOf(',') !== -1; });
+    return rows.map(function (r) {
+      if (hasTab) return r.split('\t');
+      if (hasComma) return r.split(',');
+      return [r];
+    });
+  }
+
   var TableControl = createClass({
     getInitialState: function () {
       return {
         selected: null,            // null | { type:'cells', r1,c1,r2,c2 } | { type:'header', c1,c2 } | { type:'all' }
-        insRows: '1', insCols: '1', delRows: '1', delCols: '1'
+        insRows: '1', insCols: '1', delRows: '1', delCols: '1',
+        showPaste: false, pasteText: ''
       };
     },
 
@@ -323,6 +340,59 @@
         var cell = self.getCell(t, tg);
         if (cell) cell.text = '';
       });
+      this.props.onChange(serialize(t));
+    },
+
+    // —— 粘贴数据 ——
+    pasteData: function () {
+      var self = this;
+      if (navigator.clipboard && navigator.clipboard.readText) {
+        navigator.clipboard.readText().then(function (text) {
+          if (text) self.fillFromText(text);
+          else self.setState({ showPaste: true, pasteText: '' });
+        }).catch(function () {
+          self.setState({ showPaste: true, pasteText: '' });
+        });
+      } else {
+        self.setState({ showPaste: true, pasteText: '' });
+      }
+    },
+    confirmPaste: function () {
+      var text = this.state.pasteText || '';
+      this.setState({ showPaste: false, pasteText: '' });
+      if (text.trim()) this.fillFromText(text);
+    },
+    cancelPaste: function () {
+      this.setState({ showPaste: false, pasteText: '' });
+    },
+    fillFromText: function (text) {
+      var grid = parseClipboard(text);
+      if (!grid.length) return;
+      if (grid.length === 1 && grid[0].length === 1 && grid[0][0].trim() === '') return;
+
+      var t = parse(this.props.value);
+      var sel = this.state.selected;
+      var ar = 0, ac = 0;
+      if (sel && sel.type === 'cells') { ar = sel.r1; ac = sel.c1; }
+
+      var neededRows = grid.length;
+      var neededCols = 0;
+      grid.forEach(function (row) { if (row.length > neededCols) neededCols = row.length; });
+
+      while (t.rows.length < ar + neededRows) {
+        t.rows.push(t.headers.map(function () { return emptyCell(); }));
+      }
+      while (t.headers.length < ac + neededCols) {
+        t.headers.push(emptyCell());
+        t.rows.forEach(function (row) { row.push(emptyCell()); });
+      }
+
+      for (var r = 0; r < grid.length; r++) {
+        for (var c = 0; c < grid[r].length; c++) {
+          var cell = t.rows[ar + r] && t.rows[ar + r][ac + c];
+          if (cell != null) cell.text = grid[r][c];
+        }
+      }
       this.props.onChange(serialize(t));
     },
 
@@ -689,6 +759,12 @@
         h('div', { className: 'hygoal-toolbar hygoal-struct' },
           h('button', {
             type: 'button',
+            className: 'hygoal-format-btn',
+            title: '粘贴剪贴板中的表格数据（Tab 分列、换行分行；从选中单元格或左上角开始，保留原格式）',
+            onClick: this.pasteData
+          }, '粘贴'),
+          h('button', {
+            type: 'button',
             className: 'hygoal-format-btn' + (mergeOk ? '' : ''),
             title: '合并选中的多个单元格（或表头）为一个',
             disabled: !mergeOk,
@@ -727,6 +803,20 @@
         ),
 
         // —— 表格 ——
+        // —— 粘贴数据面板（剪贴板读取失败时的兜底输入框）——
+        this.state.showPaste ? h('div', { className: 'hygoal-paste-panel' },
+          h('textarea', {
+            className: 'hygoal-paste-area',
+            placeholder: '在此粘贴表格数据（Excel 复制的内容，Tab 分隔列、换行分行）',
+            value: this.state.pasteText,
+            onChange: function (e) { self.setState({ pasteText: e.target.value }); }
+          }),
+          h('div', { className: 'hygoal-paste-actions' },
+            h('button', { type: 'button', className: 'hygoal-add', onClick: this.confirmPaste }, '确定填充'),
+            h('button', { type: 'button', className: 'hygoal-format-btn', onClick: this.cancelPaste }, '取消')
+          )
+        ) : null,
+
         h('table', { className: 'hygoal-table' },
           h('colgroup', null,
             headers.map(function (_, ci) { return h('col', { key: 'c' + ci }); })
@@ -874,7 +964,7 @@
 
   if (typeof module !== 'undefined' && module.exports) {
     // 供 node 单测使用（浏览器里 module 未定义，不会执行）
-    module.exports = { toCell: toCell, fromCell: fromCell, parse: parse, serialize: serialize };
+    module.exports = { toCell: toCell, fromCell: fromCell, parse: parse, serialize: serialize, parseClipboard: parseClipboard };
   }
 
   CMS.registerWidget('table', TableControl, TablePreview);
