@@ -276,7 +276,7 @@ export default function ProductDetailPage() {
 															key={ci}
 															style={tdStyle}
 															className={`border border-border px-3 py-2 ${
-																ci === 0 ? 'font-semibold text-foreground' : 'text-muted-foreground'
+																ci === 0 ? 'text-foreground' : 'text-muted-foreground'
 															}`}
 														>
 															{cellStyle ? <span style={cellStyle}>{cellText}</span> : cellText}
