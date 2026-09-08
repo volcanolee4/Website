@@ -235,8 +235,10 @@ export default function ProductDetailPage() {
 									<thead>
 										<tr className="bg-secondary">
 											{table.headers.map((h, i) => {
+												if (h == null) return null;
 												const isObj = typeof h === 'object' && h !== null && !Array.isArray(h);
 												const hText = isObj ? h.text : h;
+												const colSpan = isObj && h.colspan > 1 ? h.colspan : undefined;
 												const hStyle = isObj
 													? {
 														textAlign: h.align || undefined,
@@ -248,6 +250,7 @@ export default function ProductDetailPage() {
 												return (
 													<th
 														key={i}
+														colSpan={colSpan}
 														style={hStyle}
 														className="border border-border px-3 py-2.5 text-left font-semibold text-foreground"
 													>
@@ -261,6 +264,7 @@ export default function ProductDetailPage() {
 										{table.rows.map((row, ri) => (
 											<tr key={ri} className={ri % 2 === 0 ? 'bg-white' : 'bg-secondary/40'}>
 												{row.map((cell, ci) => {
+													if (cell == null) return null;
 													const isObj = typeof cell === 'object' && cell !== null && !Array.isArray(cell);
 													const cellText = isObj ? cell.text : cell;
 													const tdStyle = isObj ? { textAlign: cell.align || undefined } : undefined;
@@ -271,9 +275,13 @@ export default function ProductDetailPage() {
 														fontWeight: cell.bold ? 'bold' : undefined,
 													}
 														: undefined;
+													const colSpan = isObj && cell.colspan > 1 ? cell.colspan : undefined;
+													const rowSpan = isObj && cell.rowspan > 1 ? cell.rowspan : undefined;
 													return (
 														<td
 															key={ci}
+															colSpan={colSpan}
+															rowSpan={rowSpan}
 															style={tdStyle}
 															className={`border border-border px-3 py-2 ${
 																ci === 0 ? 'text-foreground' : 'text-muted-foreground'

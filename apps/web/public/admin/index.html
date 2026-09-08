@@ -74,7 +74,17 @@
       border-collapse: collapse;
       margin: 0 0 8px;
       table-layout: fixed;
+      -webkit-user-select: none;
+      user-select: none;
     }
+    .hygoal-table input {
+      -webkit-user-select: text;
+      user-select: text;
+    }
+    /* 结构工具栏里的数量输入框 / 合并提示 */
+    .hygoal-num { width: 46px; padding: 3px 4px; font-size: 12px; border: 1px solid #ccd4dc; border-radius: 3px; }
+    .hygoal-col-note { font-size: 11px; color: #8a97a5; }
+    .hygoal-del-table { padding: 0 8px; height: 24px; }
     .hygoal-col-actions-col { width: 92px; }
     .hygoal-table th,
     .hygoal-table td {
