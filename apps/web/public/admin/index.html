@@ -8,18 +8,61 @@
   <style>
     /* ===== 自定义表格 widget 样式 ===== */
     .hygoal-table-editor { width: 100%; }
+
+    /* 格式 / 符号工具栏 */
+    .hygoal-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 6px;
+      padding: 8px;
+      margin-bottom: 8px;
+      background: #f6f8fa;
+      border: 1px solid #e3e8ee;
+      border-radius: 4px;
+    }
+    .hygoal-toolbar-label { font-size: 12px; color: #5b6b7b; font-weight: 600; }
+    .hygoal-toolbar-sep { width: 1px; height: 20px; background: #d0d7df; margin: 0 4px; }
+    .hygoal-toolbar-hint { margin-left: auto; font-size: 11px; color: #8a97a5; }
+    .hygoal-select {
+      padding: 3px 6px;
+      font-size: 12px;
+      border: 1px solid #ccd4dc;
+      border-radius: 3px;
+      background: #fff;
+      color: #1c2530;
+      max-width: 160px;
+    }
+    .hygoal-select:disabled { background: #eef1f4; color: #9aa6b2; cursor: not-allowed; }
+    .hygoal-sym {
+      min-width: 27px;
+      height: 24px;
+      padding: 0 4px;
+      border: 1px solid #ccd4dc;
+      border-radius: 3px;
+      background: #fff;
+      color: #1c2530;
+      font-size: 14px;
+      line-height: 1;
+      cursor: pointer;
+    }
+    .hygoal-sym:hover { background: #eef7f4; border-color: #2f7d6d; color: #2f7d6d; }
+
+    /* 表格 */
     .hygoal-table {
       width: 100%;
       border-collapse: collapse;
       margin: 0 0 8px;
       table-layout: fixed;
     }
+    .hygoal-col-actions-col { width: 92px; }
     .hygoal-table th,
     .hygoal-table td {
       border: 1px solid #d0d0d0;
       padding: 0;
       position: relative;
       background: #fff;
+      vertical-align: top;
     }
     .hygoal-table th { background: #f0f4f7; }
     .hygoal-table input {
@@ -38,25 +81,38 @@
       outline-offset: -2px;
       background: #fff;
     }
-    .hygoal-del {
-      position: absolute;
-      top: 2px;
-      right: 2px;
-      width: 18px;
-      height: 18px;
-      line-height: 16px;
-      padding: 0;
-      border: none;
-      border-radius: 3px;
-      background: #e74c3c;
-      color: #fff;
-      font-size: 13px;
-      cursor: pointer;
-      opacity: 0.55;
+    .hygoal-table .hygoal-selected input { background: #eef7f4; }
+
+    /* 列操作按钮（每个表头单元格下方） */
+    .hygoal-col-actions {
+      display: flex;
+      gap: 2px;
+      justify-content: center;
+      padding: 3px 2px;
+      border-top: 1px solid #e3e8ee;
     }
-    .hygoal-del:hover { opacity: 1; }
-    .hygoal-del-cell { width: 30px; text-align: center; }
-    .hygoal-del-cell .hygoal-del { position: static; margin: 0 auto; }
+    /* 行操作单元格 / 表头角落占位 */
+    .hygoal-row-actions { width: 92px; text-align: center; vertical-align: middle; }
+    .hygoal-corner { width: 92px; background: #f0f4f7; }
+
+    .hygoal-act,
+    .hygoal-del {
+      min-width: 24px;
+      height: 20px;
+      padding: 0 3px;
+      border: 1px solid #ccd4dc;
+      border-radius: 3px;
+      background: #fff;
+      color: #1c2530;
+      font-size: 12px;
+      line-height: 1;
+      cursor: pointer;
+    }
+    .hygoal-act:hover { background: #eef7f4; border-color: #2f7d6d; color: #2f7d6d; }
+    .hygoal-del { color: #c0392b; border-color: #e6b8b1; }
+    .hygoal-del:hover { background: #e74c3c; border-color: #e74c3c; color: #fff; }
+
+    /* 底部快捷操作 */
     .hygoal-table-actions { display: flex; gap: 8px; }
     .hygoal-add {
       border: 1px solid #2f7d6d;
@@ -68,6 +124,7 @@
       cursor: pointer;
     }
     .hygoal-add:hover { background: #eef7f4; }
+
     /* 预览面板里的只读表格 */
     .hygoal-table-preview { table-layout: auto; }
     .hygoal-table-preview th,

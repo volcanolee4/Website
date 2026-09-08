@@ -247,16 +247,23 @@ export default function ProductDetailPage() {
 									<tbody>
 										{table.rows.map((row, ri) => (
 											<tr key={ri} className={ri % 2 === 0 ? 'bg-white' : 'bg-secondary/40'}>
-												{row.map((cell, ci) => (
-													<td
-														key={ci}
-														className={`border border-border px-3 py-2 ${
-															ci === 0 ? 'font-semibold text-foreground' : 'text-muted-foreground'
-														}`}
-													>
-														{cell}
-													</td>
-												))}
+												{row.map((cell, ci) => {
+													const isObj = typeof cell === 'object' && cell !== null && !Array.isArray(cell);
+													const cellText = isObj ? cell.text : cell;
+													const cellStyle = isObj
+														? { fontFamily: cell.font || undefined, fontSize: cell.size != null ? `${cell.size}px` : undefined }
+														: undefined;
+													return (
+														<td
+															key={ci}
+															className={`border border-border px-3 py-2 ${
+																ci === 0 ? 'font-semibold text-foreground' : 'text-muted-foreground'
+															}`}
+														>
+															{cellStyle ? <span style={cellStyle}>{cellText}</span> : cellText}
+														</td>
+													);
+												})}
 											</tr>
 										))}
 									</tbody>
