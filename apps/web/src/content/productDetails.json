@@ -1852,61 +1852,43 @@
       ],
       "table": {
         "headers": [
-          "Item #",
-          "d1",
-          "d2",
-          "h",
-          "l",
-          "Load (kN)"
+          {
+            "text": "L mm",
+            "align": "center",
+            "colspan": 6
+          },
+          null,
+          null,
+          null,
+          null,
+          null
         ],
         "rows": [
           [
-            "M8",
-            "M8",
-            "40",
-            "18",
-            "50",
-            "3.5"
-          ],
-          [
-            "M10",
-            "M10",
-            "50",
-            "20",
-            "60",
-            "5.0"
-          ],
-          [
-            "M12",
-            "M12",
-            "60",
-            "22",
-            "80",
-            "7.5"
-          ],
-          [
-            "M16",
-            "M16",
-            "80",
-            "25",
-            "100",
-            "12"
-          ],
-          [
-            "M20",
-            "M20",
-            "100",
-            "30",
-            "120",
-            "18"
-          ],
-          [
-            "M24",
-            "M24",
-            "120",
-            "35",
-            "150",
-            "25"
+            {
+              "text": "50",
+              "align": "center"
+            },
+            {
+              "text": "80",
+              "align": "center"
+            },
+            {
+              "text": "100",
+              "align": "center"
+            },
+            {
+              "text": "110",
+              "align": "center"
+            },
+            {
+              "text": "120",
+              "align": "center"
+            },
+            {
+              "text": "150",
+              "align": "center"
+            }
           ]
         ]
       },
@@ -1998,67 +1980,193 @@
       ],
       "table": {
         "headers": [
-          "Item #",
-          "d1",
-          "d2",
-          "h",
-          "l",
-          "Load (kN)"
+          {
+            "text": "Item #",
+            "align": "center"
+          },
+          {
+            "text": "d1",
+            "align": "center"
+          },
+          {
+            "text": "d2",
+            "align": "center"
+          },
+          {
+            "text": "h",
+            "align": "center"
+          },
+          {
+            "text": "l",
+            "align": "center"
+          },
+          {
+            "text": "Load (kN)",
+            "align": "center"
+          }
         ],
         "rows": [
           [
-            "M8",
-            "M8",
-            "40",
-            "18",
-            "50",
-            "3.5"
+            {
+              "text": "M8",
+              "align": "center"
+            },
+            {
+              "text": "M8",
+              "align": "center"
+            },
+            {
+              "text": "40",
+              "align": "center"
+            },
+            {
+              "text": "18",
+              "align": "center"
+            },
+            {
+              "text": "50",
+              "align": "center"
+            },
+            {
+              "text": "3.5",
+              "align": "center"
+            }
           ],
           [
-            "M10",
-            "M10",
-            "50",
-            "20",
-            "60",
-            "5.0"
+            {
+              "text": "M10",
+              "align": "center"
+            },
+            {
+              "text": "M10",
+              "align": "center"
+            },
+            {
+              "text": "50",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "60",
+              "align": "center"
+            },
+            {
+              "text": "5.0",
+              "align": "center"
+            }
           ],
           [
-            "M12",
-            "M12",
-            "60",
-            "22",
-            "80",
-            "7.5"
+            {
+              "text": "M12",
+              "align": "center"
+            },
+            {
+              "text": "M12",
+              "align": "center"
+            },
+            {
+              "text": "60",
+              "align": "center"
+            },
+            {
+              "text": "22",
+              "align": "center"
+            },
+            {
+              "text": "80",
+              "align": "center"
+            },
+            {
+              "text": "7.5",
+              "align": "center"
+            }
           ],
           [
-            "M16",
-            "M16",
-            "80",
-            "25",
-            "100",
-            "12"
+            {
+              "text": "M16",
+              "align": "center"
+            },
+            {
+              "text": "M16",
+              "align": "center"
+            },
+            {
+              "text": "80",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            },
+            {
+              "text": "100",
+              "align": "center"
+            },
+            {
+              "text": "12",
+              "align": "center"
+            }
           ],
           [
-            "M20",
-            "M20",
-            "100",
-            "30",
-            "120",
-            "18"
+            {
+              "text": "M20",
+              "align": "center"
+            },
+            {
+              "text": "M20",
+              "align": "center"
+            },
+            {
+              "text": "100",
+              "align": "center"
+            },
+            {
+              "text": "30",
+              "align": "center"
+            },
+            {
+              "text": "120",
+              "align": "center"
+            },
+            {
+              "text": "18",
+              "align": "center"
+            }
           ],
           [
-            "M24",
-            "M24",
-            "120",
-            "35",
-            "150",
-            "25"
+            {
+              "text": "M24",
+              "align": "center"
+            },
+            {
+              "text": "M24",
+              "align": "center"
+            },
+            {
+              "text": "120",
+              "align": "center"
+            },
+            {
+              "text": "35",
+              "align": "center"
+            },
+            {
+              "text": "150",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            }
           ]
         ]
       },
       "notes": {
         "left": [
-          "Base: steel, stainless steel or zinc die-cast",
+          "Base: steel, stainless steel",
           "Stem: zinc plated steel or stainless steel",
           "Optional rubber pad for anti-vibration"
         ],
@@ -2078,85 +2186,135 @@
       ],
       "table": {
         "headers": [
-          "Item #",
-          "H",
-          "D",
-          "B",
-          "A",
-          "C",
-          "E",
-          "d"
+          {
+            "text": "Item #",
+            "align": "center"
+          },
+          {
+            "text": "D",
+            "align": "center"
+          },
+          {
+            "text": "d1",
+            "align": "center"
+          },
+          {
+            "text": "d",
+            "align": "center"
+          },
+          {
+            "text": "l1",
+            "align": "center"
+          },
+          {
+            "text": "l2",
+            "align": "center"
+          }
         ],
         "rows": [
           [
-            "7401",
-            "10-32",
-            ".38\"",
-            ".19\"",
-            ".25\"",
-            ".40\"",
-            ".09\"",
-            ".05\""
+            {
+              "text": "6401",
+              "align": "center"
+            },
+            {
+              "text": "14",
+              "align": "center"
+            },
+            {
+              "text": "4",
+              "align": "center"
+            },
+            {
+              "text": "M6",
+              "align": "center"
+            },
+            {
+              "text": "4",
+              "align": "center"
+            },
+            {
+              "text": "12",
+              "align": "center"
+            }
           ],
           [
-            "7402",
-            "1/4-20",
-            ".5\"",
-            ".19\"",
-            ".31\"",
-            ".50\"",
-            ".13\"",
-            ".12\""
+            {
+              "text": "6402",
+              "align": "center"
+            },
+            {
+              "text": "18",
+              "align": "center"
+            },
+            {
+              "text": "5",
+              "align": "center"
+            },
+            {
+              "text": "M8",
+              "align": "center"
+            },
+            {
+              "text": "5",
+              "align": "center"
+            },
+            {
+              "text": "16",
+              "align": "center"
+            }
           ],
           [
-            "7403",
-            "5/16-18",
-            ".63\"",
-            ".25\"",
-            ".38\"",
-            ".63\"",
-            ".19\"",
-            ".16\""
+            {
+              "text": "6403",
+              "align": "center"
+            },
+            {
+              "text": "24",
+              "align": "center"
+            },
+            {
+              "text": "6",
+              "align": "center"
+            },
+            {
+              "text": "M10",
+              "align": "center"
+            },
+            {
+              "text": "6",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            }
           ],
           [
-            "7404",
-            "3/8-16",
-            ".75\"",
-            ".31\"",
-            ".50\"",
-            ".75\"",
-            ".22\"",
-            ".19\""
-          ],
-          [
-            "7405",
-            "1/2-13",
-            "1.0\"",
-            ".38\"",
-            ".63\"",
-            ".88\"",
-            ".25\"",
-            ".25\""
-          ],
-          [
-            "7406",
-            "5/8-11",
-            "1.25\"",
-            ".44\"",
-            ".75\"",
-            "1.0\"",
-            ".32\"",
-            ".31\""
-          ],
-          [
-            "7407",
-            "3/4-10",
-            "1.50\"",
-            ".50\"",
-            ".81\"",
-            "1.2\"",
-            ".45\"",
-            ".38\""
+            {
+              "text": "6404",
+              "align": "center"
+            },
+            {
+              "text": "30",
+              "align": "center"
+            },
+            {
+              "text": "8",
+              "align": "center"
+            },
+            {
+              "text": "M12",
+              "align": "center"
+            },
+            {
+              "text": "8",
+              "align": "center"
+            },
+            {
+              "text": "24",
+              "align": "center"
+            }
           ]
         ]
       },
@@ -2185,98 +2343,211 @@
       ],
       "table": {
         "headers": [
-          "Item #",
-          "d1",
-          "l1",
-          "l2",
-          "d2",
-          "d3",
-          "A/F",
-          "Spring force initial (N)",
-          "Spring force final (N)"
+          {
+            "text": "Item #",
+            "align": "center"
+          },
+          {
+            "text": "D",
+            "align": "center"
+          },
+          {
+            "text": "d1",
+            "align": "center"
+          },
+          {
+            "text": "d2",
+            "align": "center"
+          },
+          {
+            "text": "L",
+            "align": "center"
+          },
+          {
+            "text": "L1",
+            "align": "center"
+          },
+          {
+            "text": "L2",
+            "align": "center"
+          },
+          {
+            "text": "L3",
+            "align": "center"
+          },
+          {
+            "text": "SW",
+            "align": "center"
+          }
         ],
         "rows": [
           [
-            "M5",
-            "M5",
-            "12",
-            "5",
-            "4",
-            "12",
-            "7",
-            "5",
-            "12"
+            {
+              "text": "7201",
+              "align": "center"
+            },
+            {
+              "text": "21",
+              "align": "center"
+            },
+            {
+              "text": "5",
+              "align": "center"
+            },
+            {
+              "text": "M10x1",
+              "align": "center"
+            },
+            {
+              "text": "45",
+              "align": "center"
+            },
+            {
+              "text": "6",
+              "align": "center"
+            },
+            {
+              "text": "17",
+              "align": "center"
+            },
+            {
+              "text": "5",
+              "align": "center"
+            },
+            {
+              "text": "12",
+              "align": "center"
+            }
           ],
           [
-            "M6",
-            "M6",
-            "14",
-            "6",
-            "5",
-            "14",
-            "8",
-            "6",
-            "14"
+            {
+              "text": "7202",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            },
+            {
+              "text": "6",
+              "align": "center"
+            },
+            {
+              "text": "M10x1",
+              "align": "center"
+            },
+            {
+              "text": "54.5",
+              "align": "center"
+            },
+            {
+              "text": "6",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "6",
+              "align": "center"
+            },
+            {
+              "text": "14",
+              "align": "center"
+            }
           ],
           [
-            "M8",
-            "M8",
-            "16",
-            "8",
-            "6",
-            "18",
-            "10",
-            "8",
-            "20"
+            {
+              "text": "7203",
+              "align": "center"
+            },
+            {
+              "text": "31",
+              "align": "center"
+            },
+            {
+              "text": "8",
+              "align": "center"
+            },
+            {
+              "text": "M10x1.5",
+              "align": "center"
+            },
+            {
+              "text": "69",
+              "align": "center"
+            },
+            {
+              "text": "8",
+              "align": "center"
+            },
+            {
+              "text": "26",
+              "align": "center"
+            },
+            {
+              "text": "8",
+              "align": "center"
+            },
+            {
+              "text": "19",
+              "align": "center"
+            }
           ],
           [
-            "M10",
-            "M10",
-            "18",
-            "9",
-            "8",
-            "21",
-            "12",
-            "10",
-            "25"
-          ],
-          [
-            "M12",
-            "M12",
-            "20",
-            "10",
-            "10",
-            "25",
-            "14",
-            "12",
-            "32"
-          ],
-          [
-            "M16",
-            "M16",
-            "24",
-            "12",
-            "12",
-            "30",
-            "17",
-            "18",
-            "45"
+            {
+              "text": "7204",
+              "align": "center"
+            },
+            {
+              "text": "31",
+              "align": "center"
+            },
+            {
+              "text": "10",
+              "align": "center"
+            },
+            {
+              "text": "M10x1.5",
+              "align": "center"
+            },
+            {
+              "text": "80",
+              "align": "center"
+            },
+            {
+              "text": "10",
+              "align": "center"
+            },
+            {
+              "text": "33",
+              "align": "center"
+            },
+            {
+              "text": "10",
+              "align": "center"
+            },
+            {
+              "text": "22",
+              "align": "center"
+            }
           ]
         ]
       },
       "notes": {
         "left": [
-          "Knob: Zinc plated steel or Stainless steel 304",
-          "Threaded body: zinc plated steel or stainless steel 304",
-          "Plunger: zinc plated steel or stainless steel 304",
+          "Knob:High resilience PA,Matte finish",
+          "Threaded body: black oxided steel or stainless steel",
+          "Plunger: zblack oxided steel or stainless steel ",
           "Applications: indexing plungers are used where positioning operations are required"
         ],
         "right": [
-          "XX-A: without rest positions",
-          "XX-B: with rest positions",
-          "XX-ST: made by zinc plated steel",
+          "72XX-A: without rest positions",
+          "72XX-B: with rest positions",
+          "72XX-ST: made by zblack oxided",
           "XX-SS: made by stainless steel 304",
-          "XX-P: with locking patch"
+          "72XX-L: with lock nut"
         ]
       }
     },
@@ -2289,98 +2560,171 @@
       ],
       "table": {
         "headers": [
-          "Item #",
-          "d1",
-          "l1",
-          "l2",
-          "d2",
-          "d3",
-          "A/F",
-          "Spring force initial (N)",
-          "Spring force final (N)"
+          {
+            "text": "Item #",
+            "align": "center"
+          },
+          {
+            "text": "d",
+            "align": "center"
+          },
+          {
+            "text": "d1",
+            "align": "center"
+          },
+          {
+            "text": "D",
+            "align": "center"
+          },
+          {
+            "text": "L1",
+            "align": "center"
+          },
+          {
+            "text": "L2",
+            "align": "center"
+          },
+          {
+            "text": "L",
+            "align": "center"
+          }
         ],
         "rows": [
           [
-            "M5",
-            "M5",
-            "12",
-            "5",
-            "4",
-            "12",
-            "7",
-            "5",
-            "12"
+            {
+              "text": "7301",
+              "align": "center"
+            },
+            {
+              "text": "4",
+              "align": "center"
+            },
+            {
+              "text": "M8x0.75",
+              "align": "center"
+            },
+            {
+              "text": "21",
+              "align": "center"
+            },
+            {
+              "text": "5",
+              "align": "center"
+            },
+            {
+              "text": "5",
+              "align": "center"
+            },
+            {
+              "text": "26.5",
+              "align": "center"
+            }
           ],
           [
-            "M6",
-            "M6",
-            "14",
-            "6",
-            "5",
-            "14",
-            "8",
-            "6",
-            "14"
+            {
+              "text": "7302",
+              "align": "center"
+            },
+            {
+              "text": "5",
+              "align": "center"
+            },
+            {
+              "text": "M8x0.75",
+              "align": "center"
+            },
+            {
+              "text": "21",
+              "align": "center"
+            },
+            {
+              "text": "5",
+              "align": "center"
+            },
+            {
+              "text": "5",
+              "align": "center"
+            },
+            {
+              "text": "26.5",
+              "align": "center"
+            }
           ],
           [
-            "M8",
-            "M8",
-            "16",
-            "8",
-            "6",
-            "18",
-            "10",
-            "8",
-            "20"
+            {
+              "text": "7303",
+              "align": "center"
+            },
+            {
+              "text": "6",
+              "align": "center"
+            },
+            {
+              "text": "M10x1.0",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            },
+            {
+              "text": "7",
+              "align": "center"
+            },
+            {
+              "text": "7",
+              "align": "center"
+            },
+            {
+              "text": "34",
+              "align": "center"
+            }
           ],
           [
-            "M10",
-            "M10",
-            "18",
-            "9",
-            "8",
-            "21",
-            "12",
-            "10",
-            "25"
-          ],
-          [
-            "M12",
-            "M12",
-            "20",
-            "10",
-            "10",
-            "25",
-            "14",
-            "12",
-            "32"
-          ],
-          [
-            "M16",
-            "M16",
-            "24",
-            "12",
-            "12",
-            "30",
-            "17",
-            "18",
-            "45"
+            {
+              "text": "7304",
+              "align": "center"
+            },
+            {
+              "text": "7",
+              "align": "center"
+            },
+            {
+              "text": "M10x1.0",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            },
+            {
+              "text": "7",
+              "align": "center"
+            },
+            {
+              "text": "7",
+              "align": "center"
+            },
+            {
+              "text": "34",
+              "align": "center"
+            }
           ]
         ]
       },
       "notes": {
         "left": [
-          "Knob: Zinc plated steel or Stainless steel 304",
+          "Knob: High resilience PA,Matte finish",
           "Threaded body: zinc plated steel or stainless steel 304",
-          "Plunger: zinc plated steel or stainless steel 304",
-          "Applications: indexing plungers are used where positioning operations are required"
+          "Plunger: Stainless steel 304",
+          "Applications:Mini index plunger 7300 series are specially designed for srewing in thin-walled items"
         ],
         "right": [
-          "XX-A: without rest positions",
-          "XX-B: with rest positions",
-          "XX-ST: made by zinc plated steel",
-          "XX-SS: made by stainless steel 304",
-          "XX-P: with locking patch"
+          "73XX-A: without rest positions",
+          "73XX-B: with rest positions",
+          "73XX-ST: made by zinc plated steel",
+          "73XX-SS: made by stainless steel 304",
+          "73XX-P: with locking patch"
         ]
       }
     },
@@ -2393,98 +2737,210 @@
       ],
       "table": {
         "headers": [
-          "Item #",
-          "d1",
-          "l1",
-          "l2",
-          "d2",
-          "d3",
-          "A/F",
-          "Spring force initial (N)",
-          "Spring force final (N)"
+          {
+            "text": "Item #",
+            "align": "center"
+          },
+          {
+            "text": "D",
+            "align": "center"
+          },
+          {
+            "text": "L",
+            "align": "center"
+          },
+          {
+            "text": "H",
+            "align": "center"
+          },
+          {
+            "text": "h",
+            "align": "center"
+          },
+          {
+            "text": "B",
+            "align": "center"
+          },
+          {
+            "text": "l1",
+            "align": "center"
+          },
+          {
+            "text": "l2",
+            "align": "center"
+          },
+          {
+            "text": "d",
+            "align": "center"
+          }
         ],
         "rows": [
           [
-            "M5",
-            "M5",
-            "12",
-            "5",
-            "4",
-            "12",
-            "7",
-            "5",
-            "12"
+            {
+              "text": "8701",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            },
+            {
+              "text": "37",
+              "align": "center"
+            },
+            {
+              "text": "40",
+              "align": "center"
+            },
+            {
+              "text": "30",
+              "align": "center"
+            },
+            {
+              "text": "18",
+              "align": "center"
+            },
+            {
+              "text": "6",
+              "align": "center"
+            },
+            {
+              "text": "4.5",
+              "align": "center"
+            },
+            {
+              "text": "6",
+              "align": "center"
+            }
           ],
           [
-            "M6",
-            "M6",
-            "14",
-            "6",
-            "5",
-            "14",
-            "8",
-            "6",
-            "14"
+            {
+              "text": "8702",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            },
+            {
+              "text": "45",
+              "align": "center"
+            },
+            {
+              "text": "40",
+              "align": "center"
+            },
+            {
+              "text": "30",
+              "align": "center"
+            },
+            {
+              "text": "18",
+              "align": "center"
+            },
+            {
+              "text": "14",
+              "align": "center"
+            },
+            {
+              "text": "4.5",
+              "align": "center"
+            },
+            {
+              "text": "6",
+              "align": "center"
+            }
           ],
           [
-            "M8",
-            "M8",
-            "16",
-            "8",
-            "6",
-            "18",
-            "10",
-            "8",
-            "20"
+            {
+              "text": "8703",
+              "align": "center"
+            },
+            {
+              "text": "31",
+              "align": "center"
+            },
+            {
+              "text": "44",
+              "align": "center"
+            },
+            {
+              "text": "46",
+              "align": "center"
+            },
+            {
+              "text": "34",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "8",
+              "align": "center"
+            },
+            {
+              "text": "5.5",
+              "align": "center"
+            },
+            {
+              "text": "8",
+              "align": "center"
+            }
           ],
           [
-            "M10",
-            "M10",
-            "18",
-            "9",
-            "8",
-            "21",
-            "12",
-            "10",
-            "25"
-          ],
-          [
-            "M12",
-            "M12",
-            "20",
-            "10",
-            "10",
-            "25",
-            "14",
-            "12",
-            "32"
-          ],
-          [
-            "M16",
-            "M16",
-            "24",
-            "12",
-            "12",
-            "30",
-            "17",
-            "18",
-            "45"
+            {
+              "text": "8704",
+              "align": "center"
+            },
+            {
+              "text": "31",
+              "align": "center"
+            },
+            {
+              "text": "54",
+              "align": "center"
+            },
+            {
+              "text": "46",
+              "align": "center"
+            },
+            {
+              "text": "34",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "18",
+              "align": "center"
+            },
+            {
+              "text": "5.5",
+              "align": "center"
+            },
+            {
+              "text": "8",
+              "align": "center"
+            }
           ]
         ]
       },
       "notes": {
         "left": [
-          "Knob: Zinc plated steel or Stainless steel 304",
-          "Threaded body: zinc plated steel or stainless steel 304",
-          "Plunger: zinc plated steel or stainless steel 304",
-          "Applications: indexing plungers are used where positioning operations are required"
+          "Knob: High resilience PA,Matte finish",
+          "Flange body: die-cast zinc alloy plated steel",
+          "Plunger: Black oxided steel with hardened end",
+          "Applications: 8700 series with fixing plate has two holes for countersunk head screws"
         ],
         "right": [
-          "XX-A: without rest positions",
-          "XX-B: with rest positions",
-          "XX-ST: made by zinc plated steel",
-          "XX-SS: made by stainless steel 304",
-          "XX-P: with locking patch"
+          "87XX-A: without rest positions",
+          "87XX-B: with rest positions",
+          "87XX-ST: made by zinc plated steel",
+          "87XX-SS: made by stainless steel 304"
         ]
       }
     },
@@ -2497,98 +2953,122 @@
       ],
       "table": {
         "headers": [
-          "Item #",
-          "d1",
-          "l1",
-          "l2",
-          "d2",
-          "d3",
-          "A/F",
-          "Spring force initial (N)",
-          "Spring force final (N)"
+          {
+            "text": "Item #",
+            "align": "center"
+          },
+          {
+            "text": "D",
+            "align": "center"
+          },
+          {
+            "text": "d1",
+            "align": "center"
+          },
+          {
+            "text": "d2",
+            "align": "center"
+          },
+          {
+            "text": "l1",
+            "align": "center"
+          },
+          {
+            "text": "l2",
+            "align": "center"
+          },
+          {
+            "text": "l3",
+            "align": "center"
+          },
+          {
+            "text": "SW",
+            "align": "center"
+          }
         ],
         "rows": [
           [
-            "M5",
-            "M5",
-            "12",
-            "5",
-            "4",
-            "12",
-            "7",
-            "5",
-            "12"
+            {
+              "text": "8801",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            },
+            {
+              "text": "6",
+              "align": "center"
+            },
+            {
+              "text": "M12x1.5",
+              "align": "center"
+            },
+            {
+              "text": "45",
+              "align": "center"
+            },
+            {
+              "text": "6",
+              "align": "center"
+            },
+            {
+              "text": "10",
+              "align": "center"
+            },
+            {
+              "text": "17",
+              "align": "center"
+            }
           ],
           [
-            "M6",
-            "M6",
-            "14",
-            "6",
-            "5",
-            "14",
-            "8",
-            "6",
-            "14"
-          ],
-          [
-            "M8",
-            "M8",
-            "16",
-            "8",
-            "6",
-            "18",
-            "10",
-            "8",
-            "20"
-          ],
-          [
-            "M10",
-            "M10",
-            "18",
-            "9",
-            "8",
-            "21",
-            "12",
-            "10",
-            "25"
-          ],
-          [
-            "M12",
-            "M12",
-            "20",
-            "10",
-            "10",
-            "25",
-            "14",
-            "12",
-            "32"
-          ],
-          [
-            "M16",
-            "M16",
-            "24",
-            "12",
-            "12",
-            "30",
-            "17",
-            "18",
-            "45"
+            {
+              "text": "8802",
+              "align": "center"
+            },
+            {
+              "text": "31",
+              "align": "center"
+            },
+            {
+              "text": "8",
+              "align": "center"
+            },
+            {
+              "text": "M16x1.5",
+              "align": "center"
+            },
+            {
+              "text": "56",
+              "align": "center"
+            },
+            {
+              "text": "8",
+              "align": "center"
+            },
+            {
+              "text": "12",
+              "align": "center"
+            },
+            {
+              "text": "19",
+              "align": "center"
+            }
           ]
         ]
       },
       "notes": {
         "left": [
-          "Knob: Zinc plated steel or Stainless steel 304",
-          "Threaded body: zinc plated steel or stainless steel 304",
-          "Plunger: zinc plated steel or stainless steel 304",
+          "Knob: High resilience PA,Matte finish",
+          "Threaded body: black oxided steel,zinc plated steel or stainless steel 304",
+          "Plunger: black oxided steel,zinc plated steel or stainless steel 304",
           "Applications: indexing plungers are used where positioning operations are required"
         ],
         "right": [
-          "XX-A: without rest positions",
-          "XX-B: with rest positions",
-          "XX-ST: made by zinc plated steel",
-          "XX-SS: made by stainless steel 304",
-          "XX-P: with locking patch"
+          "88XX-A: without rest positions",
+          "88XX-B: with rest positions",
+          "88XX-ST: made by zinc plated stee or black oxided steel",
+          "88XX-SS: made by stainless steel 304"
         ]
       }
     },
@@ -2596,205 +3076,391 @@
       "id": "9100",
       "summary": "Ball Handle Indexing Plunger 9100\nWeld-in version",
       "gallery": [
-        "/Website/images/16956230222666bad1b7fd2b3f8028a08ed095e504c9c.png"
+        "/Website/images/16956230222666bad1b7fd2b3f8028a08ed095e504c9c.png",
+        "/Website/images/bpop-drawin.png"
       ],
       "table": {
         "headers": [
-          "Item #",
-          "d1",
-          "l1",
-          "l2",
-          "d2",
-          "d3",
-          "A/F",
-          "Spring force initial (N)",
-          "Spring force final (N)"
+          {
+            "text": "Item #",
+            "align": "center"
+          },
+          {
+            "text": "D1",
+            "align": "center"
+          },
+          {
+            "text": "D2",
+            "align": "center"
+          },
+          {
+            "text": "D",
+            "align": "center"
+          },
+          {
+            "text": "L1",
+            "align": "center"
+          },
+          {
+            "text": "L2",
+            "align": "center"
+          },
+          {
+            "text": "L3",
+            "align": "center"
+          },
+          {
+            "text": "L4",
+            "align": "center"
+          }
         ],
         "rows": [
           [
-            "M5",
-            "M5",
-            "12",
-            "5",
-            "4",
-            "12",
-            "7",
-            "5",
-            "12"
+            {
+              "text": "9101",
+              "align": "center"
+            },
+            {
+              "text": "3/8",
+              "align": "center"
+            },
+            {
+              "text": "1\"",
+              "align": "center"
+            },
+            {
+              "text": "2.165\"",
+              "align": "center"
+            },
+            {
+              "text": "1/2",
+              "align": "center"
+            },
+            {
+              "text": "1-1/2",
+              "align": "center"
+            },
+            {
+              "text": ".28\"",
+              "align": "center"
+            },
+            {
+              "text": "1-3/8",
+              "align": "center"
+            }
           ],
           [
-            "M6",
-            "M6",
-            "14",
-            "6",
-            "5",
-            "14",
-            "8",
-            "6",
-            "14"
+            {
+              "text": "9102",
+              "align": "center"
+            },
+            {
+              "text": "1/2",
+              "align": "center"
+            },
+            {
+              "text": "1\"",
+              "align": "center"
+            },
+            {
+              "text": "2.165\"",
+              "align": "center"
+            },
+            {
+              "text": "7/8",
+              "align": "center"
+            },
+            {
+              "text": "1-1/2",
+              "align": "center"
+            },
+            {
+              "text": ".28\"",
+              "align": "center"
+            },
+            {
+              "text": "1-3/8",
+              "align": "center"
+            }
           ],
           [
-            "M8",
-            "M8",
-            "16",
-            "8",
-            "6",
-            "18",
-            "10",
-            "8",
-            "20"
-          ],
-          [
-            "M10",
-            "M10",
-            "18",
-            "9",
-            "8",
-            "21",
-            "12",
-            "10",
-            "25"
-          ],
-          [
-            "M12",
-            "M12",
-            "20",
-            "10",
-            "10",
-            "25",
-            "14",
-            "12",
-            "32"
-          ],
-          [
-            "M16",
-            "M16",
-            "24",
-            "12",
-            "12",
-            "30",
-            "17",
-            "18",
-            "45"
+            {
+              "text": "9103",
+              "align": "center"
+            },
+            {
+              "text": "1/2",
+              "align": "center"
+            },
+            {
+              "text": "1\"",
+              "align": "center"
+            },
+            {
+              "text": "2.165\"",
+              "align": "center"
+            },
+            {
+              "text": "7/8",
+              "align": "center"
+            },
+            {
+              "text": "1-1/2",
+              "align": "center"
+            },
+            {
+              "text": ".28\"",
+              "align": "center"
+            },
+            {
+              "text": "1-3/8",
+              "align": "center"
+            }
           ]
         ]
       },
       "notes": {
         "left": [
-          "Knob: Zinc plated steel or Stainless steel 304",
-          "Threaded body: zinc plated steel or stainless steel 304",
+          "Knob: High resilience PA,Matte finish ",
+          "Barrel: zinc plated steel or plain steel",
           "Plunger: zinc plated steel or stainless steel 304",
-          "Applications: indexing plungers are used where positioning operations are required"
+          "Applications: 9000 series are designed to be welded into place for strength"
         ],
         "right": [
-          "XX-A: without rest positions",
-          "XX-B: with rest positions",
-          "XX-ST: made by zinc plated steel",
-          "XX-SS: made by stainless steel 304",
-          "XX-P: with locking patch"
+          "91XX-A: without rest positions",
+          "91XX-B: with rest positions",
+          "91XX-ST: made by zinc plated steel",
+          "91XX-SS: made by stainless steel 304"
         ]
       }
     },
     {
       "id": "9200",
-      "summary": "Indexing Plunger with T-Handle 9200\nThreaded body",
+      "summary": "Indexing Plunger with T-Handle 9200\nWithout rest postion",
       "gallery": [
-        "/Website/images/169568974954593c98df25c230311da17b3e231a19549.png"
+        "/Website/images/169568974954593c98df25c230311da17b3e231a19549.png",
+        "/Website/images/drawing-t.jpg"
       ],
       "table": {
         "headers": [
-          "Item #",
-          "d1",
-          "l1",
-          "l2",
-          "d2",
-          "d3",
-          "A/F",
-          "Spring force initial (N)",
-          "Spring force final (N)"
+          {
+            "text": "Item #",
+            "align": "center"
+          },
+          {
+            "text": "D",
+            "align": "center"
+          },
+          {
+            "text": "L",
+            "align": "center"
+          },
+          {
+            "text": "L1",
+            "align": "center"
+          },
+          {
+            "text": "H",
+            "align": "center"
+          },
+          {
+            "text": "H1",
+            "align": "center"
+          },
+          {
+            "text": "H2",
+            "align": "center"
+          },
+          {
+            "text": "SW",
+            "align": "center"
+          }
         ],
         "rows": [
           [
-            "M5",
-            "M5",
-            "12",
-            "5",
-            "4",
-            "12",
-            "7",
-            "5",
-            "12"
+            {
+              "text": "9201",
+              "align": "center"
+            },
+            {
+              "text": "3/8",
+              "align": "center"
+            },
+            {
+              "text": "1-1/2",
+              "align": "center"
+            },
+            {
+              "text": "9/16",
+              "align": "center"
+            },
+            {
+              "text": "1-7/16",
+              "align": "center"
+            },
+            {
+              "text": "3/16",
+              "align": "center"
+            },
+            {
+              "text": "2.018",
+              "align": "center"
+            },
+            {
+              "text": "7/8",
+              "align": "center"
+            }
           ],
           [
-            "M6",
-            "M6",
-            "14",
-            "6",
-            "5",
-            "14",
-            "8",
-            "6",
-            "14"
+            {
+              "text": "9202",
+              "align": "center"
+            },
+            {
+              "text": "1/2",
+              "align": "center"
+            },
+            {
+              "text": "1-1/2",
+              "align": "center"
+            },
+            {
+              "text": "9/16",
+              "align": "center"
+            },
+            {
+              "text": "1-7/16",
+              "align": "center"
+            },
+            {
+              "text": "3/16",
+              "align": "center"
+            },
+            {
+              "text": "2.018",
+              "align": "center"
+            },
+            {
+              "text": "7/8",
+              "align": "center"
+            }
           ],
           [
-            "M8",
-            "M8",
-            "16",
-            "8",
-            "6",
-            "18",
-            "10",
-            "8",
-            "20"
+            {
+              "text": "9203",
+              "align": "center"
+            },
+            {
+              "text": "1/4",
+              "align": "center"
+            },
+            {
+              "text": "1-1/2",
+              "align": "center"
+            },
+            {
+              "text": "9/16",
+              "align": "center"
+            },
+            {
+              "text": "1-7/16",
+              "align": "center"
+            },
+            {
+              "text": "3/16",
+              "align": "center"
+            },
+            {
+              "text": "2.018",
+              "align": "center"
+            },
+            {
+              "text": "7/8",
+              "align": "center"
+            }
           ],
           [
-            "M10",
-            "M10",
-            "18",
-            "9",
-            "8",
-            "21",
-            "12",
-            "10",
-            "25"
+            {
+              "text": "9204",
+              "align": "center"
+            },
+            {
+              "text": "1/2",
+              "align": "center"
+            },
+            {
+              "text": "2-1/4",
+              "align": "center"
+            },
+            {
+              "text": "9/16",
+              "align": "center"
+            },
+            {
+              "text": "1-7/16",
+              "align": "center"
+            },
+            {
+              "text": "3/16",
+              "align": "center"
+            },
+            {
+              "text": "2.018",
+              "align": "center"
+            },
+            {
+              "text": "7/8",
+              "align": "center"
+            }
           ],
           [
-            "M12",
-            "M12",
-            "20",
-            "10",
-            "10",
-            "25",
-            "14",
-            "12",
-            "32"
-          ],
-          [
-            "M16",
-            "M16",
-            "24",
-            "12",
-            "12",
-            "30",
-            "17",
-            "18",
-            "45"
+            {
+              "text": "9205",
+              "align": "center"
+            },
+            {
+              "text": "5/8",
+              "align": "center"
+            },
+            {
+              "text": "2-1/4",
+              "align": "center"
+            },
+            {
+              "text": "9/16",
+              "align": "center"
+            },
+            {
+              "text": "1-7/16",
+              "align": "center"
+            },
+            {
+              "text": "3/16",
+              "align": "center"
+            },
+            {
+              "text": "2.018",
+              "align": "center"
+            },
+            {
+              "text": "7/8",
+              "align": "center"
+            }
           ]
         ]
       },
       "notes": {
         "left": [
-          "Knob: Zinc plated steel or Stainless steel 304",
+          "Knob: High resilience PA,Matte finish",
           "Threaded body: zinc plated steel or stainless steel 304",
           "Plunger: zinc plated steel or stainless steel 304",
           "Applications: indexing plungers are used where positioning operations are required"
         ],
         "right": [
-          "XX-A: without rest positions",
-          "XX-B: with rest positions",
-          "XX-ST: made by zinc plated steel",
-          "XX-SS: made by stainless steel 304",
-          "XX-P: with locking patch"
+          "92XX-A: without rest positions",
+          "92XX-B: with rest positions",
+          "92XX-ST: made by zinc plated steel",
+          "92XX-SS: made by stainless steel 304"
         ]
       }
     },
