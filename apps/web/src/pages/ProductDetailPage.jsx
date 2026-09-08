@@ -27,28 +27,6 @@ function pushRecent(id) {
 	}
 }
 
-function computeColWidths(table) {
-	const headers = table?.headers;
-	if (!headers?.length) return null;
-	const n = headers.length;
-	const lens = new Array(n).fill(0);
-	headers.forEach((h, i) => {
-		if (h == null) return;
-		const t = typeof h === 'object' && h !== null ? (h.text ?? '') : String(h ?? '');
-		lens[i] = Math.max(lens[i], t.length);
-	});
-	(table.rows || []).forEach((row) => {
-		(row || []).forEach((cell, i) => {
-			if (cell == null || i >= n) return;
-			const t = typeof cell === 'object' && cell !== null ? (cell.text ?? '') : String(cell ?? '');
-			lens[i] = Math.max(lens[i], t.length);
-		});
-	});
-	const total = lens.reduce((a, l) => a + Math.max(l, 1), 0);
-	if (!total) return null;
-	return lens.map((l) => (Math.max(l, 1) / total) * 100);
-}
-
 export default function ProductDetailPage() {
 	const { productId } = useParams();
 	const product = PRODUCTS.find((p) => p.id === productId);
@@ -85,7 +63,6 @@ export default function ProductDetailPage() {
 
 	const summaryLines = (detail?.summary || product.spec).split('\n');
 	const table = detail?.table;
-	const colWidths = computeColWidths(table);
 	const notes = detail?.notes;
 
 	// —— 结构化数据（JSON-LD）：产品 + 面包屑，帮助搜索引擎和 AI 理解页面 ——
@@ -255,13 +232,6 @@ export default function ProductDetailPage() {
 						<div className="overflow-x-auto p-4 md:p-6">
 							{table && (
 								<table className="w-full min-w-[520px] border-collapse text-sm table-fixed">
-									{colWidths && (
-										<colgroup>
-											{table.headers.map((_, i) => (
-												<col key={i} style={{ width: `${colWidths[i]}%` }} />
-											))}
-										</colgroup>
-									)}
 									<thead>
 										<tr className="bg-secondary">
 											{table.headers.map((h, i) => {
