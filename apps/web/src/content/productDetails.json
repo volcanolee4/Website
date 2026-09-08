@@ -766,67 +766,297 @@
       ],
       "table": {
         "headers": [
-          "Item #",
-          "d1",
-          "d2",
-          "h",
-          "l",
-          "Load (kN)"
+          {
+            "text": "d1",
+            "align": "center"
+          },
+          {
+            "text": "d2",
+            "align": "center"
+          },
+          {
+            "text": "l1",
+            "align": "center"
+          },
+          {
+            "text": "l2",
+            "align": "center"
+          },
+          {
+            "text": "A/F",
+            "align": "center"
+          },
+          {
+            "text": "Load (lbf)",
+            "align": "center"
+          }
         ],
         "rows": [
           [
-            "M8",
-            "M8",
-            "40",
-            "18",
-            "50",
-            "3.5"
+            {
+              "text": "0.75",
+              "align": "center"
+            },
+            {
+              "text": "M6",
+              "align": "center"
+            },
+            {
+              "text": "1",
+              "align": "center"
+            },
+            {
+              "text": "0.53",
+              "align": "center"
+            },
+            {
+              "text": "0.375",
+              "align": "center"
+            },
+            {
+              "text": "700",
+              "align": "center"
+            }
           ],
           [
-            "M10",
-            "M10",
-            "50",
-            "20",
-            "60",
-            "5.0"
+            {
+              "text": "1",
+              "align": "center"
+            },
+            {
+              "text": "M8",
+              "align": "center"
+            },
+            {
+              "text": "1.25",
+              "align": "center"
+            },
+            {
+              "text": "0.7",
+              "align": "center"
+            },
+            {
+              "text": "0.5",
+              "align": "center"
+            },
+            {
+              "text": "1000",
+              "align": "center"
+            }
           ],
           [
-            "M12",
-            "M12",
-            "60",
-            "22",
-            "80",
-            "7.5"
+            {
+              "text": "1.25",
+              "align": "center"
+            },
+            {
+              "text": "M10",
+              "align": "center"
+            },
+            {
+              "text": "2",
+              "align": "center"
+            },
+            {
+              "text": "0.88",
+              "align": "center"
+            },
+            {
+              "text": "0.625",
+              "align": "center"
+            },
+            {
+              "text": "3750",
+              "align": "center"
+            }
           ],
           [
-            "M16",
-            "M16",
-            "80",
-            "25",
-            "100",
-            "12"
+            {
+              "text": "1.88",
+              "align": "center"
+            },
+            {
+              "text": "M12",
+              "align": "center"
+            },
+            {
+              "text": "2",
+              "align": "center"
+            },
+            {
+              "text": "1.13",
+              "align": "center"
+            },
+            {
+              "text": "0.75",
+              "align": "center"
+            },
+            {
+              "text": "5000",
+              "align": "center"
+            }
           ],
           [
-            "M20",
-            "M20",
-            "100",
-            "30",
-            "120",
-            "18"
+            {
+              "text": "2.5",
+              "align": "center"
+            },
+            {
+              "text": "M16",
+              "align": "center"
+            },
+            {
+              "text": "2",
+              "align": "center"
+            },
+            {
+              "text": "1.25",
+              "align": "center"
+            },
+            {
+              "text": "0.875",
+              "align": "center"
+            },
+            {
+              "text": "6000",
+              "align": "center"
+            }
           ],
           [
-            "M24",
-            "M24",
-            "120",
-            "35",
-            "150",
-            "25"
+            {
+              "text": "3",
+              "align": "center"
+            },
+            {
+              "text": "M20",
+              "align": "center"
+            },
+            {
+              "text": "2",
+              "align": "center"
+            },
+            {
+              "text": "1.5",
+              "align": "center"
+            },
+            {
+              "text": "1.062",
+              "align": "center"
+            },
+            {
+              "text": "7400",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "4",
+              "align": "center"
+            },
+            {
+              "text": "M24",
+              "align": "center"
+            },
+            {
+              "text": "3.5",
+              "align": "center"
+            },
+            {
+              "text": "1.88",
+              "align": "center"
+            },
+            {
+              "text": "1.375",
+              "align": "center"
+            },
+            {
+              "text": "20000",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "4",
+              "align": "center"
+            },
+            {
+              "text": "M24",
+              "align": "center"
+            },
+            {
+              "text": "4.25",
+              "align": "center"
+            },
+            {
+              "text": "1.88",
+              "align": "center"
+            },
+            {
+              "text": "1.375",
+              "align": "center"
+            },
+            {
+              "text": "20000",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "6",
+              "align": "center"
+            },
+            {
+              "text": "M30",
+              "align": "center"
+            },
+            {
+              "text": "4",
+              "align": "center"
+            },
+            {
+              "text": "2.75",
+              "align": "center"
+            },
+            {
+              "text": "1.875",
+              "align": "center"
+            },
+            {
+              "text": "43000",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "6",
+              "align": "center"
+            },
+            {
+              "text": "M30",
+              "align": "center"
+            },
+            {
+              "text": "6",
+              "align": "center"
+            },
+            {
+              "text": "2.75",
+              "align": "center"
+            },
+            {
+              "text": "1.875",
+              "align": "center"
+            },
+            {
+              "text": "43000",
+              "align": "center"
+            }
           ]
         ]
       },
       "notes": {
         "left": [
-          "Base: steel, stainless steel or zinc die-cast",
+          "Base: steel, stainless steel ",
           "Stem: zinc plated steel or stainless steel",
           "Optional rubber pad for anti-vibration"
         ],
@@ -846,51 +1076,505 @@
       ],
       "table": {
         "headers": [
-          "Item #",
-          "Thread",
-          "Base Ø",
-          "h",
-          "l",
-          "Load (lbs)"
+          {
+            "text": "d1",
+            "align": "center"
+          },
+          {
+            "text": "d2",
+            "align": "center"
+          },
+          {
+            "text": "l1",
+            "align": "center"
+          },
+          {
+            "text": "A/F",
+            "align": "center"
+          },
+          {
+            "text": "t min.",
+            "align": "center"
+          },
+          {
+            "text": "Load (lbs)",
+            "align": "center"
+          }
         ],
         "rows": [
           [
-            "1/4-20",
-            "1/4-20",
-            "1.57\"",
-            ".70\"",
-            "2.0\"",
-            "800"
+            {
+              "text": "0.75",
+              "align": "center"
+            },
+            {
+              "text": "10x32",
+              "align": "center"
+            },
+            {
+              "text": "0.53",
+              "align": "center"
+            },
+            {
+              "text": "0.375",
+              "align": "center"
+            },
+            {
+              "text": "0.17",
+              "align": "center"
+            },
+            {
+              "text": "700",
+              "align": "center"
+            }
           ],
           [
-            "5/16-18",
-            "5/16-18",
-            "1.97\"",
-            ".80\"",
-            "2.4\"",
-            "1100"
+            {
+              "text": "1",
+              "align": "center"
+            },
+            {
+              "text": "1/4x20",
+              "align": "center"
+            },
+            {
+              "text": "0.7",
+              "align": "center"
+            },
+            {
+              "text": "0.5",
+              "align": "center"
+            },
+            {
+              "text": "0.31",
+              "align": "center"
+            },
+            {
+              "text": "1100",
+              "align": "center"
+            }
           ],
           [
-            "3/8-16",
-            "3/8-16",
-            "2.36\"",
-            ".90\"",
-            "3.1\"",
-            "1700"
+            {
+              "text": "1",
+              "align": "center"
+            },
+            {
+              "text": "1/4x28",
+              "align": "center"
+            },
+            {
+              "text": "0.7",
+              "align": "center"
+            },
+            {
+              "text": "0.5",
+              "align": "center"
+            },
+            {
+              "text": "0.31",
+              "align": "center"
+            },
+            {
+              "text": "775",
+              "align": "center"
+            }
           ],
           [
-            "1/2-13",
-            "1/2-13",
-            "3.15\"",
-            "1.0\"",
-            "4.0\"",
-            "2700"
+            {
+              "text": "1.25",
+              "align": "center"
+            },
+            {
+              "text": "5/16x18",
+              "align": "center"
+            },
+            {
+              "text": "0.88",
+              "align": "center"
+            },
+            {
+              "text": "0.625",
+              "align": "center"
+            },
+            {
+              "text": "0.38",
+              "align": "center"
+            },
+            {
+              "text": "2500",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "1.25",
+              "align": "center"
+            },
+            {
+              "text": "5/16x24",
+              "align": "center"
+            },
+            {
+              "text": "0.88",
+              "align": "center"
+            },
+            {
+              "text": "0.625",
+              "align": "center"
+            },
+            {
+              "text": "0.38",
+              "align": "center"
+            },
+            {
+              "text": "2150",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "1.25",
+              "align": "center"
+            },
+            {
+              "text": "3/8x16",
+              "align": "center"
+            },
+            {
+              "text": "0.88",
+              "align": "center"
+            },
+            {
+              "text": "0.625",
+              "align": "center"
+            },
+            {
+              "text": "0.38",
+              "align": "center"
+            },
+            {
+              "text": "3750",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "1.25",
+              "align": "center"
+            },
+            {
+              "text": "3/8x24",
+              "align": "center"
+            },
+            {
+              "text": "0.88",
+              "align": "center"
+            },
+            {
+              "text": "0.625",
+              "align": "center"
+            },
+            {
+              "text": "0.38",
+              "align": "center"
+            },
+            {
+              "text": "3300",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "1.88",
+              "align": "center"
+            },
+            {
+              "text": "1/2x13",
+              "align": "center"
+            },
+            {
+              "text": "1.13",
+              "align": "center"
+            },
+            {
+              "text": "0.75",
+              "align": "center"
+            },
+            {
+              "text": "0.44",
+              "align": "center"
+            },
+            {
+              "text": "5000",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "1.88",
+              "align": "center"
+            },
+            {
+              "text": "1/2x20",
+              "align": "center"
+            },
+            {
+              "text": "1.13",
+              "align": "center"
+            },
+            {
+              "text": "0.75",
+              "align": "center"
+            },
+            {
+              "text": "0.44",
+              "align": "center"
+            },
+            {
+              "text": "4000",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2.5",
+              "align": "center"
+            },
+            {
+              "text": "5/8x11",
+              "align": "center"
+            },
+            {
+              "text": "1.25",
+              "align": "center"
+            },
+            {
+              "text": "0.875",
+              "align": "center"
+            },
+            {
+              "text": "0.45",
+              "align": "center"
+            },
+            {
+              "text": "6000",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2.5",
+              "align": "center"
+            },
+            {
+              "text": "5/8x18",
+              "align": "center"
+            },
+            {
+              "text": "1.25",
+              "align": "center"
+            },
+            {
+              "text": "0.875",
+              "align": "center"
+            },
+            {
+              "text": "0.45",
+              "align": "center"
+            },
+            {
+              "text": "5000",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "3",
+              "align": "center"
+            },
+            {
+              "text": "3/4x10",
+              "align": "center"
+            },
+            {
+              "text": "1.5",
+              "align": "center"
+            },
+            {
+              "text": "1.062",
+              "align": "center"
+            },
+            {
+              "text": "0.65",
+              "align": "center"
+            },
+            {
+              "text": "7400",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "3",
+              "align": "center"
+            },
+            {
+              "text": "3/4x16",
+              "align": "center"
+            },
+            {
+              "text": "1.5",
+              "align": "center"
+            },
+            {
+              "text": "1.062",
+              "align": "center"
+            },
+            {
+              "text": "0.65",
+              "align": "center"
+            },
+            {
+              "text": "6200",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "4",
+              "align": "center"
+            },
+            {
+              "text": "7/8x14",
+              "align": "center"
+            },
+            {
+              "text": "1.88",
+              "align": "center"
+            },
+            {
+              "text": "1.375",
+              "align": "center"
+            },
+            {
+              "text": "0.81",
+              "align": "center"
+            },
+            {
+              "text": "13500",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "4",
+              "align": "center"
+            },
+            {
+              "text": "7/8x9",
+              "align": "center"
+            },
+            {
+              "text": "1.88",
+              "align": "center"
+            },
+            {
+              "text": "1.375",
+              "align": "center"
+            },
+            {
+              "text": "0.81",
+              "align": "center"
+            },
+            {
+              "text": "15000",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "4",
+              "align": "center"
+            },
+            {
+              "text": "1x8",
+              "align": "center"
+            },
+            {
+              "text": "1.88",
+              "align": "center"
+            },
+            {
+              "text": "1.375",
+              "align": "center"
+            },
+            {
+              "text": "0.81",
+              "align": "center"
+            },
+            {
+              "text": "20000",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "4",
+              "align": "center"
+            },
+            {
+              "text": "1x12",
+              "align": "center"
+            },
+            {
+              "text": "1.88",
+              "align": "center"
+            },
+            {
+              "text": "1.375",
+              "align": "center"
+            },
+            {
+              "text": "0.81",
+              "align": "center"
+            },
+            {
+              "text": "18000",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "6",
+              "align": "center"
+            },
+            {
+              "text": "1 1/4x7",
+              "align": "center"
+            },
+            {
+              "text": "2.75",
+              "align": "center"
+            },
+            {
+              "text": "1.875",
+              "align": "center"
+            },
+            {
+              "text": "1",
+              "align": "center"
+            },
+            {
+              "text": "43000",
+              "align": "center"
+            }
           ]
         ]
       },
       "notes": {
         "left": [
-          "Base: steel, stainless steel or zinc die-cast",
+          "Base: steel, stainless steel ",
           "Stem: zinc plated steel or stainless steel",
           "Optional rubber pad for anti-vibration"
         ],
@@ -903,74 +1587,252 @@
     },
     {
       "id": "1400",
-      "summary": "Leveling Mounts with Tapped Socket in Metric 1400",
+      "summary": "Leveling Mounts 1400 with Tapped Socket in Metric ",
       "gallery": [
         "/Website/images/17010693826001c47b5ba6fa585cc685fda68138ef703.png",
         "/Website/images/1300-drawing.png"
       ],
       "table": {
         "headers": [
-          "Item #",
-          "d1",
-          "d2",
-          "h",
-          "l",
-          "Load (kN)"
+          {
+            "text": "d1",
+            "align": "center"
+          },
+          {
+            "text": "d2",
+            "align": "center"
+          },
+          {
+            "text": "l1",
+            "align": "center"
+          },
+          {
+            "text": "A/F",
+            "align": "center"
+          },
+          {
+            "text": "t min.",
+            "align": "center"
+          },
+          {
+            "text": "Load (lbf)",
+            "align": "center"
+          }
         ],
         "rows": [
           [
-            "M8",
-            "M8",
-            "40",
-            "18",
-            "50",
-            "3.5"
+            {
+              "text": "0.75",
+              "align": "center"
+            },
+            {
+              "text": "M6",
+              "align": "center"
+            },
+            {
+              "text": "0.53",
+              "align": "center"
+            },
+            {
+              "text": "0.375",
+              "align": "center"
+            },
+            {
+              "text": "0.17",
+              "align": "center"
+            },
+            {
+              "text": "700",
+              "align": "center"
+            }
           ],
           [
-            "M10",
-            "M10",
-            "50",
-            "20",
-            "60",
-            "5.0"
+            {
+              "text": "1",
+              "align": "center"
+            },
+            {
+              "text": "M8",
+              "align": "center"
+            },
+            {
+              "text": "0.7 ",
+              "align": "center"
+            },
+            {
+              "text": "0.5",
+              "align": "center"
+            },
+            {
+              "text": "0.31",
+              "align": "center"
+            },
+            {
+              "text": "1000",
+              "align": "center"
+            }
           ],
           [
-            "M12",
-            "M12",
-            "60",
-            "22",
-            "80",
-            "7.5"
+            {
+              "text": "1.25",
+              "align": "center"
+            },
+            {
+              "text": "M10",
+              "align": "center"
+            },
+            {
+              "text": "0.88",
+              "align": "center"
+            },
+            {
+              "text": "0.625",
+              "align": "center"
+            },
+            {
+              "text": "0.38",
+              "align": "center"
+            },
+            {
+              "text": "3750",
+              "align": "center"
+            }
           ],
           [
-            "M16",
-            "M16",
-            "80",
-            "25",
-            "100",
-            "12"
+            {
+              "text": "1.88",
+              "align": "center"
+            },
+            {
+              "text": "M12",
+              "align": "center"
+            },
+            {
+              "text": "1.13",
+              "align": "center"
+            },
+            {
+              "text": "0.75",
+              "align": "center"
+            },
+            {
+              "text": "0.44",
+              "align": "center"
+            },
+            {
+              "text": "5000",
+              "align": "center"
+            }
           ],
           [
-            "M20",
-            "M20",
-            "100",
-            "30",
-            "120",
-            "18"
+            {
+              "text": "2.5",
+              "align": "center"
+            },
+            {
+              "text": "M16",
+              "align": "center"
+            },
+            {
+              "text": "1.25",
+              "align": "center"
+            },
+            {
+              "text": "0.875",
+              "align": "center"
+            },
+            {
+              "text": "0.45",
+              "align": "center"
+            },
+            {
+              "text": "6000",
+              "align": "center"
+            }
           ],
           [
-            "M24",
-            "M24",
-            "120",
-            "35",
-            "150",
-            "25"
+            {
+              "text": "3",
+              "align": "center"
+            },
+            {
+              "text": "M20",
+              "align": "center"
+            },
+            {
+              "text": "1.5",
+              "align": "center"
+            },
+            {
+              "text": "1.062",
+              "align": "center"
+            },
+            {
+              "text": "0.65",
+              "align": "center"
+            },
+            {
+              "text": "7400",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "4",
+              "align": "center"
+            },
+            {
+              "text": "M24",
+              "align": "center"
+            },
+            {
+              "text": "1.88",
+              "align": "center"
+            },
+            {
+              "text": "1.375",
+              "align": "center"
+            },
+            {
+              "text": "0.81",
+              "align": "center"
+            },
+            {
+              "text": "20000",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "6",
+              "align": "center"
+            },
+            {
+              "text": "M30",
+              "align": "center"
+            },
+            {
+              "text": "2.75",
+              "align": "center"
+            },
+            {
+              "text": "1.875",
+              "align": "center"
+            },
+            {
+              "text": "1",
+              "align": "center"
+            },
+            {
+              "text": "43000",
+              "align": "center"
+            }
           ]
         ]
       },
       "notes": {
         "left": [
-          "Base: steel, stainless steel or zinc die-cast",
+          "Base: steel, stainless steel ",
           "Stem: zinc plated steel or stainless steel",
           "Optional rubber pad for anti-vibration"
         ],
@@ -983,7 +1845,7 @@
     },
     {
       "id": "1500",
-      "summary": "Leveling Mounts with Rubber Pad 1500\nAnti-vibration",
+      "summary": "Leveling Mounts  1500 with Rubber Pad\nAnti-vibration",
       "gallery": [
         "/Website/images/1711429886641a8140642bfb7e8bda07354d399bc7571.png",
         "/Website/images/1500-drawing.png"
@@ -1050,7 +1912,7 @@
       },
       "notes": {
         "left": [
-          "Base: steel, stainless steel or zinc die-cast",
+          "Base: steel, stainless steel ",
           "Stem: zinc plated steel or stainless steel",
           "Optional rubber pad for anti-vibration"
         ],
@@ -1070,67 +1932,53 @@
       ],
       "table": {
         "headers": [
-          "Item #",
-          "d1",
-          "d2",
-          "h",
-          "l",
-          "Load (kN)"
+          {
+            "text": "Stud rod",
+            "align": "center"
+          },
+          {
+            "text": "D",
+            "align": "center"
+          },
+          {
+            "text": "Load (lbf)",
+            "align": "center"
+          }
         ],
         "rows": [
           [
-            "M8",
-            "M8",
-            "40",
-            "18",
-            "50",
-            "3.5"
+            {
+              "text": "1/2-13",
+              "align": "center"
+            },
+            {
+              "text": "49",
+              "align": "center"
+            },
+            {
+              "text": "3750",
+              "align": "center"
+            }
           ],
           [
-            "M10",
-            "M10",
-            "50",
-            "20",
-            "60",
-            "5.0"
-          ],
-          [
-            "M12",
-            "M12",
-            "60",
-            "22",
-            "80",
-            "7.5"
-          ],
-          [
-            "M16",
-            "M16",
-            "80",
-            "25",
-            "100",
-            "12"
-          ],
-          [
-            "M20",
-            "M20",
-            "100",
-            "30",
-            "120",
-            "18"
-          ],
-          [
-            "M24",
-            "M24",
-            "120",
-            "35",
-            "150",
-            "25"
+            {
+              "text": "1/2-13",
+              "align": "center"
+            },
+            {
+              "text": "33",
+              "align": "center"
+            },
+            {
+              "text": "5000",
+              "align": "center"
+            }
           ]
         ]
       },
       "notes": {
         "left": [
-          "Base: steel, stainless steel or zinc die-cast",
+          "Base: steel, stainless steel ",
           "Stem: zinc plated steel or stainless steel",
           "Optional rubber pad for anti-vibration"
         ],
