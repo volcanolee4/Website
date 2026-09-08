@@ -154,13 +154,13 @@
         });
         return list;
       }
-      if (sel.header != null) return [{ header: sel.ci }];
+      if (sel.header != null) return [{ header: sel.header }];
       return [{ ri: sel.ri, ci: sel.ci }];
     },
 
     // 取某个目标（表头或数据格）对应的内部单元格对象
     getCell: function (t, target) {
-      if (target.header != null) return t.headers[target.ci];
+      if (target.header != null) return t.headers[target.header];
       var row = t.rows[target.ri];
       return row ? row[target.ci] : null;
     },
@@ -225,7 +225,7 @@
       var el = this._activeEl;
       var isHeader = sel.header != null;
       var cell = isHeader
-        ? t.headers[sel.ci]
+        ? t.headers[sel.header]
         : (t.rows[sel.ri] && t.rows[sel.ri][sel.ci]);
       if (!cell) return;
       var text = cell.text;
@@ -234,7 +234,7 @@
       cell.text = text.slice(0, start) + sym + text.slice(end);
 
       this._pendingCaret = isHeader
-        ? { header: true, ci: sel.ci, pos: start + sym.length }
+        ? { header: true, ci: sel.header, pos: start + sym.length }
         : { ri: sel.ri, ci: sel.ci, pos: start + sym.length };
       this.props.onChange(serialize(t));
     },
@@ -374,7 +374,7 @@
             sel
               ? (isAllSel
                 ? '已全选：表头 + ' + rows.length + ' 行 × ' + headers.length + ' 列'
-                : (isHeaderSel ? '第 ' + (sel.ci + 1) + ' 列标题' : '第 ' + (sel.ri + 1) + ' 行 · 第 ' + (sel.ci + 1) + ' 列'))
+                : (isHeaderSel ? '第 ' + (sel.header + 1) + ' 列标题' : '第 ' + (sel.ri + 1) + ' 行 · 第 ' + (sel.ci + 1) + ' 列'))
               : '点击单元格或表头后设置字体 / 字号 / 加粗 / 对齐，或点「全选」批量设置')
         ),
 
