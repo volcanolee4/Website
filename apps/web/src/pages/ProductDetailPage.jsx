@@ -234,14 +234,27 @@ export default function ProductDetailPage() {
 								<table className="w-full min-w-[520px] border-collapse text-sm">
 									<thead>
 										<tr className="bg-secondary">
-											{table.headers.map((h) => (
-												<th
-													key={h}
-													className="border border-border px-3 py-2.5 text-left font-semibold text-foreground"
-												>
-													{h}
-												</th>
-											))}
+											{table.headers.map((h, i) => {
+												const isObj = typeof h === 'object' && h !== null && !Array.isArray(h);
+												const hText = isObj ? h.text : h;
+												const hStyle = isObj
+													? {
+														textAlign: h.align || undefined,
+														fontWeight: h.bold ? 'bold' : undefined,
+														fontFamily: h.font || undefined,
+														fontSize: h.size != null ? `${h.size}px` : undefined,
+													}
+													: undefined;
+												return (
+													<th
+														key={i}
+														style={hStyle}
+														className="border border-border px-3 py-2.5 text-left font-semibold text-foreground"
+													>
+														{hText}
+													</th>
+												);
+											})}
 										</tr>
 									</thead>
 									<tbody>
@@ -250,12 +263,18 @@ export default function ProductDetailPage() {
 												{row.map((cell, ci) => {
 													const isObj = typeof cell === 'object' && cell !== null && !Array.isArray(cell);
 													const cellText = isObj ? cell.text : cell;
+													const tdStyle = isObj ? { textAlign: cell.align || undefined } : undefined;
 													const cellStyle = isObj
-														? { fontFamily: cell.font || undefined, fontSize: cell.size != null ? `${cell.size}px` : undefined }
+														? {
+														fontFamily: cell.font || undefined,
+														fontSize: cell.size != null ? `${cell.size}px` : undefined,
+														fontWeight: cell.bold ? 'bold' : undefined,
+													}
 														: undefined;
 													return (
 														<td
 															key={ci}
+															style={tdStyle}
 															className={`border border-border px-3 py-2 ${
 																ci === 0 ? 'font-semibold text-foreground' : 'text-muted-foreground'
 															}`}

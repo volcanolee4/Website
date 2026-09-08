@@ -48,6 +48,26 @@
     }
     .hygoal-sym:hover { background: #eef7f4; border-color: #2f7d6d; color: #2f7d6d; }
 
+    /* 排版按钮：全选 / 加粗 / 对齐 */
+    .hygoal-format-btn {
+      min-width: 28px;
+      height: 24px;
+      padding: 0 7px;
+      border: 1px solid #ccd4dc;
+      border-radius: 3px;
+      background: #fff;
+      color: #1c2530;
+      font-size: 13px;
+      line-height: 1;
+      cursor: pointer;
+    }
+    .hygoal-format-btn:hover { background: #eef7f4; border-color: #2f7d6d; color: #2f7d6d; }
+    .hygoal-format-btn:disabled { background: #eef1f4; color: #9aa6b2; cursor: not-allowed; }
+    .hygoal-format-btn.hygoal-active { background: #2f7d6d; border-color: #2f7d6d; color: #fff; }
+    .hygoal-format-btn.hygoal-bold { font-weight: 700; }
+    .hygoal-format-btn.hygoal-all { color: #2f7d6d; border-color: #2f7d6d; }
+    .hygoal-format-btn.hygoal-all.hygoal-active { background: #2f7d6d; color: #fff; }
+
     /* 表格 */
     .hygoal-table {
       width: 100%;
