@@ -8,6 +8,41 @@
       "spec": "Knurled knob · Steel / Stainless steel"
     },
     {
+      "id": "6400",
+      "name": "Indexing Plunger with Pull Ring 6400",
+      "category": "indexing-plunger",
+      "image": "/Website/images/16951150772876caa1e4e0a322c4080f0c23a98392865.png",
+      "spec": "Pull ring · Steel / Stainless steel"
+    },
+    {
+      "id": "7100-a",
+      "name": "Retractable Indexing Plunger 7100-A",
+      "category": "indexing-plunger",
+      "image": "/Website/images/16953492328092a76aafa9f02875a51cac8012c604f18.png",
+      "spec": "Retractable · Non-locking"
+    },
+    {
+      "id": "7100-b",
+      "name": "Retractable Indexing Plunger with Rest Position 7100-B",
+      "category": "indexing-plunger",
+      "image": "/Website/images/16953609416945ce8be38e15c264e3b006ee942d07b66.png",
+      "spec": "Retractable · Rest position"
+    },
+    {
+      "id": "7200",
+      "name": "Knurled Knob Plunger 7200",
+      "category": "indexing-plunger",
+      "image": "/Website/images/1695085897211570bc81a997309e0f9b2092b754fffec.png",
+      "spec": "Knurled knob · Steel / Stainless steel"
+    },
+    {
+      "id": "7300",
+      "name": "Mini Indexing Plunger 7300",
+      "category": "indexing-plunger",
+      "image": "/Website/images/1695088713474dd25581b3a1518c5d782ab546032045a.png",
+      "spec": "Mini · Steel / Stainless steel"
+    },
+    {
       "id": "7600-b",
       "name": "Index Plunger 7600-B Full Stainless Steel",
       "category": "indexing-plunger",
@@ -29,18 +64,25 @@
       "spec": "Steel · With rest position"
     },
     {
+      "id": "7500-ss",
+      "name": "Index Plunger 7500-SS",
+      "category": "indexing-plunger",
+      "image": "/Website/images/16980410304612734a5fe5e3c0da56a10f72152183516.jpg",
+      "spec": "Stainless steel · With rest position"
+    },
+    {
+      "id": "8700",
+      "name": "Indexing Plunger with Flange 8700",
+      "category": "indexing-plunger",
+      "image": "/Website/images/1695092582957f4b97ea30da4dc8ac088671bfa6fb2e2.png",
+      "spec": "With flange · Steel / Stainless steel"
+    },
+    {
       "id": "8800",
       "name": "Indexing Plunger with Knurled Knob 8800",
       "category": "indexing-plunger",
       "image": "/Website/images/16951140334537ac52e3f2729d1b3f6d2b7e8f6467226.png",
       "spec": "Knurled knob · Metric sizes"
-    },
-    {
-      "id": "7100-b",
-      "name": "Retractable Indexing Plunger with Rest Position 7100-B",
-      "category": "indexing-plunger",
-      "image": "/Website/images/16953609416945ce8be38e15c264e3b006ee942d07b66.png",
-      "spec": "Retractable · Rest position"
     },
     {
       "id": "9000",
@@ -85,81 +127,11 @@
       "spec": "Standard · Stainless steel"
     },
     {
-      "id": "7500-ss",
-      "name": "Index Plunger 7500-SS",
-      "category": "indexing-plunger",
-      "image": "/Website/images/16980410304612734a5fe5e3c0da56a10f72152183516.jpg",
-      "spec": "Stainless steel · With rest position"
-    },
-    {
-      "id": "7200",
-      "name": "Knurled Knob Plunger 7200",
-      "category": "indexing-plunger",
-      "image": "/Website/images/1695085897211570bc81a997309e0f9b2092b754fffec.png",
-      "spec": "Knurled knob · Steel / Stainless steel"
-    },
-    {
-      "id": "7300",
-      "name": "Mini Indexing Plunger 7300",
-      "category": "indexing-plunger",
-      "image": "/Website/images/1695088713474dd25581b3a1518c5d782ab546032045a.png",
-      "spec": "Mini · Steel / Stainless steel"
-    },
-    {
-      "id": "8700",
-      "name": "Indexing Plunger with Flange 8700",
-      "category": "indexing-plunger",
-      "image": "/Website/images/1695092582957f4b97ea30da4dc8ac088671bfa6fb2e2.png",
-      "spec": "With flange · Steel / Stainless steel"
-    },
-    {
-      "id": "6400",
-      "name": "Indexing Plunger with Pull Ring 6400",
-      "category": "indexing-plunger",
-      "image": "/Website/images/16951150772876caa1e4e0a322c4080f0c23a98392865.png",
-      "spec": "Pull ring · Steel / Stainless steel"
-    },
-    {
-      "id": "7100-a",
-      "name": "Retractable Indexing Plunger 7100-A",
-      "category": "indexing-plunger",
-      "image": "/Website/images/16953492328092a76aafa9f02875a51cac8012c604f18.png",
-      "spec": "Retractable · Non-locking"
-    },
-    {
-      "id": "2700",
-      "name": "Cam Lever with Stud in Metric 2700",
+      "id": "2100",
+      "name": "Cam Lever with Internal Thread in Metric 2100",
       "category": "cam-lever",
-      "image": "/Website/images/170107883515732fdccd81899e30be3b4860cec3169a1.png",
-      "spec": "With stud · Metric thread"
-    },
-    {
-      "id": "2600",
-      "name": "Cam Lever in Metric 2600",
-      "category": "cam-lever",
-      "image": "/Website/images/1701078414552adb1a73e2fe7547bb8227f5f997293e2.png",
-      "spec": "Metric thread · Steel"
-    },
-    {
-      "id": "2500",
-      "name": "Cam Lever with Adjustable Nut in Metric 2500",
-      "category": "cam-lever",
-      "image": "/Website/images/17010775041319026826b7c70782c23ced3f96f0b360d.png",
-      "spec": "Adjustable nut · Metric"
-    },
-    {
-      "id": "2400",
-      "name": "Cam Lever with Stud in Inch 2400",
-      "category": "cam-lever",
-      "image": "/Website/images/17010758309628e454950dd96f7e8b591dfeea88df1cc.png",
-      "spec": "With stud · Inch thread"
-    },
-    {
-      "id": "2300",
-      "name": "Cam Lever with Stud in Metric 2300",
-      "category": "cam-lever",
-      "image": "/Website/images/1701075399836e7f9cb4719479d4db81433856a8ee747.png",
-      "spec": "With stud · Metric thread"
+      "image": "/Website/images/170107408842550b996eb7302cd44403a7c82fba43bdb.png",
+      "spec": "Internal thread · Metric"
     },
     {
       "id": "2200",
@@ -169,11 +141,39 @@
       "spec": "Internal thread · Inch"
     },
     {
-      "id": "2100",
-      "name": "Cam Lever with Internal Thread in Metric 2100",
+      "id": "2300",
+      "name": "Cam Lever with Stud in Metric 2300",
       "category": "cam-lever",
-      "image": "/Website/images/170107408842550b996eb7302cd44403a7c82fba43bdb.png",
-      "spec": "Internal thread · Metric"
+      "image": "/Website/images/1701075399836e7f9cb4719479d4db81433856a8ee747.png",
+      "spec": "With stud · Metric thread"
+    },
+    {
+      "id": "2400",
+      "name": "Cam Lever with Stud in Inch 2400",
+      "category": "cam-lever",
+      "image": "/Website/images/17010758309628e454950dd96f7e8b591dfeea88df1cc.png",
+      "spec": "With stud · Inch thread"
+    },
+    {
+      "id": "2500",
+      "name": "Cam Lever with Adjustable Nut in Metric 2500",
+      "category": "cam-lever",
+      "image": "/Website/images/17010775041319026826b7c70782c23ced3f96f0b360d.png",
+      "spec": "Adjustable nut · Metric"
+    },
+    {
+      "id": "2600",
+      "name": "Cam Lever in Metric 2600",
+      "category": "cam-lever",
+      "image": "/Website/images/1701078414552adb1a73e2fe7547bb8227f5f997293e2.png",
+      "spec": "Metric thread · Steel"
+    },
+    {
+      "id": "2700",
+      "name": "Cam Lever with Stud in Metric 2700",
+      "category": "cam-lever",
+      "image": "/Website/images/170107883515732fdccd81899e30be3b4860cec3169a1.png",
+      "spec": "With stud · Metric thread"
     },
     {
       "id": "1100",
