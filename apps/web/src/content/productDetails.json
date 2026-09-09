@@ -3073,6 +3073,109 @@
       }
     },
     {
+      "id": "90000",
+      "summary": "T-Handle Indexing Plunger 90000\nWeld-in version",
+      "gallery": [
+        "/Website/images/16954377099872d821b814eec9b0afa7acf5a8607265e.png"
+      ],
+      "table": {
+        "headers": [
+          "Item #",
+          "d1",
+          "l1",
+          "l2",
+          "d2",
+          "d3",
+          "A/F",
+          "Spring force initial (N)",
+          "Spring force final (N)"
+        ],
+        "rows": [
+          [
+            "M5",
+            "M5",
+            "12",
+            "5",
+            "4",
+            "12",
+            "7",
+            "5",
+            "12"
+          ],
+          [
+            "M6",
+            "M6",
+            "14",
+            "6",
+            "5",
+            "14",
+            "8",
+            "6",
+            "14"
+          ],
+          [
+            "M8",
+            "M8",
+            "16",
+            "8",
+            "6",
+            "18",
+            "10",
+            "8",
+            "20"
+          ],
+          [
+            "M10",
+            "M10",
+            "18",
+            "9",
+            "8",
+            "21",
+            "12",
+            "10",
+            "25"
+          ],
+          [
+            "M12",
+            "M12",
+            "20",
+            "10",
+            "10",
+            "25",
+            "14",
+            "12",
+            "32"
+          ],
+          [
+            "M16",
+            "M16",
+            "24",
+            "12",
+            "12",
+            "30",
+            "17",
+            "18",
+            "45"
+          ]
+        ]
+      },
+      "notes": {
+        "left": [
+          "Knob: Zinc plated steel or Stainless steel 304",
+          "Threaded body: zinc plated steel or stainless steel 304",
+          "Plunger: zinc plated steel or stainless steel 304",
+          "Applications: indexing plungers are used where positioning operations are required"
+        ],
+        "right": [
+          "XX-A: without rest positions",
+          "XX-B: with rest positions",
+          "XX-ST: made by zinc plated steel",
+          "XX-SS: made by stainless steel 304",
+          "XX-P: with locking patch"
+        ]
+      }
+    },
+    {
       "id": "9100",
       "summary": "Ball Handle Indexing Plunger 9100\nWeld-in version",
       "gallery": [
@@ -3466,104 +3569,207 @@
     },
     {
       "id": "9300",
-      "summary": "Indexing Plunger with Ball Handle 9300\nThreaded body",
+      "summary": "Indexing Plunger with Ball Handle 9300\nWeldable housing body",
       "gallery": [
-        "/Website/images/16957078884738d40710fd005ae657f43d0b9c5b15327.png"
+        "/Website/images/16957078884738d40710fd005ae657f43d0b9c5b15327.png",
+        "/Website/images/ball-handle-drawing.jpg"
       ],
       "table": {
         "headers": [
-          "Item #",
-          "d1",
-          "l1",
-          "l2",
-          "d2",
-          "d3",
-          "A/F",
-          "Spring force initial (N)",
-          "Spring force final (N)"
+          {
+            "text": "Item #",
+            "align": "center"
+          },
+          {
+            "text": "D",
+            "align": "center"
+          },
+          {
+            "text": "L",
+            "align": "center"
+          },
+          {
+            "text": "L1",
+            "align": "center"
+          },
+          {
+            "text": "H1",
+            "align": "center"
+          },
+          {
+            "text": "H2",
+            "align": "center"
+          },
+          {
+            "text": "SW",
+            "align": "center"
+          }
         ],
         "rows": [
           [
-            "M5",
-            "M5",
-            "12",
-            "5",
-            "4",
-            "12",
-            "7",
-            "5",
-            "12"
+            {
+              "text": "9301",
+              "align": "center"
+            },
+            {
+              "text": "3/8",
+              "align": "center"
+            },
+            {
+              "text": "1-1/2",
+              "align": "center"
+            },
+            {
+              "text": "9/16",
+              "align": "center"
+            },
+            {
+              "text": "3/16",
+              "align": "center"
+            },
+            {
+              "text": "1.88\"",
+              "align": "center"
+            },
+            {
+              "text": "7/8",
+              "align": "center"
+            }
           ],
           [
-            "M6",
-            "M6",
-            "14",
-            "6",
-            "5",
-            "14",
-            "8",
-            "6",
-            "14"
+            {
+              "text": "9302",
+              "align": "center"
+            },
+            {
+              "text": "1/2",
+              "align": "center"
+            },
+            {
+              "text": "1-1/2",
+              "align": "center"
+            },
+            {
+              "text": "9/16",
+              "align": "center"
+            },
+            {
+              "text": "3/16",
+              "align": "center"
+            },
+            {
+              "text": "1.88\"",
+              "align": "center"
+            },
+            {
+              "text": "7/8",
+              "align": "center"
+            }
           ],
           [
-            "M8",
-            "M8",
-            "16",
-            "8",
-            "6",
-            "18",
-            "10",
-            "8",
-            "20"
+            {
+              "text": "9303",
+              "align": "center"
+            },
+            {
+              "text": "1/4",
+              "align": "center"
+            },
+            {
+              "text": "1-1/2",
+              "align": "center"
+            },
+            {
+              "text": "9/16",
+              "align": "center"
+            },
+            {
+              "text": "3/16",
+              "align": "center"
+            },
+            {
+              "text": "1.88\"",
+              "align": "center"
+            },
+            {
+              "text": "7/8",
+              "align": "center"
+            }
           ],
           [
-            "M10",
-            "M10",
-            "18",
-            "9",
-            "8",
-            "21",
-            "12",
-            "10",
-            "25"
+            {
+              "text": "9304",
+              "align": "center"
+            },
+            {
+              "text": "1/2",
+              "align": "center"
+            },
+            {
+              "text": "2-1/4",
+              "align": "center"
+            },
+            {
+              "text": "9/16",
+              "align": "center"
+            },
+            {
+              "text": "3/16",
+              "align": "center"
+            },
+            {
+              "text": "1.88\"",
+              "align": "center"
+            },
+            {
+              "text": "7/8",
+              "align": "center"
+            }
           ],
           [
-            "M12",
-            "M12",
-            "20",
-            "10",
-            "10",
-            "25",
-            "14",
-            "12",
-            "32"
-          ],
-          [
-            "M16",
-            "M16",
-            "24",
-            "12",
-            "12",
-            "30",
-            "17",
-            "18",
-            "45"
+            {
+              "text": "9305",
+              "align": "center"
+            },
+            {
+              "text": "5/8",
+              "align": "center"
+            },
+            {
+              "text": "2-1/4",
+              "align": "center"
+            },
+            {
+              "text": "9/16",
+              "align": "center"
+            },
+            {
+              "text": "3/16",
+              "align": "center"
+            },
+            {
+              "text": "1.88\"",
+              "align": "center"
+            },
+            {
+              "text": "7/8",
+              "align": "center"
+            }
           ]
         ]
       },
       "notes": {
         "left": [
-          "Knob: Zinc plated steel or Stainless steel 304",
+          "Knob: High resilience PA,Matte finish",
           "Threaded body: zinc plated steel or stainless steel 304",
           "Plunger: zinc plated steel or stainless steel 304",
-          "Applications: indexing plungers are used where positioning operations are required"
+          "Applications: the housing is weldable to the place for stength"
         ],
         "right": [
-          "XX-A: without rest positions",
-          "XX-B: with rest positions",
-          "XX-ST: made by zinc plated steel",
-          "XX-SS: made by stainless steel 304",
-          "XX-P: with locking patch"
+          "93XX-A: without rest positions",
+          "93XX-B: with rest positions",
+          "93-ST: made by zinc plated steel",
+          "93XX-SS: made by stainless steel 304"
         ]
       }
     },
@@ -3571,102 +3777,229 @@
       "id": "9400",
       "summary": "Indexing Plunger 9400\nStandard · Steel zinc-plated",
       "gallery": [
-        "/Website/images/16957093414521f96f39006a1a8fdfbce8a99a5224d50.png"
+        "/Website/images/16957093414521f96f39006a1a8fdfbce8a99a5224d50.png",
+        "/Website/images/drawing-t.jpg"
       ],
       "table": {
         "headers": [
-          "Item #",
-          "d1",
-          "l1",
-          "l2",
-          "d2",
-          "d3",
-          "A/F",
-          "Spring force initial (N)",
-          "Spring force final (N)"
+          {
+            "text": "Item #",
+            "align": "center"
+          },
+          {
+            "text": "D",
+            "align": "center"
+          },
+          {
+            "text": "L",
+            "align": "center"
+          },
+          {
+            "text": "L1",
+            "align": "center"
+          },
+          {
+            "text": "H",
+            "align": "center"
+          },
+          {
+            "text": "H1",
+            "align": "center"
+          },
+          {
+            "text": "H2",
+            "align": "center"
+          },
+          {
+            "text": "SW",
+            "align": "center"
+          }
         ],
         "rows": [
           [
-            "M5",
-            "M5",
-            "12",
-            "5",
-            "4",
-            "12",
-            "7",
-            "5",
-            "12"
+            {
+              "text": "9401",
+              "align": "center"
+            },
+            {
+              "text": "3/8",
+              "align": "center"
+            },
+            {
+              "text": "1-1/2",
+              "align": "center"
+            },
+            {
+              "text": "9/16",
+              "align": "center"
+            },
+            {
+              "text": "1-7/16",
+              "align": "center"
+            },
+            {
+              "text": "3/16",
+              "align": "center"
+            },
+            {
+              "text": "2.018",
+              "align": "center"
+            },
+            {
+              "text": "7/8",
+              "align": "center"
+            }
           ],
           [
-            "M6",
-            "M6",
-            "14",
-            "6",
-            "5",
-            "14",
-            "8",
-            "6",
-            "14"
+            {
+              "text": "9402",
+              "align": "center"
+            },
+            {
+              "text": "1/2",
+              "align": "center"
+            },
+            {
+              "text": "1-1/2",
+              "align": "center"
+            },
+            {
+              "text": "9/16",
+              "align": "center"
+            },
+            {
+              "text": "1-7/16",
+              "align": "center"
+            },
+            {
+              "text": "3/16",
+              "align": "center"
+            },
+            {
+              "text": "2.018",
+              "align": "center"
+            },
+            {
+              "text": "7/8",
+              "align": "center"
+            }
           ],
           [
-            "M8",
-            "M8",
-            "16",
-            "8",
-            "6",
-            "18",
-            "10",
-            "8",
-            "20"
+            {
+              "text": "9403",
+              "align": "center"
+            },
+            {
+              "text": "1/4",
+              "align": "center"
+            },
+            {
+              "text": "1-1/2",
+              "align": "center"
+            },
+            {
+              "text": "9/16",
+              "align": "center"
+            },
+            {
+              "text": "1-7/16",
+              "align": "center"
+            },
+            {
+              "text": "3/16",
+              "align": "center"
+            },
+            {
+              "text": "2.018",
+              "align": "center"
+            },
+            {
+              "text": "7/8",
+              "align": "center"
+            }
           ],
           [
-            "M10",
-            "M10",
-            "18",
-            "9",
-            "8",
-            "21",
-            "12",
-            "10",
-            "25"
+            {
+              "text": "9404",
+              "align": "center"
+            },
+            {
+              "text": "1/2",
+              "align": "center"
+            },
+            {
+              "text": "2-1/4",
+              "align": "center"
+            },
+            {
+              "text": "9/16",
+              "align": "center"
+            },
+            {
+              "text": "1-7/16",
+              "align": "center"
+            },
+            {
+              "text": "3/16",
+              "align": "center"
+            },
+            {
+              "text": "2.018",
+              "align": "center"
+            },
+            {
+              "text": "7/8",
+              "align": "center"
+            }
           ],
           [
-            "M12",
-            "M12",
-            "20",
-            "10",
-            "10",
-            "25",
-            "14",
-            "12",
-            "32"
-          ],
-          [
-            "M16",
-            "M16",
-            "24",
-            "12",
-            "12",
-            "30",
-            "17",
-            "18",
-            "45"
+            {
+              "text": "9405",
+              "align": "center"
+            },
+            {
+              "text": "5/8",
+              "align": "center"
+            },
+            {
+              "text": "2-1/4",
+              "align": "center"
+            },
+            {
+              "text": "9/16",
+              "align": "center"
+            },
+            {
+              "text": "1-7/16",
+              "align": "center"
+            },
+            {
+              "text": "3/16",
+              "align": "center"
+            },
+            {
+              "text": "2.018",
+              "align": "center"
+            },
+            {
+              "text": "7/8",
+              "align": "center"
+            }
           ]
         ]
       },
       "notes": {
         "left": [
-          "Knob: Zinc plated steel or Stainless steel 304",
-          "Threaded body: zinc plated steel or stainless steel 304",
+          "Knob: High resilience PA,Matte finish ",
+          "Housing body: zinc plated steel or stainless steel 304",
           "Plunger: zinc plated steel or stainless steel 304",
-          "Applications: indexing plungers are used where positioning operations are required"
+          "Applications: 9000 series are designed to be welded into place for strength"
         ],
         "right": [
-          "XX-A: without rest positions",
-          "XX-B: with rest positions",
-          "XX-ST: made by zinc plated steel",
-          "XX-SS: made by stainless steel 304",
-          "XX-P: with locking patch"
+          "94XX-A: without rest positions",
+          "94XX-B: with rest positions",
+          "94XX-ST: made by zinc plated steel",
+          "94XX-SS: made by stainless steel 304"
         ]
       }
     },
@@ -3674,108 +4007,211 @@
       "id": "9500",
       "summary": "Indexing Plunger 9500\nStandard · Stainless steel",
       "gallery": [
-        "/Website/images/16957065635625c5437edf1564c6107c068181b50213e.png"
+        "/Website/images/16957065635625c5437edf1564c6107c068181b50213e.png",
+        "/Website/images/ball-handle-drawing.jpg"
       ],
       "table": {
         "headers": [
-          "Item #",
-          "d1",
-          "l1",
-          "l2",
-          "d2",
-          "d3",
-          "A/F",
-          "Spring force initial (N)",
-          "Spring force final (N)"
+          {
+            "text": "Item #",
+            "align": "center"
+          },
+          {
+            "text": "D",
+            "align": "center"
+          },
+          {
+            "text": "L",
+            "align": "center"
+          },
+          {
+            "text": "L1",
+            "align": "center"
+          },
+          {
+            "text": "H1",
+            "align": "center"
+          },
+          {
+            "text": "H2",
+            "align": "center"
+          },
+          {
+            "text": "SW",
+            "align": "center"
+          }
         ],
         "rows": [
           [
-            "M5",
-            "M5",
-            "12",
-            "5",
-            "4",
-            "12",
-            "7",
-            "5",
-            "12"
+            {
+              "text": "9501",
+              "align": "center"
+            },
+            {
+              "text": "3/8",
+              "align": "center"
+            },
+            {
+              "text": "1-1/2",
+              "align": "center"
+            },
+            {
+              "text": "9/16",
+              "align": "center"
+            },
+            {
+              "text": "3/16",
+              "align": "center"
+            },
+            {
+              "text": "1.88\"",
+              "align": "center"
+            },
+            {
+              "text": "7/8",
+              "align": "center"
+            }
           ],
           [
-            "M6",
-            "M6",
-            "14",
-            "6",
-            "5",
-            "14",
-            "8",
-            "6",
-            "14"
+            {
+              "text": "9502",
+              "align": "center"
+            },
+            {
+              "text": "1/2",
+              "align": "center"
+            },
+            {
+              "text": "1-1/2",
+              "align": "center"
+            },
+            {
+              "text": "9/16",
+              "align": "center"
+            },
+            {
+              "text": "3/16",
+              "align": "center"
+            },
+            {
+              "text": "1.88\"",
+              "align": "center"
+            },
+            {
+              "text": "7/8",
+              "align": "center"
+            }
           ],
           [
-            "M8",
-            "M8",
-            "16",
-            "8",
-            "6",
-            "18",
-            "10",
-            "8",
-            "20"
+            {
+              "text": "9503",
+              "align": "center"
+            },
+            {
+              "text": "1/4",
+              "align": "center"
+            },
+            {
+              "text": "1-1/2",
+              "align": "center"
+            },
+            {
+              "text": "9/16",
+              "align": "center"
+            },
+            {
+              "text": "3/16",
+              "align": "center"
+            },
+            {
+              "text": "1.88\"",
+              "align": "center"
+            },
+            {
+              "text": "7/8",
+              "align": "center"
+            }
           ],
           [
-            "M10",
-            "M10",
-            "18",
-            "9",
-            "8",
-            "21",
-            "12",
-            "10",
-            "25"
+            {
+              "text": "9504",
+              "align": "center"
+            },
+            {
+              "text": "1/2",
+              "align": "center"
+            },
+            {
+              "text": "2-1/4",
+              "align": "center"
+            },
+            {
+              "text": "9/16",
+              "align": "center"
+            },
+            {
+              "text": "3/16",
+              "align": "center"
+            },
+            {
+              "text": "1.88\"",
+              "align": "center"
+            },
+            {
+              "text": "7/8",
+              "align": "center"
+            }
           ],
           [
-            "M12",
-            "M12",
-            "20",
-            "10",
-            "10",
-            "25",
-            "14",
-            "12",
-            "32"
-          ],
-          [
-            "M16",
-            "M16",
-            "24",
-            "12",
-            "12",
-            "30",
-            "17",
-            "18",
-            "45"
+            {
+              "text": "9505",
+              "align": "center"
+            },
+            {
+              "text": "5/8",
+              "align": "center"
+            },
+            {
+              "text": "2-1/4",
+              "align": "center"
+            },
+            {
+              "text": "9/16",
+              "align": "center"
+            },
+            {
+              "text": "3/16",
+              "align": "center"
+            },
+            {
+              "text": "1.88\"",
+              "align": "center"
+            },
+            {
+              "text": "7/8",
+              "align": "center"
+            }
           ]
         ]
       },
       "notes": {
         "left": [
-          "Knob: Zinc plated steel or Stainless steel 304",
-          "Threaded body: zinc plated steel or stainless steel 304",
+          "Knob: High resilience PA,Matte finish ",
+          "Housing body: zinc plated steel or stainless steel 304",
           "Plunger: zinc plated steel or stainless steel 304",
-          "Applications: indexing plungers are used where positioning operations are required"
+          "Applications: indexing plungers 9000 series are designed to be welded into place for strength"
         ],
         "right": [
-          "XX-A: without rest positions",
-          "XX-B: with rest positions",
-          "XX-ST: made by zinc plated steel",
-          "XX-SS: made by stainless steel 304",
-          "XX-P: with locking patch"
+          "95XX-A: without rest positions",
+          "95XX-B: with rest positions",
+          "95XX-ST: made by zinc plated steel",
+          "95XX-SS: made by stainless steel 304"
         ]
       }
     },
     {
-      "id": "2400",
-      "summary": "Cam Lever with Stud in Inch 2400",
+      "id": "9600",
+      "summary": "Cam Lever with Stud in Inch 9600",
       "gallery": [
         "/Website/images/17010758309628e454950dd96f7e8b591dfeea88df1cc.png"
       ],
@@ -3842,8 +4278,8 @@
       }
     },
     {
-      "id": "2500",
-      "summary": "Cam Lever with Adjustable Nut in Metric 2500",
+      "id": "9700",
+      "summary": "Cam Lever with Adjustable Nut in Metric 9700",
       "gallery": [
         "/Website/images/17010775041319026826b7c70782c23ced3f96f0b360d.png"
       ],
@@ -3925,8 +4361,8 @@
       }
     },
     {
-      "id": "2600",
-      "summary": "Cam Lever in Metric 2600\nIt's for quick clamping and release",
+      "id": "9800",
+      "summary": "Cam Lever in Metric 9800\nIt's for quick clamping and release",
       "gallery": [
         "/Website/images/1701078414552adb1a73e2fe7547bb8227f5f997293e2.png"
       ],
@@ -4008,8 +4444,8 @@
       }
     },
     {
-      "id": "2700",
-      "summary": "Cam Lever with Stud in Metric 2700\nIt's for quick clamping and release",
+      "id": "9900",
+      "summary": "Cam Lever with Stud in Metric 9900\nIt's for quick clamping and release",
       "gallery": [
         "/Website/images/170107883515732fdccd81899e30be3b4860cec3169a1.png"
       ],
@@ -4087,109 +4523,6 @@
           "Metric and inch thread options",
           "With stud or internal thread",
           "Adjustable nut versions available"
-        ]
-      }
-    },
-    {
-      "id": "9000",
-      "summary": "T-Handle Indexing Plunger 9000\nWeld-in version",
-      "gallery": [
-        "/Website/images/16954377099872d821b814eec9b0afa7acf5a8607265e.png"
-      ],
-      "table": {
-        "headers": [
-          "Item #",
-          "d1",
-          "l1",
-          "l2",
-          "d2",
-          "d3",
-          "A/F",
-          "Spring force initial (N)",
-          "Spring force final (N)"
-        ],
-        "rows": [
-          [
-            "M5",
-            "M5",
-            "12",
-            "5",
-            "4",
-            "12",
-            "7",
-            "5",
-            "12"
-          ],
-          [
-            "M6",
-            "M6",
-            "14",
-            "6",
-            "5",
-            "14",
-            "8",
-            "6",
-            "14"
-          ],
-          [
-            "M8",
-            "M8",
-            "16",
-            "8",
-            "6",
-            "18",
-            "10",
-            "8",
-            "20"
-          ],
-          [
-            "M10",
-            "M10",
-            "18",
-            "9",
-            "8",
-            "21",
-            "12",
-            "10",
-            "25"
-          ],
-          [
-            "M12",
-            "M12",
-            "20",
-            "10",
-            "10",
-            "25",
-            "14",
-            "12",
-            "32"
-          ],
-          [
-            "M16",
-            "M16",
-            "24",
-            "12",
-            "12",
-            "30",
-            "17",
-            "18",
-            "45"
-          ]
-        ]
-      },
-      "notes": {
-        "left": [
-          "Knob: Zinc plated steel or Stainless steel 304",
-          "Threaded body: zinc plated steel or stainless steel 304",
-          "Plunger: zinc plated steel or stainless steel 304",
-          "Applications: indexing plungers are used where positioning operations are required"
-        ],
-        "right": [
-          "XX-A: without rest positions",
-          "XX-B: with rest positions",
-          "XX-ST: made by zinc plated steel",
-          "XX-SS: made by stainless steel 304",
-          "XX-P: with locking patch"
         ]
       }
     },
@@ -4927,8 +5260,8 @@
       }
     },
     {
-      "id": "2100",
-      "summary": "Cam Lever with Internal Thread in Metric 2100",
+      "id": "cl-9300",
+      "summary": "Cam Lever with Internal Thread in Metric 9300",
       "gallery": [
         "/Website/images/170107408842550b996eb7302cd44403a7c82fba43bdb.png"
       ],
@@ -5010,8 +5343,8 @@
       }
     },
     {
-      "id": "2200",
-      "summary": "Cam Lever with Internal Thread in Inch 2200\nQuick clamping and release · Inch thread",
+      "id": "cl-9400",
+      "summary": "Cam Lever with Internal Thread in Inch 9400\nQuick clamping and release · Inch thread",
       "gallery": [
         "/Website/images/170107408842550b996eb7302cd44403a7c82fba43bdb.png"
       ],
@@ -5078,8 +5411,8 @@
       }
     },
     {
-      "id": "2300",
-      "summary": "Cam Lever with Stud in Metric 2300\nQuick clamping and release · Metric thread",
+      "id": "cl-9500",
+      "summary": "Cam Lever with Stud in Metric 9500\nQuick clamping and release · Metric thread",
       "gallery": [
         "/Website/images/1701075399836e7f9cb4719479d4db81433856a8ee747.png"
       ],
