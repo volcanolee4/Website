@@ -31,6 +31,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://volcanolee4.github.io/Website/products/6400-b</loc>
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://volcanolee4.github.io/Website/products/7600-b</loc>
     <lastmod>2026-09-06</lastmod>
     <changefreq>monthly</changefreq>
@@ -121,7 +127,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://volcanolee4.github.io/Website/products/6400</loc>
+    <loc>https://volcanolee4.github.io/Website/products/6300</loc>
     <lastmod>2026-09-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

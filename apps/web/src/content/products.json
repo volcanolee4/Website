@@ -8,8 +8,15 @@
       "spec": "Knurled knob · Steel / Stainless steel"
     },
     {
-      "id": "6400",
-      "name": "Indexing Plunger with Pull Ring 6400",
+      "id": "6400-b",
+      "name": "Knurled Knob Index Plunger 6400-B",
+      "category": "indexing-plunger",
+      "image": "/Website/images/6400-B.png",
+      "spec": "Knurled knob · Steel / Stainless steel"
+    },
+    {
+      "id": "6300",
+      "name": "Indexing Plunger with Pull Ring 6300",
       "category": "indexing-plunger",
       "image": "/Website/images/16951150772876caa1e4e0a322c4080f0c23a98392865.png",
       "spec": "Pull ring · Steel / Stainless steel"
