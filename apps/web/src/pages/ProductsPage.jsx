@@ -11,12 +11,29 @@ import { getProductDetail } from '@/data/productDetails';
 
 const ALL = 'all';
 
+// 型号排序：数字升序，同型号按后缀字母升序（7600-A 排在 7600-B 前）
+const modelSortKey = (id) => {
+	const [num, ...rest] = id.split('-');
+	const n = Number(num);
+	return { num: Number.isFinite(n) ? n : Infinity, suffix: rest.join('-') };
+};
+
+const sortByModel = (a, b) => {
+	const ka = modelSortKey(a.id);
+	const kb = modelSortKey(b.id);
+	if (ka.num !== kb.num) return ka.num - kb.num;
+	return ka.suffix.localeCompare(kb.suffix);
+};
+
 export default function ProductsPage() {
 	const [searchParams, setSearchParams] = useSearchParams();
 	const catParam = searchParams.get('cat');
 	const active = CATEGORIES.some((c) => c.slug === catParam) ? catParam : ALL;
 
-	const filtered = active === ALL ? PRODUCTS : PRODUCTS.filter((p) => p.category === active);
+	const filtered =
+		active === ALL
+			? PRODUCTS
+			: PRODUCTS.filter((p) => p.category === active).sort(sortByModel);
 
 	const select = (slug) => {
 		setSearchParams(slug === ALL ? {} : { cat: slug }, { replace: true });
