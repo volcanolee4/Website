@@ -4217,50 +4217,655 @@
       ],
       "table": {
         "headers": [
-          "Item #",
-          "Thread",
-          "l1",
-          "l2",
-          "h",
-          "A",
-          "B"
+          {
+            "text": "Part #",
+            "align": "center"
+          },
+          {
+            "text": "D",
+            "align": "center"
+          },
+          {
+            "text": "D1",
+            "align": "center"
+          },
+          {
+            "text": "D2",
+            "align": "center"
+          },
+          {
+            "text": "B",
+            "align": "center"
+          },
+          {
+            "text": "B1",
+            "align": "center"
+          },
+          {
+            "text": "H",
+            "align": "center"
+          },
+          {
+            "text": "H1",
+            "align": "center"
+          },
+          {
+            "text": "A",
+            "align": "center"
+          },
+          {
+            "text": "A1",
+            "align": "center"
+          },
+          {
+            "text": "S",
+            "align": "center"
+          },
+          {
+            "text": "L",
+            "align": "center"
+          }
         ],
         "rows": [
           [
-            "1/4-20",
-            "1/4-20",
-            "1.00\"",
-            ".50\"",
-            ".55\"",
-            "2.2\"",
-            ".70\""
+            {
+              "text": "2401",
+              "align": "center"
+            },
+            {
+              "text": "1/4-20",
+              "align": "center"
+            },
+            {
+              "text": "0.71",
+              "align": "center"
+            },
+            {
+              "text": "0.35",
+              "align": "center"
+            },
+            {
+              "text": "0.85",
+              "align": "center"
+            },
+            {
+              "text": "0.59",
+              "align": "center"
+            },
+            {
+              "text": "0.57",
+              "align": "center"
+            },
+            {
+              "text": "0.87",
+              "align": "center"
+            },
+            {
+              "text": "2.77",
+              "align": "center"
+            },
+            {
+              "text": "3.12",
+              "align": "center"
+            },
+            {
+              "text": "0.05",
+              "align": "center"
+            },
+            {
+              "text": "0.79",
+              "align": "center"
+            }
           ],
           [
-            "5/16-18",
-            "5/16-18",
-            "1.25\"",
-            ".63\"",
-            ".63\"",
-            "2.6\"",
-            ".80\""
+            {
+              "text": "2402",
+              "align": "center"
+            },
+            {
+              "text": "1/4-20",
+              "align": "center"
+            },
+            {
+              "text": "0.71",
+              "align": "center"
+            },
+            {
+              "text": "0.35",
+              "align": "center"
+            },
+            {
+              "text": "0.85",
+              "align": "center"
+            },
+            {
+              "text": "0.59",
+              "align": "center"
+            },
+            {
+              "text": "0.57",
+              "align": "center"
+            },
+            {
+              "text": "0.87",
+              "align": "center"
+            },
+            {
+              "text": "2.77",
+              "align": "center"
+            },
+            {
+              "text": "3.12",
+              "align": "center"
+            },
+            {
+              "text": "0.05",
+              "align": "center"
+            },
+            {
+              "text": "1.18",
+              "align": "center"
+            }
           ],
           [
-            "3/8-16",
-            "3/8-16",
-            "1.50\"",
-            ".75\"",
-            ".70\"",
-            "3.0\"",
-            ".90\""
+            {
+              "text": "2403",
+              "align": "center"
+            },
+            {
+              "text": "1/4-20",
+              "align": "center"
+            },
+            {
+              "text": "0.71",
+              "align": "center"
+            },
+            {
+              "text": "0.35",
+              "align": "center"
+            },
+            {
+              "text": "0.85",
+              "align": "center"
+            },
+            {
+              "text": "0.59",
+              "align": "center"
+            },
+            {
+              "text": "0.57",
+              "align": "center"
+            },
+            {
+              "text": "0.87",
+              "align": "center"
+            },
+            {
+              "text": "2.77",
+              "align": "center"
+            },
+            {
+              "text": "3.12",
+              "align": "center"
+            },
+            {
+              "text": "0.05",
+              "align": "center"
+            },
+            {
+              "text": "1.57",
+              "align": "center"
+            }
           ],
           [
-            "1/2-13",
-            "1/2-13",
-            "1.75\"",
-            ".88\"",
-            ".80\"",
-            "3.5\"",
-            "1.0\""
+            {
+              "text": "2404",
+              "align": "center"
+            },
+            {
+              "text": "1/4-20",
+              "align": "center"
+            },
+            {
+              "text": "0.71",
+              "align": "center"
+            },
+            {
+              "text": "0.35",
+              "align": "center"
+            },
+            {
+              "text": "0.85",
+              "align": "center"
+            },
+            {
+              "text": "0.59",
+              "align": "center"
+            },
+            {
+              "text": "0.57",
+              "align": "center"
+            },
+            {
+              "text": "0.87",
+              "align": "center"
+            },
+            {
+              "text": "2.77",
+              "align": "center"
+            },
+            {
+              "text": "3.12",
+              "align": "center"
+            },
+            {
+              "text": "0.05",
+              "align": "center"
+            },
+            {
+              "text": "1.97",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2405",
+              "align": "center"
+            },
+            {
+              "text": "5/16-18",
+              "align": "center"
+            },
+            {
+              "text": "1.06",
+              "align": "center"
+            },
+            {
+              "text": "0.43",
+              "align": "center"
+            },
+            {
+              "text": "1.31",
+              "align": "center"
+            },
+            {
+              "text": "0.94",
+              "align": "center"
+            },
+            {
+              "text": "0.71",
+              "align": "center"
+            },
+            {
+              "text": "1.12",
+              "align": "center"
+            },
+            {
+              "text": "3.78",
+              "align": "center"
+            },
+            {
+              "text": "4.25",
+              "align": "center"
+            },
+            {
+              "text": "0.06",
+              "align": "center"
+            },
+            {
+              "text": "0.98",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2406",
+              "align": "center"
+            },
+            {
+              "text": "5/16-18",
+              "align": "center"
+            },
+            {
+              "text": "1.06",
+              "align": "center"
+            },
+            {
+              "text": "0.43",
+              "align": "center"
+            },
+            {
+              "text": "1.31",
+              "align": "center"
+            },
+            {
+              "text": "0.94",
+              "align": "center"
+            },
+            {
+              "text": "0.71",
+              "align": "center"
+            },
+            {
+              "text": "1.12",
+              "align": "center"
+            },
+            {
+              "text": "3.78",
+              "align": "center"
+            },
+            {
+              "text": "4.25",
+              "align": "center"
+            },
+            {
+              "text": "0.06",
+              "align": "center"
+            },
+            {
+              "text": "1.18",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2407",
+              "align": "center"
+            },
+            {
+              "text": "5/16-18",
+              "align": "center"
+            },
+            {
+              "text": "1.06",
+              "align": "center"
+            },
+            {
+              "text": "0.43",
+              "align": "center"
+            },
+            {
+              "text": "1.31",
+              "align": "center"
+            },
+            {
+              "text": "0.94",
+              "align": "center"
+            },
+            {
+              "text": "0.71",
+              "align": "center"
+            },
+            {
+              "text": "1.12",
+              "align": "center"
+            },
+            {
+              "text": "3.78",
+              "align": "center"
+            },
+            {
+              "text": "4.25",
+              "align": "center"
+            },
+            {
+              "text": "0.06",
+              "align": "center"
+            },
+            {
+              "text": "1.57",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2408",
+              "align": "center"
+            },
+            {
+              "text": "5/16-18",
+              "align": "center"
+            },
+            {
+              "text": "1.06",
+              "align": "center"
+            },
+            {
+              "text": "0.43",
+              "align": "center"
+            },
+            {
+              "text": "1.31",
+              "align": "center"
+            },
+            {
+              "text": "0.94",
+              "align": "center"
+            },
+            {
+              "text": "0.71",
+              "align": "center"
+            },
+            {
+              "text": "1.12",
+              "align": "center"
+            },
+            {
+              "text": "3.78",
+              "align": "center"
+            },
+            {
+              "text": "4.25",
+              "align": "center"
+            },
+            {
+              "text": "0.06",
+              "align": "center"
+            },
+            {
+              "text": "1.97",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2409",
+              "align": "center"
+            },
+            {
+              "text": "3/8-16",
+              "align": "center"
+            },
+            {
+              "text": "1.06",
+              "align": "center"
+            },
+            {
+              "text": "0.43",
+              "align": "center"
+            },
+            {
+              "text": "1.31",
+              "align": "center"
+            },
+            {
+              "text": "0.94",
+              "align": "center"
+            },
+            {
+              "text": "0.71",
+              "align": "center"
+            },
+            {
+              "text": "1.12",
+              "align": "center"
+            },
+            {
+              "text": "3.78",
+              "align": "center"
+            },
+            {
+              "text": "4.25",
+              "align": "center"
+            },
+            {
+              "text": "0.06",
+              "align": "center"
+            },
+            {
+              "text": "0.98",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2410",
+              "align": "center"
+            },
+            {
+              "text": "3/8-16",
+              "align": "center"
+            },
+            {
+              "text": "1.06",
+              "align": "center"
+            },
+            {
+              "text": "0.43",
+              "align": "center"
+            },
+            {
+              "text": "1.31",
+              "align": "center"
+            },
+            {
+              "text": "0.94",
+              "align": "center"
+            },
+            {
+              "text": "0.71",
+              "align": "center"
+            },
+            {
+              "text": "1.12",
+              "align": "center"
+            },
+            {
+              "text": "3.78",
+              "align": "center"
+            },
+            {
+              "text": "4.25",
+              "align": "center"
+            },
+            {
+              "text": "0.06",
+              "align": "center"
+            },
+            {
+              "text": "1.18",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2411",
+              "align": "center"
+            },
+            {
+              "text": "3/8-16",
+              "align": "center"
+            },
+            {
+              "text": "1.06",
+              "align": "center"
+            },
+            {
+              "text": "0.43",
+              "align": "center"
+            },
+            {
+              "text": "1.31",
+              "align": "center"
+            },
+            {
+              "text": "0.94",
+              "align": "center"
+            },
+            {
+              "text": "0.71",
+              "align": "center"
+            },
+            {
+              "text": "1.12",
+              "align": "center"
+            },
+            {
+              "text": "3.78",
+              "align": "center"
+            },
+            {
+              "text": "4.25",
+              "align": "center"
+            },
+            {
+              "text": "0.06",
+              "align": "center"
+            },
+            {
+              "text": "1.57",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2412",
+              "align": "center"
+            },
+            {
+              "text": "3/8-16",
+              "align": "center"
+            },
+            {
+              "text": "1.06",
+              "align": "center"
+            },
+            {
+              "text": "0.43",
+              "align": "center"
+            },
+            {
+              "text": "1.31",
+              "align": "center"
+            },
+            {
+              "text": "0.94",
+              "align": "center"
+            },
+            {
+              "text": "0.71",
+              "align": "center"
+            },
+            {
+              "text": "1.12",
+              "align": "center"
+            },
+            {
+              "text": "3.78",
+              "align": "center"
+            },
+            {
+              "text": "4.25",
+              "align": "center"
+            },
+            {
+              "text": "0.06",
+              "align": "center"
+            },
+            {
+              "text": "1.97",
+              "align": "center"
+            }
           ]
         ]
       },
