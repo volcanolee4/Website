@@ -3080,82 +3080,327 @@
       ],
       "table": {
         "headers": [
-          "Item #",
-          "d1",
-          "l1",
-          "l2",
-          "d2",
-          "d3",
-          "A/F",
-          "Spring force initial (N)",
-          "Spring force final (N)"
+          {
+            "text": "Item #",
+            "align": "center"
+          },
+          {
+            "text": "T",
+            "align": "center"
+          },
+          {
+            "text": "D",
+            "align": "center"
+          },
+          {
+            "text": "D1",
+            "align": "center"
+          },
+          {
+            "text": "L",
+            "align": "center"
+          },
+          {
+            "text": "L1",
+            "align": "center"
+          },
+          {
+            "text": "W",
+            "align": "center"
+          },
+          {
+            "text": "H",
+            "align": "center"
+          },
+          {
+            "text": "H1",
+            "align": "center"
+          },
+          {
+            "text": "H2",
+            "align": "center"
+          },
+          {
+            "text": "SW",
+            "align": "center"
+          }
         ],
         "rows": [
           [
-            "M5",
-            "M5",
-            "12",
-            "5",
-            "4",
-            "12",
-            "7",
-            "5",
-            "12"
+            {
+              "text": "9001",
+              "align": "center"
+            },
+            {
+              "text": "3/4-10",
+              "align": "center"
+            },
+            {
+              "text": "1/4",
+              "align": "center"
+            },
+            {
+              "text": "1.000",
+              "align": "center"
+            },
+            {
+              "text": "1-1/2",
+              "align": "center"
+            },
+            {
+              "text": "9/16",
+              "align": "center"
+            },
+            {
+              "text": "2-1/4",
+              "align": "center"
+            },
+            {
+              "text": "1-7/16",
+              "align": "center"
+            },
+            {
+              "text": "3/16",
+              "align": "center"
+            },
+            {
+              "text": "2.018",
+              "align": "center"
+            },
+            {
+              "text": "7/8",
+              "align": "center"
+            }
           ],
           [
-            "M6",
-            "M6",
-            "14",
-            "6",
-            "5",
-            "14",
-            "8",
-            "6",
-            "14"
+            {
+              "text": "9002",
+              "align": "center"
+            },
+            {
+              "text": "3/4-10",
+              "align": "center"
+            },
+            {
+              "text": "3/8",
+              "align": "center"
+            },
+            {
+              "text": "1.000",
+              "align": "center"
+            },
+            {
+              "text": "1-1/2",
+              "align": "center"
+            },
+            {
+              "text": "9/16",
+              "align": "center"
+            },
+            {
+              "text": "2-1/4",
+              "align": "center"
+            },
+            {
+              "text": "1-7/16",
+              "align": "center"
+            },
+            {
+              "text": "3/16",
+              "align": "center"
+            },
+            {
+              "text": "2.018",
+              "align": "center"
+            },
+            {
+              "text": "7/8",
+              "align": "center"
+            }
           ],
           [
-            "M8",
-            "M8",
-            "16",
-            "8",
-            "6",
-            "18",
-            "10",
-            "8",
-            "20"
+            {
+              "text": "9003",
+              "align": "center"
+            },
+            {
+              "text": "3/4-10",
+              "align": "center"
+            },
+            {
+              "text": "1/2",
+              "align": "center"
+            },
+            {
+              "text": "1.000",
+              "align": "center"
+            },
+            {
+              "text": "1-1/2",
+              "align": "center"
+            },
+            {
+              "text": "9/16",
+              "align": "center"
+            },
+            {
+              "text": "2-1/4",
+              "align": "center"
+            },
+            {
+              "text": "1-7/16",
+              "align": "center"
+            },
+            {
+              "text": "3/16",
+              "align": "center"
+            },
+            {
+              "text": "2.018",
+              "align": "center"
+            },
+            {
+              "text": "7/8",
+              "align": "center"
+            }
           ],
           [
-            "M10",
-            "M10",
-            "18",
-            "9",
-            "8",
-            "21",
-            "12",
-            "10",
-            "25"
+            {
+              "text": "9004",
+              "align": "center"
+            },
+            {
+              "text": "3/4-10",
+              "align": "center"
+            },
+            {
+              "text": "1/2",
+              "align": "center"
+            },
+            {
+              "text": "1.000",
+              "align": "center"
+            },
+            {
+              "text": "1-1/2",
+              "align": "center"
+            },
+            {
+              "text": "11/16",
+              "align": "center"
+            },
+            {
+              "text": "2-1/4",
+              "align": "center"
+            },
+            {
+              "text": "1-7/16",
+              "align": "center"
+            },
+            {
+              "text": "3/16",
+              "align": "center"
+            },
+            {
+              "text": "2.018",
+              "align": "center"
+            },
+            {
+              "text": "7/8",
+              "align": "center"
+            }
           ],
           [
-            "M12",
-            "M12",
-            "20",
-            "10",
-            "10",
-            "25",
-            "14",
-            "12",
-            "32"
+            {
+              "text": "9005",
+              "align": "center"
+            },
+            {
+              "text": "3/4-10",
+              "align": "center"
+            },
+            {
+              "text": "1/2",
+              "align": "center"
+            },
+            {
+              "text": "1.000",
+              "align": "center"
+            },
+            {
+              "text": "2-1/4",
+              "align": "center"
+            },
+            {
+              "text": "9/16",
+              "align": "center"
+            },
+            {
+              "text": "2-1/4",
+              "align": "center"
+            },
+            {
+              "text": "1-7/16",
+              "align": "center"
+            },
+            {
+              "text": "3/16",
+              "align": "center"
+            },
+            {
+              "text": "2.018",
+              "align": "center"
+            },
+            {
+              "text": "7/8",
+              "align": "center"
+            }
           ],
           [
-            "M16",
-            "M16",
-            "24",
-            "12",
-            "12",
-            "30",
-            "17",
-            "18",
-            "45"
+            {
+              "text": "9006",
+              "align": "center"
+            },
+            {
+              "text": "3/4-10",
+              "align": "center"
+            },
+            {
+              "text": "5/8",
+              "align": "center"
+            },
+            {
+              "text": "1.000",
+              "align": "center"
+            },
+            {
+              "text": "2-1/4",
+              "align": "center"
+            },
+            {
+              "text": "9/16",
+              "align": "center"
+            },
+            {
+              "text": "2-1/4",
+              "align": "center"
+            },
+            {
+              "text": "1-7/16",
+              "align": "center"
+            },
+            {
+              "text": "3/16",
+              "align": "center"
+            },
+            {
+              "text": "2.018",
+              "align": "center"
+            },
+            {
+              "text": "7/8",
+              "align": "center"
+            }
           ]
         ]
       },
@@ -4218,85 +4463,277 @@
       ],
       "table": {
         "headers": [
-          "Item #",
-          "H",
-          "D",
-          "B",
-          "A",
-          "C",
-          "E",
-          "d"
+          {
+            "text": "Item #",
+            "align": "center"
+          },
+          {
+            "text": "H",
+            "align": "center"
+          },
+          {
+            "text": "D",
+            "align": "center"
+          },
+          {
+            "text": "B",
+            "align": "center"
+          },
+          {
+            "text": "A",
+            "align": "center"
+          },
+          {
+            "text": "C",
+            "align": "center"
+          },
+          {
+            "text": "E",
+            "align": "center"
+          },
+          {
+            "text": "d",
+            "align": "center"
+          }
         ],
         "rows": [
           [
-            "7401",
-            "10-32",
-            ".38\"",
-            ".19\"",
-            ".25\"",
-            ".40\"",
-            ".09\"",
-            ".05\""
+            {
+              "text": "6401-A",
+              "align": "center"
+            },
+            {
+              "text": "10-32",
+              "align": "center"
+            },
+            {
+              "text": ".38\"",
+              "align": "center"
+            },
+            {
+              "text": ".19\"",
+              "align": "center"
+            },
+            {
+              "text": ".25\"",
+              "align": "center"
+            },
+            {
+              "text": ".40\"",
+              "align": "center"
+            },
+            {
+              "text": ".09\"",
+              "align": "center"
+            },
+            {
+              "text": ".05\"",
+              "align": "center"
+            }
           ],
           [
-            "7402",
-            "1/4-20",
-            ".5\"",
-            ".19\"",
-            ".31\"",
-            ".50\"",
-            ".13\"",
-            ".12\""
+            {
+              "text": "6402-A",
+              "align": "center"
+            },
+            {
+              "text": "1/4-20",
+              "align": "center"
+            },
+            {
+              "text": ".5\"",
+              "align": "center"
+            },
+            {
+              "text": ".19\"",
+              "align": "center"
+            },
+            {
+              "text": ".31\"",
+              "align": "center"
+            },
+            {
+              "text": ".50\"",
+              "align": "center"
+            },
+            {
+              "text": ".13\"",
+              "align": "center"
+            },
+            {
+              "text": ".12\"",
+              "align": "center"
+            }
           ],
           [
-            "7403",
-            "5/16-18",
-            ".63\"",
-            ".25\"",
-            ".38\"",
-            ".63\"",
-            ".19\"",
-            ".16\""
+            {
+              "text": "6403-A",
+              "align": "center"
+            },
+            {
+              "text": "5/16-18",
+              "align": "center"
+            },
+            {
+              "text": ".63\"",
+              "align": "center"
+            },
+            {
+              "text": ".25\"",
+              "align": "center"
+            },
+            {
+              "text": ".38\"",
+              "align": "center"
+            },
+            {
+              "text": ".63\"",
+              "align": "center"
+            },
+            {
+              "text": ".19\"",
+              "align": "center"
+            },
+            {
+              "text": ".16\"",
+              "align": "center"
+            }
           ],
           [
-            "7404",
-            "3/8-16",
-            ".75\"",
-            ".31\"",
-            ".50\"",
-            ".75\"",
-            ".22\"",
-            ".19\""
+            {
+              "text": "6404-A",
+              "align": "center"
+            },
+            {
+              "text": "3/8-16",
+              "align": "center"
+            },
+            {
+              "text": ".75\"",
+              "align": "center"
+            },
+            {
+              "text": ".31\"",
+              "align": "center"
+            },
+            {
+              "text": ".50\"",
+              "align": "center"
+            },
+            {
+              "text": ".75\"",
+              "align": "center"
+            },
+            {
+              "text": ".22\"",
+              "align": "center"
+            },
+            {
+              "text": ".19\"",
+              "align": "center"
+            }
           ],
           [
-            "7405",
-            "1/2-13",
-            "1.0\"",
-            ".38\"",
-            ".63\"",
-            ".88\"",
-            ".25\"",
-            ".25\""
+            {
+              "text": "6405-A",
+              "align": "center"
+            },
+            {
+              "text": "1/2-13",
+              "align": "center"
+            },
+            {
+              "text": "1.0\"",
+              "align": "center"
+            },
+            {
+              "text": ".38\"",
+              "align": "center"
+            },
+            {
+              "text": ".63\"",
+              "align": "center"
+            },
+            {
+              "text": ".88\"",
+              "align": "center"
+            },
+            {
+              "text": ".25\"",
+              "align": "center"
+            },
+            {
+              "text": ".25\"",
+              "align": "center"
+            }
           ],
           [
-            "7406",
-            "5/8-11",
-            "1.25\"",
-            ".44\"",
-            ".75\"",
-            "1.0\"",
-            ".32\"",
-            ".31\""
+            {
+              "text": "6406-A",
+              "align": "center"
+            },
+            {
+              "text": "5/8-11",
+              "align": "center"
+            },
+            {
+              "text": "1.25\"",
+              "align": "center"
+            },
+            {
+              "text": ".44\"",
+              "align": "center"
+            },
+            {
+              "text": ".75\"",
+              "align": "center"
+            },
+            {
+              "text": "1.0\"",
+              "align": "center"
+            },
+            {
+              "text": ".32\"",
+              "align": "center"
+            },
+            {
+              "text": ".31\"",
+              "align": "center"
+            }
           ],
           [
-            "7407",
-            "3/4-10",
-            "1.50\"",
-            ".50\"",
-            ".81\"",
-            "1.2\"",
-            ".45\"",
-            ".38\""
+            {
+              "text": "6407-A",
+              "align": "center"
+            },
+            {
+              "text": "3/4-10",
+              "align": "center"
+            },
+            {
+              "text": "1.50\"",
+              "align": "center"
+            },
+            {
+              "text": ".50\"",
+              "align": "center"
+            },
+            {
+              "text": ".81\"",
+              "align": "center"
+            },
+            {
+              "text": "1.2\"",
+              "align": "center"
+            },
+            {
+              "text": ".45\"",
+              "align": "center"
+            },
+            {
+              "text": ".38\"",
+              "align": "center"
+            }
           ]
         ]
       },
@@ -4325,85 +4762,277 @@
       ],
       "table": {
         "headers": [
-          "Item #",
-          "H",
-          "D",
-          "B",
-          "A",
-          "C",
-          "E",
-          "d"
+          {
+            "text": "Item #",
+            "align": "center"
+          },
+          {
+            "text": "H",
+            "align": "center"
+          },
+          {
+            "text": "D",
+            "align": "center"
+          },
+          {
+            "text": "B",
+            "align": "center"
+          },
+          {
+            "text": "A",
+            "align": "center"
+          },
+          {
+            "text": "C",
+            "align": "center"
+          },
+          {
+            "text": "E",
+            "align": "center"
+          },
+          {
+            "text": "d",
+            "align": "center"
+          }
         ],
         "rows": [
           [
-            "7401",
-            "10-32",
-            ".38\"",
-            ".19\"",
-            ".25\"",
-            ".40\"",
-            ".09\"",
-            ".05\""
+            {
+              "text": "6401-B",
+              "align": "center"
+            },
+            {
+              "text": "10-32",
+              "align": "center"
+            },
+            {
+              "text": ".38\"",
+              "align": "center"
+            },
+            {
+              "text": ".19\"",
+              "align": "center"
+            },
+            {
+              "text": ".25\"",
+              "align": "center"
+            },
+            {
+              "text": ".40\"",
+              "align": "center"
+            },
+            {
+              "text": ".09\"",
+              "align": "center"
+            },
+            {
+              "text": ".05\"",
+              "align": "center"
+            }
           ],
           [
-            "7402",
-            "1/4-20",
-            ".5\"",
-            ".19\"",
-            ".31\"",
-            ".50\"",
-            ".13\"",
-            ".12\""
+            {
+              "text": "6402-B",
+              "align": "center"
+            },
+            {
+              "text": "1/4-20",
+              "align": "center"
+            },
+            {
+              "text": ".5\"",
+              "align": "center"
+            },
+            {
+              "text": ".19\"",
+              "align": "center"
+            },
+            {
+              "text": ".31\"",
+              "align": "center"
+            },
+            {
+              "text": ".50\"",
+              "align": "center"
+            },
+            {
+              "text": ".13\"",
+              "align": "center"
+            },
+            {
+              "text": ".12\"",
+              "align": "center"
+            }
           ],
           [
-            "7403",
-            "5/16-18",
-            ".63\"",
-            ".25\"",
-            ".38\"",
-            ".63\"",
-            ".19\"",
-            ".16\""
+            {
+              "text": "6403-B",
+              "align": "center"
+            },
+            {
+              "text": "5/16-18",
+              "align": "center"
+            },
+            {
+              "text": ".63\"",
+              "align": "center"
+            },
+            {
+              "text": ".25\"",
+              "align": "center"
+            },
+            {
+              "text": ".38\"",
+              "align": "center"
+            },
+            {
+              "text": ".63\"",
+              "align": "center"
+            },
+            {
+              "text": ".19\"",
+              "align": "center"
+            },
+            {
+              "text": ".16\"",
+              "align": "center"
+            }
           ],
           [
-            "7404",
-            "3/8-16",
-            ".75\"",
-            ".31\"",
-            ".50\"",
-            ".75\"",
-            ".22\"",
-            ".19\""
+            {
+              "text": "6404-B",
+              "align": "center"
+            },
+            {
+              "text": "3/8-16",
+              "align": "center"
+            },
+            {
+              "text": ".75\"",
+              "align": "center"
+            },
+            {
+              "text": ".31\"",
+              "align": "center"
+            },
+            {
+              "text": ".50\"",
+              "align": "center"
+            },
+            {
+              "text": ".75\"",
+              "align": "center"
+            },
+            {
+              "text": ".22\"",
+              "align": "center"
+            },
+            {
+              "text": ".19\"",
+              "align": "center"
+            }
           ],
           [
-            "7405",
-            "1/2-13",
-            "1.0\"",
-            ".38\"",
-            ".63\"",
-            ".88\"",
-            ".25\"",
-            ".25\""
+            {
+              "text": "6405-B",
+              "align": "center"
+            },
+            {
+              "text": "1/2-13",
+              "align": "center"
+            },
+            {
+              "text": "1.0\"",
+              "align": "center"
+            },
+            {
+              "text": ".38\"",
+              "align": "center"
+            },
+            {
+              "text": ".63\"",
+              "align": "center"
+            },
+            {
+              "text": ".88\"",
+              "align": "center"
+            },
+            {
+              "text": ".25\"",
+              "align": "center"
+            },
+            {
+              "text": ".25\"",
+              "align": "center"
+            }
           ],
           [
-            "7406",
-            "5/8-11",
-            "1.25\"",
-            ".44\"",
-            ".75\"",
-            "1.0\"",
-            ".32\"",
-            ".31\""
+            {
+              "text": "6406-B",
+              "align": "center"
+            },
+            {
+              "text": "5/8-11",
+              "align": "center"
+            },
+            {
+              "text": "1.25\"",
+              "align": "center"
+            },
+            {
+              "text": ".44\"",
+              "align": "center"
+            },
+            {
+              "text": ".75\"",
+              "align": "center"
+            },
+            {
+              "text": "1.0\"",
+              "align": "center"
+            },
+            {
+              "text": ".32\"",
+              "align": "center"
+            },
+            {
+              "text": ".31\"",
+              "align": "center"
+            }
           ],
           [
-            "7407",
-            "3/4-10",
-            "1.50\"",
-            ".50\"",
-            ".81\"",
-            "1.2\"",
-            ".45\"",
-            ".38\""
+            {
+              "text": "6407-B",
+              "align": "center"
+            },
+            {
+              "text": "3/4-10",
+              "align": "center"
+            },
+            {
+              "text": "1.50\"",
+              "align": "center"
+            },
+            {
+              "text": ".50\"",
+              "align": "center"
+            },
+            {
+              "text": ".81\"",
+              "align": "center"
+            },
+            {
+              "text": "1.2\"",
+              "align": "center"
+            },
+            {
+              "text": ".45\"",
+              "align": "center"
+            },
+            {
+              "text": ".38\"",
+              "align": "center"
+            }
           ]
         ]
       },
@@ -4431,82 +5060,281 @@
       ],
       "table": {
         "headers": [
-          "Item #",
-          "d1",
-          "l1",
-          "l2",
-          "d2",
-          "d3",
-          "A/F",
-          "Spring force initial (N)",
-          "Spring force final (N)"
+          {
+            "text": "Item #",
+            "align": "center"
+          },
+          {
+            "text": "D",
+            "align": "center"
+          },
+          {
+            "text": "D1",
+            "align": "center"
+          },
+          {
+            "text": "D2",
+            "align": "center"
+          },
+          {
+            "text": "L",
+            "align": "center"
+          },
+          {
+            "text": "L1",
+            "align": "center"
+          },
+          {
+            "text": "L2",
+            "align": "center"
+          },
+          {
+            "text": "L3",
+            "align": "center"
+          },
+          {
+            "text": "H",
+            "align": "center"
+          },
+          {
+            "text": "SW1",
+            "align": "center"
+          },
+          {
+            "text": "SW2",
+            "align": "center"
+          }
         ],
         "rows": [
           [
-            "M5",
-            "M5",
-            "12",
-            "5",
-            "4",
-            "12",
-            "7",
-            "5",
-            "12"
+            {
+              "text": "7601-B",
+              "align": "center"
+            },
+            {
+              "text": "4",
+              "align": "center"
+            },
+            {
+              "text": "M8X1",
+              "align": "center"
+            },
+            {
+              "text": "18",
+              "align": "center"
+            },
+            {
+              "text": "38.5",
+              "align": "center"
+            },
+            {
+              "text": "15",
+              "align": "center"
+            },
+            {
+              "text": "6",
+              "align": "center"
+            },
+            {
+              "text": "13",
+              "align": "center"
+            },
+            {
+              "text": "4",
+              "align": "center"
+            },
+            {
+              "text": "10",
+              "align": "center"
+            },
+            {
+              "text": "13",
+              "align": "center"
+            }
           ],
           [
-            "M6",
-            "M6",
-            "14",
-            "6",
-            "5",
-            "14",
-            "8",
-            "6",
-            "14"
+            {
+              "text": "7602-B",
+              "align": "center"
+            },
+            {
+              "text": "5",
+              "align": "center"
+            },
+            {
+              "text": "M10X1",
+              "align": "center"
+            },
+            {
+              "text": "21",
+              "align": "center"
+            },
+            {
+              "text": "43.5",
+              "align": "center"
+            },
+            {
+              "text": "17",
+              "align": "center"
+            },
+            {
+              "text": "7",
+              "align": "center"
+            },
+            {
+              "text": "15",
+              "align": "center"
+            },
+            {
+              "text": "5",
+              "align": "center"
+            },
+            {
+              "text": "13",
+              "align": "center"
+            },
+            {
+              "text": "17",
+              "align": "center"
+            }
           ],
           [
-            "M8",
-            "M8",
-            "16",
-            "8",
-            "6",
-            "18",
-            "10",
-            "8",
-            "20"
+            {
+              "text": "7603-B",
+              "align": "center"
+            },
+            {
+              "text": "6",
+              "align": "center"
+            },
+            {
+              "text": "M12X1.5",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            },
+            {
+              "text": "51.7",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "8",
+              "align": "center"
+            },
+            {
+              "text": "17",
+              "align": "center"
+            },
+            {
+              "text": "6",
+              "align": "center"
+            },
+            {
+              "text": "14",
+              "align": "center"
+            },
+            {
+              "text": "19",
+              "align": "center"
+            }
           ],
           [
-            "M10",
-            "M10",
-            "18",
-            "9",
-            "8",
-            "21",
-            "12",
-            "10",
-            "25"
+            {
+              "text": "7604-B",
+              "align": "center"
+            },
+            {
+              "text": "8",
+              "align": "center"
+            },
+            {
+              "text": "M16X1.5",
+              "align": "center"
+            },
+            {
+              "text": "33",
+              "align": "center"
+            },
+            {
+              "text": "68",
+              "align": "center"
+            },
+            {
+              "text": "26",
+              "align": "center"
+            },
+            {
+              "text": "10",
+              "align": "center"
+            },
+            {
+              "text": "23",
+              "align": "center"
+            },
+            {
+              "text": "8",
+              "align": "center"
+            },
+            {
+              "text": "19",
+              "align": "center"
+            },
+            {
+              "text": "24",
+              "align": "center"
+            }
           ],
           [
-            "M12",
-            "M12",
-            "20",
-            "10",
-            "10",
-            "25",
-            "14",
-            "12",
-            "32"
-          ],
-          [
-            "M16",
-            "M16",
-            "24",
-            "12",
-            "12",
-            "30",
-            "17",
-            "18",
-            "45"
+            {
+              "text": "7605-B",
+              "align": "center"
+            },
+            {
+              "text": "10",
+              "align": "center"
+            },
+            {
+              "text": "M20X1.5",
+              "align": "center"
+            },
+            {
+              "text": "33",
+              "align": "center"
+            },
+            {
+              "text": "74",
+              "align": "center"
+            },
+            {
+              "text": "28",
+              "align": "center"
+            },
+            {
+              "text": "12",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            },
+            {
+              "text": "10",
+              "align": "center"
+            },
+            {
+              "text": "22",
+              "align": "center"
+            },
+            {
+              "text": "30",
+              "align": "center"
+            }
           ]
         ]
       },
@@ -4534,82 +5362,347 @@
       ],
       "table": {
         "headers": [
-          "Item #",
-          "d1",
-          "l1",
-          "l2",
-          "d2",
-          "d3",
-          "A/F",
-          "Spring force initial (N)",
-          "Spring force final (N)"
+          {
+            "text": "Item #",
+            "align": "center"
+          },
+          {
+            "text": "D",
+            "align": "center"
+          },
+          {
+            "text": "D1",
+            "align": "center"
+          },
+          {
+            "text": "D2",
+            "align": "center"
+          },
+          {
+            "text": "L",
+            "align": "center"
+          },
+          {
+            "text": "L1",
+            "align": "center"
+          },
+          {
+            "text": "L2",
+            "align": "center"
+          },
+          {
+            "text": "H",
+            "align": "center"
+          },
+          {
+            "text": "SW1",
+            "align": "center"
+          }
         ],
         "rows": [
           [
-            "M5",
-            "M5",
-            "12",
-            "5",
-            "4",
-            "12",
-            "7",
-            "5",
-            "12"
+            {
+              "text": "7601-A",
+              "align": "center"
+            },
+            {
+              "text": "3",
+              "align": "center"
+            },
+            {
+              "text": "M6X0.75",
+              "align": "center"
+            },
+            {
+              "text": "14",
+              "align": "center"
+            },
+            {
+              "text": "34.5",
+              "align": "center"
+            },
+            {
+              "text": "17",
+              "align": "center"
+            },
+            {
+              "text": "14",
+              "align": "center"
+            },
+            {
+              "text": "3.5",
+              "align": "center"
+            },
+            {
+              "text": "10",
+              "align": "center"
+            }
           ],
           [
-            "M6",
-            "M6",
-            "14",
-            "6",
-            "5",
-            "14",
-            "8",
-            "6",
-            "14"
+            {
+              "text": "7602-A",
+              "align": "center"
+            },
+            {
+              "text": "4",
+              "align": "center"
+            },
+            {
+              "text": "M8X1.00",
+              "align": "center"
+            },
+            {
+              "text": "18",
+              "align": "center"
+            },
+            {
+              "text": "43",
+              "align": "center"
+            },
+            {
+              "text": "21",
+              "align": "center"
+            },
+            {
+              "text": "18",
+              "align": "center"
+            },
+            {
+              "text": "4",
+              "align": "center"
+            },
+            {
+              "text": "13",
+              "align": "center"
+            }
           ],
           [
-            "M8",
-            "M8",
-            "16",
-            "8",
-            "6",
-            "18",
-            "10",
-            "8",
-            "20"
+            {
+              "text": "7603-A",
+              "align": "center"
+            },
+            {
+              "text": "5",
+              "align": "center"
+            },
+            {
+              "text": "M10X1.00",
+              "align": "center"
+            },
+            {
+              "text": "21",
+              "align": "center"
+            },
+            {
+              "text": "50",
+              "align": "center"
+            },
+            {
+              "text": "24",
+              "align": "center"
+            },
+            {
+              "text": "21",
+              "align": "center"
+            },
+            {
+              "text": "5",
+              "align": "center"
+            },
+            {
+              "text": "17",
+              "align": "center"
+            }
           ],
           [
-            "M10",
-            "M10",
-            "18",
-            "9",
-            "8",
-            "21",
-            "12",
-            "10",
-            "25"
+            {
+              "text": "7604-A",
+              "align": "center"
+            },
+            {
+              "text": "6",
+              "align": "center"
+            },
+            {
+              "text": "M12X1.50",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            },
+            {
+              "text": "59",
+              "align": "center"
+            },
+            {
+              "text": "28",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            },
+            {
+              "text": "6",
+              "align": "center"
+            },
+            {
+              "text": "19",
+              "align": "center"
+            }
           ],
           [
-            "M12",
-            "M12",
-            "20",
-            "10",
-            "10",
-            "25",
-            "14",
-            "12",
-            "32"
+            {
+              "text": "7605-A",
+              "align": "center"
+            },
+            {
+              "text": "8",
+              "align": "center"
+            },
+            {
+              "text": "M16X1.50",
+              "align": "center"
+            },
+            {
+              "text": "33",
+              "align": "center"
+            },
+            {
+              "text": "77",
+              "align": "center"
+            },
+            {
+              "text": "36",
+              "align": "center"
+            },
+            {
+              "text": "33",
+              "align": "center"
+            },
+            {
+              "text": "8",
+              "align": "center"
+            },
+            {
+              "text": "24",
+              "align": "center"
+            }
           ],
           [
-            "M16",
-            "M16",
-            "24",
-            "12",
-            "12",
-            "30",
-            "17",
-            "18",
-            "45"
+            {
+              "text": "7606-A",
+              "align": "center"
+            },
+            {
+              "text": "10",
+              "align": "center"
+            },
+            {
+              "text": "M20X1.50",
+              "align": "center"
+            },
+            {
+              "text": "33",
+              "align": "center"
+            },
+            {
+              "text": "83",
+              "align": "center"
+            },
+            {
+              "text": "40",
+              "align": "center"
+            },
+            {
+              "text": "33",
+              "align": "center"
+            },
+            {
+              "text": "10",
+              "align": "center"
+            },
+            {
+              "text": "30",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "7607-A",
+              "align": "center"
+            },
+            {
+              "text": "12",
+              "align": "center"
+            },
+            {
+              "text": "M20X1.50",
+              "align": "center"
+            },
+            {
+              "text": "33",
+              "align": "center"
+            },
+            {
+              "text": "87",
+              "align": "center"
+            },
+            {
+              "text": "42",
+              "align": "center"
+            },
+            {
+              "text": "33",
+              "align": "center"
+            },
+            {
+              "text": "12",
+              "align": "center"
+            },
+            {
+              "text": "30",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "7608-A",
+              "align": "center"
+            },
+            {
+              "text": "16",
+              "align": "center"
+            },
+            {
+              "text": "M24X2.00",
+              "align": "center"
+            },
+            {
+              "text": "40",
+              "align": "center"
+            },
+            {
+              "text": "106",
+              "align": "center"
+            },
+            {
+              "text": "50",
+              "align": "center"
+            },
+            {
+              "text": "40",
+              "align": "center"
+            },
+            {
+              "text": "16",
+              "align": "center"
+            },
+            {
+              "text": "36",
+              "align": "center"
+            }
           ]
         ]
       },
@@ -4637,85 +5730,455 @@
       ],
       "table": {
         "headers": [
-          "Item #",
-          "H",
-          "D",
-          "B",
-          "A",
-          "C",
-          "E",
-          "d"
+          {
+            "text": "Item #",
+            "align": "center"
+          },
+          {
+            "text": "D",
+            "align": "center"
+          },
+          {
+            "text": "D1",
+            "align": "center"
+          },
+          {
+            "text": "D2",
+            "align": "center"
+          },
+          {
+            "text": "L",
+            "align": "center"
+          },
+          {
+            "text": "L1",
+            "align": "center"
+          },
+          {
+            "text": "L2",
+            "align": "center"
+          },
+          {
+            "text": "L3",
+            "align": "center"
+          },
+          {
+            "text": "L4",
+            "align": "center"
+          },
+          {
+            "text": "H",
+            "align": "center"
+          },
+          {
+            "text": "SW1",
+            "align": "center"
+          },
+          {
+            "text": "SW2",
+            "align": "center"
+          }
         ],
         "rows": [
           [
-            "7401",
-            "10-32",
-            ".38\"",
-            ".19\"",
-            ".25\"",
-            ".40\"",
-            ".09\"",
-            ".05\""
+            {
+              "text": "7501-ST",
+              "align": "center"
+            },
+            {
+              "text": "3",
+              "align": "center"
+            },
+            {
+              "text": "M6X0.75",
+              "align": "center"
+            },
+            {
+              "text": "M2",
+              "align": "center"
+            },
+            {
+              "text": "24",
+              "align": "center"
+            },
+            {
+              "text": "12",
+              "align": "center"
+            },
+            {
+              "text": "5",
+              "align": "center"
+            },
+            {
+              "text": "3.5",
+              "align": "center"
+            },
+            {
+              "text": "10",
+              "align": "center"
+            },
+            {
+              "text": "3.5",
+              "align": "center"
+            },
+            {
+              "text": "8",
+              "align": "center"
+            },
+            {
+              "text": "10",
+              "align": "center"
+            }
           ],
           [
-            "7402",
-            "1/4-20",
-            ".5\"",
-            ".19\"",
-            ".31\"",
-            ".50\"",
-            ".13\"",
-            ".12\""
+            {
+              "text": "7502-ST",
+              "align": "center"
+            },
+            {
+              "text": "4",
+              "align": "center"
+            },
+            {
+              "text": "M8X1",
+              "align": "center"
+            },
+            {
+              "text": "M3",
+              "align": "center"
+            },
+            {
+              "text": "32",
+              "align": "center"
+            },
+            {
+              "text": "15",
+              "align": "center"
+            },
+            {
+              "text": "6",
+              "align": "center"
+            },
+            {
+              "text": "7",
+              "align": "center"
+            },
+            {
+              "text": "13",
+              "align": "center"
+            },
+            {
+              "text": "4",
+              "align": "center"
+            },
+            {
+              "text": "10",
+              "align": "center"
+            },
+            {
+              "text": "13",
+              "align": "center"
+            }
           ],
           [
-            "7403",
-            "5/16-18",
-            ".63\"",
-            ".25\"",
-            ".38\"",
-            ".63\"",
-            ".19\"",
-            ".16\""
+            {
+              "text": "7503-ST",
+              "align": "center"
+            },
+            {
+              "text": "5",
+              "align": "center"
+            },
+            {
+              "text": "M10X1",
+              "align": "center"
+            },
+            {
+              "text": "M4",
+              "align": "center"
+            },
+            {
+              "text": "37",
+              "align": "center"
+            },
+            {
+              "text": "17",
+              "align": "center"
+            },
+            {
+              "text": "7",
+              "align": "center"
+            },
+            {
+              "text": "8",
+              "align": "center"
+            },
+            {
+              "text": "15",
+              "align": "center"
+            },
+            {
+              "text": "5",
+              "align": "center"
+            },
+            {
+              "text": "13",
+              "align": "center"
+            },
+            {
+              "text": "17",
+              "align": "center"
+            }
           ],
           [
-            "7404",
-            "3/8-16",
-            ".75\"",
-            ".31\"",
-            ".50\"",
-            ".75\"",
-            ".22\"",
-            ".19\""
+            {
+              "text": "7504-ST",
+              "align": "center"
+            },
+            {
+              "text": "6",
+              "align": "center"
+            },
+            {
+              "text": "M12X1.5",
+              "align": "center"
+            },
+            {
+              "text": "M6",
+              "align": "center"
+            },
+            {
+              "text": "42",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "8",
+              "align": "center"
+            },
+            {
+              "text": "8",
+              "align": "center"
+            },
+            {
+              "text": "17",
+              "align": "center"
+            },
+            {
+              "text": "6",
+              "align": "center"
+            },
+            {
+              "text": "14",
+              "align": "center"
+            },
+            {
+              "text": "19",
+              "align": "center"
+            }
           ],
           [
-            "7405",
-            "1/2-13",
-            "1.0\"",
-            ".38\"",
-            ".63\"",
-            ".88\"",
-            ".25\"",
-            ".25\""
+            {
+              "text": "7505-ST",
+              "align": "center"
+            },
+            {
+              "text": "8",
+              "align": "center"
+            },
+            {
+              "text": "M16X1.5",
+              "align": "center"
+            },
+            {
+              "text": "M8",
+              "align": "center"
+            },
+            {
+              "text": "56",
+              "align": "center"
+            },
+            {
+              "text": "26",
+              "align": "center"
+            },
+            {
+              "text": "10",
+              "align": "center"
+            },
+            {
+              "text": "12",
+              "align": "center"
+            },
+            {
+              "text": "23",
+              "align": "center"
+            },
+            {
+              "text": "8",
+              "align": "center"
+            },
+            {
+              "text": "19",
+              "align": "center"
+            },
+            {
+              "text": "24",
+              "align": "center"
+            }
           ],
           [
-            "7406",
-            "5/8-11",
-            "1.25\"",
-            ".44\"",
-            ".75\"",
-            "1.0\"",
-            ".32\"",
-            ".31\""
+            {
+              "text": "7506-ST",
+              "align": "center"
+            },
+            {
+              "text": "10",
+              "align": "center"
+            },
+            {
+              "text": "M20X1.5",
+              "align": "center"
+            },
+            {
+              "text": "M8",
+              "align": "center"
+            },
+            {
+              "text": "62",
+              "align": "center"
+            },
+            {
+              "text": "28",
+              "align": "center"
+            },
+            {
+              "text": "12",
+              "align": "center"
+            },
+            {
+              "text": "12",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            },
+            {
+              "text": "10",
+              "align": "center"
+            },
+            {
+              "text": "22",
+              "align": "center"
+            },
+            {
+              "text": "30",
+              "align": "center"
+            }
           ],
           [
-            "7407",
-            "3/4-10",
-            "1.50\"",
-            ".50\"",
-            ".81\"",
-            "1.2\"",
-            ".45\"",
-            ".38\""
+            {
+              "text": "7507-ST",
+              "align": "center"
+            },
+            {
+              "text": "12",
+              "align": "center"
+            },
+            {
+              "text": "M20X1.5",
+              "align": "center"
+            },
+            {
+              "text": "M8",
+              "align": "center"
+            },
+            {
+              "text": "66",
+              "align": "center"
+            },
+            {
+              "text": "28",
+              "align": "center"
+            },
+            {
+              "text": "14",
+              "align": "center"
+            },
+            {
+              "text": "12",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            },
+            {
+              "text": "12",
+              "align": "center"
+            },
+            {
+              "text": "22",
+              "align": "center"
+            },
+            {
+              "text": "30",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "7508-ST",
+              "align": "center"
+            },
+            {
+              "text": "16",
+              "align": "center"
+            },
+            {
+              "text": "M24X2",
+              "align": "center"
+            },
+            {
+              "text": "M10",
+              "align": "center"
+            },
+            {
+              "text": "80",
+              "align": "center"
+            },
+            {
+              "text": "32",
+              "align": "center"
+            },
+            {
+              "text": "18",
+              "align": "center"
+            },
+            {
+              "text": "14",
+              "align": "center"
+            },
+            {
+              "text": "28",
+              "align": "center"
+            },
+            {
+              "text": "16",
+              "align": "center"
+            },
+            {
+              "text": "27",
+              "align": "center"
+            },
+            {
+              "text": "36",
+              "align": "center"
+            }
           ]
         ]
       },
@@ -4743,82 +6206,235 @@
       ],
       "table": {
         "headers": [
-          "Item #",
-          "d1",
-          "l1",
-          "l2",
-          "d2",
-          "d3",
-          "A/F",
-          "Spring force initial (N)",
-          "Spring force final (N)"
+          {
+            "text": "Item #",
+            "align": "center"
+          },
+          {
+            "text": "D",
+            "align": "center"
+          },
+          {
+            "text": "Thread",
+            "align": "center"
+          },
+          {
+            "text": "D2",
+            "align": "center"
+          },
+          {
+            "text": "L",
+            "align": "center"
+          },
+          {
+            "text": "L1",
+            "align": "center"
+          },
+          {
+            "text": "L2",
+            "align": "center"
+          },
+          {
+            "text": "L3",
+            "align": "center"
+          },
+          {
+            "text": "H",
+            "align": "center"
+          },
+          {
+            "text": "SW1",
+            "align": "center"
+          },
+          {
+            "text": "SW2",
+            "align": "center"
+          }
         ],
         "rows": [
           [
-            "M5",
-            "M5",
-            "12",
-            "5",
-            "4",
-            "12",
-            "7",
-            "5",
-            "12"
+            {
+              "text": "7101-B",
+              "align": "center"
+            },
+            {
+              "text": "5",
+              "align": "center"
+            },
+            {
+              "text": "M10x1.0",
+              "align": "center"
+            },
+            {
+              "text": "21",
+              "align": "center"
+            },
+            {
+              "text": "47",
+              "align": "center"
+            },
+            {
+              "text": "17",
+              "align": "center"
+            },
+            {
+              "text": "7",
+              "align": "center"
+            },
+            {
+              "text": "15",
+              "align": "center"
+            },
+            {
+              "text": "5",
+              "align": "center"
+            },
+            {
+              "text": "13",
+              "align": "center"
+            },
+            {
+              "text": "17",
+              "align": "center"
+            }
           ],
           [
-            "M6",
-            "M6",
-            "14",
-            "6",
-            "5",
-            "14",
-            "8",
-            "6",
-            "14"
+            {
+              "text": "7102-B",
+              "align": "center"
+            },
+            {
+              "text": "6",
+              "align": "center"
+            },
+            {
+              "text": "M12x1.5",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            },
+            {
+              "text": "56",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "8",
+              "align": "center"
+            },
+            {
+              "text": "17",
+              "align": "center"
+            },
+            {
+              "text": "6",
+              "align": "center"
+            },
+            {
+              "text": "14",
+              "align": "center"
+            },
+            {
+              "text": "19",
+              "align": "center"
+            }
           ],
           [
-            "M8",
-            "M8",
-            "16",
-            "8",
-            "6",
-            "18",
-            "10",
-            "8",
-            "20"
+            {
+              "text": "7103-B",
+              "align": "center"
+            },
+            {
+              "text": "8",
+              "align": "center"
+            },
+            {
+              "text": "M16x1.5",
+              "align": "center"
+            },
+            {
+              "text": "33",
+              "align": "center"
+            },
+            {
+              "text": "74",
+              "align": "center"
+            },
+            {
+              "text": "26",
+              "align": "center"
+            },
+            {
+              "text": "10",
+              "align": "center"
+            },
+            {
+              "text": "23",
+              "align": "center"
+            },
+            {
+              "text": "8",
+              "align": "center"
+            },
+            {
+              "text": "19",
+              "align": "center"
+            },
+            {
+              "text": "24",
+              "align": "center"
+            }
           ],
           [
-            "M10",
-            "M10",
-            "18",
-            "9",
-            "8",
-            "21",
-            "12",
-            "10",
-            "25"
-          ],
-          [
-            "M12",
-            "M12",
-            "20",
-            "10",
-            "10",
-            "25",
-            "14",
-            "12",
-            "32"
-          ],
-          [
-            "M16",
-            "M16",
-            "24",
-            "12",
-            "12",
-            "30",
-            "17",
-            "18",
-            "45"
+            {
+              "text": "7104-B",
+              "align": "center"
+            },
+            {
+              "text": "10",
+              "align": "center"
+            },
+            {
+              "text": "M20x1.5",
+              "align": "center"
+            },
+            {
+              "text": "33",
+              "align": "center"
+            },
+            {
+              "text": "80",
+              "align": "center"
+            },
+            {
+              "text": "28",
+              "align": "center"
+            },
+            {
+              "text": "12",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            },
+            {
+              "text": "10",
+              "align": "center"
+            },
+            {
+              "text": "22",
+              "align": "center"
+            },
+            {
+              "text": "30",
+              "align": "center"
+            }
           ]
         ]
       },
@@ -4847,85 +6463,455 @@
       ],
       "table": {
         "headers": [
-          "Item #",
-          "H",
-          "D",
-          "B",
-          "A",
-          "C",
-          "E",
-          "d"
+          {
+            "text": "Item #",
+            "align": "center"
+          },
+          {
+            "text": "D",
+            "align": "center"
+          },
+          {
+            "text": "D1",
+            "align": "center"
+          },
+          {
+            "text": "D2",
+            "align": "center"
+          },
+          {
+            "text": "L",
+            "align": "center"
+          },
+          {
+            "text": "L1",
+            "align": "center"
+          },
+          {
+            "text": "L2",
+            "align": "center"
+          },
+          {
+            "text": "L3",
+            "align": "center"
+          },
+          {
+            "text": "L4",
+            "align": "center"
+          },
+          {
+            "text": "H",
+            "align": "center"
+          },
+          {
+            "text": "SW1",
+            "align": "center"
+          },
+          {
+            "text": "SW2",
+            "align": "center"
+          }
         ],
         "rows": [
           [
-            "7401",
-            "10-32",
-            ".38\"",
-            ".19\"",
-            ".25\"",
-            ".40\"",
-            ".09\"",
-            ".05\""
+            {
+              "text": "7501-SS",
+              "align": "center"
+            },
+            {
+              "text": "3",
+              "align": "center"
+            },
+            {
+              "text": "M6X0.75",
+              "align": "center"
+            },
+            {
+              "text": "M2",
+              "align": "center"
+            },
+            {
+              "text": "24",
+              "align": "center"
+            },
+            {
+              "text": "12",
+              "align": "center"
+            },
+            {
+              "text": "5",
+              "align": "center"
+            },
+            {
+              "text": "3.5",
+              "align": "center"
+            },
+            {
+              "text": "10",
+              "align": "center"
+            },
+            {
+              "text": "3.5",
+              "align": "center"
+            },
+            {
+              "text": "8",
+              "align": "center"
+            },
+            {
+              "text": "10",
+              "align": "center"
+            }
           ],
           [
-            "7402",
-            "1/4-20",
-            ".5\"",
-            ".19\"",
-            ".31\"",
-            ".50\"",
-            ".13\"",
-            ".12\""
+            {
+              "text": "7502-SS",
+              "align": "center"
+            },
+            {
+              "text": "4",
+              "align": "center"
+            },
+            {
+              "text": "M8X1",
+              "align": "center"
+            },
+            {
+              "text": "M3",
+              "align": "center"
+            },
+            {
+              "text": "32",
+              "align": "center"
+            },
+            {
+              "text": "15",
+              "align": "center"
+            },
+            {
+              "text": "6",
+              "align": "center"
+            },
+            {
+              "text": "7",
+              "align": "center"
+            },
+            {
+              "text": "13",
+              "align": "center"
+            },
+            {
+              "text": "4",
+              "align": "center"
+            },
+            {
+              "text": "10",
+              "align": "center"
+            },
+            {
+              "text": "13",
+              "align": "center"
+            }
           ],
           [
-            "7403",
-            "5/16-18",
-            ".63\"",
-            ".25\"",
-            ".38\"",
-            ".63\"",
-            ".19\"",
-            ".16\""
+            {
+              "text": "7503-SS",
+              "align": "center"
+            },
+            {
+              "text": "5",
+              "align": "center"
+            },
+            {
+              "text": "M10X1",
+              "align": "center"
+            },
+            {
+              "text": "M4",
+              "align": "center"
+            },
+            {
+              "text": "37",
+              "align": "center"
+            },
+            {
+              "text": "17",
+              "align": "center"
+            },
+            {
+              "text": "7",
+              "align": "center"
+            },
+            {
+              "text": "8",
+              "align": "center"
+            },
+            {
+              "text": "15",
+              "align": "center"
+            },
+            {
+              "text": "5",
+              "align": "center"
+            },
+            {
+              "text": "13",
+              "align": "center"
+            },
+            {
+              "text": "17",
+              "align": "center"
+            }
           ],
           [
-            "7404",
-            "3/8-16",
-            ".75\"",
-            ".31\"",
-            ".50\"",
-            ".75\"",
-            ".22\"",
-            ".19\""
+            {
+              "text": "7504-SS",
+              "align": "center"
+            },
+            {
+              "text": "6",
+              "align": "center"
+            },
+            {
+              "text": "M12X1.5",
+              "align": "center"
+            },
+            {
+              "text": "M6",
+              "align": "center"
+            },
+            {
+              "text": "42",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "8",
+              "align": "center"
+            },
+            {
+              "text": "8",
+              "align": "center"
+            },
+            {
+              "text": "17",
+              "align": "center"
+            },
+            {
+              "text": "6",
+              "align": "center"
+            },
+            {
+              "text": "14",
+              "align": "center"
+            },
+            {
+              "text": "19",
+              "align": "center"
+            }
           ],
           [
-            "7405",
-            "1/2-13",
-            "1.0\"",
-            ".38\"",
-            ".63\"",
-            ".88\"",
-            ".25\"",
-            ".25\""
+            {
+              "text": "7505-SS",
+              "align": "center"
+            },
+            {
+              "text": "8",
+              "align": "center"
+            },
+            {
+              "text": "M16X1.5",
+              "align": "center"
+            },
+            {
+              "text": "M8",
+              "align": "center"
+            },
+            {
+              "text": "56",
+              "align": "center"
+            },
+            {
+              "text": "26",
+              "align": "center"
+            },
+            {
+              "text": "10",
+              "align": "center"
+            },
+            {
+              "text": "12",
+              "align": "center"
+            },
+            {
+              "text": "23",
+              "align": "center"
+            },
+            {
+              "text": "8",
+              "align": "center"
+            },
+            {
+              "text": "19",
+              "align": "center"
+            },
+            {
+              "text": "24",
+              "align": "center"
+            }
           ],
           [
-            "7406",
-            "5/8-11",
-            "1.25\"",
-            ".44\"",
-            ".75\"",
-            "1.0\"",
-            ".32\"",
-            ".31\""
+            {
+              "text": "7506-SS",
+              "align": "center"
+            },
+            {
+              "text": "10",
+              "align": "center"
+            },
+            {
+              "text": "M20X1.5",
+              "align": "center"
+            },
+            {
+              "text": "M8",
+              "align": "center"
+            },
+            {
+              "text": "62",
+              "align": "center"
+            },
+            {
+              "text": "28",
+              "align": "center"
+            },
+            {
+              "text": "12",
+              "align": "center"
+            },
+            {
+              "text": "12",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            },
+            {
+              "text": "10",
+              "align": "center"
+            },
+            {
+              "text": "22",
+              "align": "center"
+            },
+            {
+              "text": "30",
+              "align": "center"
+            }
           ],
           [
-            "7407",
-            "3/4-10",
-            "1.50\"",
-            ".50\"",
-            ".81\"",
-            "1.2\"",
-            ".45\"",
-            ".38\""
+            {
+              "text": "7507-SS",
+              "align": "center"
+            },
+            {
+              "text": "12",
+              "align": "center"
+            },
+            {
+              "text": "M20X1.5",
+              "align": "center"
+            },
+            {
+              "text": "M8",
+              "align": "center"
+            },
+            {
+              "text": "66",
+              "align": "center"
+            },
+            {
+              "text": "28",
+              "align": "center"
+            },
+            {
+              "text": "14",
+              "align": "center"
+            },
+            {
+              "text": "12",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            },
+            {
+              "text": "12",
+              "align": "center"
+            },
+            {
+              "text": "22",
+              "align": "center"
+            },
+            {
+              "text": "30",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "7508-SS",
+              "align": "center"
+            },
+            {
+              "text": "16",
+              "align": "center"
+            },
+            {
+              "text": "M24X2",
+              "align": "center"
+            },
+            {
+              "text": "M10",
+              "align": "center"
+            },
+            {
+              "text": "80",
+              "align": "center"
+            },
+            {
+              "text": "32",
+              "align": "center"
+            },
+            {
+              "text": "18",
+              "align": "center"
+            },
+            {
+              "text": "14",
+              "align": "center"
+            },
+            {
+              "text": "28",
+              "align": "center"
+            },
+            {
+              "text": "16",
+              "align": "center"
+            },
+            {
+              "text": "27",
+              "align": "center"
+            },
+            {
+              "text": "36",
+              "align": "center"
+            }
           ]
         ]
       },
@@ -4954,82 +6940,235 @@
       ],
       "table": {
         "headers": [
-          "Item #",
-          "d1",
-          "l1",
-          "l2",
-          "d2",
-          "d3",
-          "A/F",
-          "Spring force initial (N)",
-          "Spring force final (N)"
+          {
+            "text": "Item #",
+            "align": "center"
+          },
+          {
+            "text": "D",
+            "align": "center"
+          },
+          {
+            "text": "Thread",
+            "align": "center"
+          },
+          {
+            "text": "D2",
+            "align": "center"
+          },
+          {
+            "text": "L",
+            "align": "center"
+          },
+          {
+            "text": "L1",
+            "align": "center"
+          },
+          {
+            "text": "L2",
+            "align": "center"
+          },
+          {
+            "text": "L3",
+            "align": "center"
+          },
+          {
+            "text": "H",
+            "align": "center"
+          },
+          {
+            "text": "SW1",
+            "align": "center"
+          },
+          {
+            "text": "SW2",
+            "align": "center"
+          }
         ],
         "rows": [
           [
-            "M5",
-            "M5",
-            "12",
-            "5",
-            "4",
-            "12",
-            "7",
-            "5",
-            "12"
+            {
+              "text": "7101-A",
+              "align": "center"
+            },
+            {
+              "text": "5",
+              "align": "center"
+            },
+            {
+              "text": "M10x1.0",
+              "align": "center"
+            },
+            {
+              "text": "21",
+              "align": "center"
+            },
+            {
+              "text": "47",
+              "align": "center"
+            },
+            {
+              "text": "17",
+              "align": "center"
+            },
+            {
+              "text": "7",
+              "align": "center"
+            },
+            {
+              "text": "15",
+              "align": "center"
+            },
+            {
+              "text": "5",
+              "align": "center"
+            },
+            {
+              "text": "13",
+              "align": "center"
+            },
+            {
+              "text": "17",
+              "align": "center"
+            }
           ],
           [
-            "M6",
-            "M6",
-            "14",
-            "6",
-            "5",
-            "14",
-            "8",
-            "6",
-            "14"
+            {
+              "text": "7102-A",
+              "align": "center"
+            },
+            {
+              "text": "6",
+              "align": "center"
+            },
+            {
+              "text": "M12x1.5",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            },
+            {
+              "text": "56",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "8",
+              "align": "center"
+            },
+            {
+              "text": "17",
+              "align": "center"
+            },
+            {
+              "text": "6",
+              "align": "center"
+            },
+            {
+              "text": "14",
+              "align": "center"
+            },
+            {
+              "text": "19",
+              "align": "center"
+            }
           ],
           [
-            "M8",
-            "M8",
-            "16",
-            "8",
-            "6",
-            "18",
-            "10",
-            "8",
-            "20"
+            {
+              "text": "7103-A",
+              "align": "center"
+            },
+            {
+              "text": "8",
+              "align": "center"
+            },
+            {
+              "text": "M16x1.5",
+              "align": "center"
+            },
+            {
+              "text": "33",
+              "align": "center"
+            },
+            {
+              "text": "74",
+              "align": "center"
+            },
+            {
+              "text": "26",
+              "align": "center"
+            },
+            {
+              "text": "10",
+              "align": "center"
+            },
+            {
+              "text": "23",
+              "align": "center"
+            },
+            {
+              "text": "8",
+              "align": "center"
+            },
+            {
+              "text": "19",
+              "align": "center"
+            },
+            {
+              "text": "24",
+              "align": "center"
+            }
           ],
           [
-            "M10",
-            "M10",
-            "18",
-            "9",
-            "8",
-            "21",
-            "12",
-            "10",
-            "25"
-          ],
-          [
-            "M12",
-            "M12",
-            "20",
-            "10",
-            "10",
-            "25",
-            "14",
-            "12",
-            "32"
-          ],
-          [
-            "M16",
-            "M16",
-            "24",
-            "12",
-            "12",
-            "30",
-            "17",
-            "18",
-            "45"
+            {
+              "text": "7104-A",
+              "align": "center"
+            },
+            {
+              "text": "10",
+              "align": "center"
+            },
+            {
+              "text": "M20x1.5",
+              "align": "center"
+            },
+            {
+              "text": "33",
+              "align": "center"
+            },
+            {
+              "text": "80",
+              "align": "center"
+            },
+            {
+              "text": "28",
+              "align": "center"
+            },
+            {
+              "text": "12",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            },
+            {
+              "text": "10",
+              "align": "center"
+            },
+            {
+              "text": "22",
+              "align": "center"
+            },
+            {
+              "text": "30",
+              "align": "center"
+            }
           ]
         ]
       },
@@ -5058,65 +7197,373 @@
       ],
       "table": {
         "headers": [
-          "Item #",
-          "d1",
-          "l1",
-          "l2",
-          "l3",
-          "h",
-          "A",
-          "B"
+          {
+            "text": "Part #",
+            "align": "center"
+          },
+          {
+            "text": "D",
+            "align": "center"
+          },
+          {
+            "text": "D1",
+            "align": "center"
+          },
+          {
+            "text": "D2",
+            "align": "center"
+          },
+          {
+            "text": "B",
+            "align": "center"
+          },
+          {
+            "text": "B1",
+            "align": "center"
+          },
+          {
+            "text": "H",
+            "align": "center"
+          },
+          {
+            "text": "H1",
+            "align": "center"
+          },
+          {
+            "text": "A",
+            "align": "center"
+          },
+          {
+            "text": "A1",
+            "align": "center"
+          },
+          {
+            "text": "S",
+            "align": "center"
+          }
         ],
         "rows": [
           [
-            "M5",
-            "M5",
-            "20",
-            "10",
-            "8",
-            "12",
-            "45",
-            "16"
+            {
+              "text": "2101",
+              "align": "center"
+            },
+            {
+              "text": "M3",
+              "align": "center"
+            },
+            {
+              "text": "12",
+              "align": "center"
+            },
+            {
+              "text": "6",
+              "align": "center"
+            },
+            {
+              "text": "14.4",
+              "align": "center"
+            },
+            {
+              "text": "11.5",
+              "align": "center"
+            },
+            {
+              "text": "9",
+              "align": "center"
+            },
+            {
+              "text": "13",
+              "align": "center"
+            },
+            {
+              "text": "36.2",
+              "align": "center"
+            },
+            {
+              "text": "41.7",
+              "align": "center"
+            },
+            {
+              "text": "1",
+              "align": "center"
+            }
           ],
           [
-            "M6",
-            "M6",
-            "25",
-            "12",
-            "10",
-            "14",
-            "55",
-            "18"
+            {
+              "text": "2102",
+              "align": "center"
+            },
+            {
+              "text": "M4",
+              "align": "center"
+            },
+            {
+              "text": "12",
+              "align": "center"
+            },
+            {
+              "text": "6",
+              "align": "center"
+            },
+            {
+              "text": "14.4",
+              "align": "center"
+            },
+            {
+              "text": "11.5",
+              "align": "center"
+            },
+            {
+              "text": "9",
+              "align": "center"
+            },
+            {
+              "text": "13",
+              "align": "center"
+            },
+            {
+              "text": "36.2",
+              "align": "center"
+            },
+            {
+              "text": "41.7",
+              "align": "center"
+            },
+            {
+              "text": "1",
+              "align": "center"
+            }
           ],
           [
-            "M8",
-            "M8",
-            "30",
-            "16",
-            "12",
-            "16",
-            "65",
-            "22"
+            {
+              "text": "2103",
+              "align": "center"
+            },
+            {
+              "text": "M4",
+              "align": "center"
+            },
+            {
+              "text": "15.5",
+              "align": "center"
+            },
+            {
+              "text": "8",
+              "align": "center"
+            },
+            {
+              "text": "18",
+              "align": "center"
+            },
+            {
+              "text": "13",
+              "align": "center"
+            },
+            {
+              "text": "11.2",
+              "align": "center"
+            },
+            {
+              "text": "17",
+              "align": "center"
+            },
+            {
+              "text": "52.3",
+              "align": "center"
+            },
+            {
+              "text": "59",
+              "align": "center"
+            },
+            {
+              "text": "1",
+              "align": "center"
+            }
           ],
           [
-            "M10",
-            "M10",
-            "35",
-            "18",
-            "14",
-            "18",
-            "75",
-            "26"
+            {
+              "text": "2104",
+              "align": "center"
+            },
+            {
+              "text": "M5",
+              "align": "center"
+            },
+            {
+              "text": "15.5",
+              "align": "center"
+            },
+            {
+              "text": "8",
+              "align": "center"
+            },
+            {
+              "text": "18",
+              "align": "center"
+            },
+            {
+              "text": "13",
+              "align": "center"
+            },
+            {
+              "text": "11.2",
+              "align": "center"
+            },
+            {
+              "text": "17",
+              "align": "center"
+            },
+            {
+              "text": "52.3",
+              "align": "center"
+            },
+            {
+              "text": "59",
+              "align": "center"
+            },
+            {
+              "text": "1",
+              "align": "center"
+            }
           ],
           [
-            "M12",
-            "M12",
-            "40",
-            "20",
-            "16",
-            "20",
-            "90",
-            "30"
+            {
+              "text": "2105",
+              "align": "center"
+            },
+            {
+              "text": "M5",
+              "align": "center"
+            },
+            {
+              "text": "18",
+              "align": "center"
+            },
+            {
+              "text": "9",
+              "align": "center"
+            },
+            {
+              "text": "21.5",
+              "align": "center"
+            },
+            {
+              "text": "15",
+              "align": "center"
+            },
+            {
+              "text": "14.5",
+              "align": "center"
+            },
+            {
+              "text": "22",
+              "align": "center"
+            },
+            {
+              "text": "70.4",
+              "align": "center"
+            },
+            {
+              "text": "79.2",
+              "align": "center"
+            },
+            {
+              "text": "1.2",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2106",
+              "align": "center"
+            },
+            {
+              "text": "M6",
+              "align": "center"
+            },
+            {
+              "text": "18",
+              "align": "center"
+            },
+            {
+              "text": "9",
+              "align": "center"
+            },
+            {
+              "text": "21.5",
+              "align": "center"
+            },
+            {
+              "text": "15",
+              "align": "center"
+            },
+            {
+              "text": "14.5",
+              "align": "center"
+            },
+            {
+              "text": "22",
+              "align": "center"
+            },
+            {
+              "text": "70.4",
+              "align": "center"
+            },
+            {
+              "text": "79.2",
+              "align": "center"
+            },
+            {
+              "text": "1.2",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2107",
+              "align": "center"
+            },
+            {
+              "text": "M8",
+              "align": "center"
+            },
+            {
+              "text": "27",
+              "align": "center"
+            },
+            {
+              "text": "11",
+              "align": "center"
+            },
+            {
+              "text": "33.2",
+              "align": "center"
+            },
+            {
+              "text": "24",
+              "align": "center"
+            },
+            {
+              "text": "18",
+              "align": "center"
+            },
+            {
+              "text": "28.5",
+              "align": "center"
+            },
+            {
+              "text": "96",
+              "align": "center"
+            },
+            {
+              "text": "108",
+              "align": "center"
+            },
+            {
+              "text": "1.5",
+              "align": "center"
+            }
           ]
         ]
       },
@@ -5142,50 +7589,419 @@
       ],
       "table": {
         "headers": [
-          "Item #",
-          "Thread",
-          "l1",
-          "l2",
-          "h",
-          "A",
-          "B"
+          {
+            "text": "Part #",
+            "align": "center"
+          },
+          {
+            "text": "D",
+            "align": "center"
+          },
+          {
+            "text": "D1",
+            "align": "center"
+          },
+          {
+            "text": "D2",
+            "align": "center"
+          },
+          {
+            "text": "B",
+            "align": "center"
+          },
+          {
+            "text": "B1",
+            "align": "center"
+          },
+          {
+            "text": "H",
+            "align": "center"
+          },
+          {
+            "text": "H1",
+            "align": "center"
+          },
+          {
+            "text": "A",
+            "align": "center"
+          },
+          {
+            "text": "A1",
+            "align": "center"
+          },
+          {
+            "text": "S",
+            "align": "center"
+          }
         ],
         "rows": [
           [
-            "1/4-20",
-            "1/4-20",
-            "1.00\"",
-            ".50\"",
-            ".55\"",
-            "2.2\"",
-            ".70\""
+            {
+              "text": "2201",
+              "align": "center"
+            },
+            {
+              "text": "#6-32",
+              "align": "center"
+            },
+            {
+              "text": "0.47",
+              "align": "center"
+            },
+            {
+              "text": "0.24",
+              "align": "center"
+            },
+            {
+              "text": "0.57",
+              "align": "center"
+            },
+            {
+              "text": "0.45",
+              "align": "center"
+            },
+            {
+              "text": "0.35",
+              "align": "center"
+            },
+            {
+              "text": "0.51",
+              "align": "center"
+            },
+            {
+              "text": "1.43",
+              "align": "center"
+            },
+            {
+              "text": "1.64",
+              "align": "center"
+            },
+            {
+              "text": "0.04",
+              "align": "center"
+            }
           ],
           [
-            "5/16-18",
-            "5/16-18",
-            "1.25\"",
-            ".63\"",
-            ".63\"",
-            "2.6\"",
-            ".80\""
+            {
+              "text": "2202",
+              "align": "center"
+            },
+            {
+              "text": "#8-32",
+              "align": "center"
+            },
+            {
+              "text": "0.47",
+              "align": "center"
+            },
+            {
+              "text": "0.24",
+              "align": "center"
+            },
+            {
+              "text": "0.57",
+              "align": "center"
+            },
+            {
+              "text": "0.45",
+              "align": "center"
+            },
+            {
+              "text": "0.35",
+              "align": "center"
+            },
+            {
+              "text": "0.51",
+              "align": "center"
+            },
+            {
+              "text": "1.43",
+              "align": "center"
+            },
+            {
+              "text": "1.64",
+              "align": "center"
+            },
+            {
+              "text": "0.04",
+              "align": "center"
+            }
           ],
           [
-            "3/8-16",
-            "3/8-16",
-            "1.50\"",
-            ".75\"",
-            ".70\"",
-            "3.0\"",
-            ".90\""
+            {
+              "text": "2203",
+              "align": "center"
+            },
+            {
+              "text": "#8-32",
+              "align": "center"
+            },
+            {
+              "text": "0.61",
+              "align": "center"
+            },
+            {
+              "text": "0.31",
+              "align": "center"
+            },
+            {
+              "text": "0.71",
+              "align": "center"
+            },
+            {
+              "text": "0.51",
+              "align": "center"
+            },
+            {
+              "text": "0.44",
+              "align": "center"
+            },
+            {
+              "text": "0.67",
+              "align": "center"
+            },
+            {
+              "text": "2.06",
+              "align": "center"
+            },
+            {
+              "text": "2.32",
+              "align": "center"
+            },
+            {
+              "text": "0.04",
+              "align": "center"
+            }
           ],
           [
-            "1/2-13",
-            "1/2-13",
-            "1.75\"",
-            ".88\"",
-            ".80\"",
-            "3.5\"",
-            "1.0\""
+            {
+              "text": "2204",
+              "align": "center"
+            },
+            {
+              "text": "#10-24",
+              "align": "center"
+            },
+            {
+              "text": "0.61",
+              "align": "center"
+            },
+            {
+              "text": "0.31",
+              "align": "center"
+            },
+            {
+              "text": "0.71",
+              "align": "center"
+            },
+            {
+              "text": "0.51",
+              "align": "center"
+            },
+            {
+              "text": "0.44",
+              "align": "center"
+            },
+            {
+              "text": "0.67",
+              "align": "center"
+            },
+            {
+              "text": "2.06",
+              "align": "center"
+            },
+            {
+              "text": "2.32",
+              "align": "center"
+            },
+            {
+              "text": "0.04",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2205",
+              "align": "center"
+            },
+            {
+              "text": "#10-32",
+              "align": "center"
+            },
+            {
+              "text": "0.61",
+              "align": "center"
+            },
+            {
+              "text": "0.31",
+              "align": "center"
+            },
+            {
+              "text": "0.71",
+              "align": "center"
+            },
+            {
+              "text": "0.51",
+              "align": "center"
+            },
+            {
+              "text": "0.44",
+              "align": "center"
+            },
+            {
+              "text": "0.67",
+              "align": "center"
+            },
+            {
+              "text": "2.06",
+              "align": "center"
+            },
+            {
+              "text": "2.32",
+              "align": "center"
+            },
+            {
+              "text": "0.04",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2206",
+              "align": "center"
+            },
+            {
+              "text": "#10-32",
+              "align": "center"
+            },
+            {
+              "text": "0.71",
+              "align": "center"
+            },
+            {
+              "text": "0.35",
+              "align": "center"
+            },
+            {
+              "text": "0.85",
+              "align": "center"
+            },
+            {
+              "text": "0.59",
+              "align": "center"
+            },
+            {
+              "text": "0.57",
+              "align": "center"
+            },
+            {
+              "text": "0.87",
+              "align": "center"
+            },
+            {
+              "text": "2.77",
+              "align": "center"
+            },
+            {
+              "text": "3.12",
+              "align": "center"
+            },
+            {
+              "text": "0.05",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2207",
+              "align": "center"
+            },
+            {
+              "text": "1/4-20",
+              "align": "center"
+            },
+            {
+              "text": "0.71",
+              "align": "center"
+            },
+            {
+              "text": "0.35",
+              "align": "center"
+            },
+            {
+              "text": "0.85",
+              "align": "center"
+            },
+            {
+              "text": "0.59",
+              "align": "center"
+            },
+            {
+              "text": "0.57",
+              "align": "center"
+            },
+            {
+              "text": "0.87",
+              "align": "center"
+            },
+            {
+              "text": "2.77",
+              "align": "center"
+            },
+            {
+              "text": "3.12",
+              "align": "center"
+            },
+            {
+              "text": "0.05",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2208",
+              "align": "center"
+            },
+            {
+              "text": "5/16-18",
+              "align": "center"
+            },
+            {
+              "text": "1.06",
+              "align": "center"
+            },
+            {
+              "text": "0.43",
+              "align": "center"
+            },
+            {
+              "text": "1.31",
+              "align": "center"
+            },
+            {
+              "text": "0.94",
+              "align": "center"
+            },
+            {
+              "text": "0.71",
+              "align": "center"
+            },
+            {
+              "text": "1.12",
+              "align": "center"
+            },
+            {
+              "text": "3.78",
+              "align": "center"
+            },
+            {
+              "text": "4.25",
+              "align": "center"
+            },
+            {
+              "text": "0.06",
+              "align": "center"
+            }
           ]
         ]
       },
@@ -5211,65 +8027,855 @@
       ],
       "table": {
         "headers": [
-          "Item #",
-          "d1",
-          "l1",
-          "l2",
-          "l3",
-          "h",
-          "A",
-          "B"
+          {
+            "text": "Part #",
+            "align": "center"
+          },
+          {
+            "text": "D",
+            "align": "center"
+          },
+          {
+            "text": "D1",
+            "align": "center"
+          },
+          {
+            "text": "D2",
+            "align": "center"
+          },
+          {
+            "text": "B",
+            "align": "center"
+          },
+          {
+            "text": "B1",
+            "align": "center"
+          },
+          {
+            "text": "H",
+            "align": "center"
+          },
+          {
+            "text": "H1",
+            "align": "center"
+          },
+          {
+            "text": "A",
+            "align": "center"
+          },
+          {
+            "text": "A1",
+            "align": "center"
+          },
+          {
+            "text": "S",
+            "align": "center"
+          },
+          {
+            "text": "L",
+            "align": "center"
+          }
         ],
         "rows": [
           [
-            "M5",
-            "M5",
-            "20",
-            "10",
-            "8",
-            "12",
-            "45",
-            "16"
+            {
+              "text": "2301",
+              "align": "center"
+            },
+            {
+              "text": "M5",
+              "align": "center"
+            },
+            {
+              "text": "18",
+              "align": "center"
+            },
+            {
+              "text": "9",
+              "align": "center"
+            },
+            {
+              "text": "21.5",
+              "align": "center"
+            },
+            {
+              "text": "15",
+              "align": "center"
+            },
+            {
+              "text": "14.5",
+              "align": "center"
+            },
+            {
+              "text": "22",
+              "align": "center"
+            },
+            {
+              "text": "70.4",
+              "align": "center"
+            },
+            {
+              "text": "79.2",
+              "align": "center"
+            },
+            {
+              "text": "1.2",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            }
           ],
           [
-            "M6",
-            "M6",
-            "25",
-            "12",
-            "10",
-            "14",
-            "55",
-            "18"
+            {
+              "text": "2302",
+              "align": "center"
+            },
+            {
+              "text": "M5",
+              "align": "center"
+            },
+            {
+              "text": "18",
+              "align": "center"
+            },
+            {
+              "text": "9",
+              "align": "center"
+            },
+            {
+              "text": "21.5",
+              "align": "center"
+            },
+            {
+              "text": "15",
+              "align": "center"
+            },
+            {
+              "text": "14.5",
+              "align": "center"
+            },
+            {
+              "text": "22",
+              "align": "center"
+            },
+            {
+              "text": "70.4",
+              "align": "center"
+            },
+            {
+              "text": "79.2",
+              "align": "center"
+            },
+            {
+              "text": "1.2",
+              "align": "center"
+            },
+            {
+              "text": "30",
+              "align": "center"
+            }
           ],
           [
-            "M8",
-            "M8",
-            "30",
-            "16",
-            "12",
-            "16",
-            "65",
-            "22"
+            {
+              "text": "2303",
+              "align": "center"
+            },
+            {
+              "text": "M5",
+              "align": "center"
+            },
+            {
+              "text": "18",
+              "align": "center"
+            },
+            {
+              "text": "9",
+              "align": "center"
+            },
+            {
+              "text": "21.5",
+              "align": "center"
+            },
+            {
+              "text": "15",
+              "align": "center"
+            },
+            {
+              "text": "14.5",
+              "align": "center"
+            },
+            {
+              "text": "22",
+              "align": "center"
+            },
+            {
+              "text": "70.4",
+              "align": "center"
+            },
+            {
+              "text": "79.2",
+              "align": "center"
+            },
+            {
+              "text": "1.2",
+              "align": "center"
+            },
+            {
+              "text": "40",
+              "align": "center"
+            }
           ],
           [
-            "M10",
-            "M10",
-            "35",
-            "18",
-            "14",
-            "18",
-            "75",
-            "26"
+            {
+              "text": "2304",
+              "align": "center"
+            },
+            {
+              "text": "M5",
+              "align": "center"
+            },
+            {
+              "text": "18",
+              "align": "center"
+            },
+            {
+              "text": "9",
+              "align": "center"
+            },
+            {
+              "text": "21.5",
+              "align": "center"
+            },
+            {
+              "text": "15",
+              "align": "center"
+            },
+            {
+              "text": "14.5",
+              "align": "center"
+            },
+            {
+              "text": "22",
+              "align": "center"
+            },
+            {
+              "text": "70.4",
+              "align": "center"
+            },
+            {
+              "text": "79.2",
+              "align": "center"
+            },
+            {
+              "text": "1.2",
+              "align": "center"
+            },
+            {
+              "text": "50",
+              "align": "center"
+            }
           ],
           [
-            "M12",
-            "M12",
-            "40",
-            "20",
-            "16",
-            "20",
-            "90",
-            "30"
+            {
+              "text": "2305",
+              "align": "center"
+            },
+            {
+              "text": "M6",
+              "align": "center"
+            },
+            {
+              "text": "18",
+              "align": "center"
+            },
+            {
+              "text": "9",
+              "align": "center"
+            },
+            {
+              "text": "21.5",
+              "align": "center"
+            },
+            {
+              "text": "15",
+              "align": "center"
+            },
+            {
+              "text": "14.5",
+              "align": "center"
+            },
+            {
+              "text": "22",
+              "align": "center"
+            },
+            {
+              "text": "70.4",
+              "align": "center"
+            },
+            {
+              "text": "79.2",
+              "align": "center"
+            },
+            {
+              "text": "1.2",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2306",
+              "align": "center"
+            },
+            {
+              "text": "M6",
+              "align": "center"
+            },
+            {
+              "text": "18",
+              "align": "center"
+            },
+            {
+              "text": "9",
+              "align": "center"
+            },
+            {
+              "text": "21.5",
+              "align": "center"
+            },
+            {
+              "text": "15",
+              "align": "center"
+            },
+            {
+              "text": "14.5",
+              "align": "center"
+            },
+            {
+              "text": "22",
+              "align": "center"
+            },
+            {
+              "text": "70.4",
+              "align": "center"
+            },
+            {
+              "text": "79.2",
+              "align": "center"
+            },
+            {
+              "text": "1.2",
+              "align": "center"
+            },
+            {
+              "text": "30",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2307",
+              "align": "center"
+            },
+            {
+              "text": "M6",
+              "align": "center"
+            },
+            {
+              "text": "18",
+              "align": "center"
+            },
+            {
+              "text": "9",
+              "align": "center"
+            },
+            {
+              "text": "21.5",
+              "align": "center"
+            },
+            {
+              "text": "15",
+              "align": "center"
+            },
+            {
+              "text": "14.5",
+              "align": "center"
+            },
+            {
+              "text": "22",
+              "align": "center"
+            },
+            {
+              "text": "70.4",
+              "align": "center"
+            },
+            {
+              "text": "79.2",
+              "align": "center"
+            },
+            {
+              "text": "1.2",
+              "align": "center"
+            },
+            {
+              "text": "40",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2308",
+              "align": "center"
+            },
+            {
+              "text": "M6",
+              "align": "center"
+            },
+            {
+              "text": "18",
+              "align": "center"
+            },
+            {
+              "text": "9",
+              "align": "center"
+            },
+            {
+              "text": "21.5",
+              "align": "center"
+            },
+            {
+              "text": "15",
+              "align": "center"
+            },
+            {
+              "text": "14.5",
+              "align": "center"
+            },
+            {
+              "text": "22",
+              "align": "center"
+            },
+            {
+              "text": "70.4",
+              "align": "center"
+            },
+            {
+              "text": "79.2",
+              "align": "center"
+            },
+            {
+              "text": "1.2",
+              "align": "center"
+            },
+            {
+              "text": "50",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2309",
+              "align": "center"
+            },
+            {
+              "text": "M8",
+              "align": "center"
+            },
+            {
+              "text": "27",
+              "align": "center"
+            },
+            {
+              "text": "11",
+              "align": "center"
+            },
+            {
+              "text": "33.2",
+              "align": "center"
+            },
+            {
+              "text": "24",
+              "align": "center"
+            },
+            {
+              "text": "18",
+              "align": "center"
+            },
+            {
+              "text": "28.5",
+              "align": "center"
+            },
+            {
+              "text": "96",
+              "align": "center"
+            },
+            {
+              "text": "108",
+              "align": "center"
+            },
+            {
+              "text": "1.5",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2310",
+              "align": "center"
+            },
+            {
+              "text": "M8",
+              "align": "center"
+            },
+            {
+              "text": "27",
+              "align": "center"
+            },
+            {
+              "text": "11",
+              "align": "center"
+            },
+            {
+              "text": "33.2",
+              "align": "center"
+            },
+            {
+              "text": "24",
+              "align": "center"
+            },
+            {
+              "text": "18",
+              "align": "center"
+            },
+            {
+              "text": "28.5",
+              "align": "center"
+            },
+            {
+              "text": "96",
+              "align": "center"
+            },
+            {
+              "text": "108",
+              "align": "center"
+            },
+            {
+              "text": "1.5",
+              "align": "center"
+            },
+            {
+              "text": "30",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2311",
+              "align": "center"
+            },
+            {
+              "text": "M8",
+              "align": "center"
+            },
+            {
+              "text": "27",
+              "align": "center"
+            },
+            {
+              "text": "11",
+              "align": "center"
+            },
+            {
+              "text": "33.2",
+              "align": "center"
+            },
+            {
+              "text": "24",
+              "align": "center"
+            },
+            {
+              "text": "18",
+              "align": "center"
+            },
+            {
+              "text": "28.5",
+              "align": "center"
+            },
+            {
+              "text": "96",
+              "align": "center"
+            },
+            {
+              "text": "108",
+              "align": "center"
+            },
+            {
+              "text": "1.5",
+              "align": "center"
+            },
+            {
+              "text": "40",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2312",
+              "align": "center"
+            },
+            {
+              "text": "M8",
+              "align": "center"
+            },
+            {
+              "text": "27",
+              "align": "center"
+            },
+            {
+              "text": "11",
+              "align": "center"
+            },
+            {
+              "text": "33.2",
+              "align": "center"
+            },
+            {
+              "text": "24",
+              "align": "center"
+            },
+            {
+              "text": "18",
+              "align": "center"
+            },
+            {
+              "text": "28.5",
+              "align": "center"
+            },
+            {
+              "text": "96",
+              "align": "center"
+            },
+            {
+              "text": "108",
+              "align": "center"
+            },
+            {
+              "text": "1.5",
+              "align": "center"
+            },
+            {
+              "text": "50",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2313",
+              "align": "center"
+            },
+            {
+              "text": "M10",
+              "align": "center"
+            },
+            {
+              "text": "27",
+              "align": "center"
+            },
+            {
+              "text": "11",
+              "align": "center"
+            },
+            {
+              "text": "33.2",
+              "align": "center"
+            },
+            {
+              "text": "24",
+              "align": "center"
+            },
+            {
+              "text": "18",
+              "align": "center"
+            },
+            {
+              "text": "28.5",
+              "align": "center"
+            },
+            {
+              "text": "96",
+              "align": "center"
+            },
+            {
+              "text": "108",
+              "align": "center"
+            },
+            {
+              "text": "1.5",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2314",
+              "align": "center"
+            },
+            {
+              "text": "M10",
+              "align": "center"
+            },
+            {
+              "text": "27",
+              "align": "center"
+            },
+            {
+              "text": "11",
+              "align": "center"
+            },
+            {
+              "text": "33.2",
+              "align": "center"
+            },
+            {
+              "text": "24",
+              "align": "center"
+            },
+            {
+              "text": "18",
+              "align": "center"
+            },
+            {
+              "text": "28.5",
+              "align": "center"
+            },
+            {
+              "text": "96",
+              "align": "center"
+            },
+            {
+              "text": "108",
+              "align": "center"
+            },
+            {
+              "text": "1.5",
+              "align": "center"
+            },
+            {
+              "text": "30",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2315",
+              "align": "center"
+            },
+            {
+              "text": "M10",
+              "align": "center"
+            },
+            {
+              "text": "27",
+              "align": "center"
+            },
+            {
+              "text": "11",
+              "align": "center"
+            },
+            {
+              "text": "33.2",
+              "align": "center"
+            },
+            {
+              "text": "24",
+              "align": "center"
+            },
+            {
+              "text": "18",
+              "align": "center"
+            },
+            {
+              "text": "28.5",
+              "align": "center"
+            },
+            {
+              "text": "96",
+              "align": "center"
+            },
+            {
+              "text": "108",
+              "align": "center"
+            },
+            {
+              "text": "1.5",
+              "align": "center"
+            },
+            {
+              "text": "40",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2316",
+              "align": "center"
+            },
+            {
+              "text": "M10",
+              "align": "center"
+            },
+            {
+              "text": "27",
+              "align": "center"
+            },
+            {
+              "text": "11",
+              "align": "center"
+            },
+            {
+              "text": "33.2",
+              "align": "center"
+            },
+            {
+              "text": "24",
+              "align": "center"
+            },
+            {
+              "text": "18",
+              "align": "center"
+            },
+            {
+              "text": "28.5",
+              "align": "center"
+            },
+            {
+              "text": "96",
+              "align": "center"
+            },
+            {
+              "text": "108",
+              "align": "center"
+            },
+            {
+              "text": "1.5",
+              "align": "center"
+            },
+            {
+              "text": "50",
+              "align": "center"
+            }
           ]
         ]
       },
@@ -5969,65 +9575,455 @@
       ],
       "table": {
         "headers": [
-          "Item #",
-          "d1",
-          "l1",
-          "l2",
-          "l3",
-          "h",
-          "A",
-          "B"
+          {
+            "text": "Part #",
+            "align": "center"
+          },
+          {
+            "text": "l1",
+            "align": "center"
+          },
+          {
+            "text": "d1",
+            "align": "center"
+          },
+          {
+            "text": "b",
+            "align": "center"
+          },
+          {
+            "text": "d3",
+            "align": "center"
+          },
+          {
+            "text": "d4",
+            "align": "center"
+          },
+          {
+            "text": "d5",
+            "align": "center"
+          },
+          {
+            "text": "h",
+            "align": "center"
+          },
+          {
+            "text": "l3",
+            "align": "center"
+          },
+          {
+            "text": "l4",
+            "align": "center"
+          },
+          {
+            "text": "l5",
+            "align": "center"
+          },
+          {
+            "text": "t",
+            "align": "center"
+          }
         ],
         "rows": [
           [
-            "M5",
-            "M5",
-            "20",
-            "10",
-            "8",
-            "12",
-            "45",
-            "16"
+            {
+              "text": "2501",
+              "align": "center"
+            },
+            {
+              "text": "44",
+              "align": "center"
+            },
+            {
+              "text": "M 4",
+              "align": "center"
+            },
+            {
+              "text": "12",
+              "align": "center"
+            },
+            {
+              "text": "12",
+              "align": "center"
+            },
+            {
+              "text": "15",
+              "align": "center"
+            },
+            {
+              "text": "14",
+              "align": "center"
+            },
+            {
+              "text": "0.5",
+              "align": "center"
+            },
+            {
+              "text": "13.2",
+              "align": "center"
+            },
+            {
+              "text": "2",
+              "align": "center"
+            },
+            {
+              "text": "2.2",
+              "align": "center"
+            },
+            {
+              "text": "8",
+              "align": "center"
+            }
           ],
           [
-            "M6",
-            "M6",
-            "25",
-            "12",
-            "10",
-            "14",
-            "55",
-            "18"
+            {
+              "text": "2502",
+              "align": "center"
+            },
+            {
+              "text": "44",
+              "align": "center"
+            },
+            {
+              "text": "M 5",
+              "align": "center"
+            },
+            {
+              "text": "12",
+              "align": "center"
+            },
+            {
+              "text": "12",
+              "align": "center"
+            },
+            {
+              "text": "15",
+              "align": "center"
+            },
+            {
+              "text": "14",
+              "align": "center"
+            },
+            {
+              "text": "0.5",
+              "align": "center"
+            },
+            {
+              "text": "13.2",
+              "align": "center"
+            },
+            {
+              "text": "2",
+              "align": "center"
+            },
+            {
+              "text": "2.2",
+              "align": "center"
+            },
+            {
+              "text": "8",
+              "align": "center"
+            }
           ],
           [
-            "M8",
-            "M8",
-            "30",
-            "16",
-            "12",
-            "16",
-            "65",
-            "22"
+            {
+              "text": "2503",
+              "align": "center"
+            },
+            {
+              "text": "63",
+              "align": "center"
+            },
+            {
+              "text": "M 5",
+              "align": "center"
+            },
+            {
+              "text": "16",
+              "align": "center"
+            },
+            {
+              "text": "16",
+              "align": "center"
+            },
+            {
+              "text": "19",
+              "align": "center"
+            },
+            {
+              "text": "18.5",
+              "align": "center"
+            },
+            {
+              "text": "0.75",
+              "align": "center"
+            },
+            {
+              "text": "16.3",
+              "align": "center"
+            },
+            {
+              "text": "2.5",
+              "align": "center"
+            },
+            {
+              "text": "3",
+              "align": "center"
+            },
+            {
+              "text": "10",
+              "align": "center"
+            }
           ],
           [
-            "M10",
-            "M10",
-            "35",
-            "18",
-            "14",
-            "18",
-            "75",
-            "26"
+            {
+              "text": "2504",
+              "align": "center"
+            },
+            {
+              "text": "63",
+              "align": "center"
+            },
+            {
+              "text": "M 6",
+              "align": "center"
+            },
+            {
+              "text": "16",
+              "align": "center"
+            },
+            {
+              "text": "16",
+              "align": "center"
+            },
+            {
+              "text": "19",
+              "align": "center"
+            },
+            {
+              "text": "18.5",
+              "align": "center"
+            },
+            {
+              "text": "0.75",
+              "align": "center"
+            },
+            {
+              "text": "16.3",
+              "align": "center"
+            },
+            {
+              "text": "2.5",
+              "align": "center"
+            },
+            {
+              "text": "3",
+              "align": "center"
+            },
+            {
+              "text": "10",
+              "align": "center"
+            }
           ],
           [
-            "M12",
-            "M12",
-            "40",
-            "20",
-            "16",
-            "20",
-            "90",
-            "30"
+            {
+              "text": "2505",
+              "align": "center"
+            },
+            {
+              "text": "82",
+              "align": "center"
+            },
+            {
+              "text": "M 6",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            },
+            {
+              "text": "22.5",
+              "align": "center"
+            },
+            {
+              "text": "1",
+              "align": "center"
+            },
+            {
+              "text": "19.5",
+              "align": "center"
+            },
+            {
+              "text": "3",
+              "align": "center"
+            },
+            {
+              "text": "3.7",
+              "align": "center"
+            },
+            {
+              "text": "12",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2506",
+              "align": "center"
+            },
+            {
+              "text": "82",
+              "align": "center"
+            },
+            {
+              "text": "M 8",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            },
+            {
+              "text": "22.5",
+              "align": "center"
+            },
+            {
+              "text": "1",
+              "align": "center"
+            },
+            {
+              "text": "19.5",
+              "align": "center"
+            },
+            {
+              "text": "3",
+              "align": "center"
+            },
+            {
+              "text": "3.7",
+              "align": "center"
+            },
+            {
+              "text": "12",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2507",
+              "align": "center"
+            },
+            {
+              "text": "101",
+              "align": "center"
+            },
+            {
+              "text": "M 8",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            },
+            {
+              "text": "26",
+              "align": "center"
+            },
+            {
+              "text": "30",
+              "align": "center"
+            },
+            {
+              "text": "27",
+              "align": "center"
+            },
+            {
+              "text": "1.5",
+              "align": "center"
+            },
+            {
+              "text": "25.3",
+              "align": "center"
+            },
+            {
+              "text": "4",
+              "align": "center"
+            },
+            {
+              "text": "4.8",
+              "align": "center"
+            },
+            {
+              "text": "15",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2508",
+              "align": "center"
+            },
+            {
+              "text": "101",
+              "align": "center"
+            },
+            {
+              "text": "M 10",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            },
+            {
+              "text": "26",
+              "align": "center"
+            },
+            {
+              "text": "30",
+              "align": "center"
+            },
+            {
+              "text": "27",
+              "align": "center"
+            },
+            {
+              "text": "1.5",
+              "align": "center"
+            },
+            {
+              "text": "25.3",
+              "align": "center"
+            },
+            {
+              "text": "4",
+              "align": "center"
+            },
+            {
+              "text": "4.8",
+              "align": "center"
+            },
+            {
+              "text": "15",
+              "align": "center"
+            }
           ]
         ]
       },
@@ -6053,65 +10049,383 @@
       ],
       "table": {
         "headers": [
-          "Item #",
-          "d1",
-          "l1",
-          "l2",
-          "l3",
-          "h",
-          "A",
-          "B"
+          {
+            "text": "Part #",
+            "align": "center"
+          },
+          {
+            "text": "l1",
+            "align": "center"
+          },
+          {
+            "text": "d1",
+            "align": "center"
+          },
+          {
+            "text": "b",
+            "align": "center"
+          },
+          {
+            "text": "d3",
+            "align": "center"
+          },
+          {
+            "text": "d5",
+            "align": "center"
+          },
+          {
+            "text": "h",
+            "align": "center"
+          },
+          {
+            "text": "l3",
+            "align": "center"
+          },
+          {
+            "text": "l5",
+            "align": "center"
+          },
+          {
+            "text": "t",
+            "align": "center"
+          }
         ],
         "rows": [
           [
-            "M5",
-            "M5",
-            "20",
-            "10",
-            "8",
-            "12",
-            "45",
-            "16"
+            {
+              "text": "2601",
+              "align": "center"
+            },
+            {
+              "text": "44",
+              "align": "center"
+            },
+            {
+              "text": "M 4",
+              "align": "center"
+            },
+            {
+              "text": "12",
+              "align": "center"
+            },
+            {
+              "text": "12",
+              "align": "center"
+            },
+            {
+              "text": "14",
+              "align": "center"
+            },
+            {
+              "text": "0.5",
+              "align": "center"
+            },
+            {
+              "text": "13.2",
+              "align": "center"
+            },
+            {
+              "text": "2.2",
+              "align": "center"
+            },
+            {
+              "text": "8",
+              "align": "center"
+            }
           ],
           [
-            "M6",
-            "M6",
-            "25",
-            "12",
-            "10",
-            "14",
-            "55",
-            "18"
+            {
+              "text": "2602",
+              "align": "center"
+            },
+            {
+              "text": "44",
+              "align": "center"
+            },
+            {
+              "text": "M 5",
+              "align": "center"
+            },
+            {
+              "text": "12",
+              "align": "center"
+            },
+            {
+              "text": "12",
+              "align": "center"
+            },
+            {
+              "text": "14",
+              "align": "center"
+            },
+            {
+              "text": "0.5",
+              "align": "center"
+            },
+            {
+              "text": "13.2",
+              "align": "center"
+            },
+            {
+              "text": "2.2",
+              "align": "center"
+            },
+            {
+              "text": "8",
+              "align": "center"
+            }
           ],
           [
-            "M8",
-            "M8",
-            "30",
-            "16",
-            "12",
-            "16",
-            "65",
-            "22"
+            {
+              "text": "2603",
+              "align": "center"
+            },
+            {
+              "text": "63",
+              "align": "center"
+            },
+            {
+              "text": "M 5",
+              "align": "center"
+            },
+            {
+              "text": "16",
+              "align": "center"
+            },
+            {
+              "text": "16",
+              "align": "center"
+            },
+            {
+              "text": "18.5",
+              "align": "center"
+            },
+            {
+              "text": "0.75",
+              "align": "center"
+            },
+            {
+              "text": "16.3",
+              "align": "center"
+            },
+            {
+              "text": "3",
+              "align": "center"
+            },
+            {
+              "text": "10",
+              "align": "center"
+            }
           ],
           [
-            "M10",
-            "M10",
-            "35",
-            "18",
-            "14",
-            "18",
-            "75",
-            "26"
+            {
+              "text": "2604",
+              "align": "center"
+            },
+            {
+              "text": "63",
+              "align": "center"
+            },
+            {
+              "text": "M 6",
+              "align": "center"
+            },
+            {
+              "text": "16",
+              "align": "center"
+            },
+            {
+              "text": "16",
+              "align": "center"
+            },
+            {
+              "text": "18.5",
+              "align": "center"
+            },
+            {
+              "text": "0.75",
+              "align": "center"
+            },
+            {
+              "text": "16.3",
+              "align": "center"
+            },
+            {
+              "text": "3",
+              "align": "center"
+            },
+            {
+              "text": "10",
+              "align": "center"
+            }
           ],
           [
-            "M12",
-            "M12",
-            "40",
-            "20",
-            "16",
-            "20",
-            "90",
-            "30"
+            {
+              "text": "2605",
+              "align": "center"
+            },
+            {
+              "text": "82",
+              "align": "center"
+            },
+            {
+              "text": "M 6",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "22.5",
+              "align": "center"
+            },
+            {
+              "text": "1",
+              "align": "center"
+            },
+            {
+              "text": "19.5",
+              "align": "center"
+            },
+            {
+              "text": "3.7",
+              "align": "center"
+            },
+            {
+              "text": "12",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2606",
+              "align": "center"
+            },
+            {
+              "text": "82",
+              "align": "center"
+            },
+            {
+              "text": "M 8",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "22.5",
+              "align": "center"
+            },
+            {
+              "text": "1",
+              "align": "center"
+            },
+            {
+              "text": "19.5",
+              "align": "center"
+            },
+            {
+              "text": "3.7",
+              "align": "center"
+            },
+            {
+              "text": "12",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2607",
+              "align": "center"
+            },
+            {
+              "text": "101",
+              "align": "center"
+            },
+            {
+              "text": "M 8",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            },
+            {
+              "text": "26",
+              "align": "center"
+            },
+            {
+              "text": "27",
+              "align": "center"
+            },
+            {
+              "text": "1.5",
+              "align": "center"
+            },
+            {
+              "text": "25.3",
+              "align": "center"
+            },
+            {
+              "text": "4.8",
+              "align": "center"
+            },
+            {
+              "text": "15",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2608",
+              "align": "center"
+            },
+            {
+              "text": "101",
+              "align": "center"
+            },
+            {
+              "text": "M 10",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            },
+            {
+              "text": "26",
+              "align": "center"
+            },
+            {
+              "text": "27",
+              "align": "center"
+            },
+            {
+              "text": "1.5",
+              "align": "center"
+            },
+            {
+              "text": "25.3",
+              "align": "center"
+            },
+            {
+              "text": "4.8",
+              "align": "center"
+            },
+            {
+              "text": "15",
+              "align": "center"
+            }
           ]
         ]
       },
@@ -6137,65 +10451,695 @@
       ],
       "table": {
         "headers": [
-          "Item #",
-          "d1",
-          "l1",
-          "l2",
-          "l3",
-          "h",
-          "A",
-          "B"
+          {
+            "text": "Part #",
+            "align": "center"
+          },
+          {
+            "text": "l1",
+            "align": "center"
+          },
+          {
+            "text": "d2",
+            "align": "center"
+          },
+          {
+            "text": "l2",
+            "align": "center"
+          },
+          {
+            "text": "b",
+            "align": "center"
+          },
+          {
+            "text": "d3",
+            "align": "center"
+          },
+          {
+            "text": "d4",
+            "align": "center"
+          },
+          {
+            "text": "h",
+            "align": "center"
+          },
+          {
+            "text": "l3",
+            "align": "center"
+          },
+          {
+            "text": "l4",
+            "align": "center"
+          },
+          {
+            "text": "l5",
+            "align": "center"
+          }
         ],
         "rows": [
           [
-            "M5",
-            "M5",
-            "20",
-            "10",
-            "8",
-            "12",
-            "45",
-            "16"
+            {
+              "text": "2701",
+              "align": "center"
+            },
+            {
+              "text": "82",
+              "align": "center"
+            },
+            {
+              "text": "M 6",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            },
+            {
+              "text": "1",
+              "align": "center"
+            },
+            {
+              "text": "19.5",
+              "align": "center"
+            },
+            {
+              "text": "3",
+              "align": "center"
+            },
+            {
+              "text": "3.7",
+              "align": "center"
+            }
           ],
           [
-            "M6",
-            "M6",
-            "25",
-            "12",
-            "10",
-            "14",
-            "55",
-            "18"
+            {
+              "text": "2702",
+              "align": "center"
+            },
+            {
+              "text": "82",
+              "align": "center"
+            },
+            {
+              "text": "M 6",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            },
+            {
+              "text": "1",
+              "align": "center"
+            },
+            {
+              "text": "19.5",
+              "align": "center"
+            },
+            {
+              "text": "3",
+              "align": "center"
+            },
+            {
+              "text": "3.7",
+              "align": "center"
+            }
           ],
           [
-            "M8",
-            "M8",
-            "30",
-            "16",
-            "12",
-            "16",
-            "65",
-            "22"
+            {
+              "text": "2703",
+              "align": "center"
+            },
+            {
+              "text": "82",
+              "align": "center"
+            },
+            {
+              "text": "M 6",
+              "align": "center"
+            },
+            {
+              "text": "30",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            },
+            {
+              "text": "1",
+              "align": "center"
+            },
+            {
+              "text": "19.5",
+              "align": "center"
+            },
+            {
+              "text": "3",
+              "align": "center"
+            },
+            {
+              "text": "3.7",
+              "align": "center"
+            }
           ],
           [
-            "M10",
-            "M10",
-            "35",
-            "18",
-            "14",
-            "18",
-            "75",
-            "26"
+            {
+              "text": "2704",
+              "align": "center"
+            },
+            {
+              "text": "82",
+              "align": "center"
+            },
+            {
+              "text": "M 6",
+              "align": "center"
+            },
+            {
+              "text": "35",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            },
+            {
+              "text": "1",
+              "align": "center"
+            },
+            {
+              "text": "19.5",
+              "align": "center"
+            },
+            {
+              "text": "3",
+              "align": "center"
+            },
+            {
+              "text": "3.7",
+              "align": "center"
+            }
           ],
           [
-            "M12",
-            "M12",
-            "40",
-            "20",
-            "16",
-            "20",
-            "90",
-            "30"
+            {
+              "text": "2705",
+              "align": "center"
+            },
+            {
+              "text": "82",
+              "align": "center"
+            },
+            {
+              "text": "M 6",
+              "align": "center"
+            },
+            {
+              "text": "40",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            },
+            {
+              "text": "1",
+              "align": "center"
+            },
+            {
+              "text": "19.5",
+              "align": "center"
+            },
+            {
+              "text": "3",
+              "align": "center"
+            },
+            {
+              "text": "3.7",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2706",
+              "align": "center"
+            },
+            {
+              "text": "82",
+              "align": "center"
+            },
+            {
+              "text": "M 6",
+              "align": "center"
+            },
+            {
+              "text": "50",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            },
+            {
+              "text": "1",
+              "align": "center"
+            },
+            {
+              "text": "19.5",
+              "align": "center"
+            },
+            {
+              "text": "3",
+              "align": "center"
+            },
+            {
+              "text": "3.7",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2707",
+              "align": "center"
+            },
+            {
+              "text": "82",
+              "align": "center"
+            },
+            {
+              "text": "M 6",
+              "align": "center"
+            },
+            {
+              "text": "60",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            },
+            {
+              "text": "1",
+              "align": "center"
+            },
+            {
+              "text": "19.5",
+              "align": "center"
+            },
+            {
+              "text": "3",
+              "align": "center"
+            },
+            {
+              "text": "3.7",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2708",
+              "align": "center"
+            },
+            {
+              "text": "82",
+              "align": "center"
+            },
+            {
+              "text": "M 8",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            },
+            {
+              "text": "1",
+              "align": "center"
+            },
+            {
+              "text": "19.5",
+              "align": "center"
+            },
+            {
+              "text": "3",
+              "align": "center"
+            },
+            {
+              "text": "3.7",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2709",
+              "align": "center"
+            },
+            {
+              "text": "82",
+              "align": "center"
+            },
+            {
+              "text": "M 8",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            },
+            {
+              "text": "1",
+              "align": "center"
+            },
+            {
+              "text": "19.5",
+              "align": "center"
+            },
+            {
+              "text": "3",
+              "align": "center"
+            },
+            {
+              "text": "3.7",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2710",
+              "align": "center"
+            },
+            {
+              "text": "82",
+              "align": "center"
+            },
+            {
+              "text": "M 8",
+              "align": "center"
+            },
+            {
+              "text": "30",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            },
+            {
+              "text": "1",
+              "align": "center"
+            },
+            {
+              "text": "19.5",
+              "align": "center"
+            },
+            {
+              "text": "3",
+              "align": "center"
+            },
+            {
+              "text": "3.7",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2711",
+              "align": "center"
+            },
+            {
+              "text": "82",
+              "align": "center"
+            },
+            {
+              "text": "M 8",
+              "align": "center"
+            },
+            {
+              "text": "35",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            },
+            {
+              "text": "1",
+              "align": "center"
+            },
+            {
+              "text": "19.5",
+              "align": "center"
+            },
+            {
+              "text": "3",
+              "align": "center"
+            },
+            {
+              "text": "3.7",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2712",
+              "align": "center"
+            },
+            {
+              "text": "82",
+              "align": "center"
+            },
+            {
+              "text": "M 8",
+              "align": "center"
+            },
+            {
+              "text": "40",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            },
+            {
+              "text": "1",
+              "align": "center"
+            },
+            {
+              "text": "19.5",
+              "align": "center"
+            },
+            {
+              "text": "3",
+              "align": "center"
+            },
+            {
+              "text": "3.7",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2713",
+              "align": "center"
+            },
+            {
+              "text": "82",
+              "align": "center"
+            },
+            {
+              "text": "M 8",
+              "align": "center"
+            },
+            {
+              "text": "50",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            },
+            {
+              "text": "1",
+              "align": "center"
+            },
+            {
+              "text": "19.5",
+              "align": "center"
+            },
+            {
+              "text": "3",
+              "align": "center"
+            },
+            {
+              "text": "3.7",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2714",
+              "align": "center"
+            },
+            {
+              "text": "82",
+              "align": "center"
+            },
+            {
+              "text": "M 8",
+              "align": "center"
+            },
+            {
+              "text": "60",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "20",
+              "align": "center"
+            },
+            {
+              "text": "25",
+              "align": "center"
+            },
+            {
+              "text": "1",
+              "align": "center"
+            },
+            {
+              "text": "19.5",
+              "align": "center"
+            },
+            {
+              "text": "3",
+              "align": "center"
+            },
+            {
+              "text": "3.7",
+              "align": "center"
+            }
           ]
         ]
       },
