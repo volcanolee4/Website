@@ -4210,928 +4210,6 @@
       }
     },
     {
-      "id": "2400",
-      "summary": "Cam Lever with Stud in Inch 2400",
-      "gallery": [
-        "/Website/images/17010758309628e454950dd96f7e8b591dfeea88df1cc.png"
-      ],
-      "table": {
-        "headers": [
-          {
-            "text": "Part #",
-            "align": "center"
-          },
-          {
-            "text": "D",
-            "align": "center"
-          },
-          {
-            "text": "D1",
-            "align": "center"
-          },
-          {
-            "text": "D2",
-            "align": "center"
-          },
-          {
-            "text": "B",
-            "align": "center"
-          },
-          {
-            "text": "B1",
-            "align": "center"
-          },
-          {
-            "text": "H",
-            "align": "center"
-          },
-          {
-            "text": "H1",
-            "align": "center"
-          },
-          {
-            "text": "A",
-            "align": "center"
-          },
-          {
-            "text": "A1",
-            "align": "center"
-          },
-          {
-            "text": "S",
-            "align": "center"
-          },
-          {
-            "text": "L",
-            "align": "center"
-          }
-        ],
-        "rows": [
-          [
-            {
-              "text": "2401",
-              "align": "center"
-            },
-            {
-              "text": "1/4-20",
-              "align": "center"
-            },
-            {
-              "text": "0.71",
-              "align": "center"
-            },
-            {
-              "text": "0.35",
-              "align": "center"
-            },
-            {
-              "text": "0.85",
-              "align": "center"
-            },
-            {
-              "text": "0.59",
-              "align": "center"
-            },
-            {
-              "text": "0.57",
-              "align": "center"
-            },
-            {
-              "text": "0.87",
-              "align": "center"
-            },
-            {
-              "text": "2.77",
-              "align": "center"
-            },
-            {
-              "text": "3.12",
-              "align": "center"
-            },
-            {
-              "text": "0.05",
-              "align": "center"
-            },
-            {
-              "text": "0.79",
-              "align": "center"
-            }
-          ],
-          [
-            {
-              "text": "2402",
-              "align": "center"
-            },
-            {
-              "text": "1/4-20",
-              "align": "center"
-            },
-            {
-              "text": "0.71",
-              "align": "center"
-            },
-            {
-              "text": "0.35",
-              "align": "center"
-            },
-            {
-              "text": "0.85",
-              "align": "center"
-            },
-            {
-              "text": "0.59",
-              "align": "center"
-            },
-            {
-              "text": "0.57",
-              "align": "center"
-            },
-            {
-              "text": "0.87",
-              "align": "center"
-            },
-            {
-              "text": "2.77",
-              "align": "center"
-            },
-            {
-              "text": "3.12",
-              "align": "center"
-            },
-            {
-              "text": "0.05",
-              "align": "center"
-            },
-            {
-              "text": "1.18",
-              "align": "center"
-            }
-          ],
-          [
-            {
-              "text": "2403",
-              "align": "center"
-            },
-            {
-              "text": "1/4-20",
-              "align": "center"
-            },
-            {
-              "text": "0.71",
-              "align": "center"
-            },
-            {
-              "text": "0.35",
-              "align": "center"
-            },
-            {
-              "text": "0.85",
-              "align": "center"
-            },
-            {
-              "text": "0.59",
-              "align": "center"
-            },
-            {
-              "text": "0.57",
-              "align": "center"
-            },
-            {
-              "text": "0.87",
-              "align": "center"
-            },
-            {
-              "text": "2.77",
-              "align": "center"
-            },
-            {
-              "text": "3.12",
-              "align": "center"
-            },
-            {
-              "text": "0.05",
-              "align": "center"
-            },
-            {
-              "text": "1.57",
-              "align": "center"
-            }
-          ],
-          [
-            {
-              "text": "2404",
-              "align": "center"
-            },
-            {
-              "text": "1/4-20",
-              "align": "center"
-            },
-            {
-              "text": "0.71",
-              "align": "center"
-            },
-            {
-              "text": "0.35",
-              "align": "center"
-            },
-            {
-              "text": "0.85",
-              "align": "center"
-            },
-            {
-              "text": "0.59",
-              "align": "center"
-            },
-            {
-              "text": "0.57",
-              "align": "center"
-            },
-            {
-              "text": "0.87",
-              "align": "center"
-            },
-            {
-              "text": "2.77",
-              "align": "center"
-            },
-            {
-              "text": "3.12",
-              "align": "center"
-            },
-            {
-              "text": "0.05",
-              "align": "center"
-            },
-            {
-              "text": "1.97",
-              "align": "center"
-            }
-          ],
-          [
-            {
-              "text": "2405",
-              "align": "center"
-            },
-            {
-              "text": "5/16-18",
-              "align": "center"
-            },
-            {
-              "text": "1.06",
-              "align": "center"
-            },
-            {
-              "text": "0.43",
-              "align": "center"
-            },
-            {
-              "text": "1.31",
-              "align": "center"
-            },
-            {
-              "text": "0.94",
-              "align": "center"
-            },
-            {
-              "text": "0.71",
-              "align": "center"
-            },
-            {
-              "text": "1.12",
-              "align": "center"
-            },
-            {
-              "text": "3.78",
-              "align": "center"
-            },
-            {
-              "text": "4.25",
-              "align": "center"
-            },
-            {
-              "text": "0.06",
-              "align": "center"
-            },
-            {
-              "text": "0.98",
-              "align": "center"
-            }
-          ],
-          [
-            {
-              "text": "2406",
-              "align": "center"
-            },
-            {
-              "text": "5/16-18",
-              "align": "center"
-            },
-            {
-              "text": "1.06",
-              "align": "center"
-            },
-            {
-              "text": "0.43",
-              "align": "center"
-            },
-            {
-              "text": "1.31",
-              "align": "center"
-            },
-            {
-              "text": "0.94",
-              "align": "center"
-            },
-            {
-              "text": "0.71",
-              "align": "center"
-            },
-            {
-              "text": "1.12",
-              "align": "center"
-            },
-            {
-              "text": "3.78",
-              "align": "center"
-            },
-            {
-              "text": "4.25",
-              "align": "center"
-            },
-            {
-              "text": "0.06",
-              "align": "center"
-            },
-            {
-              "text": "1.18",
-              "align": "center"
-            }
-          ],
-          [
-            {
-              "text": "2407",
-              "align": "center"
-            },
-            {
-              "text": "5/16-18",
-              "align": "center"
-            },
-            {
-              "text": "1.06",
-              "align": "center"
-            },
-            {
-              "text": "0.43",
-              "align": "center"
-            },
-            {
-              "text": "1.31",
-              "align": "center"
-            },
-            {
-              "text": "0.94",
-              "align": "center"
-            },
-            {
-              "text": "0.71",
-              "align": "center"
-            },
-            {
-              "text": "1.12",
-              "align": "center"
-            },
-            {
-              "text": "3.78",
-              "align": "center"
-            },
-            {
-              "text": "4.25",
-              "align": "center"
-            },
-            {
-              "text": "0.06",
-              "align": "center"
-            },
-            {
-              "text": "1.57",
-              "align": "center"
-            }
-          ],
-          [
-            {
-              "text": "2408",
-              "align": "center"
-            },
-            {
-              "text": "5/16-18",
-              "align": "center"
-            },
-            {
-              "text": "1.06",
-              "align": "center"
-            },
-            {
-              "text": "0.43",
-              "align": "center"
-            },
-            {
-              "text": "1.31",
-              "align": "center"
-            },
-            {
-              "text": "0.94",
-              "align": "center"
-            },
-            {
-              "text": "0.71",
-              "align": "center"
-            },
-            {
-              "text": "1.12",
-              "align": "center"
-            },
-            {
-              "text": "3.78",
-              "align": "center"
-            },
-            {
-              "text": "4.25",
-              "align": "center"
-            },
-            {
-              "text": "0.06",
-              "align": "center"
-            },
-            {
-              "text": "1.97",
-              "align": "center"
-            }
-          ],
-          [
-            {
-              "text": "2409",
-              "align": "center"
-            },
-            {
-              "text": "3/8-16",
-              "align": "center"
-            },
-            {
-              "text": "1.06",
-              "align": "center"
-            },
-            {
-              "text": "0.43",
-              "align": "center"
-            },
-            {
-              "text": "1.31",
-              "align": "center"
-            },
-            {
-              "text": "0.94",
-              "align": "center"
-            },
-            {
-              "text": "0.71",
-              "align": "center"
-            },
-            {
-              "text": "1.12",
-              "align": "center"
-            },
-            {
-              "text": "3.78",
-              "align": "center"
-            },
-            {
-              "text": "4.25",
-              "align": "center"
-            },
-            {
-              "text": "0.06",
-              "align": "center"
-            },
-            {
-              "text": "0.98",
-              "align": "center"
-            }
-          ],
-          [
-            {
-              "text": "2410",
-              "align": "center"
-            },
-            {
-              "text": "3/8-16",
-              "align": "center"
-            },
-            {
-              "text": "1.06",
-              "align": "center"
-            },
-            {
-              "text": "0.43",
-              "align": "center"
-            },
-            {
-              "text": "1.31",
-              "align": "center"
-            },
-            {
-              "text": "0.94",
-              "align": "center"
-            },
-            {
-              "text": "0.71",
-              "align": "center"
-            },
-            {
-              "text": "1.12",
-              "align": "center"
-            },
-            {
-              "text": "3.78",
-              "align": "center"
-            },
-            {
-              "text": "4.25",
-              "align": "center"
-            },
-            {
-              "text": "0.06",
-              "align": "center"
-            },
-            {
-              "text": "1.18",
-              "align": "center"
-            }
-          ],
-          [
-            {
-              "text": "2411",
-              "align": "center"
-            },
-            {
-              "text": "3/8-16",
-              "align": "center"
-            },
-            {
-              "text": "1.06",
-              "align": "center"
-            },
-            {
-              "text": "0.43",
-              "align": "center"
-            },
-            {
-              "text": "1.31",
-              "align": "center"
-            },
-            {
-              "text": "0.94",
-              "align": "center"
-            },
-            {
-              "text": "0.71",
-              "align": "center"
-            },
-            {
-              "text": "1.12",
-              "align": "center"
-            },
-            {
-              "text": "3.78",
-              "align": "center"
-            },
-            {
-              "text": "4.25",
-              "align": "center"
-            },
-            {
-              "text": "0.06",
-              "align": "center"
-            },
-            {
-              "text": "1.57",
-              "align": "center"
-            }
-          ],
-          [
-            {
-              "text": "2412",
-              "align": "center"
-            },
-            {
-              "text": "3/8-16",
-              "align": "center"
-            },
-            {
-              "text": "1.06",
-              "align": "center"
-            },
-            {
-              "text": "0.43",
-              "align": "center"
-            },
-            {
-              "text": "1.31",
-              "align": "center"
-            },
-            {
-              "text": "0.94",
-              "align": "center"
-            },
-            {
-              "text": "0.71",
-              "align": "center"
-            },
-            {
-              "text": "1.12",
-              "align": "center"
-            },
-            {
-              "text": "3.78",
-              "align": "center"
-            },
-            {
-              "text": "4.25",
-              "align": "center"
-            },
-            {
-              "text": "0.06",
-              "align": "center"
-            },
-            {
-              "text": "1.97",
-              "align": "center"
-            }
-          ]
-        ]
-      },
-      "notes": {
-        "left": [
-          "Handle: plastic or steel",
-          "Cam / stud: zinc plated steel or stainless steel",
-          "Applications: quick clamping and release without tools"
-        ],
-        "right": [
-          "Metric and inch thread options",
-          "With stud or internal thread",
-          "Adjustable nut versions available"
-        ]
-      }
-    },
-    {
-      "id": "2500",
-      "summary": "Cam Lever with Adjustable Nut in Metric 2500",
-      "gallery": [
-        "/Website/images/17010775041319026826b7c70782c23ced3f96f0b360d.png"
-      ],
-      "table": {
-        "headers": [
-          "Item #",
-          "d1",
-          "l1",
-          "l2",
-          "l3",
-          "h",
-          "A",
-          "B"
-        ],
-        "rows": [
-          [
-            "M5",
-            "M5",
-            "20",
-            "10",
-            "8",
-            "12",
-            "45",
-            "16"
-          ],
-          [
-            "M6",
-            "M6",
-            "25",
-            "12",
-            "10",
-            "14",
-            "55",
-            "18"
-          ],
-          [
-            "M8",
-            "M8",
-            "30",
-            "16",
-            "12",
-            "16",
-            "65",
-            "22"
-          ],
-          [
-            "M10",
-            "M10",
-            "35",
-            "18",
-            "14",
-            "18",
-            "75",
-            "26"
-          ],
-          [
-            "M12",
-            "M12",
-            "40",
-            "20",
-            "16",
-            "20",
-            "90",
-            "30"
-          ]
-        ]
-      },
-      "notes": {
-        "left": [
-          "Handle: plastic or steel",
-          "Cam / stud: zinc plated steel or stainless steel",
-          "Applications: quick clamping and release without tools"
-        ],
-        "right": [
-          "Metric and inch thread options",
-          "With stud or internal thread",
-          "Adjustable nut versions available"
-        ]
-      }
-    },
-    {
-      "id": "2600",
-      "summary": "Cam Lever in Metric 2600\nIt's for quick clamping and release",
-      "gallery": [
-        "/Website/images/1701078414552adb1a73e2fe7547bb8227f5f997293e2.png"
-      ],
-      "table": {
-        "headers": [
-          "Item #",
-          "d1",
-          "l1",
-          "l2",
-          "l3",
-          "h",
-          "A",
-          "B"
-        ],
-        "rows": [
-          [
-            "M5",
-            "M5",
-            "20",
-            "10",
-            "8",
-            "12",
-            "45",
-            "16"
-          ],
-          [
-            "M6",
-            "M6",
-            "25",
-            "12",
-            "10",
-            "14",
-            "55",
-            "18"
-          ],
-          [
-            "M8",
-            "M8",
-            "30",
-            "16",
-            "12",
-            "16",
-            "65",
-            "22"
-          ],
-          [
-            "M10",
-            "M10",
-            "35",
-            "18",
-            "14",
-            "18",
-            "75",
-            "26"
-          ],
-          [
-            "M12",
-            "M12",
-            "40",
-            "20",
-            "16",
-            "20",
-            "90",
-            "30"
-          ]
-        ]
-      },
-      "notes": {
-        "left": [
-          "Handle: plastic or steel",
-          "Cam / stud: zinc plated steel or stainless steel",
-          "Applications: quick clamping and release without tools"
-        ],
-        "right": [
-          "Metric and inch thread options",
-          "With stud or internal thread",
-          "Adjustable nut versions available"
-        ]
-      }
-    },
-    {
-      "id": "2700",
-      "summary": "Cam Lever with Stud in Metric 2700\nIt's for quick clamping and release",
-      "gallery": [
-        "/Website/images/170107883515732fdccd81899e30be3b4860cec3169a1.png"
-      ],
-      "table": {
-        "headers": [
-          "Item #",
-          "d1",
-          "l1",
-          "l2",
-          "l3",
-          "h",
-          "A",
-          "B"
-        ],
-        "rows": [
-          [
-            "M5",
-            "M5",
-            "20",
-            "10",
-            "8",
-            "12",
-            "45",
-            "16"
-          ],
-          [
-            "M6",
-            "M6",
-            "25",
-            "12",
-            "10",
-            "14",
-            "55",
-            "18"
-          ],
-          [
-            "M8",
-            "M8",
-            "30",
-            "16",
-            "12",
-            "16",
-            "65",
-            "22"
-          ],
-          [
-            "M10",
-            "M10",
-            "35",
-            "18",
-            "14",
-            "18",
-            "75",
-            "26"
-          ],
-          [
-            "M12",
-            "M12",
-            "40",
-            "20",
-            "16",
-            "20",
-            "90",
-            "30"
-          ]
-        ]
-      },
-      "notes": {
-        "left": [
-          "Handle: plastic or steel",
-          "Cam / stud: zinc plated steel or stainless steel",
-          "Applications: quick clamping and release without tools"
-        ],
-        "right": [
-          "Metric and inch thread options",
-          "With stud or internal thread",
-          "Adjustable nut versions available"
-        ]
-      }
-    },
-    {
       "id": "6400-a",
       "summary": "Knurled Knob Index Plunger 6400-A\nWith or without locking patch",
       "gallery": [
@@ -5868,7 +4946,8 @@
       "id": "2100",
       "summary": "Cam Lever with Internal Thread in Metric 2100",
       "gallery": [
-        "/Website/images/170107408842550b996eb7302cd44403a7c82fba43bdb.png"
+        "/Website/images/170107408842550b996eb7302cd44403a7c82fba43bdb.png",
+        "/Website/images/cam-lever-2100-drawing.png"
       ],
       "table": {
         "headers": [
@@ -5951,7 +5030,8 @@
       "id": "2200",
       "summary": "Cam Lever with Internal Thread in Inch 2200\nQuick clamping and release · Inch thread",
       "gallery": [
-        "/Website/images/170107408842550b996eb7302cd44403a7c82fba43bdb.png"
+        "/Website/images/170107408842550b996eb7302cd44403a7c82fba43bdb.png",
+        "/Website/images/cam-lever-2100-drawing.png"
       ],
       "table": {
         "headers": [
@@ -6019,7 +5099,934 @@
       "id": "2300",
       "summary": "Cam Lever with Stud in Metric 2300\nQuick clamping and release · Metric thread",
       "gallery": [
-        "/Website/images/1701075399836e7f9cb4719479d4db81433856a8ee747.png"
+        "/Website/images/1701075399836e7f9cb4719479d4db81433856a8ee747.png",
+        "/Website/images/cam-lever-2300-drawing.png"
+      ],
+      "table": {
+        "headers": [
+          "Item #",
+          "d1",
+          "l1",
+          "l2",
+          "l3",
+          "h",
+          "A",
+          "B"
+        ],
+        "rows": [
+          [
+            "M5",
+            "M5",
+            "20",
+            "10",
+            "8",
+            "12",
+            "45",
+            "16"
+          ],
+          [
+            "M6",
+            "M6",
+            "25",
+            "12",
+            "10",
+            "14",
+            "55",
+            "18"
+          ],
+          [
+            "M8",
+            "M8",
+            "30",
+            "16",
+            "12",
+            "16",
+            "65",
+            "22"
+          ],
+          [
+            "M10",
+            "M10",
+            "35",
+            "18",
+            "14",
+            "18",
+            "75",
+            "26"
+          ],
+          [
+            "M12",
+            "M12",
+            "40",
+            "20",
+            "16",
+            "20",
+            "90",
+            "30"
+          ]
+        ]
+      },
+      "notes": {
+        "left": [
+          "Handle: plastic or steel",
+          "Cam / stud: zinc plated steel or stainless steel",
+          "Applications: quick clamping and release without tools"
+        ],
+        "right": [
+          "Metric and inch thread options",
+          "With stud or internal thread",
+          "Adjustable nut versions available"
+        ]
+      }
+    },
+    {
+      "id": "2400",
+      "summary": "Cam Lever with Stud in Inch 2400",
+      "gallery": [
+        "/Website/images/17010758309628e454950dd96f7e8b591dfeea88df1cc.png",
+        "/Website/images/cam-lever-2300-drawing.png"
+      ],
+      "table": {
+        "headers": [
+          {
+            "text": "Part #",
+            "align": "center"
+          },
+          {
+            "text": "D",
+            "align": "center"
+          },
+          {
+            "text": "D1",
+            "align": "center"
+          },
+          {
+            "text": "D2",
+            "align": "center"
+          },
+          {
+            "text": "B",
+            "align": "center"
+          },
+          {
+            "text": "B1",
+            "align": "center"
+          },
+          {
+            "text": "H",
+            "align": "center"
+          },
+          {
+            "text": "H1",
+            "align": "center"
+          },
+          {
+            "text": "A",
+            "align": "center"
+          },
+          {
+            "text": "A1",
+            "align": "center"
+          },
+          {
+            "text": "S",
+            "align": "center"
+          },
+          {
+            "text": "L",
+            "align": "center"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "text": "2401",
+              "align": "center"
+            },
+            {
+              "text": "1/4-20",
+              "align": "center"
+            },
+            {
+              "text": "0.71",
+              "align": "center"
+            },
+            {
+              "text": "0.35",
+              "align": "center"
+            },
+            {
+              "text": "0.85",
+              "align": "center"
+            },
+            {
+              "text": "0.59",
+              "align": "center"
+            },
+            {
+              "text": "0.57",
+              "align": "center"
+            },
+            {
+              "text": "0.87",
+              "align": "center"
+            },
+            {
+              "text": "2.77",
+              "align": "center"
+            },
+            {
+              "text": "3.12",
+              "align": "center"
+            },
+            {
+              "text": "0.05",
+              "align": "center"
+            },
+            {
+              "text": "0.79",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2402",
+              "align": "center"
+            },
+            {
+              "text": "1/4-20",
+              "align": "center"
+            },
+            {
+              "text": "0.71",
+              "align": "center"
+            },
+            {
+              "text": "0.35",
+              "align": "center"
+            },
+            {
+              "text": "0.85",
+              "align": "center"
+            },
+            {
+              "text": "0.59",
+              "align": "center"
+            },
+            {
+              "text": "0.57",
+              "align": "center"
+            },
+            {
+              "text": "0.87",
+              "align": "center"
+            },
+            {
+              "text": "2.77",
+              "align": "center"
+            },
+            {
+              "text": "3.12",
+              "align": "center"
+            },
+            {
+              "text": "0.05",
+              "align": "center"
+            },
+            {
+              "text": "1.18",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2403",
+              "align": "center"
+            },
+            {
+              "text": "1/4-20",
+              "align": "center"
+            },
+            {
+              "text": "0.71",
+              "align": "center"
+            },
+            {
+              "text": "0.35",
+              "align": "center"
+            },
+            {
+              "text": "0.85",
+              "align": "center"
+            },
+            {
+              "text": "0.59",
+              "align": "center"
+            },
+            {
+              "text": "0.57",
+              "align": "center"
+            },
+            {
+              "text": "0.87",
+              "align": "center"
+            },
+            {
+              "text": "2.77",
+              "align": "center"
+            },
+            {
+              "text": "3.12",
+              "align": "center"
+            },
+            {
+              "text": "0.05",
+              "align": "center"
+            },
+            {
+              "text": "1.57",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2404",
+              "align": "center"
+            },
+            {
+              "text": "1/4-20",
+              "align": "center"
+            },
+            {
+              "text": "0.71",
+              "align": "center"
+            },
+            {
+              "text": "0.35",
+              "align": "center"
+            },
+            {
+              "text": "0.85",
+              "align": "center"
+            },
+            {
+              "text": "0.59",
+              "align": "center"
+            },
+            {
+              "text": "0.57",
+              "align": "center"
+            },
+            {
+              "text": "0.87",
+              "align": "center"
+            },
+            {
+              "text": "2.77",
+              "align": "center"
+            },
+            {
+              "text": "3.12",
+              "align": "center"
+            },
+            {
+              "text": "0.05",
+              "align": "center"
+            },
+            {
+              "text": "1.97",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2405",
+              "align": "center"
+            },
+            {
+              "text": "5/16-18",
+              "align": "center"
+            },
+            {
+              "text": "1.06",
+              "align": "center"
+            },
+            {
+              "text": "0.43",
+              "align": "center"
+            },
+            {
+              "text": "1.31",
+              "align": "center"
+            },
+            {
+              "text": "0.94",
+              "align": "center"
+            },
+            {
+              "text": "0.71",
+              "align": "center"
+            },
+            {
+              "text": "1.12",
+              "align": "center"
+            },
+            {
+              "text": "3.78",
+              "align": "center"
+            },
+            {
+              "text": "4.25",
+              "align": "center"
+            },
+            {
+              "text": "0.06",
+              "align": "center"
+            },
+            {
+              "text": "0.98",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2406",
+              "align": "center"
+            },
+            {
+              "text": "5/16-18",
+              "align": "center"
+            },
+            {
+              "text": "1.06",
+              "align": "center"
+            },
+            {
+              "text": "0.43",
+              "align": "center"
+            },
+            {
+              "text": "1.31",
+              "align": "center"
+            },
+            {
+              "text": "0.94",
+              "align": "center"
+            },
+            {
+              "text": "0.71",
+              "align": "center"
+            },
+            {
+              "text": "1.12",
+              "align": "center"
+            },
+            {
+              "text": "3.78",
+              "align": "center"
+            },
+            {
+              "text": "4.25",
+              "align": "center"
+            },
+            {
+              "text": "0.06",
+              "align": "center"
+            },
+            {
+              "text": "1.18",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2407",
+              "align": "center"
+            },
+            {
+              "text": "5/16-18",
+              "align": "center"
+            },
+            {
+              "text": "1.06",
+              "align": "center"
+            },
+            {
+              "text": "0.43",
+              "align": "center"
+            },
+            {
+              "text": "1.31",
+              "align": "center"
+            },
+            {
+              "text": "0.94",
+              "align": "center"
+            },
+            {
+              "text": "0.71",
+              "align": "center"
+            },
+            {
+              "text": "1.12",
+              "align": "center"
+            },
+            {
+              "text": "3.78",
+              "align": "center"
+            },
+            {
+              "text": "4.25",
+              "align": "center"
+            },
+            {
+              "text": "0.06",
+              "align": "center"
+            },
+            {
+              "text": "1.57",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2408",
+              "align": "center"
+            },
+            {
+              "text": "5/16-18",
+              "align": "center"
+            },
+            {
+              "text": "1.06",
+              "align": "center"
+            },
+            {
+              "text": "0.43",
+              "align": "center"
+            },
+            {
+              "text": "1.31",
+              "align": "center"
+            },
+            {
+              "text": "0.94",
+              "align": "center"
+            },
+            {
+              "text": "0.71",
+              "align": "center"
+            },
+            {
+              "text": "1.12",
+              "align": "center"
+            },
+            {
+              "text": "3.78",
+              "align": "center"
+            },
+            {
+              "text": "4.25",
+              "align": "center"
+            },
+            {
+              "text": "0.06",
+              "align": "center"
+            },
+            {
+              "text": "1.97",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2409",
+              "align": "center"
+            },
+            {
+              "text": "3/8-16",
+              "align": "center"
+            },
+            {
+              "text": "1.06",
+              "align": "center"
+            },
+            {
+              "text": "0.43",
+              "align": "center"
+            },
+            {
+              "text": "1.31",
+              "align": "center"
+            },
+            {
+              "text": "0.94",
+              "align": "center"
+            },
+            {
+              "text": "0.71",
+              "align": "center"
+            },
+            {
+              "text": "1.12",
+              "align": "center"
+            },
+            {
+              "text": "3.78",
+              "align": "center"
+            },
+            {
+              "text": "4.25",
+              "align": "center"
+            },
+            {
+              "text": "0.06",
+              "align": "center"
+            },
+            {
+              "text": "0.98",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2410",
+              "align": "center"
+            },
+            {
+              "text": "3/8-16",
+              "align": "center"
+            },
+            {
+              "text": "1.06",
+              "align": "center"
+            },
+            {
+              "text": "0.43",
+              "align": "center"
+            },
+            {
+              "text": "1.31",
+              "align": "center"
+            },
+            {
+              "text": "0.94",
+              "align": "center"
+            },
+            {
+              "text": "0.71",
+              "align": "center"
+            },
+            {
+              "text": "1.12",
+              "align": "center"
+            },
+            {
+              "text": "3.78",
+              "align": "center"
+            },
+            {
+              "text": "4.25",
+              "align": "center"
+            },
+            {
+              "text": "0.06",
+              "align": "center"
+            },
+            {
+              "text": "1.18",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2411",
+              "align": "center"
+            },
+            {
+              "text": "3/8-16",
+              "align": "center"
+            },
+            {
+              "text": "1.06",
+              "align": "center"
+            },
+            {
+              "text": "0.43",
+              "align": "center"
+            },
+            {
+              "text": "1.31",
+              "align": "center"
+            },
+            {
+              "text": "0.94",
+              "align": "center"
+            },
+            {
+              "text": "0.71",
+              "align": "center"
+            },
+            {
+              "text": "1.12",
+              "align": "center"
+            },
+            {
+              "text": "3.78",
+              "align": "center"
+            },
+            {
+              "text": "4.25",
+              "align": "center"
+            },
+            {
+              "text": "0.06",
+              "align": "center"
+            },
+            {
+              "text": "1.57",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "2412",
+              "align": "center"
+            },
+            {
+              "text": "3/8-16",
+              "align": "center"
+            },
+            {
+              "text": "1.06",
+              "align": "center"
+            },
+            {
+              "text": "0.43",
+              "align": "center"
+            },
+            {
+              "text": "1.31",
+              "align": "center"
+            },
+            {
+              "text": "0.94",
+              "align": "center"
+            },
+            {
+              "text": "0.71",
+              "align": "center"
+            },
+            {
+              "text": "1.12",
+              "align": "center"
+            },
+            {
+              "text": "3.78",
+              "align": "center"
+            },
+            {
+              "text": "4.25",
+              "align": "center"
+            },
+            {
+              "text": "0.06",
+              "align": "center"
+            },
+            {
+              "text": "1.97",
+              "align": "center"
+            }
+          ]
+        ]
+      },
+      "notes": {
+        "left": [
+          "Handle: plastic or steel",
+          "Cam / stud: zinc plated steel or stainless steel",
+          "Applications: quick clamping and release without tools"
+        ],
+        "right": [
+          "Metric and inch thread options",
+          "With stud or internal thread",
+          "Adjustable nut versions available"
+        ]
+      }
+    },
+    {
+      "id": "2500",
+      "summary": "Cam Lever with Adjustable Nut in Metric 2500",
+      "gallery": [
+        "/Website/images/17010775041319026826b7c70782c23ced3f96f0b360d.png",
+        "/Website/images/cam-lever-2500-drawing.png"
+      ],
+      "table": {
+        "headers": [
+          "Item #",
+          "d1",
+          "l1",
+          "l2",
+          "l3",
+          "h",
+          "A",
+          "B"
+        ],
+        "rows": [
+          [
+            "M5",
+            "M5",
+            "20",
+            "10",
+            "8",
+            "12",
+            "45",
+            "16"
+          ],
+          [
+            "M6",
+            "M6",
+            "25",
+            "12",
+            "10",
+            "14",
+            "55",
+            "18"
+          ],
+          [
+            "M8",
+            "M8",
+            "30",
+            "16",
+            "12",
+            "16",
+            "65",
+            "22"
+          ],
+          [
+            "M10",
+            "M10",
+            "35",
+            "18",
+            "14",
+            "18",
+            "75",
+            "26"
+          ],
+          [
+            "M12",
+            "M12",
+            "40",
+            "20",
+            "16",
+            "20",
+            "90",
+            "30"
+          ]
+        ]
+      },
+      "notes": {
+        "left": [
+          "Handle: plastic or steel",
+          "Cam / stud: zinc plated steel or stainless steel",
+          "Applications: quick clamping and release without tools"
+        ],
+        "right": [
+          "Metric and inch thread options",
+          "With stud or internal thread",
+          "Adjustable nut versions available"
+        ]
+      }
+    },
+    {
+      "id": "2600",
+      "summary": "Cam Lever in Metric 2600\nIt's for quick clamping and release",
+      "gallery": [
+        "/Website/images/1701078414552adb1a73e2fe7547bb8227f5f997293e2.png",
+        "/Website/images/cam-lever-2600-drawing.png"
+      ],
+      "table": {
+        "headers": [
+          "Item #",
+          "d1",
+          "l1",
+          "l2",
+          "l3",
+          "h",
+          "A",
+          "B"
+        ],
+        "rows": [
+          [
+            "M5",
+            "M5",
+            "20",
+            "10",
+            "8",
+            "12",
+            "45",
+            "16"
+          ],
+          [
+            "M6",
+            "M6",
+            "25",
+            "12",
+            "10",
+            "14",
+            "55",
+            "18"
+          ],
+          [
+            "M8",
+            "M8",
+            "30",
+            "16",
+            "12",
+            "16",
+            "65",
+            "22"
+          ],
+          [
+            "M10",
+            "M10",
+            "35",
+            "18",
+            "14",
+            "18",
+            "75",
+            "26"
+          ],
+          [
+            "M12",
+            "M12",
+            "40",
+            "20",
+            "16",
+            "20",
+            "90",
+            "30"
+          ]
+        ]
+      },
+      "notes": {
+        "left": [
+          "Handle: plastic or steel",
+          "Cam / stud: zinc plated steel or stainless steel",
+          "Applications: quick clamping and release without tools"
+        ],
+        "right": [
+          "Metric and inch thread options",
+          "With stud or internal thread",
+          "Adjustable nut versions available"
+        ]
+      }
+    },
+    {
+      "id": "2700",
+      "summary": "Cam Lever with Stud in Metric 2700\nIt's for quick clamping and release",
+      "gallery": [
+        "/Website/images/170107883515732fdccd81899e30be3b4860cec3169a1.png",
+        "/Website/images/cam-lever-2700-drawing.png"
       ],
       "table": {
         "headers": [
