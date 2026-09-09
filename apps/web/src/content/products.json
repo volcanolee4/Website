@@ -43,8 +43,8 @@
       "spec": "Retractable · Rest position"
     },
     {
-      "id": "90000",
-      "name": "T-Handle Indexing Plunger 90000",
+      "id": "9000",
+      "name": "T-Handle Indexing Plunger 9000",
       "category": "indexing-plunger",
       "image": "/Website/images/16954377099872d821b814eec9b0afa7acf5a8607265e.png",
       "spec": "T-handle · Weld-in version"
@@ -127,50 +127,50 @@
       "spec": "Retractable · Non-locking"
     },
     {
-      "id": "9900",
-      "name": "Cam Lever with Stud in Metric 9900",
+      "id": "2700",
+      "name": "Cam Lever with Stud in Metric 2700",
       "category": "cam-lever",
       "image": "/Website/images/170107883515732fdccd81899e30be3b4860cec3169a1.png",
       "spec": "With stud · Metric thread"
     },
     {
-      "id": "9800",
-      "name": "Cam Lever in Metric 9800",
+      "id": "2600",
+      "name": "Cam Lever in Metric 2600",
       "category": "cam-lever",
       "image": "/Website/images/1701078414552adb1a73e2fe7547bb8227f5f997293e2.png",
       "spec": "Metric thread · Steel"
     },
     {
-      "id": "9700",
-      "name": "Cam Lever with Adjustable Nut in Metric 9700",
+      "id": "2500",
+      "name": "Cam Lever with Adjustable Nut in Metric 2500",
       "category": "cam-lever",
       "image": "/Website/images/17010775041319026826b7c70782c23ced3f96f0b360d.png",
       "spec": "Adjustable nut · Metric"
     },
     {
-      "id": "9600",
-      "name": "Cam Lever with Stud in Inch 9600",
+      "id": "2400",
+      "name": "Cam Lever with Stud in Inch 2400",
       "category": "cam-lever",
       "image": "/Website/images/17010758309628e454950dd96f7e8b591dfeea88df1cc.png",
       "spec": "With stud · Inch thread"
     },
     {
-      "id": "cl-9500",
-      "name": "Cam Lever with Stud in Metric 9500",
+      "id": "2300",
+      "name": "Cam Lever with Stud in Metric 2300",
       "category": "cam-lever",
       "image": "/Website/images/1701075399836e7f9cb4719479d4db81433856a8ee747.png",
       "spec": "With stud · Metric thread"
     },
     {
-      "id": "cl-9400",
-      "name": "Cam Lever with Internal Thread in Inch 9400",
+      "id": "2200",
+      "name": "Cam Lever with Internal Thread in Inch 2200",
       "category": "cam-lever",
       "image": "/Website/images/170107408842550b996eb7302cd44403a7c82fba43bdb.png",
       "spec": "Internal thread · Inch"
     },
     {
-      "id": "cl-9300",
-      "name": "Cam Lever with Internal Thread in Metric 9300",
+      "id": "2100",
+      "name": "Cam Lever with Internal Thread in Metric 2100",
       "category": "cam-lever",
       "image": "/Website/images/170107408842550b996eb7302cd44403a7c82fba43bdb.png",
       "spec": "Internal thread · Metric"
