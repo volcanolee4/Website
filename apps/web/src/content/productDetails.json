@@ -4250,7 +4250,7 @@
     },
     {
       "id": "9500",
-      "summary": "Indexing Plunger 9500\nStandard · Stainless steel",
+      "summary": "Indexing Plunger 9500\nStandard · Weldable housing",
       "gallery": [
         "/images/16957065635625c5437edf1564c6107c068181b50213e.png",
         "/images/ball-handle-drawing.jpg"
@@ -5054,9 +5054,10 @@
     },
     {
       "id": "7600-b",
-      "summary": "Index Plunger 7600-B Full Stainless Steel\nLocking type · rest position",
+      "summary": "Index Plunger 7600-B Full Stainless Steel\nLocking type · With rest position",
       "gallery": [
-        "/images/169814950361889fab76c4d5cd688647ce11ea6bdbd44.png"
+        "/images/169814950361889fab76c4d5cd688647ce11ea6bdbd44.png",
+        "/images/7600-b-drawing.png"
       ],
       "table": {
         "headers": [
@@ -5340,10 +5341,10 @@
       },
       "notes": {
         "left": [
-          "Knob: Zinc plated steel or Stainless steel 304",
-          "Threaded body: zinc plated steel or stainless steel 304",
-          "Plunger: zinc plated steel or stainless steel 304",
-          "Applications: indexing plungers are used where positioning operations are required"
+          "Knob: Stainless steel 304 or 316",
+          "Threaded body: Stainless steel 304 or 316",
+          "Plunger: Stainless steel 304 or 316",
+          "Applications: iThe 7600 all-stainless steel product series is designed for use in environments with high corrosion resistance requirements"
         ],
         "right": [
           "XX-A: without rest positions",
@@ -5358,7 +5359,8 @@
       "id": "7600-a",
       "summary": "Index Plunger 7600-A Full Stainless Steel\nNon-locking type",
       "gallery": [
-        "/images/1698127384574b6b0ecce941a74899a202abb360e5b2b.png"
+        "/images/1698127384574b6b0ecce941a74899a202abb360e5b2b.png",
+        "/images/7600-a-drawing.png"
       ],
       "table": {
         "headers": [
@@ -5708,10 +5710,10 @@
       },
       "notes": {
         "left": [
-          "Knob: Zinc plated steel or Stainless steel 304",
-          "Threaded body: zinc plated steel or stainless steel 304",
-          "Plunger: zinc plated steel or stainless steel 304",
-          "Applications: indexing plungers are used where positioning operations are required"
+          "Knob: Stainless steel 304 or 316",
+          "Threaded body: Stainless steel 304 or 316",
+          "Plunger: Stainless steel 304 or 316",
+          "Applications: The 7600 all-stainless steel product series is designed for use in environments with high corrosion resistance requirements"
         ],
         "right": [
           "XX-A: without rest positions",
@@ -5724,9 +5726,10 @@
     },
     {
       "id": "7500-st",
-      "summary": "Index Plunger 7500-ST\nSteel · With rest position",
+      "summary": "Index Plunger 7500-ST\nSteel · With threaded end",
       "gallery": [
-        "/images/169804266099523229ac638a140e48b1cde2f3f48a017.jpg"
+        "/images/169804266099523229ac638a140e48b1cde2f3f48a017.jpg",
+        "/images/1698041050015aebe501277c5d21c3705e841e329eec4.jpg"
       ],
       "table": {
         "headers": [
@@ -6184,15 +6187,15 @@
       },
       "notes": {
         "left": [
-          "Knob: Zinc plated steel or Stainless steel 304",
-          "Threaded body: zinc plated steel or stainless steel 304",
-          "Plunger: zinc plated steel or stainless steel 304",
-          "Applications: indexing plungers are used where positioning operations are required"
+          "Knob: threaded end for users to attach their own grip",
+          "Threaded body: zinc plated steel, black oxided steel or stainless steel 304",
+          "Plunger: zinc plated steel, black oxided steel or stainless steel 304",
+          "Applications:7500 indexing plungers are used in where you want to use your own grips"
         ],
         "right": [
           "XX-A: without rest positions",
           "XX-B: with rest positions",
-          "XX-ST: made by zinc plated steel",
+          "XX-ST: made by zinc plated steel or black oxided steel",
           "XX-SS: made by stainless steel 304",
           "XX-P: with locking patch"
         ]
@@ -6202,7 +6205,8 @@
       "id": "7100-b",
       "summary": "Retractable Indexing Plunger with Rest Position 7100-B",
       "gallery": [
-        "/images/16953609416945ce8be38e15c264e3b006ee942d07b66.png"
+        "/images/16953609416945ce8be38e15c264e3b006ee942d07b66.png",
+        "/images/7100-b-drawing.jpg"
       ],
       "table": {
         "headers": [
@@ -6440,15 +6444,15 @@
       },
       "notes": {
         "left": [
-          "Knob: Zinc plated steel or Stainless steel 304",
-          "Threaded body: zinc plated steel or stainless steel 304",
-          "Plunger: zinc plated steel or stainless steel 304",
+          "Knob: High resilience PA,Matte finish",
+          "Threaded body: zinc plated steel, black oxided steel or stainless steel 304",
+          "Plunger: zinc plated steel, black oxided steel or stainless steel 304",
           "Applications: indexing plungers are used where positioning operations are required"
         ],
         "right": [
           "XX-A: without rest positions",
           "XX-B: with rest positions",
-          "XX-ST: made by zinc plated steel",
+          "XX-ST: made by zinc plated steel or black oxided steel",
           "XX-SS: made by stainless steel 304",
           "XX-P: with locking patch"
         ]
@@ -6456,7 +6460,7 @@
     },
     {
       "id": "7500-ss",
-      "summary": "Index Plunger 7500-SS\nStainless steel · With rest position",
+      "summary": "Index Plunger 7500-SS\nStainless steel · With theaded end",
       "gallery": [
         "/images/16980410304612734a5fe5e3c0da56a10f72152183516.jpg",
         "/images/1698041050015aebe501277c5d21c3705e841e329eec4.jpg"
@@ -6917,15 +6921,15 @@
       },
       "notes": {
         "left": [
-          "Knob: Zinc plated steel or Stainless steel 304",
-          "Threaded body: zinc plated steel or stainless steel 304",
-          "Plunger: zinc plated steel or stainless steel 304",
-          "Applications: indexing plungers are used where positioning operations are required"
+          "Knob: threaded end for users to attach their own grip",
+          "Threaded body: zinc plated steel, black oxided steel or stainless steel 304",
+          "Plunger: zinc plated steel, black oxided steel or stainless steel 304",
+          "Applications: 7500 indexing plungers are used in where you want to use your own grips"
         ],
         "right": [
           "XX-A: without rest positions",
           "XX-B: with rest positions",
-          "XX-ST: made by zinc plated steel",
+          "XX-ST:made by zinc plated steel or black oxided steel",
           "XX-SS: made by stainless steel 304",
           "XX-P: with locking patch"
         ]
@@ -7174,15 +7178,15 @@
       },
       "notes": {
         "left": [
-          "Knob: Zinc plated steel or Stainless steel 304",
-          "Threaded body: zinc plated steel or stainless steel 304",
-          "Plunger: zinc plated steel or stainless steel 304",
+          "Knob: High resilience PA,Matte finish",
+          "Threaded body: zinc plated steel,black oxided steel or stainless steel 304",
+          "Plunger: zinc plated steel,black oxided steel or stainless steel 304",
           "Applications: indexing plungers are used where positioning operations are required"
         ],
         "right": [
           "XX-A: without rest positions",
           "XX-B: with rest positions",
-          "XX-ST: made by zinc plated steel",
+          "XX-ST: made by zinc plated steel or black  oxided steel",
           "XX-SS: made by stainless steel 304",
           "XX-P: with locking patch"
         ]
@@ -7569,7 +7573,7 @@
       },
       "notes": {
         "left": [
-          "Handle: plastic or steel",
+          "Handle: plastic or Aluminum",
           "Cam / stud: zinc plated steel or stainless steel",
           "Applications: quick clamping and release without tools"
         ],
@@ -8007,7 +8011,7 @@
       },
       "notes": {
         "left": [
-          "Handle: plastic or steel",
+          "Handle: plastic or Aluminum",
           "Cam / stud: zinc plated steel or stainless steel",
           "Applications: quick clamping and release without tools"
         ],
@@ -8881,7 +8885,7 @@
       },
       "notes": {
         "left": [
-          "Handle: plastic or steel",
+          "Handle: plastic or Aluminum",
           "Cam / stud: zinc plated steel or stainless steel",
           "Applications: quick clamping and release without tools"
         ],
@@ -9555,7 +9559,7 @@
       },
       "notes": {
         "left": [
-          "Handle: plastic or steel",
+          "Handle: plastic or Aluminum",
           "Cam / stud: zinc plated steel or stainless steel",
           "Applications: quick clamping and release without tools"
         ],
@@ -10029,7 +10033,7 @@
       },
       "notes": {
         "left": [
-          "Handle: plastic or steel",
+          "Handle: plastic or Aluminum",
           "Cam / stud: zinc plated steel or stainless steel",
           "Applications: quick clamping and release without tools"
         ],
@@ -10431,7 +10435,7 @@
       },
       "notes": {
         "left": [
-          "Handle: plastic or steel",
+          "Handle: plastic or Aluminum",
           "Cam / stud: zinc plated steel or stainless steel",
           "Applications: quick clamping and release without tools"
         ],
@@ -11145,7 +11149,7 @@
       },
       "notes": {
         "left": [
-          "Handle: plastic or steel",
+          "Handle: plastic or Aluminum",
           "Cam / stud: zinc plated steel or stainless steel",
           "Applications: quick clamping and release without tools"
         ],
