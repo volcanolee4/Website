@@ -11,7 +11,7 @@ import ContactPage from './pages/ContactPage';
 
 function App() {
 	return (
-		<Router basename="/Website">
+		<Router basename="/">
 			<ScrollToTop />
 			<div className="flex min-h-screen flex-col bg-background text-foreground">
 				<Header />

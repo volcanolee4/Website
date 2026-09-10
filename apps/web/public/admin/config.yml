@@ -5,17 +5,17 @@ backend:
   repo: volcanolee4/Website
   branch: main
   # 站点地址（/admin 所在的域名，用于登录后跳回）
-  site_domain: https://volcanolee4.github.io/Website/
+  site_domain: https://www.hygoal.com/
   # OAuth 网关地址（Cloudflare Pages，已部署）
   base_url: https://hygoal-oauth.pages.dev
   auth_endpoint: /api/auth
 
 # 上传的媒体文件存放位置（widget: image 上传的图会存到这里）
 media_folder: "apps/web/public/images"
-public_folder: "/Website/images"
+public_folder: "/images"
 
 # 站点显示名称
-site_url: https://volcanolee4.github.io/Website/
+site_url: https://www.hygoal.com/
 
 collections:
   # ============ 站点设置（单例） ============

@@ -369,9 +369,8 @@ logger.error = (msg, options) => {
 }
 
 export default defineConfig({
-	// GitHub Pages 项目站点部署在 /Website/ 子路径下。
-	// 若未来绑定自定义域名(如 hygoal.com)，改为 '/' 并同步修改 App.jsx 的 basename。
-	base: '/Website/',
+	// 已绑定自定义域名 www.hygoal.com，站点部署在根路径下。
+	base: '/',
 	optimizeDeps: {
 		include: allDeps,
 	},

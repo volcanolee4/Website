@@ -64,4 +64,4 @@ User-agent: YouBot
 Allow: /
 
 # 站点地图位置
-Sitemap: https://volcanolee4.github.io/Website/sitemap.xml
+Sitemap: https://www.hygoal.com/sitemap.xml

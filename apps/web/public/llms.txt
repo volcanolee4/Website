@@ -4,10 +4,10 @@
 
 ## Key pages
 
-- [Home](https://volcanolee4.github.io/Website/): Company overview, product categories, factory capabilities.
-- [Products](https://volcanolee4.github.io/Website/products): Full product range, filterable by category (Indexing Plunger / Leveling Feet / Cam Lever / Customized Service).
-- [About](https://volcanolee4.github.io/Website/about): Why choose HYGOAL — precision craftsmanship, cost-effective manufacturing, OEM/ODM capability.
-- [Contact](https://volcanolee4.github.io/Website/contact): Request a quotation; engineers reply within 48 hours.
+- [Home](https://www.hygoal.com/): Company overview, product categories, factory capabilities.
+- [Products](https://www.hygoal.com/products): Full product range, filterable by category (Indexing Plunger / Leveling Feet / Cam Lever / Customized Service).
+- [About](https://www.hygoal.com/about): Why choose HYGOAL — precision craftsmanship, cost-effective manufacturing, OEM/ODM capability.
+- [Contact](https://www.hygoal.com/contact): Request a quotation; engineers reply within 48 hours.
 
 ## Product categories
 

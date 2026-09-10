@@ -68,7 +68,7 @@ export default function ProductDetailPage() {
 	// —— 结构化数据（JSON-LD）：产品 + 面包屑，帮助搜索引擎和 AI 理解页面 ——
 	const origin = window.location.origin;
 	const productImage = product.image.startsWith('http') ? product.image : origin + product.image;
-	const productUrl = `${origin}/Website/products/${product.id}`;
+	const productUrl = `${origin}/products/${product.id}`;
 	const productJsonLd = JSON.stringify({
 		'@context': 'https://schema.org',
 		'@type': 'Product',
@@ -84,8 +84,8 @@ export default function ProductDetailPage() {
 		'@context': 'https://schema.org',
 		'@type': 'BreadcrumbList',
 		itemListElement: [
-			{ '@type': 'ListItem', position: 1, name: 'Home', item: `${origin}/Website/` },
-			{ '@type': 'ListItem', position: 2, name: 'Products', item: `${origin}/Website/products` },
+			{ '@type': 'ListItem', position: 1, name: 'Home', item: `${origin}/` },
+			{ '@type': 'ListItem', position: 2, name: 'Products', item: `${origin}/products` },
 			{ '@type': 'ListItem', position: 3, name: product.name, item: productUrl },
 		],
 	});

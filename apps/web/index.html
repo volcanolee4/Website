@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<link rel="icon" type="image/svg+xml" href="/Website/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="description" content="HYGOAL manufactures and exports precision machine components — indexing plungers, leveling feet, cam levers and custom CNC-machined parts — from Ningbo, China to 40+ countries." />
 		<meta name="robots" content="index, follow" />
@@ -15,8 +15,8 @@
 			"@context": "https://schema.org",
 			"@type": "Organization",
 			"name": "HYGOAL",
-			"url": "https://volcanolee4.github.io/Website/",
-			"logo": "https://volcanolee4.github.io/Website/images/logoa.svg",
+			"url": "https://www.hygoal.com/",
+			"logo": "https://www.hygoal.com/images/logoa.svg",
 			"email": "info@hygoal.com",
 			"telephone": "+86 574 8806 0075",
 			"foundingDate": "2009",
@@ -31,15 +31,15 @@
 		</script>
 		<script type="text/javascript">
 			// SPA 路由还原：配合 public/404.html 使用。
-			// 直接访问 /Website/products/xxx 时，404.html 会重定向到
-			// /Website/?p=/products/xxx，这里把 ?p= 里的路径还原进 history。
+			// 直接访问 /products/xxx 时，404.html 会重定向到
+			// /?p=/products/xxx，这里把 ?p= 里的路径还原进 history。
 			(function () {
 				var params = new URLSearchParams(window.location.search);
 				var p = params.get('p');
 				if (p) {
 					params.delete('p');
 					var qs = params.toString();
-					var url = '/Website' + p + (qs ? '?' + qs : '') + window.location.hash;
+					var url = p + (qs ? '?' + qs : '') + window.location.hash;
 					window.history.replaceState(null, '', url);
 				}
 			})();
