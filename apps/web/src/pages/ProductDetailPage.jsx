@@ -5,7 +5,7 @@ import { ArrowLeft, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import PageHero from '@/components/PageHero';
 import CtaBand from '@/components/CtaBand';
 import { PRODUCTS, categoryName } from '@/data/site';
-import { getProductDetail, CATEGORY_DRAWINGS } from '@/data/productDetails';
+import { getProductDetail } from '@/data/productDetails';
 
 const RECENT_KEY = 'hygoal_recent_products';
 
@@ -35,9 +35,6 @@ export default function ProductDetailPage() {
 	const gallery = useMemo(() => {
 		if (!product) return [];
 		const g = detail?.gallery?.length ? [...detail.gallery] : [product.image];
-		// Pair the product photo with its technical drawing (as on hygoal.com).
-		const drawing = CATEGORY_DRAWINGS[product.category];
-		if (drawing && !g.includes(drawing)) g.push(drawing);
 		return [...new Set(g)];
 	}, [product, detail]);
 

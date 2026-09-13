@@ -148,14 +148,6 @@ collections:
         label: "产品详情与规格表"
         file: "apps/web/src/content/productDetails.json"
         fields:
-          - label: "分类技术图纸"
-            name: categoryDrawings
-            widget: object
-            fields:
-              - { label: "分度销图纸", name: indexing-plunger, widget: image, required: false }
-              - { label: "凸轮手柄图纸", name: cam-lever, widget: image, required: false }
-              - { label: "调平脚图纸", name: levelling-feet, widget: image, required: false }
-
           - label: "产品详情"
             name: details
             widget: list
