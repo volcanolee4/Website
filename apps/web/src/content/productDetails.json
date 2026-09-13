@@ -1976,7 +1976,7 @@
       "summary": "Leveling Mounts with fix-lug 1700\nWith fix-lug · Steel / Stainless steel",
       "gallery": [
         "/images/1724293305632c29505177007f163801ff8172a0468e9.png",
-        "/images/foot-with-fixing-lug-drawing.png"
+        "/images/foot-with-fixing-lug-drawing.webp"
       ],
       "table": {
         "headers": [
@@ -1985,56 +1985,38 @@
             "align": "center"
           },
           {
-            "text": "d1",
+            "text": "M",
             "align": "center"
           },
           {
-            "text": "d2",
+            "text": "H",
             "align": "center"
           },
           {
-            "text": "h",
+            "text": "H1",
             "align": "center"
           },
           {
-            "text": "l",
+            "text": "D",
             "align": "center"
           },
           {
-            "text": "Load (kN)",
+            "text": "D1",
+            "align": "center"
+          },
+          {
+            "text": "L",
+            "align": "center"
+          },
+          {
+            "text": "L1",
             "align": "center"
           }
         ],
         "rows": [
           [
             {
-              "text": "M8",
-              "align": "center"
-            },
-            {
-              "text": "M8",
-              "align": "center"
-            },
-            {
-              "text": "40",
-              "align": "center"
-            },
-            {
-              "text": "18",
-              "align": "center"
-            },
-            {
-              "text": "50",
-              "align": "center"
-            },
-            {
-              "text": "3.5",
-              "align": "center"
-            }
-          ],
-          [
-            {
-              "text": "M10",
+              "text": "1701",
               "align": "center"
             },
             {
@@ -2046,33 +2028,33 @@
               "align": "center"
             },
             {
-              "text": "20",
+              "text": "15",
               "align": "center"
             },
             {
-              "text": "60",
+              "text": "50",
               "align": "center"
             },
             {
-              "text": "5.0",
+              "text": "13",
+              "align": "center"
+            },
+            {
+              "text": "83",
+              "align": "center"
+            },
+            {
+              "text": "45",
               "align": "center"
             }
           ],
           [
             {
-              "text": "M12",
+              "text": "1702",
               "align": "center"
             },
             {
-              "text": "M12",
-              "align": "center"
-            },
-            {
-              "text": "60",
-              "align": "center"
-            },
-            {
-              "text": "22",
+              "text": "M10",
               "align": "center"
             },
             {
@@ -2080,13 +2062,165 @@
               "align": "center"
             },
             {
-              "text": "7.5",
+              "text": "15",
+              "align": "center"
+            },
+            {
+              "text": "50",
+              "align": "center"
+            },
+            {
+              "text": "13",
+              "align": "center"
+            },
+            {
+              "text": "83",
+              "align": "center"
+            },
+            {
+              "text": "45",
               "align": "center"
             }
           ],
           [
             {
-              "text": "M16",
+              "text": "1703",
+              "align": "center"
+            },
+            {
+              "text": "M10",
+              "align": "center"
+            },
+            {
+              "text": "100",
+              "align": "center"
+            },
+            {
+              "text": "15",
+              "align": "center"
+            },
+            {
+              "text": "50",
+              "align": "center"
+            },
+            {
+              "text": "13",
+              "align": "center"
+            },
+            {
+              "text": "83",
+              "align": "center"
+            },
+            {
+              "text": "45",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "1704",
+              "align": "center"
+            },
+            {
+              "text": "M12",
+              "align": "center"
+            },
+            {
+              "text": "50",
+              "align": "center"
+            },
+            {
+              "text": "15",
+              "align": "center"
+            },
+            {
+              "text": "50",
+              "align": "center"
+            },
+            {
+              "text": "13",
+              "align": "center"
+            },
+            {
+              "text": "83",
+              "align": "center"
+            },
+            {
+              "text": "45",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "1705",
+              "align": "center"
+            },
+            {
+              "text": "M12",
+              "align": "center"
+            },
+            {
+              "text": "80",
+              "align": "center"
+            },
+            {
+              "text": "15",
+              "align": "center"
+            },
+            {
+              "text": "50",
+              "align": "center"
+            },
+            {
+              "text": "13",
+              "align": "center"
+            },
+            {
+              "text": "83",
+              "align": "center"
+            },
+            {
+              "text": "45",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "1706",
+              "align": "center"
+            },
+            {
+              "text": "M12",
+              "align": "center"
+            },
+            {
+              "text": "100",
+              "align": "center"
+            },
+            {
+              "text": "15",
+              "align": "center"
+            },
+            {
+              "text": "50",
+              "align": "center"
+            },
+            {
+              "text": "13",
+              "align": "center"
+            },
+            {
+              "text": "83",
+              "align": "center"
+            },
+            {
+              "text": "45",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "1707",
               "align": "center"
             },
             {
@@ -2098,7 +2232,33 @@
               "align": "center"
             },
             {
-              "text": "25",
+              "text": "17",
+              "align": "center"
+            },
+            {
+              "text": "80",
+              "align": "center"
+            },
+            {
+              "text": "15",
+              "align": "center"
+            },
+            {
+              "text": "107",
+              "align": "center"
+            },
+            {
+              "text": "54",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "1708",
+              "align": "center"
+            },
+            {
+              "text": "M16",
               "align": "center"
             },
             {
@@ -2106,51 +2266,33 @@
               "align": "center"
             },
             {
-              "text": "12",
+              "text": "17",
+              "align": "center"
+            },
+            {
+              "text": "80",
+              "align": "center"
+            },
+            {
+              "text": "15",
+              "align": "center"
+            },
+            {
+              "text": "107",
+              "align": "center"
+            },
+            {
+              "text": "54",
               "align": "center"
             }
           ],
           [
             {
-              "text": "M20",
+              "text": "1709",
               "align": "center"
             },
             {
-              "text": "M20",
-              "align": "center"
-            },
-            {
-              "text": "100",
-              "align": "center"
-            },
-            {
-              "text": "30",
-              "align": "center"
-            },
-            {
-              "text": "120",
-              "align": "center"
-            },
-            {
-              "text": "18",
-              "align": "center"
-            }
-          ],
-          [
-            {
-              "text": "M24",
-              "align": "center"
-            },
-            {
-              "text": "M24",
-              "align": "center"
-            },
-            {
-              "text": "120",
-              "align": "center"
-            },
-            {
-              "text": "35",
+              "text": "M16",
               "align": "center"
             },
             {
@@ -2158,7 +2300,261 @@
               "align": "center"
             },
             {
-              "text": "25",
+              "text": "17",
+              "align": "center"
+            },
+            {
+              "text": "80",
+              "align": "center"
+            },
+            {
+              "text": "15",
+              "align": "center"
+            },
+            {
+              "text": "107",
+              "align": "center"
+            },
+            {
+              "text": "54",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "1710",
+              "align": "center"
+            },
+            {
+              "text": "M20",
+              "align": "center"
+            },
+            {
+              "text": "80",
+              "align": "center"
+            },
+            {
+              "text": "17",
+              "align": "center"
+            },
+            {
+              "text": "80",
+              "align": "center"
+            },
+            {
+              "text": "15",
+              "align": "center"
+            },
+            {
+              "text": "107",
+              "align": "center"
+            },
+            {
+              "text": "54",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "1711",
+              "align": "center"
+            },
+            {
+              "text": "M20",
+              "align": "center"
+            },
+            {
+              "text": "100",
+              "align": "center"
+            },
+            {
+              "text": "17",
+              "align": "center"
+            },
+            {
+              "text": "80",
+              "align": "center"
+            },
+            {
+              "text": "15",
+              "align": "center"
+            },
+            {
+              "text": "107",
+              "align": "center"
+            },
+            {
+              "text": "54",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "1712",
+              "align": "center"
+            },
+            {
+              "text": "M20",
+              "align": "center"
+            },
+            {
+              "text": "150",
+              "align": "center"
+            },
+            {
+              "text": "17",
+              "align": "center"
+            },
+            {
+              "text": "80",
+              "align": "center"
+            },
+            {
+              "text": "15",
+              "align": "center"
+            },
+            {
+              "text": "107",
+              "align": "center"
+            },
+            {
+              "text": "54",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "1713",
+              "align": "center"
+            },
+            {
+              "text": "M16",
+              "align": "center"
+            },
+            {
+              "text": "100",
+              "align": "center"
+            },
+            {
+              "text": "19",
+              "align": "center"
+            },
+            {
+              "text": "100",
+              "align": "center"
+            },
+            {
+              "text": "15",
+              "align": "center"
+            },
+            {
+              "text": "129",
+              "align": "center"
+            },
+            {
+              "text": "66",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "1714",
+              "align": "center"
+            },
+            {
+              "text": "M16",
+              "align": "center"
+            },
+            {
+              "text": "150",
+              "align": "center"
+            },
+            {
+              "text": "19",
+              "align": "center"
+            },
+            {
+              "text": "100",
+              "align": "center"
+            },
+            {
+              "text": "15",
+              "align": "center"
+            },
+            {
+              "text": "129",
+              "align": "center"
+            },
+            {
+              "text": "66",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "1715",
+              "align": "center"
+            },
+            {
+              "text": "M20",
+              "align": "center"
+            },
+            {
+              "text": "100",
+              "align": "center"
+            },
+            {
+              "text": "19",
+              "align": "center"
+            },
+            {
+              "text": "100",
+              "align": "center"
+            },
+            {
+              "text": "15",
+              "align": "center"
+            },
+            {
+              "text": "129",
+              "align": "center"
+            },
+            {
+              "text": "66",
+              "align": "center"
+            }
+          ],
+          [
+            {
+              "text": "1716",
+              "align": "center"
+            },
+            {
+              "text": "M20",
+              "align": "center"
+            },
+            {
+              "text": "150",
+              "align": "center"
+            },
+            {
+              "text": "19",
+              "align": "center"
+            },
+            {
+              "text": "100",
+              "align": "center"
+            },
+            {
+              "text": "15",
+              "align": "center"
+            },
+            {
+              "text": "129",
+              "align": "center"
+            },
+            {
+              "text": "66",
               "align": "center"
             }
           ]
