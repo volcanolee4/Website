@@ -30,6 +30,12 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Install pngquant
+        run: sudo apt-get update && sudo apt-get install -y pngquant
+
+      - name: Compress PNG images
+        run: bash scripts/compress-images.sh
+
       - name: Build
         run: npm run build
 
