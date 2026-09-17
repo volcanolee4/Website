@@ -3477,10 +3477,6 @@
             "align": "center"
           },
           {
-            "text": "T",
-            "align": "center"
-          },
-          {
             "text": "D",
             "align": "center"
           },
@@ -3497,10 +3493,6 @@
             "align": "center"
           },
           {
-            "text": "W",
-            "align": "center"
-          },
-          {
             "text": "H",
             "align": "center"
           },
@@ -3511,20 +3503,12 @@
           {
             "text": "H2",
             "align": "center"
-          },
-          {
-            "text": "SW",
-            "align": "center"
           }
         ],
         "rows": [
           [
             {
               "text": "9001",
-              "align": "center"
-            },
-            {
-              "text": "3/4-10",
               "align": "center"
             },
             {
@@ -3544,10 +3528,6 @@
               "align": "center"
             },
             {
-              "text": "2-1/4",
-              "align": "center"
-            },
-            {
               "text": "1-7/16",
               "align": "center"
             },
@@ -3558,19 +3538,11 @@
             {
               "text": "2.018",
               "align": "center"
-            },
-            {
-              "text": "7/8",
-              "align": "center"
             }
           ],
           [
             {
               "text": "9002",
-              "align": "center"
-            },
-            {
-              "text": "3/4-10",
               "align": "center"
             },
             {
@@ -3590,10 +3562,6 @@
               "align": "center"
             },
             {
-              "text": "2-1/4",
-              "align": "center"
-            },
-            {
               "text": "1-7/16",
               "align": "center"
             },
@@ -3604,19 +3572,11 @@
             {
               "text": "2.018",
               "align": "center"
-            },
-            {
-              "text": "7/8",
-              "align": "center"
             }
           ],
           [
             {
               "text": "9003",
-              "align": "center"
-            },
-            {
-              "text": "3/4-10",
               "align": "center"
             },
             {
@@ -3636,10 +3596,6 @@
               "align": "center"
             },
             {
-              "text": "2-1/4",
-              "align": "center"
-            },
-            {
               "text": "1-7/16",
               "align": "center"
             },
@@ -3650,19 +3606,11 @@
             {
               "text": "2.018",
               "align": "center"
-            },
-            {
-              "text": "7/8",
-              "align": "center"
             }
           ],
           [
             {
               "text": "9004",
-              "align": "center"
-            },
-            {
-              "text": "3/4-10",
               "align": "center"
             },
             {
@@ -3682,10 +3630,6 @@
               "align": "center"
             },
             {
-              "text": "2-1/4",
-              "align": "center"
-            },
-            {
               "text": "1-7/16",
               "align": "center"
             },
@@ -3696,19 +3640,11 @@
             {
               "text": "2.018",
               "align": "center"
-            },
-            {
-              "text": "7/8",
-              "align": "center"
             }
           ],
           [
             {
               "text": "9005",
-              "align": "center"
-            },
-            {
-              "text": "3/4-10",
               "align": "center"
             },
             {
@@ -3728,10 +3664,6 @@
               "align": "center"
             },
             {
-              "text": "2-1/4",
-              "align": "center"
-            },
-            {
               "text": "1-7/16",
               "align": "center"
             },
@@ -3742,19 +3674,11 @@
             {
               "text": "2.018",
               "align": "center"
-            },
-            {
-              "text": "7/8",
-              "align": "center"
             }
           ],
           [
             {
               "text": "9006",
-              "align": "center"
-            },
-            {
-              "text": "3/4-10",
               "align": "center"
             },
             {
@@ -3774,10 +3698,6 @@
               "align": "center"
             },
             {
-              "text": "2-1/4",
-              "align": "center"
-            },
-            {
               "text": "1-7/16",
               "align": "center"
             },
@@ -3787,10 +3707,6 @@
             },
             {
               "text": "2.018",
-              "align": "center"
-            },
-            {
-              "text": "7/8",
               "align": "center"
             }
           ]
