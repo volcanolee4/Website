@@ -34,7 +34,8 @@ collections:
             fields:
               - { label: "公司简称", name: name, widget: string }
               - { label: "公司全称", name: fullName, widget: string }
-              - { label: "邮箱", name: email, widget: string }
+              - { label: "邮箱前缀（@ 之前）", name: emailUser, widget: string, hint: "防垃圾邮件：邮箱拆成两段存储，前端自动拼接显示，这里只填 @ 之前的部分" }
+              - { label: "邮箱域名（@ 之后）", name: emailDomain, widget: string, hint: "只填 @ 之后的部分，例如 hygoal.com" }
               - { label: "电话", name: phone, widget: string }
               - { label: "WhatsApp", name: whatsapp, widget: string }
               - { label: "地址", name: address, widget: string }

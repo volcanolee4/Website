@@ -2,7 +2,8 @@
   "company": {
     "name": "HYGOAL",
     "fullName": "HYGOAL",
-    "email": "info@hygoal.com",
+    "emailUser": "info",
+    "emailDomain": "hygoal.com",
     "phone": "+86 574 8806 0075",
     "whatsapp": "N/A",
     "address": "Ningbo, Zhejiang, China",

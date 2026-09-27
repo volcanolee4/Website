@@ -11,7 +11,11 @@ const ICON_MAP = {
 	'drafting-compass': DraftingCompass,
 };
 
-export const COMPANY = siteData.company;
+// 防垃圾邮件爬虫：邮箱拆成两段存（@ 前后），运行时拼接，源码与打包产物里都不出现完整邮箱
+export const COMPANY = {
+	...siteData.company,
+	email: `${siteData.company.emailUser}@${siteData.company.emailDomain}`,
+};
 
 export const IMAGES = siteData.images;
 
