@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+import Seo from '@/components/Seo';
 import { ArrowRight, PackageSearch, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useState } from 'react';
 import Reveal from '@/components/Reveal';
 import PageHero from '@/components/PageHero';
 import CtaBand from '@/components/CtaBand';
-import { CATEGORIES, PRODUCTS, categoryName } from '@/data/site';
+import { CATEGORIES, IMAGES, PRODUCTS, categoryName } from '@/data/site';
 import { getProductDetail } from '@/data/productDetails';
 
 const ALL = 'all';
@@ -48,6 +49,13 @@ export default function ProductsPage() {
 					content="Browse HYGOAL standard machine elements: indexing plungers, levelling feet, cam levers and customized CNC machining service. 48-hour quotation, export worldwide."
 				/>
 			</Helmet>
+
+			<Seo
+				title="Products | Indexing Plungers, Leveling Feet, Cam Levers — HYGOAL"
+				description="Browse HYGOAL standard machine elements: indexing plungers, levelling feet, cam levers and customized CNC machining service. 48-hour quotation, export worldwide."
+				image={IMAGES.banner2}
+				siteName="HYGOAL"
+			/>
 
 			<PageHero
 				kicker="Product Range"

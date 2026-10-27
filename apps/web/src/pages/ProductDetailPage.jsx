@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { Link, Navigate, useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+import Seo, { SITE_URL } from '@/components/Seo';
 import { ArrowLeft, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import PageHero from '@/components/PageHero';
 import CtaBand from '@/components/CtaBand';
@@ -63,7 +64,8 @@ export default function ProductDetailPage() {
 	const notes = detail?.notes;
 
 	// —— 结构化数据（JSON-LD）：产品 + 面包屑，帮助搜索引擎和 AI 理解页面 ——
-	const origin = window.location.origin;
+	// 固定用站点正式域名，避免 localhost / apex 域名混进 canonical 与 JSON-LD
+	const origin = SITE_URL;
 	const productImage = product.image.startsWith('http') ? product.image : origin + product.image;
 	const productUrl = `${origin}/products/${product.id}`;
 	const productJsonLd = JSON.stringify({
@@ -101,6 +103,15 @@ export default function ProductDetailPage() {
 				<script type="application/ld+json">{productJsonLd}</script>
 				<script type="application/ld+json">{breadcrumbJsonLd}</script>
 			</Helmet>
+
+			<Seo
+				title={`${product.name} — HYGOAL`}
+				description={`${product.name}. ${product.spec}. Specs, drawings and technical data from HYGOAL.`}
+				image={productImage}
+				url={productUrl}
+				type="product"
+				siteName="HYGOAL"
+			/>
 
 			<PageHero
 				kicker={categoryName(product.category)}

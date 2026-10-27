@@ -376,9 +376,12 @@ export default defineConfig({
 	},
 	customLogger: logger,
 	plugins: [
-		...(isDev ? [inlineEditPlugin(), editModeDevPlugin(), iframeRouteRestorationPlugin(), sitePagesPlugin(), pocketbaseAuthPlugin(), sessionJournalPlugin()] : []),
+		// Horizons 建站器的 5 段内联脚本（window.onerror / console / fetch 补丁 + parent.postMessage）
+		// 只在 dev 注入；生产 HTML 不需要，去掉可减小体积、避免向父窗口泄露错误栈。
+		...(isDev
+			? [inlineEditPlugin(), editModeDevPlugin(), iframeRouteRestorationPlugin(), sitePagesPlugin(), pocketbaseAuthPlugin(), sessionJournalPlugin(), addTransformIndexHtml]
+			: []),
 		react(),
-		addTransformIndexHtml
 	],
 	server: {
 		port: 3000,

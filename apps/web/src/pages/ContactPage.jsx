@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
+import Seo from '@/components/Seo';
 import { Mail, Phone, MapPin, Clock, Send, CheckCircle2 } from 'lucide-react';
 import Reveal from '@/components/Reveal';
 import PageHero from '@/components/PageHero';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
-import { COMPANY } from '@/data/site';
+import { COMPANY, IMAGES } from '@/data/site';
 
 const INFO = [
 	{ icon: MapPin, label: 'Factory Address', value: COMPANY.address },
@@ -48,6 +49,13 @@ export default function ContactPage() {
 					content="Contact HYGOAL Precision Components in Ningbo, China for quotations on indexing plungers, levelling feet, cam levers and custom CNC machining. Engineers reply within 48 hours."
 				/>
 			</Helmet>
+
+			<Seo
+				title="Contact HYGOAL | Request a Quotation Within 48 Hours"
+				description="Contact HYGOAL Precision Components in Ningbo, China for quotations on indexing plungers, levelling feet, cam levers and custom CNC machining. Engineers reply within 48 hours."
+				image={IMAGES.workshop}
+				siteName="HYGOAL"
+			/>
 
 			<PageHero
 				kicker="Contact Us"

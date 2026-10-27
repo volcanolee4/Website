@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import Seo from '@/components/Seo';
 import { CheckCircle2 } from 'lucide-react';
 import Reveal from '@/components/Reveal';
 import PageHero from '@/components/PageHero';
@@ -16,6 +17,13 @@ export default function AboutPage() {
 					content="Why choose HYGOAL — precision craftsmanship, cutting-edge technology, cost-effective solutions, experienced experts, seamless customization and global reach from Ningbo, China."
 				/>
 			</Helmet>
+
+			<Seo
+				title="Why Choose HYGOAL | Precision Components Manufacturer in Ningbo, China"
+				description="Why choose HYGOAL — precision craftsmanship, cutting-edge technology, cost-effective solutions, experienced experts, seamless customization and global reach from Ningbo, China."
+				image={IMAGES.workshop}
+				siteName="HYGOAL"
+			/>
 
 			<PageHero
 				kicker="Advantage"
