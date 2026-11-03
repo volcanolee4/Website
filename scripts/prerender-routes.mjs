@@ -76,7 +76,8 @@ function escapeHtml(s) {
 }
 
 function injectHead(html, route) {
-	const canonical = SITE_URL + (route.path === '/' ? '/' : route.path);
+	const pathWithSlash = route.path === '/' ? '/' : (route.path.endsWith('/') ? route.path : route.path + '/');
+	const canonical = SITE_URL + pathWithSlash;
 	const title = escapeHtml(route.title);
 	const description = escapeHtml(route.description);
 	const image = route.product?.image
@@ -90,27 +91,27 @@ function injectHead(html, route) {
 	if (/<meta\s+name="description"[^>]*>/i.test(out)) {
 		out = out.replace(
 			/<meta\s+name="description"[^>]*>/i,
-			`<meta name="description" content="${description}" />`,
+			`<meta name="description" data-react-helmet="true" content="${description}" />`,
 		);
 	} else {
 		out = out.replace(
 			/<\/title>/i,
-			`</title>\n\t\t<meta name="description" content="${description}" />`,
+			`</title>\n\t\t<meta name="description" data-react-helmet="true" content="${description}" />`,
 		);
 	}
 
 	const headExtras = `
-		<link rel="canonical" href="${canonical}" />
-		<meta property="og:url" content="${canonical}" />
-		<meta property="og:type" content="${route.product ? 'product' : 'website'}" />
-		<meta property="og:site_name" content="HYGOAL" />
-		<meta property="og:title" content="${title}" />
-		<meta property="og:description" content="${description}" />
-		<meta property="og:image" content="${escapeHtml(image)}" />
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content="${title}" />
-		<meta name="twitter:description" content="${description}" />
-		<meta name="twitter:image" content="${escapeHtml(image)}" />
+		<link rel="canonical" data-react-helmet="true" href="${canonical}" />
+		<meta property="og:url" data-react-helmet="true" content="${canonical}" />
+		<meta property="og:type" data-react-helmet="true" content="${route.product ? 'product' : 'website'}" />
+		<meta property="og:site_name" data-react-helmet="true" content="HYGOAL" />
+		<meta property="og:title" data-react-helmet="true" content="${title}" />
+		<meta property="og:description" data-react-helmet="true" content="${description}" />
+		<meta property="og:image" data-react-helmet="true" content="${escapeHtml(image)}" />
+		<meta name="twitter:card" data-react-helmet="true" content="summary_large_image" />
+		<meta name="twitter:title" data-react-helmet="true" content="${title}" />
+		<meta name="twitter:description" data-react-helmet="true" content="${description}" />
+		<meta name="twitter:image" data-react-helmet="true" content="${escapeHtml(image)}" />
 `;
 
 	// Drop any previous prerender markers to keep rebuilds idempotent.
@@ -137,7 +138,7 @@ function injectHead(html, route) {
 			'@type': 'BreadcrumbList',
 			itemListElement: [
 				{ '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
-				{ '@type': 'ListItem', position: 2, name: 'Products', item: `${SITE_URL}/products` },
+				{ '@type': 'ListItem', position: 2, name: 'Products', item: `${SITE_URL}/products/` },
 				{ '@type': 'ListItem', position: 3, name: route.product.name, item: canonical },
 			],
 		};
@@ -157,7 +158,7 @@ function injectHead(html, route) {
 				itemListElement: (route.products || []).map((p, i) => ({
 					'@type': 'ListItem',
 					position: i + 1,
-					url: `${SITE_URL}/products/${p.id}`,
+					url: `${SITE_URL}/products/${p.id}/`,
 					name: p.name,
 				})),
 			},
@@ -167,7 +168,7 @@ function injectHead(html, route) {
 			'@type': 'BreadcrumbList',
 			itemListElement: [
 				{ '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
-				{ '@type': 'ListItem', position: 2, name: 'Products', item: `${SITE_URL}/products` },
+				{ '@type': 'ListItem', position: 2, name: 'Products', item: `${SITE_URL}/products/` },
 				{ '@type': 'ListItem', position: 3, name: route.category.name, item: canonical },
 			],
 		};

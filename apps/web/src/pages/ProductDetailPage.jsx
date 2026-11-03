@@ -63,31 +63,10 @@ export default function ProductDetailPage() {
 	const table = detail?.table;
 	const notes = detail?.notes;
 
-	// —— 结构化数据（JSON-LD）：产品 + 面包屑，帮助搜索引擎和 AI 理解页面 ——
-	// 固定用站点正式域名，避免 localhost / apex 域名混进 canonical 与 JSON-LD
+	// Prerender injects Product + BreadcrumbList JSON-LD; avoid client duplicates.
 	const origin = SITE_URL;
 	const productImage = product.image.startsWith('http') ? product.image : origin + product.image;
-	const productUrl = `${origin}/products/${product.id}`;
-	const productJsonLd = JSON.stringify({
-		'@context': 'https://schema.org',
-		'@type': 'Product',
-		name: product.name,
-		image: productImage,
-		description: product.spec,
-		sku: product.id,
-		category: categoryName(product.category),
-		brand: { '@type': 'Brand', name: 'HYGOAL' },
-		manufacturer: { '@type': 'Organization', name: 'HYGOAL' },
-	});
-	const breadcrumbJsonLd = JSON.stringify({
-		'@context': 'https://schema.org',
-		'@type': 'BreadcrumbList',
-		itemListElement: [
-			{ '@type': 'ListItem', position: 1, name: 'Home', item: `${origin}/` },
-			{ '@type': 'ListItem', position: 2, name: 'Products', item: `${origin}/products` },
-			{ '@type': 'ListItem', position: 3, name: product.name, item: productUrl },
-		],
-	});
+	const productUrl = `${origin}/products/${product.id}/`;
 
 	const prevImg = () => setActive((i) => (i - 1 + gallery.length) % gallery.length);
 	const nextImg = () => setActive((i) => (i + 1) % gallery.length);
@@ -100,9 +79,7 @@ export default function ProductDetailPage() {
 					name="description"
 					content={`${product.name}. ${product.spec}. Specs, drawings and technical data from HYGOAL.`}
 				/>
-				<script type="application/ld+json">{productJsonLd}</script>
-				<script type="application/ld+json">{breadcrumbJsonLd}</script>
-			</Helmet>
+											</Helmet>
 
 			<Seo
 				title={`${product.name} — HYGOAL`}
@@ -180,9 +157,9 @@ export default function ProductDetailPage() {
 
 						{/* Title + summary */}
 						<div className="flex flex-col">
-							<h1 className="font-display text-3xl font-bold leading-tight tracking-tight text-foreground md:text-4xl">
+							<h2 className="font-display text-3xl font-bold leading-tight tracking-tight text-foreground md:text-4xl">
 								{product.name}
-							</h1>
+							</h2>
 							<div className="mt-6 border-t border-border pt-6 text-base leading-relaxed text-muted-foreground">
 								{summaryLines.map((line) => (
 									<p key={line} className="mb-1 last:mb-0">

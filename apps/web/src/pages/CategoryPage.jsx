@@ -33,7 +33,7 @@ export default function CategoryPage({ categorySlug }) {
 	const description =
 		category.seoDescription ||
 		`Browse HYGOAL ${category.name.toLowerCase()} products manufactured in Ningbo, China. Stock sizes and OEM / ODM support with 48-hour quotation.`;
-	const canonical = `${SITE_URL}/${category.slug}`;
+	const canonical = `${SITE_URL}/${category.slug}/`;
 	const heroTitle = category.heroTitle || category.name;
 	const heroDescription = category.heroDescription || category.blurb;
 
@@ -42,25 +42,6 @@ export default function CategoryPage({ categorySlug }) {
 			<Helmet>
 				<title>{title}</title>
 				<meta name="description" content={description} />
-				<script type="application/ld+json">
-					{JSON.stringify({
-						'@context': 'https://schema.org',
-						'@type': 'CollectionPage',
-						name: title,
-						description,
-						url: canonical,
-						isPartOf: { '@type': 'WebSite', name: 'HYGOAL', url: `${SITE_URL}/` },
-						mainEntity: {
-							'@type': 'ItemList',
-							itemListElement: products.map((p, i) => ({
-								'@type': 'ListItem',
-								position: i + 1,
-								url: `${SITE_URL}/products/${p.id}`,
-								name: p.name,
-							})),
-						},
-					})}
-				</script>
 			</Helmet>
 
 			<Seo

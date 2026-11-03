@@ -5,7 +5,27 @@ import { Helmet } from 'react-helmet';
 // <title> and <meta name="description"> so the raw HTML stays crawlable.
 export const SITE_URL = 'https://www.hygoal.com';
 
-// og:image / twitter:image 必须是绝对 URL，相对路径社交爬虫抓不到
+/** Prefer trailing-slash paths (GitHub Pages 200); root stays "/". */
+export function toCanonicalPath(pathname) {
+	if (!pathname || pathname === '/') return '/';
+	const clean = pathname.startsWith('/') ? pathname : `/${pathname}`;
+	return clean.endsWith('/') ? clean : `${clean}/`;
+}
+
+export function toCanonicalUrl(pathOrUrl) {
+	if (!pathOrUrl) return `${SITE_URL}/`;
+	if (/^https?:\/\//i.test(pathOrUrl)) {
+		try {
+			const u = new URL(pathOrUrl);
+			return SITE_URL + toCanonicalPath(u.pathname);
+		} catch {
+			return pathOrUrl;
+		}
+	}
+	return SITE_URL + toCanonicalPath(pathOrUrl);
+}
+
+// og:image / twitter:image must be absolute URLs
 const toAbsolute = (url) => {
 	if (!url) return url;
 	if (/^https?:\/\//i.test(url)) return url;
@@ -13,7 +33,11 @@ const toAbsolute = (url) => {
 };
 
 const Seo = ({ title, description, image, url, siteName, type = 'website' }) => {
-	const canonical = url || SITE_URL + window.location.pathname;
+	const pathname =
+		typeof window !== 'undefined' ? window.location.pathname : '/';
+	const canonical = url
+		? toCanonicalUrl(url)
+		: SITE_URL + toCanonicalPath(pathname);
 
 	return (
 		<Helmet>

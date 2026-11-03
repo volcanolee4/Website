@@ -46,13 +46,13 @@ export default function ContactPage() {
 				<title>Contact HYGOAL | Request a Quotation Within 48 Hours</title>
 				<meta
 					name="description"
-					content="Contact HYGOAL Precision Components in Ningbo, China for quotations on indexing plungers, levelling feet, cam levers and custom CNC machining. Engineers reply within 48 hours."
+					content="Contact HYGOAL Precision Components in Ningbo, China for quotations on indexing plungers, leveling feet, cam levers and custom CNC machining. Engineers reply within 48 hours."
 				/>
 			</Helmet>
 
 			<Seo
 				title="Contact HYGOAL | Request a Quotation Within 48 Hours"
-				description="Contact HYGOAL Precision Components in Ningbo, China for quotations on indexing plungers, levelling feet, cam levers and custom CNC machining. Engineers reply within 48 hours."
+				description="Contact HYGOAL Precision Components in Ningbo, China for quotations on indexing plungers, leveling feet, cam levers and custom CNC machining. Engineers reply within 48 hours."
 				image={IMAGES.workshop}
 				siteName="HYGOAL"
 			/>

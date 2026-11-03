@@ -30,7 +30,7 @@ const xml = `<?xml version="1.0" encoding="UTF-8"?>
 ${urls
   .map(
     (u) => `  <url>
-    <loc>${BASE_URL}${u}</loc>
+    <loc>${u === '' ? BASE_URL : `${BASE_URL}${u}/`}</loc>
     <lastmod>${now}</lastmod>
     <changefreq>${u === '' ? 'weekly' : 'monthly'}</changefreq>
     <priority>${u === '' ? '1.0' : u.startsWith('products/') ? '0.8' : categories.categories.some((c) => c.slug === u) ? '0.7' : '0.6'}</priority>

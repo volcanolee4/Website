@@ -51,13 +51,13 @@ export default function ProductsPage() {
 				<title>Products | Indexing Plungers, Leveling Feet, Cam Levers — HYGOAL</title>
 				<meta
 					name="description"
-					content="Browse HYGOAL standard machine elements: indexing plungers, levelling feet, cam levers and customized CNC machining service. 48-hour quotation, export worldwide."
+					content="Browse HYGOAL standard machine elements: indexing plungers, leveling feet, cam levers and customized CNC machining service. 48-hour quotation, export worldwide."
 				/>
 			</Helmet>
 
 			<Seo
 				title="Products | Indexing Plungers, Leveling Feet, Cam Levers — HYGOAL"
-				description="Browse HYGOAL standard machine elements: indexing plungers, levelling feet, cam levers and customized CNC machining service. 48-hour quotation, export worldwide."
+				description="Browse HYGOAL standard machine elements: indexing plungers, leveling feet, cam levers and customized CNC machining service. 48-hour quotation, export worldwide."
 				image={IMAGES.banner2}
 				siteName="HYGOAL"
 			/>
