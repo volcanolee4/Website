@@ -58,7 +58,7 @@ export default function ProductsPage() {
 			<Seo
 				title="Products | Indexing Plungers, Leveling Feet, Cam Levers — HYGOAL"
 				description="Browse HYGOAL standard machine elements: indexing plungers, leveling feet, cam levers and customized CNC machining service. 48-hour quotation, export worldwide."
-				image={IMAGES.banner2}
+				image="/images/1698647051683fb62bd92b8dd7ed94e44ded91fdc23be.png"
 				siteName="HYGOAL"
 			/>
 

@@ -8,6 +8,35 @@ import CtaBand from '@/components/CtaBand';
 import { PRODUCTS, categoryName } from '@/data/site';
 import { getProductDetail } from '@/data/productDetails';
 
+function buildProductMetaDescription(product, detail) {
+	const summaryExtra = (detail?.summary || '')
+		.split('\n')
+		.slice(1)
+		.join(' ')
+		.trim();
+	let d = [
+		`${product.name} — ${product.spec || 'Precision machine component'}.`,
+		summaryExtra ? `${summaryExtra}.` : '',
+		'Factory-direct from HYGOAL in Ningbo, China; specs, drawings and quotation within 48 hours.',
+	]
+		.filter(Boolean)
+		.join(' ')
+		.replace(/\s+/g, ' ')
+		.trim();
+	if (d.length > 160) {
+		d = d.slice(0, 159).replace(/\s+\S*$/, '').trimEnd() + '…';
+	}
+	if (d.length < 120) {
+		d = (d + ' Precision machine components manufactured by HYGOAL for export worldwide.')
+			.replace(/\s+/g, ' ')
+			.trim();
+		if (d.length > 160) {
+			d = d.slice(0, 159).replace(/\s+\S*$/, '').trimEnd() + '…';
+		}
+	}
+	return d;
+}
+
 const RECENT_KEY = 'hygoal_recent_products';
 
 function readRecent() {
@@ -59,6 +88,7 @@ export default function ProductDetailPage() {
 		return <Navigate to="/products" replace />;
 	}
 
+	const metaDescription = buildProductMetaDescription(product, detail);
 	const summaryLines = (detail?.summary || product.spec).split('\n');
 	const table = detail?.table;
 	const notes = detail?.notes;
@@ -77,13 +107,13 @@ export default function ProductDetailPage() {
 				<title>{product.name} — HYGOAL</title>
 				<meta
 					name="description"
-					content={`${product.name}. ${product.spec}. Specs, drawings and technical data from HYGOAL.`}
+					content={metaDescription}
 				/>
 											</Helmet>
 
 			<Seo
 				title={`${product.name} — HYGOAL`}
-				description={`${product.name}. ${product.spec}. Specs, drawings and technical data from HYGOAL.`}
+				description={metaDescription}
 				image={productImage}
 				url={productUrl}
 				type="product"

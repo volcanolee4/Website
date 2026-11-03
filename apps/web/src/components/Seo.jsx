@@ -41,6 +41,7 @@ const Seo = ({ title, description, image, url, siteName, type = 'website' }) => 
 
 	return (
 		<Helmet>
+			<meta name="robots" content="index, follow" />
 			<link rel="canonical" href={canonical} />
 			<meta property="og:url" content={canonical} />
 			<meta property="og:type" content={type} />

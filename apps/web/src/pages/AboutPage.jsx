@@ -21,7 +21,7 @@ export default function AboutPage() {
 			<Seo
 				title="Why Choose HYGOAL | Precision Components Manufacturer in Ningbo, China"
 				description="Why choose HYGOAL — precision craftsmanship, cutting-edge technology, cost-effective solutions, experienced experts, seamless customization and global reach from Ningbo, China."
-				image={IMAGES.workshop}
+				image="/images/1698647051683fb62bd92b8dd7ed94e44ded91fdc23be.png"
 				siteName="HYGOAL"
 			/>
 

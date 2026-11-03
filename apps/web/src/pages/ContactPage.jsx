@@ -53,7 +53,7 @@ export default function ContactPage() {
 			<Seo
 				title="Contact HYGOAL | Request a Quotation Within 48 Hours"
 				description="Contact HYGOAL Precision Components in Ningbo, China for quotations on indexing plungers, leveling feet, cam levers and custom CNC machining. Engineers reply within 48 hours."
-				image={IMAGES.workshop}
+				image="/images/1698647051683fb62bd92b8dd7ed94e44ded91fdc23be.png"
 				siteName="HYGOAL"
 			/>
 

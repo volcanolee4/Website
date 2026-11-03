@@ -1,8 +1,11 @@
 /**
  * Post-build route prerender for GitHub Pages.
  * Copies the Vite-built index.html into each SPA path as path/index.html
- * and injects per-route <title>, description, canonical, og tags, and
- * (for products) a Product JSON-LD block into the first paint HTML.
+ * and injects per-route <title>, description, canonical, og tags,
+ * JSON-LD, and a crawlable HTML body inside #root (h1 + main copy).
+ *
+ * Body injection is safe with ReactDOM.createRoot (not hydrateRoot):
+ * the client wipe-replaces #root on boot while crawlers still see text.
  *
  * Usage (after vite build):
  *   node scripts/prerender-routes.mjs
@@ -14,6 +17,8 @@ import { fileURLToPath } from 'node:url';
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const distDir = join(root, 'dist', 'apps', 'web');
 const SITE_URL = 'https://www.hygoal.com';
+/** Core-page social image: PNG (not SVG) so crawlers/share cards accept it. */
+const DEFAULT_OG_IMAGE = `${SITE_URL}/images/1698647051683fb62bd92b8dd7ed94e44ded91fdc23be.png`;
 
 const products = JSON.parse(
 	readFileSync(join(root, 'apps', 'web', 'src', 'content', 'products.json'), 'utf8'),
@@ -23,49 +28,14 @@ const categories = JSON.parse(
 	readFileSync(join(root, 'apps', 'web', 'src', 'content', 'categories.json'), 'utf8'),
 ).categories;
 
+const productDetails = JSON.parse(
+	readFileSync(join(root, 'apps', 'web', 'src', 'content', 'productDetails.json'), 'utf8'),
+).details;
+
+const detailsById = new Map(productDetails.map((d) => [d.id, d]));
+
 const DEFAULT_DESC =
 	'HYGOAL manufactures and exports precision machine components — indexing plungers, leveling feet, cam levers and custom CNC-machined parts — from Ningbo, China to 40+ countries.';
-
-const routes = [
-	{
-		path: '/',
-		title: 'HYGOAL | Indexing Plunger, Leveling Feet & Cam Lever Manufacturer',
-		description: DEFAULT_DESC,
-	},
-	{
-		path: '/about',
-		title: 'Why Choose HYGOAL | Precision Components Manufacturer in Ningbo, China',
-		description:
-			'Why choose HYGOAL — precision craftsmanship, cost-effective factory pricing, and customized industrial components from Ningbo, China.',
-	},
-	{
-		path: '/products',
-		title: 'Products | Indexing Plungers, Leveling Feet, Cam Levers — HYGOAL',
-		description:
-			'Browse HYGOAL standard machine components: indexing plungers, leveling feet, cam levers and related industrial accessories.',
-	},
-	{
-		path: '/contact',
-		title: 'Contact HYGOAL | Request a Quotation Within 48 Hours',
-		description:
-			'Contact HYGOAL Precision Components in Ningbo for quotations on indexing plungers, leveling feet, cam levers and custom CNC parts.',
-	},
-	...categories.map((c) => ({
-		path: `/${c.slug}`,
-		title: c.seoTitle || `${c.name} Manufacturer | HYGOAL`,
-		description:
-			c.seoDescription ||
-			`Browse HYGOAL ${c.name.toLowerCase()} products manufactured in Ningbo, China.`,
-		category: c,
-		products: products.filter((p) => p.category === c.slug),
-	})),
-	...products.map((p) => ({
-		path: `/products/${p.id}`,
-		title: `${p.name} — HYGOAL`,
-		description: `${p.name}. ${p.spec || p.category || 'Precision machine component from HYGOAL, Ningbo, China.'}`,
-		product: p,
-	})),
-];
 
 function escapeHtml(s) {
 	return String(s)
@@ -75,19 +45,180 @@ function escapeHtml(s) {
 		.replaceAll('"', '&quot;');
 }
 
+function clampMetaDescription(text, min = 120, max = 160) {
+	let d = String(text || '')
+		.replace(/\s+/g, ' ')
+		.trim();
+	if (d.length > max) {
+		d = d.slice(0, max - 1).replace(/\s+\S*$/, '').trimEnd() + '…';
+	}
+	if (d.length < min) {
+		const pad =
+			' Precision machine components from HYGOAL in Ningbo, China — request specs and a quotation within 48 hours.';
+		d = (d + pad).replace(/\s+/g, ' ').trim();
+		if (d.length > max) {
+			d = d.slice(0, max - 1).replace(/\s+\S*$/, '').trimEnd() + '…';
+		}
+	}
+	return d;
+}
+
+function productMetaDescription(product) {
+	const detail = detailsById.get(product.id);
+	const summaryExtra = (detail?.summary || '')
+		.split('\n')
+		.slice(1)
+		.join(' ')
+		.trim();
+	const base = [
+		`${product.name} — ${product.spec || 'Precision machine component'}.`,
+		summaryExtra ? `${summaryExtra}.` : '',
+		'Factory-direct from HYGOAL in Ningbo, China; specs, drawings and quotation within 48 hours.',
+	]
+		.filter(Boolean)
+		.join(' ');
+	return clampMetaDescription(base);
+}
+
+function absoluteImage(pathOrUrl) {
+	if (!pathOrUrl) return DEFAULT_OG_IMAGE;
+	if (/^https?:\/\//i.test(pathOrUrl)) return pathOrUrl;
+	return SITE_URL + (pathOrUrl.startsWith('/') ? pathOrUrl : `/${pathOrUrl}`);
+}
+
+const routes = [
+	{
+		path: '/',
+		title: 'HYGOAL | Indexing Plunger, Leveling Feet & Cam Lever Manufacturer',
+		description: DEFAULT_DESC,
+		bodyHtml: `
+			<main>
+				<h1>Precision Machine Components from Ningbo, China</h1>
+				<p>${escapeHtml(DEFAULT_DESC)}</p>
+				<p>HYGOAL manufactures indexing plungers, leveling feet, cam levers and custom CNC-machined parts for export to 40+ countries.</p>
+				<ul>
+					<li><a href="/indexing-plunger/">Indexing Plungers</a></li>
+					<li><a href="/levelling-feet/">Leveling Feet</a></li>
+					<li><a href="/cam-lever/">Cam Levers</a></li>
+					<li><a href="/customized-service/">Customized CNC Service</a></li>
+					<li><a href="/products/">All Products</a></li>
+					<li><a href="/about/">About HYGOAL</a></li>
+					<li><a href="/contact/">Contact / Quotation</a></li>
+				</ul>
+			</main>`,
+	},
+	{
+		path: '/about',
+		title: 'Why Choose HYGOAL | Precision Components Manufacturer in Ningbo, China',
+		description:
+			'Why choose HYGOAL — precision craftsmanship, cost-effective factory pricing, and customized industrial components from Ningbo, China.',
+		bodyHtml: `
+			<main>
+				<h1>Why Choose HYGOAL</h1>
+				<p>Why choose HYGOAL — precision craftsmanship, cost-effective factory pricing, and customized industrial components from Ningbo, China.</p>
+				<p>Precision-engineered indexing plungers, leveling feet and cam levers with OEM / ODM support and export worldwide.</p>
+				<p><a href="/products/">Browse products</a> · <a href="/contact/">Request a quotation</a></p>
+			</main>`,
+	},
+	{
+		path: '/products',
+		title: 'Products | Indexing Plungers, Leveling Feet, Cam Levers — HYGOAL',
+		description:
+			'Browse HYGOAL standard machine components: indexing plungers, leveling feet, cam levers and related industrial accessories.',
+		bodyHtml: `
+			<main>
+				<h1>HYGOAL Products</h1>
+				<p>Browse HYGOAL standard machine components: indexing plungers, leveling feet, cam levers and related industrial accessories.</p>
+				<ul>
+					<li><a href="/indexing-plunger/">Indexing Plunger</a></li>
+					<li><a href="/levelling-feet/">Leveling Feet</a></li>
+					<li><a href="/cam-lever/">Cam Lever</a></li>
+					<li><a href="/customized-service/">Customized Service</a></li>
+				</ul>
+			</main>`,
+	},
+	{
+		path: '/contact',
+		title: 'Contact HYGOAL | Request a Quotation Within 48 Hours',
+		description:
+			'Contact HYGOAL Precision Components in Ningbo for quotations on indexing plungers, leveling feet, cam levers and custom CNC parts.',
+		bodyHtml: `
+			<main>
+				<h1>Contact HYGOAL</h1>
+				<p>Contact HYGOAL Precision Components in Ningbo for quotations on indexing plungers, leveling feet, cam levers and custom CNC parts.</p>
+				<p>Engineers reply within 48 hours, Monday to Saturday. Tell us the part number, drawing or quantity you need.</p>
+				<p><a href="/products/">View products</a></p>
+			</main>`,
+	},
+	...categories.map((c) => {
+		const catProducts = products.filter((p) => p.category === c.slug);
+		const description =
+			c.seoDescription ||
+			`Browse HYGOAL ${c.name.toLowerCase()} products manufactured in Ningbo, China.`;
+		const h1 = c.heroTitle || c.name;
+		const list = catProducts
+			.map(
+				(p) =>
+					`<li><a href="/products/${p.id}/">${escapeHtml(p.name)}</a> — ${escapeHtml(p.spec || '')}</li>`,
+			)
+			.join('\n');
+		return {
+			path: `/${c.slug}`,
+			title: c.seoTitle || `${c.name} Manufacturer | HYGOAL`,
+			description,
+			category: c,
+			products: catProducts,
+			bodyHtml: `
+			<main>
+				<h1>${escapeHtml(h1)}</h1>
+				<p>${escapeHtml(c.heroDescription || c.blurb || description)}</p>
+				<p>${escapeHtml(description)}</p>
+				<ul>
+					${list}
+				</ul>
+				<p><a href="/products/">All products</a> · <a href="/contact/">Request a quotation</a></p>
+			</main>`,
+		};
+	}),
+	...products.map((p) => {
+		const description = productMetaDescription(p);
+		const detail = detailsById.get(p.id);
+		const summaryBlock = escapeHtml((detail?.summary || p.spec || '').replace(/\n/g, ' — '));
+		return {
+			path: `/products/${p.id}`,
+			title: `${p.name} — HYGOAL`,
+			description,
+			product: p,
+			bodyHtml: `
+			<main>
+				<article>
+					<h1>${escapeHtml(p.name)}</h1>
+					<p>${escapeHtml(description)}</p>
+					<p>${summaryBlock}</p>
+					<p>Category: <a href="/${escapeHtml(p.category)}/">${escapeHtml(p.category)}</a> · SKU: ${escapeHtml(p.id)}</p>
+					<p><a href="/products/">All products</a> · <a href="/contact/">Request a quotation</a></p>
+				</article>
+			</main>`,
+		};
+	}),
+];
+
 function injectHead(html, route) {
-	const pathWithSlash = route.path === '/' ? '/' : (route.path.endsWith('/') ? route.path : route.path + '/');
+	const pathWithSlash = route.path === '/' ? '/' : route.path.endsWith('/') ? route.path : route.path + '/';
 	const canonical = SITE_URL + pathWithSlash;
 	const title = escapeHtml(route.title);
 	const description = escapeHtml(route.description);
 	const image = route.product?.image
-		? SITE_URL + (route.product.image.startsWith('/') ? route.product.image : `/${route.product.image}`)
+		? absoluteImage(route.product.image)
 		: route.category?.image
-			? SITE_URL + (route.category.image.startsWith('/') ? route.category.image : `/${route.category.image}`)
-			: `${SITE_URL}/images/logoa.svg`;
+			? absoluteImage(route.category.image)
+			: DEFAULT_OG_IMAGE;
 
 	let out = html;
-	out = out.replace(/<title>[^<]*<\/title>/i, `<title>${title}</title>`);
+	out = out.replace(
+		/<title[^>]*>[^<]*<\/title>/i,
+		`<title data-react-helmet="true">${title}</title>`,
+	);
 	if (/<meta\s+name="description"[^>]*>/i.test(out)) {
 		out = out.replace(
 			/<meta\s+name="description"[^>]*>/i,
@@ -97,6 +228,18 @@ function injectHead(html, route) {
 		out = out.replace(
 			/<\/title>/i,
 			`</title>\n\t\t<meta name="description" data-react-helmet="true" content="${description}" />`,
+		);
+	}
+
+	if (/<meta\s+name="robots"[^>]*>/i.test(out)) {
+		out = out.replace(
+			/<meta\s+name="robots"[^>]*>/i,
+			`<meta name="robots" data-react-helmet="true" content="index, follow" />`,
+		);
+	} else {
+		out = out.replace(
+			/<\/title>/i,
+			`</title>\n\t\t<meta name="robots" data-react-helmet="true" content="index, follow" />`,
 		);
 	}
 
@@ -123,6 +266,16 @@ function injectHead(html, route) {
 
 	let jsonLd = '';
 	if (route.product) {
+		const offer = {
+			'@type': 'Offer',
+			url: canonical,
+			availability: 'https://schema.org/InStock',
+			priceCurrency: 'USD',
+		};
+		// Only attach a real price when product data provides one (none today).
+		if (route.product.price != null && route.product.price !== '') {
+			offer.price = String(route.product.price);
+		}
 		const productLd = {
 			'@context': 'https://schema.org',
 			'@type': 'Product',
@@ -132,6 +285,7 @@ function injectHead(html, route) {
 			brand: { '@type': 'Brand', name: 'HYGOAL' },
 			url: canonical,
 			image: image,
+			offers: offer,
 		};
 		const breadcrumbLd = {
 			'@context': 'https://schema.org',
@@ -182,6 +336,19 @@ function injectHead(html, route) {
 	return out;
 }
 
+function injectBody(html, route) {
+	const inner = (route.bodyHtml || '').trim();
+	if (!inner) return html;
+	// Replace empty #root; also tolerate whitespace-only root from prior builds.
+	if (/<div id="root">[\s\S]*?<\/div>\s*<script/i.test(html)) {
+		return html.replace(
+			/<div id="root">[\s\S]*?<\/div>(\s*<script)/i,
+			`<div id="root">\n${inner}\n\t\t</div>$1`,
+		);
+	}
+	return html.replace(/<div id="root"><\/div>/i, `<div id="root">\n${inner}\n\t\t</div>`);
+}
+
 function destFor(routePath) {
 	if (routePath === '/') return join(distDir, 'index.html');
 	const clean = routePath.replace(/^\//, '').replace(/\/$/, '');
@@ -196,7 +363,8 @@ if (!existsSync(join(distDir, 'index.html'))) {
 const baseHtml = readFileSync(join(distDir, 'index.html'), 'utf8');
 let written = 0;
 for (const route of routes) {
-	const html = injectHead(baseHtml, route);
+	let html = injectHead(baseHtml, route);
+	html = injectBody(html, route);
 	const dest = destFor(route.path);
 	mkdirSync(dirname(dest), { recursive: true });
 	writeFileSync(dest, html);
