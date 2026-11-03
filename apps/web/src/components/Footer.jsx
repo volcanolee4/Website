@@ -43,7 +43,7 @@ export default function Footer() {
 						{CATEGORIES.map((cat) => (
 							<li key={cat.slug}>
 								<Link
-									to={`/products?cat=${cat.slug}`}
+									to={`/${cat.slug}`}
 									className="text-navy-foreground/70 transition-colors hover:text-brand"
 								>
 									{cat.name}

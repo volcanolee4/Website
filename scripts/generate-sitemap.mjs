@@ -12,12 +12,14 @@ const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const BASE_URL = 'https://www.hygoal.com/';
 
 const products = JSON.parse(readFileSync(join(root, 'apps', 'web', 'src', 'content', 'products.json'), 'utf8'));
+const categories = JSON.parse(readFileSync(join(root, 'apps', 'web', 'src', 'content', 'categories.json'), 'utf8'));
 
 const urls = [
   '',
   'about',
   'products',
   'contact',
+  ...categories.categories.map((c) => c.slug),
   ...products.products.map((p) => `products/${p.id}`),
 ];
 
@@ -31,7 +33,7 @@ ${urls
     <loc>${BASE_URL}${u}</loc>
     <lastmod>${now}</lastmod>
     <changefreq>${u === '' ? 'weekly' : 'monthly'}</changefreq>
-    <priority>${u === '' ? '1.0' : u.startsWith('products/') ? '0.8' : '0.6'}</priority>
+    <priority>${u === '' ? '1.0' : u.startsWith('products/') ? '0.8' : categories.categories.some((c) => c.slug === u) ? '0.7' : '0.6'}</priority>
   </url>`
   )
   .join('\n')}
@@ -39,4 +41,4 @@ ${urls
 `;
 
 writeFileSync(join(root, 'apps', 'web', 'public', 'sitemap.xml'), xml);
-console.log(`✅ 已生成 sitemap.xml，共 ${urls.length} 条 URL（BASE_URL: ${BASE_URL}）`);
+console.log(`✓ 已生成 sitemap.xml，共 ${urls.length} 个 URL（BASE_URL: ${BASE_URL}）`);

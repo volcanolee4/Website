@@ -71,7 +71,7 @@ export default function HomePage() {
 							{CATEGORIES.map((cat) => (
 								<Link
 									key={cat.slug}
-									to={`/products?cat=${cat.slug}`}
+									to={`/${cat.slug}`}
 									className="group flex min-h-[56px] flex-1 items-center justify-center gap-2 border-2 border-foreground/10 bg-white px-3 text-center transition-all hover:border-primary hover:bg-primary active:scale-[0.98] md:gap-3 md:px-5"
 								>
 									<cat.icon className="h-5 w-5 text-brand transition-colors group-hover:text-brand" strokeWidth={2} />
@@ -87,7 +87,7 @@ export default function HomePage() {
 					<div className="mt-14 grid grid-cols-2 gap-5 lg:grid-cols-4">
 						{CATEGORIES.map((cat, i) => (
 							<Reveal key={cat.slug} delay={0.08 * i}>
-								<Link to={`/products?cat=${cat.slug}`} className="group block">
+								<Link to={`/${cat.slug}`} className="group block">
 									<div className="relative overflow-hidden bg-secondary">
 										<img
 											src={cat.image}

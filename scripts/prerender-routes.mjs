@@ -19,6 +19,10 @@ const products = JSON.parse(
 	readFileSync(join(root, 'apps', 'web', 'src', 'content', 'products.json'), 'utf8'),
 ).products;
 
+const categories = JSON.parse(
+	readFileSync(join(root, 'apps', 'web', 'src', 'content', 'categories.json'), 'utf8'),
+).categories;
+
 const DEFAULT_DESC =
 	'HYGOAL manufactures and exports precision machine components — indexing plungers, leveling feet, cam levers and custom CNC-machined parts — from Ningbo, China to 40+ countries.';
 
@@ -46,6 +50,15 @@ const routes = [
 		description:
 			'Contact HYGOAL Precision Components in Ningbo for quotations on indexing plungers, leveling feet, cam levers and custom CNC parts.',
 	},
+	...categories.map((c) => ({
+		path: `/${c.slug}`,
+		title: c.seoTitle || `${c.name} Manufacturer | HYGOAL`,
+		description:
+			c.seoDescription ||
+			`Browse HYGOAL ${c.name.toLowerCase()} products manufactured in Ningbo, China.`,
+		category: c,
+		products: products.filter((p) => p.category === c.slug),
+	})),
 	...products.map((p) => ({
 		path: `/products/${p.id}`,
 		title: `${p.name} — HYGOAL`,
@@ -68,7 +81,9 @@ function injectHead(html, route) {
 	const description = escapeHtml(route.description);
 	const image = route.product?.image
 		? SITE_URL + (route.product.image.startsWith('/') ? route.product.image : `/${route.product.image}`)
-		: `${SITE_URL}/images/logoa.svg`;
+		: route.category?.image
+			? SITE_URL + (route.category.image.startsWith('/') ? route.category.image : `/${route.category.image}`)
+			: `${SITE_URL}/images/logoa.svg`;
 
 	let out = html;
 	out = out.replace(/<title>[^<]*<\/title>/i, `<title>${title}</title>`);
@@ -129,6 +144,36 @@ function injectHead(html, route) {
 		jsonLd = `
 		<script type="application/ld+json">${JSON.stringify(productLd)}</script>
 		<script type="application/ld+json">${JSON.stringify(breadcrumbLd)}</script>`;
+	} else if (route.category) {
+		const collectionLd = {
+			'@context': 'https://schema.org',
+			'@type': 'CollectionPage',
+			name: route.title,
+			description: route.description,
+			url: canonical,
+			isPartOf: { '@type': 'WebSite', name: 'HYGOAL', url: `${SITE_URL}/` },
+			mainEntity: {
+				'@type': 'ItemList',
+				itemListElement: (route.products || []).map((p, i) => ({
+					'@type': 'ListItem',
+					position: i + 1,
+					url: `${SITE_URL}/products/${p.id}`,
+					name: p.name,
+				})),
+			},
+		};
+		const breadcrumbLd = {
+			'@context': 'https://schema.org',
+			'@type': 'BreadcrumbList',
+			itemListElement: [
+				{ '@type': 'ListItem', position: 1, name: 'Home', item: `${SITE_URL}/` },
+				{ '@type': 'ListItem', position: 2, name: 'Products', item: `${SITE_URL}/products` },
+				{ '@type': 'ListItem', position: 3, name: route.category.name, item: canonical },
+			],
+		};
+		jsonLd = `
+		<script type="application/ld+json">${JSON.stringify(collectionLd)}</script>
+		<script type="application/ld+json">${JSON.stringify(breadcrumbLd)}</script>`;
 	}
 
 	const block = `\t\t<!-- hygoal-prerender-start -->${headExtras}${jsonLd}\n\t\t<!-- hygoal-prerender-end -->\n`;
@@ -157,4 +202,4 @@ for (const route of routes) {
 	written += 1;
 }
 
-console.log(`✅ Prerendered ${written} routes under ${distDir}`);
+console.log(`✓ Prerendered ${written} routes under ${distDir}`);

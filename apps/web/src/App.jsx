@@ -7,7 +7,9 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ProductsPage from './pages/ProductsPage';
 import ProductDetailPage from './pages/ProductDetailPage';
+import CategoryPage from './pages/CategoryPage';
 import ContactPage from './pages/ContactPage';
+import { CATEGORIES } from './data/site';
 
 function App() {
 	return (
@@ -21,6 +23,13 @@ function App() {
 						<Route path="/about" element={<AboutPage />} />
 						<Route path="/products" element={<ProductsPage />} />
 						<Route path="/products/:productId" element={<ProductDetailPage />} />
+						{CATEGORIES.map((cat) => (
+							<Route
+								key={cat.slug}
+								path={`/${cat.slug}`}
+								element={<CategoryPage categorySlug={cat.slug} />}
+							/>
+						))}
 						<Route path="/contact" element={<ContactPage />} />
 						<Route path="*" element={<Navigate to="/" replace />} />
 					</Routes>

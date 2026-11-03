@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useSearchParams } from 'react-router-dom';
+import { Link, Navigate, useSearchParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import Seo from '@/components/Seo';
 import { ArrowRight, PackageSearch, ChevronLeft, ChevronRight } from 'lucide-react';
@@ -27,9 +27,14 @@ const sortByModel = (a, b) => {
 };
 
 export default function ProductsPage() {
-	const [searchParams, setSearchParams] = useSearchParams();
+	const [searchParams] = useSearchParams();
 	const catParam = searchParams.get('cat');
 	const active = CATEGORIES.some((c) => c.slug === catParam) ? catParam : ALL;
+
+	// Dedicated SEO landing pages own each category URL
+	if (catParam && CATEGORIES.some((c) => c.slug === catParam)) {
+		return <Navigate to={`/${catParam}`} replace />;
+	}
 
 	const filtered =
 		active === ALL
@@ -65,23 +70,22 @@ export default function ProductsPage() {
 
 			<section className="bg-white py-16 md:py-20">
 				<div className="mx-auto max-w-7xl px-6">
-					{/* Filter tabs */}
-					<div className="flex flex-wrap justify-center gap-3" role="tablist" aria-label="Product categories">
-						{[{ slug: ALL, name: 'All Products' }, ...CATEGORIES].map((cat) => (
-							<button
+					{/* Category links (SEO landing pages) + All Products */}
+					<div className="flex flex-wrap justify-center gap-3" role="navigation" aria-label="Product categories">
+						<span
+							className="min-h-[44px] border-2 border-brand bg-brand px-6 font-display text-lg font-semibold uppercase tracking-wide text-brand-foreground"
+							aria-current="page"
+						>
+							All Products
+						</span>
+						{CATEGORIES.map((cat) => (
+							<Link
 								key={cat.slug}
-								type="button"
-								role="tab"
-								aria-selected={active === cat.slug}
-								onClick={() => select(cat.slug)}
-								className={`min-h-[44px] border-2 px-6 font-display text-lg font-semibold uppercase tracking-wide transition-all active:scale-[0.98] ${
-									active === cat.slug
-										? 'border-brand bg-brand text-brand-foreground'
-										: 'border-foreground/10 bg-white text-foreground hover:border-brand hover:text-brand'
-								}`}
+								to={`/${cat.slug}`}
+								className="min-h-[44px] border-2 border-foreground/10 bg-white px-6 font-display text-lg font-semibold uppercase tracking-wide text-foreground transition-all hover:border-brand hover:text-brand active:scale-[0.98]"
 							>
 								{cat.name}
-							</button>
+							</Link>
 						))}
 					</div>
 
