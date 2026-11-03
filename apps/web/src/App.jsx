@@ -1,15 +1,21 @@
-import React, { useEffect } from 'react';
+import React, { Suspense, lazy, useEffect } from 'react';
 import { Route, Routes, BrowserRouter as Router, Navigate } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
-import AboutPage from './pages/AboutPage';
-import ProductsPage from './pages/ProductsPage';
-import ProductDetailPage from './pages/ProductDetailPage';
-import CategoryPage from './pages/CategoryPage';
-import ContactPage from './pages/ContactPage';
 import { CATEGORIES } from './data/site';
+
+/*
+ * Route-level splitting: only the homepage ships in the entry chunk. Product
+ * pages drag 260kB of productDetails.json behind them, so keeping them out of
+ * the entry cuts the first payload roughly in half for anything landing on /.
+ */
+const AboutPage = lazy(() => import('./pages/AboutPage'));
+const ProductsPage = lazy(() => import('./pages/ProductsPage'));
+const ProductDetailPage = lazy(() => import('./pages/ProductDetailPage'));
+const CategoryPage = lazy(() => import('./pages/CategoryPage'));
+const ContactPage = lazy(() => import('./pages/ContactPage'));
 
 /**
  * Fade out and drop the inline first-paint shell from index.html.
@@ -56,30 +62,46 @@ function useBootSkeletonRemoval() {
 	}, []);
 }
 
-function App() {
+/**
+ * Rendered *inside* the Suspense boundary on purpose: when a lazy route is
+ * still loading the boundary shows its fallback, so this never mounts and the
+ * boot skeleton keeps covering the viewport. It only runs once the real page
+ * has rendered — no blank frame on deep links.
+ */
+function BootReveal() {
 	useBootSkeletonRemoval();
+	return null;
+}
 
+function PageFallback() {
+	return <div className="min-h-[60vh] bg-navy" aria-hidden="true" />;
+}
+
+function App() {
 	return (
 		<Router basename="/">
 			<ScrollToTop />
 			<div className="flex min-h-screen flex-col bg-background text-foreground">
 				<Header />
 				<main className="flex-1">
-					<Routes>
-						<Route path="/" element={<HomePage />} />
-						<Route path="/about" element={<AboutPage />} />
-						<Route path="/products" element={<ProductsPage />} />
-						<Route path="/products/:productId" element={<ProductDetailPage />} />
-						{CATEGORIES.map((cat) => (
-							<Route
-								key={cat.slug}
-								path={`/${cat.slug}`}
-								element={<CategoryPage categorySlug={cat.slug} />}
-							/>
-						))}
-						<Route path="/contact" element={<ContactPage />} />
-						<Route path="*" element={<Navigate to="/" replace />} />
-					</Routes>
+					<Suspense fallback={<PageFallback />}>
+						<BootReveal />
+						<Routes>
+							<Route path="/" element={<HomePage />} />
+							<Route path="/about" element={<AboutPage />} />
+							<Route path="/products" element={<ProductsPage />} />
+							<Route path="/products/:productId" element={<ProductDetailPage />} />
+							{CATEGORIES.map((cat) => (
+								<Route
+									key={cat.slug}
+									path={`/${cat.slug}`}
+									element={<CategoryPage categorySlug={cat.slug} />}
+								/>
+							))}
+							<Route path="/contact" element={<ContactPage />} />
+							<Route path="*" element={<Navigate to="/" replace />} />
+						</Routes>
+					</Suspense>
 				</main>
 				<Footer />
 			</div>

@@ -34,6 +34,18 @@ const productDetails = JSON.parse(
 	readFileSync(join(root, 'apps', 'web', 'src', 'content', 'productDetails.json'), 'utf8'),
 ).details;
 
+const siteContent = JSON.parse(
+	readFileSync(join(root, 'apps', 'web', 'src', 'content', 'site.json'), 'utf8'),
+);
+
+/**
+ * Above-the-fold image of the homepage hero. Preloading it starts the download
+ * at HTML-parse time instead of after the JS bundle mounts, which is when the
+ * browser would otherwise discover the <img> (LCP was ~3.2s on Slow 4G).
+ * Only the homepage gets it: PageHero on every other route has no image.
+ */
+const HOME_HERO_IMAGE = siteContent?.images?.banner1 || '';
+
 const detailsById = new Map(productDetails.map((d) => [d.id, d]));
 const categoryNames = new Map(categories.map((c) => [c.slug, c.name]));
 
@@ -277,8 +289,13 @@ function injectHead(html, route) {
 		);
 	}
 
+	const heroPreload =
+		route.path === '/' && HOME_HERO_IMAGE
+			? `		<link rel="preload" as="image" href="${escapeHtml(HOME_HERO_IMAGE)}" fetchpriority="high" />\n`
+			: '';
+
 	const headExtras = `
-		<link rel="canonical" data-react-helmet="true" href="${canonical}" />
+${heroPreload}		<link rel="canonical" data-react-helmet="true" href="${canonical}" />
 		<meta property="og:url" data-react-helmet="true" content="${canonical}" />
 		<meta property="og:type" data-react-helmet="true" content="${route.product ? 'product' : 'website'}" />
 		<meta property="og:site_name" data-react-helmet="true" content="HYGOAL" />
