@@ -1,7 +1,7 @@
 /**
  * 生成 sitemap.xml（站点地图），帮助搜索引擎和 AI 爬虫发现所有页面。
  * 用法：node scripts/generate-sitemap.mjs
- * 换域名（hygoal.com）时改下面的 BASE_URL 后重跑。
+ * 仅列出将由 prerender 产出真实 HTML 的干净路径（https://www.hygoal.com/...）。
  */
 import { readFileSync, writeFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
@@ -9,8 +9,7 @@ import { fileURLToPath } from 'node:url';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 
-// 站点根地址（含 /Website/ 子路径；绑定 hygoal.com 后改成 https://hygoal.com/）
-const BASE_URL = 'https://volcanolee4.github.io/Website/';
+const BASE_URL = 'https://www.hygoal.com/';
 
 const products = JSON.parse(readFileSync(join(root, 'apps', 'web', 'src', 'content', 'products.json'), 'utf8'));
 
@@ -40,4 +39,4 @@ ${urls
 `;
 
 writeFileSync(join(root, 'apps', 'web', 'public', 'sitemap.xml'), xml);
-console.log(`✅ 已生成 sitemap.xml，共 ${urls.length} 个 URL（BASE_URL: ${BASE_URL}）`);
+console.log(`✅ 已生成 sitemap.xml，共 ${urls.length} 条 URL（BASE_URL: ${BASE_URL}）`);
