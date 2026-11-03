@@ -18,6 +18,105 @@
 		<meta name="twitter:description" data-react-helmet="true" content="HYGOAL manufactures indexing plungers, leveling feet, cam levers and custom CNC parts in Ningbo, China — factory-direct, exported to 40+ countries." />
 		<meta name="twitter:image" data-react-helmet="true" content="https://www.hygoal.com/images/1698647051683fb62bd92b8dd7ed94e44ded91fdc23be.png" />
 		<title data-react-helmet="true">HYGOAL | Indexing Plunger, Leveling Feet & Cam Lever Manufacturer</title>
+		<style>
+			/*
+			  First-paint shell: inline critical CSS only (no bundle, no fonts), so the
+			  browser paints instantly instead of a blank white screen while the JS
+			  bundle downloads/parses. App.jsx fades it out after React mounts.
+			  Keep the markup a SIBLING of #root — prerender-routes.mjs rewrites the
+			  inside of #root with a non-greedy regex and would corrupt nested markup.
+			*/
+			html {
+				background: #0a1624;
+			}
+			body {
+				margin: 0;
+				background: #ffffff;
+			}
+			#boot-skeleton {
+				position: fixed;
+				inset: 0;
+				z-index: 9999;
+				display: flex;
+				flex-direction: column;
+				background: #ffffff;
+				opacity: 1;
+				transition: opacity 0.25s ease-out;
+			}
+			#boot-skeleton .bs-top {
+				flex: 0 0 36px;
+				background: #0a1624;
+			}
+			#boot-skeleton .bs-nav {
+				flex: 0 0 72px;
+				border-bottom: 1px solid #e6eaf0;
+				background: #ffffff;
+			}
+			#boot-skeleton .bs-inner {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				width: 100%;
+				max-width: 1280px;
+				height: 100%;
+				margin: 0 auto;
+				padding: 0 24px;
+				box-sizing: border-box;
+			}
+			#boot-skeleton .bs-logo {
+				width: 132px;
+				height: 28px;
+				border-radius: 3px;
+				background: #eef1f5;
+			}
+			#boot-skeleton .bs-links {
+				display: none;
+				gap: 32px;
+			}
+			#boot-skeleton .bs-links span {
+				display: block;
+				width: 62px;
+				height: 8px;
+				border-radius: 2px;
+				background: #eef1f5;
+			}
+			#boot-skeleton .bs-cta {
+				width: 128px;
+				height: 42px;
+				border-radius: 3px;
+				background: #e95d0c;
+				opacity: 0.55;
+			}
+			#boot-skeleton .bs-hero {
+				flex: 1 1 auto;
+				background: linear-gradient(100deg, #0a1624 0%, #12293d 58%, #1b3a52 100%);
+			}
+			@media (min-width: 768px) {
+				#boot-skeleton .bs-links {
+					display: flex;
+				}
+			}
+			#boot-skeleton.is-done {
+				opacity: 0;
+			}
+			/* Failsafe: if JS never boots, never trap the user behind the overlay. */
+			@keyframes bs-failsafe {
+				to {
+					opacity: 0;
+					visibility: hidden;
+				}
+			}
+			#boot-skeleton {
+				animation: bs-failsafe 0.3s linear 8s forwards;
+			}
+		</style>
+		<noscript>
+			<style>
+				#boot-skeleton {
+					display: none;
+				}
+			</style>
+		</noscript>
 		<script type="application/ld+json">
 		{
 			"@context": "https://schema.org",
@@ -52,6 +151,17 @@
 		</script>
 	</head>
 	<body>
+		<div id="boot-skeleton" aria-hidden="true">
+			<div class="bs-top"></div>
+			<div class="bs-nav">
+				<div class="bs-inner">
+					<div class="bs-logo"></div>
+					<div class="bs-links"><span></span><span></span><span></span><span></span></div>
+					<div class="bs-cta"></div>
+				</div>
+			</div>
+			<div class="bs-hero"></div>
+		</div>
 		<div id="root"></div>
 		<script type="module" src="/src/main.jsx"></script>
 	</body>

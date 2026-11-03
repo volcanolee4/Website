@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
@@ -41,6 +41,16 @@ export default function HeroCarousel() {
 	const [paused, setPaused] = useState(false);
 	const reduceMotion = useReducedMotion();
 
+	// The first slide paints fully opaque/positioned with no entrance animation:
+	// a fade-in from opacity 0 keeps the h1 and the banner image invisible for
+	// ~0.5-0.9s after mount, which reads as a blank hero and pushes LCP back.
+	// Slide changes (and navigating back to the carousel) still animate normally.
+	const firstSlideVisible = useRef(true);
+	useEffect(() => {
+		firstSlideVisible.current = false;
+	}, []);
+	const isFirstPaint = firstSlideVisible.current;
+
 	useEffect(() => {
 		if (paused) return undefined;
 		const timer = setInterval(() => setIndex((i) => (i + 1) % SLIDES.length), 6000);
@@ -61,7 +71,7 @@ export default function HeroCarousel() {
 				<motion.div
 					key={index}
 					className="absolute inset-0"
-					initial={{ opacity: 0 }}
+					initial={isFirstPaint ? false : { opacity: 0 }}
 					animate={{ opacity: 1 }}
 					exit={{ opacity: 0 }}
 					transition={{ duration: 0.9, ease: 'easeOut' }}
@@ -82,7 +92,7 @@ export default function HeroCarousel() {
 			<div className="relative z-10 mx-auto flex min-h-[92dvh] max-w-7xl items-center px-6 py-24">
 				<motion.div
 					key={`content-${index}`}
-					initial="hidden"
+					initial={isFirstPaint ? false : 'hidden'}
 					animate="show"
 					variants={{ show: { transition: { staggerChildren: 0.09, delayChildren: 0.15 } } }}
 					className="max-w-3xl"
