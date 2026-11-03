@@ -23,12 +23,12 @@ export default function HomePage() {
 				<title>HYGOAL | Indexing Plunger, Leveling Feet & Cam Lever Manufacturer</title>
 				<meta
 					name="description"
-					content="HYGOAL manufactures and exports precision machine components — indexing plungers, leveling feet, cam levers and custom CNC-machined parts — from Ningbo, China to 40+ countries."
+					content="HYGOAL manufactures indexing plungers, leveling feet, cam levers and custom CNC parts in Ningbo, China — factory-direct, exported to 40+ countries."
 				/>
 			</Helmet>
 			<Seo
 				title="HYGOAL | Indexing Plunger, Leveling Feet & Cam Lever Manufacturer"
-				description="HYGOAL manufactures and exports precision machine components — indexing plungers, leveling feet, cam levers and custom CNC-machined parts — from Ningbo, China to 40+ countries."
+				description="HYGOAL manufactures indexing plungers, leveling feet, cam levers and custom CNC parts in Ningbo, China — factory-direct, exported to 40+ countries."
 				image="/images/1698647051683fb62bd92b8dd7ed94e44ded91fdc23be.png"
 				siteName="HYGOAL"
 			/>

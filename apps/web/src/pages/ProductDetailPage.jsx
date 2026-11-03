@@ -8,33 +8,62 @@ import CtaBand from '@/components/CtaBand';
 import { PRODUCTS, categoryName } from '@/data/site';
 import { getProductDetail } from '@/data/productDetails';
 
-function buildProductMetaDescription(product, detail) {
-	const summaryExtra = (detail?.summary || '')
+// Mirrors scripts/prerender-routes.mjs so the hydrated meta description equals
+// the prerendered one (whole sentences only, 120-160 chars, no ellipsis cut).
+const DESC_MAX = 160;
+const DESC_MIN = 120;
+const DESC_PADS = [
+	'Factory-direct from HYGOAL in Ningbo, China; quotation within 48 hours.',
+	'HYGOAL, Ningbo, China.',
+];
+
+const cleanText = (s) => String(s || '').replace(/\s+/g, ' ').trim();
+
+function truncateSentence(text) {
+	const cut = text
+		.slice(0, DESC_MAX)
+		.replace(/\s+\S*$/, '')
+		.replace(/[.,;:·—-]$/, '')
+		.trimEnd();
+	return `${cut}.`;
+}
+
+function fitDescription(parts) {
+	const list = parts.map(cleanText).filter(Boolean);
+	let out = '';
+	for (const s of list) {
+		const candidate = out ? `${out} ${s}` : s;
+		if (candidate.length <= DESC_MAX) out = candidate;
+	}
+	// A single over-long source sentence must be trimmed, not dropped.
+	if (!out && list.length) out = truncateSentence(list[0]);
+	for (const pad of DESC_PADS) {
+		if (out.length >= DESC_MIN) break;
+		const candidate = `${out} ${pad}`;
+		if (candidate.length <= DESC_MAX) out = candidate;
+	}
+	if (out.length > DESC_MAX) out = truncateSentence(out);
+	return out;
+}
+
+function summaryExtra(detail, spec) {
+	const extra = (detail?.summary || '')
 		.split('\n')
 		.slice(1)
-		.join(' ')
-		.trim();
-	let d = [
-		`${product.name} — ${product.spec || 'Precision machine component'}.`,
-		summaryExtra ? `${summaryExtra}.` : '',
-		'Factory-direct from HYGOAL in Ningbo, China; specs, drawings and quotation within 48 hours.',
-	]
+		.map((line) => cleanText(line))
 		.filter(Boolean)
-		.join(' ')
-		.replace(/\s+/g, ' ')
-		.trim();
-	if (d.length > 160) {
-		d = d.slice(0, 159).replace(/\s+\S*$/, '').trimEnd() + '…';
-	}
-	if (d.length < 120) {
-		d = (d + ' Precision machine components manufactured by HYGOAL for export worldwide.')
-			.replace(/\s+/g, ' ')
-			.trim();
-		if (d.length > 160) {
-			d = d.slice(0, 159).replace(/\s+\S*$/, '').trimEnd() + '…';
-		}
-	}
-	return d;
+		.join(' ');
+	// Some records repeat the spec line verbatim — do not print it twice.
+	if (extra && cleanText(spec) && extra.toLowerCase() === cleanText(spec).toLowerCase()) return '';
+	return extra;
+}
+
+function buildProductMetaDescription(product, detail) {
+	const extra = summaryExtra(detail, product.spec);
+	return fitDescription([
+		`${product.name} — ${product.spec || 'Precision machine component'}.`,
+		extra ? `${extra}.` : '',
+	]);
 }
 
 const RECENT_KEY = 'hygoal_recent_products';

@@ -6,6 +6,8 @@
  *
  * Body injection is safe with ReactDOM.createRoot (not hydrateRoot):
  * the client wipe-replaces #root on boot while crawlers still see text.
+ * The injected block is wrapped in <div id="seo-prerender" hidden> so it never
+ * flashes unstyled text before React mounts; crawlers still parse the text.
  *
  * Usage (after vite build):
  *   node scripts/prerender-routes.mjs
@@ -33,9 +35,20 @@ const productDetails = JSON.parse(
 ).details;
 
 const detailsById = new Map(productDetails.map((d) => [d.id, d]));
+const categoryNames = new Map(categories.map((c) => [c.slug, c.name]));
 
+// Homepage description: kept <= 160 chars so Google does not truncate it.
+// Must stay identical to apps/web/index.html + HomePage.jsx.
 const DEFAULT_DESC =
-	'HYGOAL manufactures and exports precision machine components — indexing plungers, leveling feet, cam levers and custom CNC-machined parts — from Ningbo, China to 40+ countries.';
+	'HYGOAL manufactures indexing plungers, leveling feet, cam levers and custom CNC parts in Ningbo, China — factory-direct, exported to 40+ countries.';
+
+/** Pads appended only when the description is still under MIN chars. */
+const DESC_PADS = [
+	'Factory-direct from HYGOAL in Ningbo, China; quotation within 48 hours.',
+	'HYGOAL, Ningbo, China.',
+];
+const DESC_MIN = 120;
+const DESC_MAX = 160;
 
 function escapeHtml(s) {
 	return String(s)
@@ -45,39 +58,59 @@ function escapeHtml(s) {
 		.replaceAll('"', '&quot;');
 }
 
-function clampMetaDescription(text, min = 120, max = 160) {
-	let d = String(text || '')
-		.replace(/\s+/g, ' ')
-		.trim();
-	if (d.length > max) {
-		d = d.slice(0, max - 1).replace(/\s+\S*$/, '').trimEnd() + '…';
+const cleanText = (s) => String(s || '').replace(/\s+/g, ' ').trim();
+
+/**
+ * Join whole sentences while they fit within DESC_MAX — never cut mid-sentence
+ * (no trailing "…"). Sentence may be dropped; pads keep us above DESC_MIN.
+ */
+function truncateSentence(text) {
+	const cut = text
+		.slice(0, DESC_MAX)
+		.replace(/\s+\S*$/, '')
+		.replace(/[.,;:·—-]$/, '')
+		.trimEnd();
+	return `${cut}.`;
+}
+
+function fitDescription(parts) {
+	const list = parts.map(cleanText).filter(Boolean);
+	let out = '';
+	for (const s of list) {
+		const candidate = out ? `${out} ${s}` : s;
+		if (candidate.length <= DESC_MAX) out = candidate;
 	}
-	if (d.length < min) {
-		const pad =
-			' Precision machine components from HYGOAL in Ningbo, China — request specs and a quotation within 48 hours.';
-		d = (d + pad).replace(/\s+/g, ' ').trim();
-		if (d.length > max) {
-			d = d.slice(0, max - 1).replace(/\s+\S*$/, '').trimEnd() + '…';
-		}
+	// A single over-long source sentence must be trimmed, not dropped.
+	if (!out && list.length) out = truncateSentence(list[0]);
+	for (const pad of DESC_PADS) {
+		if (out.length >= DESC_MIN) break;
+		const candidate = `${out} ${pad}`;
+		if (candidate.length <= DESC_MAX) out = candidate;
 	}
-	return d;
+	if (out.length > DESC_MAX) out = truncateSentence(out);
+	return out;
+}
+
+/** Summary lines after the first (the first line repeats the product name). */
+function summaryExtra(detail, spec) {
+	const extra = (detail?.summary || '')
+		.split('\n')
+		.slice(1)
+		.map((line) => cleanText(line))
+		.filter(Boolean)
+		.join(' ');
+	// Some records repeat the spec line verbatim — do not print it twice.
+	if (extra && cleanText(spec) && extra.toLowerCase() === cleanText(spec).toLowerCase()) return '';
+	return extra;
 }
 
 function productMetaDescription(product) {
 	const detail = detailsById.get(product.id);
-	const summaryExtra = (detail?.summary || '')
-		.split('\n')
-		.slice(1)
-		.join(' ')
-		.trim();
-	const base = [
+	const extra = summaryExtra(detail, product.spec);
+	return fitDescription([
 		`${product.name} — ${product.spec || 'Precision machine component'}.`,
-		summaryExtra ? `${summaryExtra}.` : '',
-		'Factory-direct from HYGOAL in Ningbo, China; specs, drawings and quotation within 48 hours.',
-	]
-		.filter(Boolean)
-		.join(' ');
-	return clampMetaDescription(base);
+		extra ? `${extra}.` : '',
+	]);
 }
 
 function absoluteImage(pathOrUrl) {
@@ -95,7 +128,7 @@ const routes = [
 			<main>
 				<h1>Precision Machine Components from Ningbo, China</h1>
 				<p>${escapeHtml(DEFAULT_DESC)}</p>
-				<p>HYGOAL manufactures indexing plungers, leveling feet, cam levers and custom CNC-machined parts for export to 40+ countries.</p>
+				<p>Indexing plungers, leveling feet, cam levers and custom CNC-machined parts, manufactured in-house since 2009 and exported to 40+ countries.</p>
 				<ul>
 					<li><a href="/indexing-plunger/">Indexing Plungers</a></li>
 					<li><a href="/levelling-feet/">Leveling Feet</a></li>
@@ -103,7 +136,7 @@ const routes = [
 					<li><a href="/customized-service/">Customized CNC Service</a></li>
 					<li><a href="/products/">All Products</a></li>
 					<li><a href="/about/">About HYGOAL</a></li>
-					<li><a href="/contact/">Contact / Quotation</a></li>
+					<li><a href="/contact/">Contact / Request a Quotation</a></li>
 				</ul>
 			</main>`,
 	},
@@ -115,8 +148,8 @@ const routes = [
 		bodyHtml: `
 			<main>
 				<h1>Why Choose HYGOAL</h1>
-				<p>Why choose HYGOAL — precision craftsmanship, cost-effective factory pricing, and customized industrial components from Ningbo, China.</p>
-				<p>Precision-engineered indexing plungers, leveling feet and cam levers with OEM / ODM support and export worldwide.</p>
+				<p>Precision craftsmanship, factory-direct pricing and customized industrial components from Ningbo, China.</p>
+				<p>HYGOAL has manufactured indexing plungers, leveling feet and cam levers since 2009, with OEM / ODM machining to drawing or sample and export to 40+ countries.</p>
 				<p><a href="/products/">Browse products</a> · <a href="/contact/">Request a quotation</a></p>
 			</main>`,
 	},
@@ -128,13 +161,14 @@ const routes = [
 		bodyHtml: `
 			<main>
 				<h1>HYGOAL Products</h1>
-				<p>Browse HYGOAL standard machine components: indexing plungers, leveling feet, cam levers and related industrial accessories.</p>
+				<p>Standard machine components manufactured in Ningbo, China: indexing plungers, leveling feet and cam levers, plus custom CNC machining to drawing.</p>
 				<ul>
 					<li><a href="/indexing-plunger/">Indexing Plunger</a></li>
 					<li><a href="/levelling-feet/">Leveling Feet</a></li>
 					<li><a href="/cam-lever/">Cam Lever</a></li>
 					<li><a href="/customized-service/">Customized Service</a></li>
 				</ul>
+				<p><a href="/contact/">Request a quotation</a></p>
 			</main>`,
 	},
 	{
@@ -145,16 +179,17 @@ const routes = [
 		bodyHtml: `
 			<main>
 				<h1>Contact HYGOAL</h1>
-				<p>Contact HYGOAL Precision Components in Ningbo for quotations on indexing plungers, leveling feet, cam levers and custom CNC parts.</p>
-				<p>Engineers reply within 48 hours, Monday to Saturday. Tell us the part number, drawing or quantity you need.</p>
+				<p>Quotations for indexing plungers, leveling feet, cam levers and custom CNC parts — engineers reply within 48 hours, Monday to Saturday.</p>
+				<p>Tell us the part number, drawing or quantity you need and we will quote to your destination port.</p>
 				<p><a href="/products/">View products</a></p>
 			</main>`,
 	},
 	...categories.map((c) => {
 		const catProducts = products.filter((p) => p.category === c.slug);
-		const description =
+		const description = fitDescription([
 			c.seoDescription ||
-			`Browse HYGOAL ${c.name.toLowerCase()} products manufactured in Ningbo, China.`;
+				`Browse HYGOAL ${c.name.toLowerCase()} products manufactured in Ningbo, China.`,
+		]);
 		const h1 = c.heroTitle || c.name;
 		const list = catProducts
 			.map(
@@ -172,7 +207,6 @@ const routes = [
 			<main>
 				<h1>${escapeHtml(h1)}</h1>
 				<p>${escapeHtml(c.heroDescription || c.blurb || description)}</p>
-				<p>${escapeHtml(description)}</p>
 				<ul>
 					${list}
 				</ul>
@@ -183,7 +217,8 @@ const routes = [
 	...products.map((p) => {
 		const description = productMetaDescription(p);
 		const detail = detailsById.get(p.id);
-		const summaryBlock = escapeHtml((detail?.summary || p.spec || '').replace(/\n/g, ' — '));
+		const extra = summaryExtra(detail, p.spec);
+		const categoryName = categoryNames.get(p.category) || p.category;
 		return {
 			path: `/products/${p.id}`,
 			title: `${p.name} — HYGOAL`,
@@ -193,9 +228,8 @@ const routes = [
 			<main>
 				<article>
 					<h1>${escapeHtml(p.name)}</h1>
-					<p>${escapeHtml(description)}</p>
-					<p>${summaryBlock}</p>
-					<p>Category: <a href="/${escapeHtml(p.category)}/">${escapeHtml(p.category)}</a> · SKU: ${escapeHtml(p.id)}</p>
+					<p>${escapeHtml(cleanText(p.spec || ''))}${extra ? `. ${escapeHtml(extra)}` : ''}.</p>
+					<p>Category: <a href="/${escapeHtml(p.category)}/">${escapeHtml(categoryName)}</a> · SKU: ${escapeHtml(p.id)}</p>
 					<p><a href="/products/">All products</a> · <a href="/contact/">Request a quotation</a></p>
 				</article>
 			</main>`,
@@ -266,16 +300,8 @@ function injectHead(html, route) {
 
 	let jsonLd = '';
 	if (route.product) {
-		const offer = {
-			'@type': 'Offer',
-			url: canonical,
-			availability: 'https://schema.org/InStock',
-			priceCurrency: 'USD',
-		};
-		// Only attach a real price when product data provides one (none today).
-		if (route.product.price != null && route.product.price !== '') {
-			offer.price = String(route.product.price);
-		}
+		// No offers block: HYGOAL does not publish prices (quote-only B2B), and an
+		// Offer without `price` is flagged by Google as a missing required field.
 		const productLd = {
 			'@context': 'https://schema.org',
 			'@type': 'Product',
@@ -285,7 +311,6 @@ function injectHead(html, route) {
 			brand: { '@type': 'Brand', name: 'HYGOAL' },
 			url: canonical,
 			image: image,
-			offers: offer,
 		};
 		const breadcrumbLd = {
 			'@context': 'https://schema.org',
@@ -336,17 +361,18 @@ function injectHead(html, route) {
 	return out;
 }
 
+/**
+ * Crawlable body. Wrapped in a hidden wrapper so it never paints before React
+ * boots (no flash of unstyled text); crawlers still read the text content.
+ */
 function injectBody(html, route) {
 	const inner = (route.bodyHtml || '').trim();
 	if (!inner) return html;
-	// Replace empty #root; also tolerate whitespace-only root from prior builds.
+	const wrapped = `<div id="seo-prerender" hidden>\n${inner}\n\t\t</div>`;
 	if (/<div id="root">[\s\S]*?<\/div>\s*<script/i.test(html)) {
-		return html.replace(
-			/<div id="root">[\s\S]*?<\/div>(\s*<script)/i,
-			`<div id="root">\n${inner}\n\t\t</div>$1`,
-		);
+		return html.replace(/<div id="root">[\s\S]*?<\/div>(\s*<script)/i, `<div id="root">\n${wrapped}\n\t\t</div>$1`);
 	}
-	return html.replace(/<div id="root"><\/div>/i, `<div id="root">\n${inner}\n\t\t</div>`);
+	return html.replace(/<div id="root"><\/div>/i, `<div id="root">\n\t\t\t${wrapped}\n\t\t</div>`);
 }
 
 function destFor(routePath) {
