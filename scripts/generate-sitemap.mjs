@@ -19,6 +19,7 @@ const urls = [
   'about',
   'products',
   'contact',
+  'catalogue',
   ...categories.categories.map((c) => c.slug),
   ...products.products.map((p) => `products/${p.id}`),
 ];

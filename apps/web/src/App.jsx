@@ -16,6 +16,7 @@ const ProductsPage = lazy(() => import('./pages/ProductsPage'));
 const ProductDetailPage = lazy(() => import('./pages/ProductDetailPage'));
 const CategoryPage = lazy(() => import('./pages/CategoryPage'));
 const ContactPage = lazy(() => import('./pages/ContactPage'));
+const CatalogPage = lazy(() => import('./pages/CatalogPage'));
 
 /**
  * Fade out and drop the inline first-paint shell from index.html.
@@ -98,6 +99,7 @@ function App() {
 									element={<CategoryPage categorySlug={cat.slug} />}
 								/>
 							))}
+							<Route path="/catalogue" element={<CatalogPage />} />
 							<Route path="/contact" element={<ContactPage />} />
 							<Route path="*" element={<Navigate to="/" replace />} />
 						</Routes>

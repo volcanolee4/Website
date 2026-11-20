@@ -196,6 +196,24 @@ const routes = [
 				<p><a href="/products/">View products</a></p>
 			</main>`,
 	},
+	{
+		path: '/catalogue',
+		title: 'Product Catalogue 2026 (PDF) | HYGOAL',
+		description:
+			'Download the HYGOAL product catalogue (PDF): 34 series of indexing plungers, leveling mounts and cam levers with full size tables in metric and inch.',
+		bodyHtml: `
+			<main>
+				<h1>HYGOAL Product Catalogue 2026</h1>
+				<p>40 pages covering 34 series of indexing plungers, leveling mounts and cam levers, with full size tables in metric and inch, materials and options per series, and our custom machining service.</p>
+				<ul>
+					<li><a href="/indexing-plunger/">Indexing plungers</a></li>
+					<li><a href="/levelling-feet/">Leveling mounts</a></li>
+					<li><a href="/cam-lever/">Cam levers</a></li>
+					<li><a href="/customized-service/">Custom machined parts</a></li>
+				</ul>
+				<p><a href="/catalogue/HYGOAL-Catalogue-2026.pdf">Download the catalogue (PDF, 2 MB)</a> · <a href="/products/">All products</a> · <a href="/contact/">Request a quotation</a></p>
+			</main>`,
+	},
 	...categories.map((c) => {
 		const catProducts = products.filter((p) => p.category === c.slug);
 		const description = fitDescription([
