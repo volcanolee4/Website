@@ -18,7 +18,7 @@ import { CATEGORIES, PRODUCTS, COMPANY } from '@/data/site';
 const PDF_PATH = '/catalogue/HYGOAL-Catalogue-2026.pdf';
 const COVER = '/images/catalogue-cover.jpg';
 
-const TITLE = 'Product Catalogue 2026 | HYGOAL';
+const TITLE = 'Product Catalogue 2026 (PDF) | HYGOAL';
 const DESCRIPTION =
 	'Download the HYGOAL product catalogue (PDF): 34 series of indexing plungers, leveling mounts and cam levers with full size tables in metric and inch.';
 
