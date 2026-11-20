@@ -156,7 +156,7 @@ export default function CategoryPage({ categorySlug }) {
 								</h2>
 								<p className="mt-2 max-w-xl text-muted-foreground">
 									Send a sketch, sample or STEP file and receive a firm quotation within 48 hours.
-									Browse our full catalogue or jump to customized CNC service.
+									Browse our <Link to="/catalogue" className="font-semibold text-foreground underline decoration-brand decoration-2 underline-offset-4">full catalogue</Link> or jump to customized CNC service.
 								</p>
 							</div>
 							<div className="flex flex-wrap gap-3">

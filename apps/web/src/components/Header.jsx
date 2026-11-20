@@ -57,7 +57,7 @@ export default function Header() {
 						<img src={IMAGES.logo} alt="HYGOAL — Precision Components" className="h-12 w-auto max-w-[180px] object-contain" />
 					</Link>
 
-					<nav className="hidden items-center gap-8 md:flex" aria-label="Main navigation">
+					<nav className="hidden items-center gap-8 lg:flex" aria-label="Main navigation">
 						{NAV.map((item) => (
 							<NavLink key={item.to} to={item.to} end={item.to === '/'} className={navLinkClass}>
 								{item.label}
@@ -77,7 +77,7 @@ export default function Header() {
 							<button
 								type="button"
 								aria-label="Open menu"
-								className="inline-flex h-11 w-11 items-center justify-center border border-border text-foreground md:hidden"
+								className="inline-flex h-11 w-11 items-center justify-center border border-border text-foreground lg:hidden"
 							>
 								<Menu className="h-5 w-5" strokeWidth={2} />
 							</button>

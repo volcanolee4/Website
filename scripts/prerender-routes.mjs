@@ -198,6 +198,7 @@ const routes = [
 	},
 	{
 		path: '/catalogue',
+		image: '/images/catalogue-cover.jpg',
 		title: 'Product Catalogue 2026 (PDF) | HYGOAL',
 		description:
 			'Download the HYGOAL product catalogue (PDF): 34 series of indexing plungers, leveling mounts and cam levers with full size tables in metric and inch.',
@@ -272,7 +273,9 @@ function injectHead(html, route) {
 	const canonical = SITE_URL + pathWithSlash;
 	const title = escapeHtml(route.title);
 	const description = escapeHtml(route.description);
-	const image = route.product?.image
+	const image = route.image
+		? absoluteImage(route.image)
+		: route.product?.image
 		? absoluteImage(route.product.image)
 		: route.category?.image
 			? absoluteImage(route.category.image)
