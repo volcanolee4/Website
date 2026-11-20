@@ -149,6 +149,7 @@ const routes = [
 					<li><a href="/products/">All Products</a></li>
 					<li><a href="/about/">About HYGOAL</a></li>
 					<li><a href="/contact/">Contact / Request a Quotation</a></li>
+					<li><a href="/catalogue/">Product Catalogue 2026 (PDF)</a></li>
 				</ul>
 			</main>`,
 	},
@@ -180,7 +181,7 @@ const routes = [
 					<li><a href="/cam-lever/">Cam Lever</a></li>
 					<li><a href="/customized-service/">Customized Service</a></li>
 				</ul>
-				<p><a href="/contact/">Request a quotation</a></p>
+				<p><a href="/catalogue/">Catalogue (PDF)</a> · <a href="/contact/">Request a quotation</a></p>
 			</main>`,
 	},
 	{
@@ -241,7 +242,7 @@ const routes = [
 				<ul>
 					${list}
 				</ul>
-				<p><a href="/products/">All products</a> · <a href="/contact/">Request a quotation</a></p>
+				<p><a href="/catalogue/">Catalogue (PDF)</a> · <a href="/products/">All products</a> · <a href="/contact/">Request a quotation</a></p>
 			</main>`,
 		};
 	}),
@@ -261,7 +262,7 @@ const routes = [
 					<h1>${escapeHtml(p.name)}</h1>
 					<p>${escapeHtml(cleanText(p.spec || ''))}${extra ? `. ${escapeHtml(extra)}` : ''}.</p>
 					<p>Category: <a href="/${escapeHtml(p.category)}/">${escapeHtml(categoryName)}</a> · SKU: ${escapeHtml(p.id)}</p>
-					<p><a href="/products/">All products</a> · <a href="/contact/">Request a quotation</a></p>
+					<p><a href="/catalogue/">Catalogue (PDF)</a> · <a href="/products/">All products</a> · <a href="/contact/">Request a quotation</a></p>
 				</article>
 			</main>`,
 		};
